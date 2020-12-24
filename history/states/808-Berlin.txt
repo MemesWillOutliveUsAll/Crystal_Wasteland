@@ -1,0 +1,21 @@
+state={
+	id=808
+	name="STATE_808"
+	provinces={
+		6521 
+	}
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 10
+			air_base = 4
+
+		}
+		add_core_of = GER
+
+	}
+	manpower=4242501
+	buildings_max_level_factor=1.000
+	state_category=city
+}

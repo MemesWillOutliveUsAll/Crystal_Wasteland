@@ -1,0 +1,230 @@
+﻿shared_focus = {
+	id = ostgermania_The_tue_heir
+	icon = GFX_goal_generic_allies_build_infantry
+	x = 14
+	y = 0
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+	
+	available = {
+
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	load_focus_tree = {
+			tree = osg_warlord_focus
+			keep_completed = no
+		}
+	}
+		
+		
+
+
+	bypass = {
+
+	}
+}
+
+# warlordism ####
+
+shared_focus = {
+	id = ostgermania_work_them_harder
+	icon = GFX_goal_generic_allies_build_infantry
+	x = 8
+	y = 0
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = ostgermania_alert_loyalists
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = ostgermania_work_them_harder }
+	relative_position_id = ostgermania_work_them_harder
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	}
+
+	bypass = {
+
+	}
+}
+
+###################################################
+shared_focus = {
+	id = ostgermania_take_out_kaiser
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = ostgermania_alert_loyalists }
+	relative_position_id = ostgermania_alert_loyalists
+	x = -2
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	declare_war_on = {
+			target = PRE
+			type = annex_everything
+		}
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = ostgermania_take_integrate_kaiser
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = ostgermania_take_out_kaiser }
+	relative_position_id = ostgermania_take_out_kaiser
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 200
+	}
+
+	available = {
+	controls_state = 5
+	controls_state = 763
+	controls_state = 188
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_state_core = 188
+	add_state_core = 763
+	add_state_core = 5
+	}
+
+	bypass = {
+
+	}
+}
+##################################################################
+shared_focus = {
+	id = ostgermania_invade_poles
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = ostgermania_alert_loyalists }
+	relative_position_id = ostgermania_alert_loyalists
+	x = 2
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		declare_war_on = {
+			target = PLA
+			type = annex_everything
+		}
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = ostgermania_integrate_poles
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = ostgermania_invade_poles }
+	relative_position_id = ostgermania_invade_poles
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	controls_state = 87
+	controls_state = 98
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_state_core = 87
+	add_state_core = 98
+	
+	}
+
+	bypass = {
+
+	}
+}

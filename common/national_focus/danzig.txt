@@ -1,0 +1,32 @@
+﻿focus_tree = {
+	id = danzig_initial_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = DAN
+		}
+	}
+	
+	default = no
+	
+	shared_focus = DAN_Airmarshal_goering
+}
+
+focus_tree = {
+	id = danzig_warlord_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = DAN
+		}
+	}
+	
+	default = no
+	shared_focus = DAN_Start_the_propellers
+}

@@ -1,0 +1,303 @@
+﻿shared_focus = {
+	id = silesian_The_industrialists
+	icon = GFX_goal_generic_allies_build_infantry
+	x = 14
+	y = 0
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	load_focus_tree = {
+		tree = silesia_warlord_focus
+		keep_completed = no
+	}
+	}
+		
+		
+
+
+	bypass = {
+
+	}
+}
+shared_focus = {
+	id = silesian_finish_sorbs
+	icon = GFX_goal_generic_allies_build_infantry
+	x = 14
+	y = 0
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_state_core = 807
+	add_state_core = 820
+	add_state_core = 66
+	declare_war_on = {
+			target = SOR
+			type = annex_everything
+		}
+	
+	}
+		
+		
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = silesian_industrialize_some_more
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = silesian_finish_sorbs }
+	relative_position_id = silesian_finish_sorbs
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	}
+
+	bypass = {
+
+	}
+}
+###################################################
+shared_focus = {
+	id = silesian_attack_Kaltenbrunner
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = silesian_industrialize_some_more }
+	relative_position_id = silesian_industrialize_some_more
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	declare_war_on = {
+			target = OMK
+			type = annex_everything
+		}
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = silesian_take_integrate_kaltenbrunner
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = silesian_attack_Kaltenbrunner }
+	relative_position_id = silesian_attack_Kaltenbrunner
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 200
+	}
+
+	available = {
+	controls_state = 68
+	controls_state = 63
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_state_core = 68
+	add_state_core = 63
+	}
+
+	bypass = {
+
+	}
+}
+###########################################
+shared_focus = {
+	id = silesian_attack_germany
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = silesian_industrialize_some_more }
+	relative_position_id = silesian_industrialize_some_more
+	x = -2
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	declare_war_on = {
+			target = GER
+			type = annex_everything
+		}
+	}
+
+	bypass = {
+
+	}
+}
+shared_focus = {
+	id = silesia_integrate_germany
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = silesian_attack_germany }
+	relative_position_id = silesian_attack_germany
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 200
+	}
+
+	available = {
+	controls_state = 810
+	controls_state = 808
+	controls_state = 64
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_state_core = 810
+	add_state_core = 808
+	add_state_core = 64
+	}
+
+	bypass = {
+
+	}
+}
+#######################################################
+shared_focus = {
+	id = silesian_attack_Goering
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = prussia_ready_our_armies }
+	relative_position_id = prussia_ready_our_armies
+	x = 2
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	declare_war_on = {
+			target = DAN
+			type = annex_everything
+		}
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = silesian_integrate_danzig
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = silesian_attack_Goering }
+	relative_position_id = silesian_attack_Goering
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	controls_state = 85
+	controls_state = 86
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_state_core = 85
+	add_state_core = 86
+	}
+
+	bypass = {
+
+	}
+}

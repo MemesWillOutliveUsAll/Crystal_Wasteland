@@ -1,0 +1,194 @@
+﻿shared_focus = {
+	id = DAN_Airmarshal_goering
+	icon = GFX_goal_generic_allies_build_infantry
+	x = 14
+	y = 0
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	hidden_effect = {
+		load_focus_tree = {
+			tree = danzig_warlord_focus
+			keep_completed = no
+		}
+	}
+	}
+		
+		
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = DAN_Start_the_propellers
+	icon = GFX_goal_generic_allies_build_infantry
+	x = 8
+	y = 0
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = DAN_rip_the_oil_out
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = DAN_Start_the_propellers }
+	relative_position_id = DAN_Start_the_propellers
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = DAN_take_out_Kaltenbrunner
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = DAN_rip_the_oil_out }
+	relative_position_id = DAN_rip_the_oil_out
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	declare_war_on = {
+			target = OMK
+			type = annex_everything
+		}
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = DAN_take_out_poles
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = DAN_rip_the_oil_out }
+	relative_position_id = DAN_rip_the_oil_out
+	x = -2
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	declare_war_on = {
+			target = PLA
+			type = annex_everything
+		}
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = DAN_take_out_Kaiser
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = DAN_rip_the_oil_out }
+	relative_position_id = DAN_rip_the_oil_out
+	x = 2
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	declare_war_on = {
+			target = PRE
+			type = annex_everything
+		}
+	}
+
+	bypass = {
+
+	}
+}

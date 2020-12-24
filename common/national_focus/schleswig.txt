@@ -1,0 +1,39 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = schleswig_intial_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SHL
+		}
+	}
+	
+	default = no
+	shared_focus = Shleswig_Admiral_Donitz_saves_the_day
+}
+
+focus_tree = {
+	id = schleswig_warlord_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SHL
+		}
+	}
+	
+	default = no
+	shared_focus = Shleswig_emergency_dockyards
+}

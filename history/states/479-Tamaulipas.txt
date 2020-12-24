@@ -1,0 +1,19 @@
+
+state={
+	id=479
+	name="STATE_479"
+	manpower = 1032988
+	
+	state_category = town
+
+	resources={
+		oil=9
+		#steel=2 moved to Guerrero
+	}
+	
+
+	provinces={
+		1952 2083 4956 5015 5021 12721 13088 
+	}
+	
+}

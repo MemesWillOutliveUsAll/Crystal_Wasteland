@@ -1,0 +1,166 @@
+on_actions = {
+	on_capitulation = {
+		effect = {
+			if = {#Holand attacks Belgium after Germany
+				limit = {
+					FROM = {
+							OR = {
+								original_tag = HOL
+							}
+						}
+						ROOT = { original_tag = BEL }
+						has_global_flag = HOLincorporateVLA
+				}
+				HOL = {
+						white_peace = BEL
+					}
+				HOL = {add_state_core = 6}
+				HOL = {transfer_state = 6}
+				country_event = {
+				id = mod_netherlands.2		
+				days = 1 
+				} 
+				clr_global_flag = HOLincorporateVLA
+				
+			}
+			
+			if = {#Holand attacks Belgium
+				limit = {
+					FROM = {
+							OR = {
+								original_tag = HOL
+							}
+						}
+						ROOT = { original_tag = BEL }
+				}
+				HOL = {
+					white_peace = BEL
+				}
+			}
+			
+			if = { 
+				limit = {
+						FROM = {
+							OR = {
+								original_tag = CZE
+							}
+						}
+						ROOT = { original_tag = SLO }
+					}
+				CZE = {white_peace = SLO}
+				CZE ={annex_country = {target = SLO}}
+				CZE = {
+					country_event = {
+					id = mod_Czechoslovakia.3		
+					days = 8 
+					} 
+					remove_state_core = 70
+					remove_state_core = 71
+					remove_state_claim = 664
+				}
+				
+			}
+			
+			if = { 
+				limit = {
+						FROM = {
+							OR = {
+								original_tag = CZE
+							}
+						}
+						ROOT = { original_tag = HUN }
+					}
+				CZE = {white_peace = HUN}
+				CZE = {transfer_state = 664}
+				CZE = {transfer_state = 73}
+			}
+			
+			if = { 
+				limit = {
+						FROM = {
+							OR = {
+								original_tag = HUN
+							}
+						}
+						ROOT = { original_tag = CZE }
+					}
+					HUN = { white_peace = CZE }
+					HUN = {add_state_core = 70}
+					HUN = {transfer_state = 70}
+					HUN = {add_state_core = 71}
+					HUN = {transfer_state = 71}
+					CZE = {
+						set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+						}
+						add_popularity = {ideology = democratic popularity = 0.7 }
+					}
+					
+					CZE = {
+						set_cosmetic_tag = CZE_ONLY
+					}
+			}	
+			
+			
+			if = {  # GERMAN warlords #
+				limit = {
+						FROM = {
+							OR = {
+								original_tag = DAN
+								original_tag = OMK
+								original_tag = OSG
+								original_tag = SDR
+								original_tag = SHL
+								original_tag = GER
+								original_tag = SDR
+								original_tag = PLA
+								original_tag = HAN
+								original_tag = HES
+								original_tag = BAY
+								original_tag = ALL
+								original_tag = PRE
+								original_tag = AUS
+								original_tag = LUX
+								original_tag = SOR
+							}
+						}
+						ROOT = { 
+							OR = {
+								original_tag = OMK 
+								original_tag = OSG 
+								original_tag = SHL
+								original_tag = GER
+								original_tag = SDR
+								original_tag = PLA
+								original_tag = HAN
+								original_tag = HES
+								original_tag = BAY
+								original_tag = ALL
+								original_tag = PRE
+								original_tag = DAN
+								original_tag = AUS 
+								original_tag = LUX
+								original_tag = SOR
+							}
+						}
+					
+					}
+					FROM = {
+						white_peace = ROOT
+						annex_country = {
+					 		target = ROOT
+					 		transfer_troops = no
+					 	}
+					}
+			}
+			
+			
+			
+			
+			
+			
+		}
+	}
+		
+}

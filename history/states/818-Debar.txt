@@ -1,0 +1,20 @@
+state={
+	id=818
+	name="STATE_818"
+	history={
+		owner = YUG
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = YUG
+
+	}
+	provinces={
+		833 867 
+	}
+	manpower= 14516
+	buildings_max_level_factor=1.000
+	state_category=town
+}

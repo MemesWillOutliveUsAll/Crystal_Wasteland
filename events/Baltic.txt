@@ -1,0 +1,81 @@
+﻿###########################
+# Baltic Events
+###########################
+
+add_namespace = baltic
+
+# Ostland collapse
+country_event = {
+	id = baltic.1
+	title = baltic.1.t
+	desc = baltic.1.d
+	picture = GFX_report_event_soviet_soldiers
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 2 }
+	
+	option = { # belarus independence
+		name = baltic.1.a
+		BLR = {
+			transfer_state = 204
+			transfer_state = 194
+			transfer_state = 94
+			transfer_state = 95
+			transfer_state = 96
+			transfer_state = 207
+			transfer_state = 206
+			OST = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				add_popularity = {ideology = neutrality popularity = 0.5 }
+			}
+		}
+		country_event = { id = baltic.2 days = 7 }
+	}
+	
+	
+}
+
+country_event = {
+	id = baltic.2
+	title = baltic.2.t
+	desc = baltic.2.d
+	picture = GFX_report_event_soviet_soldiers
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 14 }
+	
+	option = { # belarus independence
+		name = baltic.2.a
+		LIT = {
+			transfer_state = 784
+			transfer_state = 11
+			transfer_state = 189
+		}
+		LAT = {
+			transfer_state = 190
+			transfer_state = 12
+		}
+		EST = {
+			transfer_state = 13
+			transfer_state = 191
+		}
+		GRA = {
+			transfer_state = 815
+			transfer_state = 816
+		}
+		GLI = {
+			transfer_state = 821
+			transfer_state = 822
+		}
+	}
+	
+}

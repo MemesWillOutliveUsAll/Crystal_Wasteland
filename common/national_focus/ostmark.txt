@@ -1,0 +1,40 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = ostmark_initial_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = OMK
+		}
+	}
+	
+	default = no
+	
+	shared_focus = ostmark_our_plot
+}
+
+focus_tree = {
+	id = ostmark_warlord_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = OMK
+		}
+	}
+	
+	default = no
+	shared_focus = ostmark_purge_the_unloyal
+}

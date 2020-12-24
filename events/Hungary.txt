@@ -1,0 +1,20 @@
+﻿###########################
+# Hungarian Events
+###########################
+
+add_namespace = hungary
+
+# Second Vienna Award - No Territory
+country_event = {
+	id = hungary.1
+	title = hungary.1.t
+	desc = hungary.1.d
+	picture = GFX_report_event_finnish_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary.1.a
+	}
+}
+

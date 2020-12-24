@@ -1,0 +1,17 @@
+
+state={
+	id=338
+	name="STATE_338"
+	manpower = 1800615
+	resources={
+		steel=9 # was: 16
+	}
+
+	state_category = city
+
+	
+
+	provinces={
+		3369 6221 6351 6378 9484 11471 
+	}
+}

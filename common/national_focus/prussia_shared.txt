@@ -1,0 +1,299 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+shared_focus = {
+	id = prussia_the_kaiser
+	icon = GFX_goal_generic_allies_build_infantry
+	x = 14
+	y = 0
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		load_focus_tree = {
+				tree = prussia_warlord_focus
+				keep_completed = no
+		}
+	}
+
+
+	bypass = {
+
+	}
+}
+
+# warlordism ####
+
+shared_focus = {
+	id = prussia_rally_the_old_guard
+	icon = GFX_goal_generic_allies_build_infantry
+	x = 8
+	y = 0
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = prussia_ready_our_armies
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = prussia_rally_the_old_guard }
+	relative_position_id = prussia_rally_the_old_guard
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	}
+
+	bypass = {
+
+	}
+}
+############################################
+shared_focus = {
+	id = prussia_take_out_Goering
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = prussia_ready_our_armies }
+	relative_position_id = prussia_ready_our_armies
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	declare_war_on = {
+			target = DAN
+			type = annex_everything
+		}
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = prussia_integrate_danzig
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = prussia_take_out_Goering }
+	relative_position_id = prussia_take_out_Goering
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	controls_state = 85
+	controls_state = 86
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_state_core = 85
+	add_state_core = 86
+	}
+
+	bypass = {
+
+	}
+}
+###########################################
+shared_focus = {
+	id = prussia_take_out_hess
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = prussia_ready_our_armies }
+	relative_position_id = prussia_ready_our_armies
+	x = -2
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	declare_war_on = {
+			target = OSG
+			type = annex_everything
+		}
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = germany_take_integrate_hess
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = prussia_take_out_hess }
+	relative_position_id = prussia_take_out_hess
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	controls_state = 97
+	controls_state = 817
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_state_core = 97
+	add_state_core = 817
+	}
+
+	bypass = {
+
+	}
+}
+###########################################
+shared_focus = {
+	id = prussia_invade_poles
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = prussia_ready_our_armies }
+	relative_position_id = prussia_ready_our_armies
+	x = 2
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	declare_war_on = {
+			target = PLA
+			type = annex_everything
+		}
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = prussia_integrate_poles
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = germany_take_out_Kaltenbrunner }
+	relative_position_id = germany_take_out_Kaltenbrunner
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	controls_state = 87
+	controls_state = 98
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_state_core = 87
+	add_state_core = 98
+	
+	}
+
+	bypass = {
+
+	}
+}

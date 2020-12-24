@@ -1,0 +1,18 @@
+
+state={
+	id=19
+	name="STATE_19"
+	resources={
+		steel=25.000
+		aluminium=11.000
+	}
+
+	
+
+	provinces={
+		6621 6762 6777 9737 11565 
+	}
+	manpower=1140400
+	buildings_max_level_factor=1.000
+	state_category=city
+}

@@ -1,0 +1,18 @@
+state={
+	id=812
+	name="STATE_812"
+	history={
+		owner = SDR
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = SDR
+
+	}
+	provinces={
+		9412 13205 
+	}
+	manpower= 260000
+	buildings_max_level_factor=1.000
+	state_category=town
+}
