@@ -20,7 +20,7 @@ focus_tree = {
 	
 	default = no
 	shared_focus = silesian_The_industrialists
-	
+	continuous_focus_position = { x = 2000 y = 1000 }
 }
 
 focus_tree = {
@@ -37,5 +37,5 @@ focus_tree = {
 	
 	default = no
 	shared_focus = silesian_finish_sorbs
-	
+	continuous_focus_position = { x = 2000 y = 1000 }
 }

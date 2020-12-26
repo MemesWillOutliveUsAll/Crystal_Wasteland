@@ -99,7 +99,7 @@ shared_focus = {
 	relative_position_id = ostgermania_alert_loyalists
 	x = -2
 	y = 1
-
+	will_lead_to_war_with = PRE
 	cost = 3
 
 	ai_will_do = {
@@ -122,7 +122,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	NOT = {country_exists = PRE}
 	}
 }
 
@@ -168,7 +168,7 @@ shared_focus = {
 	relative_position_id = ostgermania_alert_loyalists
 	x = 2
 	y = 1
-
+	will_lead_to_war_with = PLA
 	cost = 3
 
 	ai_will_do = {
@@ -191,7 +191,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	NOT = {country_exists = PLA}
 	}
 }
 
@@ -222,6 +222,400 @@ shared_focus = {
 	add_state_core = 87
 	add_state_core = 98
 	
+	}
+
+	bypass = {
+	
+	}
+}
+########################################################################
+shared_focus = {
+	id = ostgermania_take_out_Goering
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = ostgermania_take_out_kaiser }
+	relative_position_id = ostgermania_alert_loyalists
+	x = -4
+	y = 4
+
+	cost = 3
+	will_lead_to_war_with = DAN
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	declare_war_on = {
+			target = DAN
+			type = annex_everything
+		}
+	}
+
+	bypass = {
+	NOT = {country_exists = DAN}
+	}
+}
+
+shared_focus = {
+	id = ostgermania_integrate_danzig
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = ostgermania_take_out_Goering }
+	relative_position_id = ostgermania_take_out_Goering
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	controls_state = 85
+	controls_state = 86
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_state_core = 85
+	add_state_core = 86
+	}
+
+	bypass = {
+
+	}
+}
+##############################################################
+shared_focus = {
+	id = ostgermania_invade_silesians
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = ostgermania_invade_poles }
+	relative_position_id = ostgermania_alert_loyalists
+	x = 4
+	y = 4
+	will_lead_to_war_with = SDR
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	declare_war_on = {
+			target = SDR
+			type = annex_everything
+		}
+	}
+
+	bypass = {
+	NOT = {country_exists = SDR}
+	}
+}
+
+shared_focus = {
+	id = ostgermania_integrate_silesia
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = ostgermania_invade_silesians }
+	relative_position_id = ostgermania_invade_silesians
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 200
+	}
+
+	available = {
+	controls_state = 807
+	controls_state = 820
+	controls_state = 66
+	controls_state = 67
+	controls_state = 762
+	controls_state = 812
+	controls_state = 72
+	controls_state = 74
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_state_core = 807
+	add_state_core = 820
+	add_state_core = 66
+	add_state_core = 67
+	add_state_core = 762
+	add_state_core = 812
+	add_state_core = 72
+	add_state_core = 74
+	
+	}
+
+	bypass = {
+
+	}
+}
+#############################################
+shared_focus = {
+	id = ostgermania_take_out_Kaltenbrunner
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus =  ostgermania_invade_silesians}
+	relative_position_id = ostgermania_alert_loyalists
+	x = 2
+	y = 6
+
+	cost = 3
+	will_lead_to_war_with = OMK
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	declare_war_on = {
+			target = OMK
+			type = annex_everything
+		}
+	}
+
+	bypass = {
+	NOT = {country_exists = OMK}
+	}
+}
+
+shared_focus = {
+	id = ostgermania_take_integrate_kaltenbrunner
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = ostgermania_take_out_Kaltenbrunner }
+	relative_position_id = ostgermania_take_out_Kaltenbrunner
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 200
+	}
+
+	available = {
+	controls_state = 68
+	controls_state = 63
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_state_core = 68
+	add_state_core = 63
+	}
+
+	bypass = {
+
+	}
+}
+##############################################################
+shared_focus = {
+	id = ostgermania_take_out_berlin
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = DAN_take_out_Kaiser }
+	relative_position_id = ostgermania_alert_loyalists
+	x = -2
+	y = 6
+
+	cost = 3
+	will_lead_to_war_with = GER
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	declare_war_on = {
+			target = GER
+			type = annex_everything
+		}
+	}
+
+	bypass = {
+	NOT = {country_exists = GER}
+	}
+}
+
+shared_focus = {
+	id = ostgermania_integrate_germany
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = ostgermania_take_Berlin }
+	relative_position_id = ostgermania_take_Berlin
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 200
+	}
+
+	available = {
+	controls_state = 810
+	controls_state = 808
+	controls_state = 64
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_state_core = 810
+	add_state_core = 808
+	add_state_core = 64
+	}
+
+	bypass = {
+
+	}
+}
+############################################
+shared_focus = {
+	id = ostgermania_take_out_Donitz
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus =  ostgermania_take_out_Kaltenbrunner}
+	prerequisite = { focus =  ostgermania_take_out_berlin}
+	relative_position_id = ostgermania_alert_loyalists
+	x = 0
+	y = 8
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		will_lead_to_war_with = SHL
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	declare_war_on = {
+			target = SHL
+			type = annex_everything
+		}
+	}
+
+	bypass = {
+	NOT = {country_exists = SHL}
+	}
+}
+
+shared_focus = {
+	id = ostgermania_integrate_Donitz
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = ostgermania_take_out_Donitz }
+	relative_position_id = ostgermania_take_out_Donitz
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 200
+	}
+
+	available = {
+	controls_state = 814
+	controls_state = 58
+	controls_state = 61
+	controls_state = 62
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_state_core = 61
+	add_state_core = 62
+	add_state_core = 58
+	add_state_core = 814
+	}
+
+	bypass = {
+
+	}
+}
+##############################
+shared_focus = {
+	id = ostgermania_unite_east_germany
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = ostgermania_integrate_Donitz }
+	prerequisite = { focus = ostgermania_integrate_Donitz }
+	relative_position_id = ostgermania_integrate_Donitz
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {
+	country_exists = SHL
+	country_exists = DAN
+	country_exists = SDR
+	country_exists = OMK
+	country_exists = PRE
+	country_exists = GER
+	}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	set_cosmetic_tag = GER
 	}
 
 	bypass = {

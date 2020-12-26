@@ -7,7 +7,7 @@
 ### search_filters = {FOCUS_FILTER_ANNEXATION}
 
 focus_tree = {
-	id = bavaria_focus
+	id = bavaria_initial_focus
 	
 	country = {
 		factor = 0
@@ -19,35 +19,25 @@ focus_tree = {
 	}
 	
 	default = no
+	shared_focus = BAY_Communsim_in_Bavaria
+	continuous_focus_position = { x = 2000 y = 1000 }
 	
-	focus = {
-		id = BAY_Communsim_in_Bavaria
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 14
-		y = 0
+}
 
-		cost = 3
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
+focus_tree = {
+	id = bavaria_warlord_focus
+	
+	country = {
+		factor = 0
 		
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		}
-		
-		
-
-
-		bypass = {
-
+		modifier = {
+			add = 10
+			tag = BAY
 		}
 	}
+	
+	default = no
+	shared_focus = BAY_rally_the_workers
+	continuous_focus_position = { x = 2000 y = 1000 }
+	
 }

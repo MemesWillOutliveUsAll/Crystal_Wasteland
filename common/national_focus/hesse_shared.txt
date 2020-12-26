@@ -1,53 +1,392 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
-### search_filters = {FOCUS_FILTER_RESEARCH}
-### search_filters = {FOCUS_FILTER_INDUSTRY}
-### search_filters = {FOCUS_FILTER_STABILITY}
-### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
-### search_filters = {FOCUS_FILTER_MANPOWER}
-### search_filters = {FOCUS_FILTER_ANNEXATION}
+﻿
+shared_focus = {
+	id = HES_Speidel_our_saviour
+	icon = GFX_goal_generic_allies_build_infantry
+	x = 14
+	y = 0
 
-focus_tree = {
-	id = hesse_focus
-	
-	country = {
-		factor = 0
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
 		
-		modifier = {
-			add = 10
-			tag = HES
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		load_focus_tree = {
+				tree = hesse_initial_focus
+				keep_completed = no
 		}
 	}
+
+
+	bypass = {
+
+	}
+}
+
+######### warlordism #########
+
+shared_focus = {
+	id = HES_a_new_germany
+	icon = GFX_goal_generic_allies_build_infantry
+	x = 14
+	y = 0
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
 	
-	default = no
+	}
+		
+		
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = HES_grab_the_guns
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = HES_a_new_germany }
+	relative_position_id = HES_a_new_germany
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	}
+
+	bypass = {
+
+	}
+}
+
+############################################
+shared_focus = {
+	id = HES_take_out_Hannover
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = HES_grab_the_guns }
+	will_lead_to_war_with = HAN
+	relative_position_id = HES_grab_the_guns
+	x = -1
+	y = 1
 	
-	focus = {
-		id = HES_Speidel_our_saviour
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 14
-		y = 0
+	cost = 3
 
-		cost = 3
+	ai_will_do = {
+		factor = 1
+	}
 
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
+	available = {
+	has_war = no
+	}
 		
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
 		
-		completion_reward = {
+	completion_reward = {
+	declare_war_on = {
+			target = BAY
+			type = annex_everything
 		}
+	}
+
+	bypass = {
+	NOT = {country_exists = HAN}
+	}
+}
+
+shared_focus = {
+	id = HES_integrate_Hannover
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = HES_take_out_Hannover }
+	relative_position_id = HES_take_out_Hannover
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 200
+	}
+
+	available = {
+	controls_state = 56
+	controls_state = 57
+	controls_state = 59
+	controls_state = 809
+	}
 		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
 		
+	completion_reward = {
+	add_state_core = 56
+	add_state_core = 57
+	add_state_core = 59
+	add_state_core = 809
+	}
 
+	bypass = {
 
-		bypass = {
+	}
+}
 
+###########################################
+shared_focus = {
+	id = HES_take_out_bavaria
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = HES_integrate_Hannover }
+	will_lead_to_war_with = BAY
+	relative_position_id = HES_integrate_Hannover
+	x = -1
+	y = 1
+	
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	declare_war_on = {
+			target = BAY
+			type = annex_everything
 		}
+	}
+
+	bypass = {
+	NOT = {country_exists = BAY}
+	}
+}
+
+shared_focus = {
+	id = HES_integrate_bavaria
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = HES_take_out_bavaria }
+	relative_position_id = HES_take_out_bavaria
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 200
+	}
+
+	available = {
+	controls_state = 50
+	controls_state = 54
+	controls_state = 53
+	controls_state = 52
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_state_core = 50
+	add_state_core = 54
+	add_state_core = 53
+	add_state_core = 52
+	}
+
+	bypass = {
+
+	}
+}
+#####################################
+shared_focus = {
+	id = HES_take_out_SS
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = HES_integrate_Hannover }
+	will_lead_to_war_with = ALL
+	relative_position_id = HES_integrate_Hannover
+	x = 1
+	y = 1
+	
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	declare_war_on = {
+			target = BAY
+			type = annex_everything
+		}
+	}
+
+	bypass = {
+	NOT = {country_exists = ALL}
+	}
+}
+
+shared_focus = {
+	id = HES_integrate_rhine
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = HES_take_out_SS }
+	relative_position_id = HES_take_out_SS
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 200
+	}
+
+	available = {
+	controls_state = 51
+	controls_state = 811
+	controls_state = 42
+	controls_state = 28
+	controls_state = 8
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_state_core = 50
+	add_state_core = 54
+	add_state_core = 53
+	add_state_core = 52
+	}
+
+	bypass = {
+
+	}
+}
+
+#############################
+shared_focus = {
+	id = HES_integrate_austria
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = HES_integrate_rhine }
+	prerequisite = { focus = HES_integrate_bavaria }
+	relative_position_id = HES_integrate_rhine
+	x = -1
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 200
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	annex_country = {
+				target = AUS
+				transfer_troops = yes
+			}
+	add_state_core = 153
+	add_state_core = 39
+	add_state_core = 152
+	add_state_core = 4
+	add_state_core = 819
+	}
+
+	bypass = {
+
+	}
+}
+#####################################
+shared_focus = {
+	id = HES_unite_west_germany
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = HES_integrate_austria }
+	relative_position_id = HES_integrate_austria
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {
+	country_exists = ALL
+	country_exists = AUS
+	country_exists = HES
+	country_exists = BAY
+	}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	set_cosmetic_tag = GER
+	}
+
+	bypass = {
+
 	}
 }

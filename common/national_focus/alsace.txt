@@ -7,7 +7,7 @@
 ### search_filters = {FOCUS_FILTER_ANNEXATION}
 
 focus_tree = {
-	id = alsace_focus
+	id = alsace_initial_focus
 	
 	country = {
 		factor = 0
@@ -19,35 +19,24 @@ focus_tree = {
 	}
 	
 	default = no
+	shared_focus = ALL_The_SS_in_power
+	continuous_focus_position = { x = 2000 y = 1000 }
+}
+
+focus_tree = {
+	id = alsace_warlord_focus
 	
-	focus = {
-		id = ALL_The_SS_in_power
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 14
-		y = 0
-
-		cost = 3
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
+	country = {
+		factor = 0
 		
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		}
-		
-		
-
-
-		bypass = {
-
+		modifier = {
+			add = 10
+			tag = ALL
 		}
 	}
+	
+	default = no
+	shared_focus = ALL_anex_luxemburg
+	continuous_focus_position = { x = 2000 y = 1000 }
 }
+

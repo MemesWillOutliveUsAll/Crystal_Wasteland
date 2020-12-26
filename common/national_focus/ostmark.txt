@@ -21,6 +21,7 @@ focus_tree = {
 	default = no
 	
 	shared_focus = ostmark_our_plot
+	continuous_focus_position = { x = 2000 y = 1000 }
 }
 
 focus_tree = {
@@ -37,4 +38,5 @@ focus_tree = {
 	
 	default = no
 	shared_focus = ostmark_purge_the_unloyal
+	continuous_focus_position = { x = 2000 y = 1000 }
 }

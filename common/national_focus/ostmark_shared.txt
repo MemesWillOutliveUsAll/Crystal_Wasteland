@@ -96,7 +96,7 @@ shared_focus = {
 	relative_position_id = ostmark_purge_the_military
 	x = 1
 	y = 1
-
+	will_lead_to_war_with = DAN
 	cost = 3
 
 	ai_will_do = {
@@ -119,7 +119,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	NOT = {country_exists = DAN}
 	}
 }
 
@@ -152,7 +152,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	
 	}
 }
 ##################################################################################
@@ -163,7 +163,7 @@ shared_focus = {
 	relative_position_id = ostmark_purge_the_military
 	x = -1
 	y = 1
-
+	will_lead_to_war_with = SHL
 	cost = 3
 
 	ai_will_do = {
@@ -186,7 +186,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	NOT = {country_exists = SHL}
 	}
 }
 
@@ -234,7 +234,7 @@ shared_focus = {
 	relative_position_id = ostmark_purge_the_military
 	x = 4
 	y = 1
-
+	will_lead_to_war_with = GER
 	cost = 3
 
 	ai_will_do = {
@@ -257,7 +257,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	NOT = {country_exists = GER}
 	}
 }
 
@@ -303,7 +303,7 @@ shared_focus = {
 	relative_position_id = ostmark_purge_the_military
 	x = -4
 	y = 1
-
+	will_lead_to_war_with = SDR
 	cost = 3
 
 	ai_will_do = {
@@ -326,7 +326,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	NOT = {country_exists = SDR}
 	}
 }
 
@@ -386,7 +386,7 @@ shared_focus = {
 	y = 4
 
 	cost = 3
-
+	will_lead_to_war_with = PLA
 	ai_will_do = {
 		factor = 1
 	}
@@ -407,7 +407,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	NOT = {country_exists = PLA}
 	}
 }
 
@@ -452,7 +452,7 @@ shared_focus = {
 	relative_position_id = ostmark_purge_the_military
 	x = 2
 	y = 4
-
+	will_lead_to_war_with = PRE
 	cost = 3
 
 	ai_will_do = {
@@ -475,7 +475,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	NOT = {country_exists = PRE}
 	}
 }
 
@@ -522,7 +522,7 @@ shared_focus = {
 	relative_position_id = ostmark_purge_the_military
 	x = 0
 	y = 6
-
+	will_lead_to_war_with = OSG
 	cost = 3
 
 	ai_will_do = {
@@ -545,7 +545,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	NOT = {country_exists = OSG}
 	}
 }
 

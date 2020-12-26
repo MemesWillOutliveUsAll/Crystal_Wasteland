@@ -13,6 +13,7 @@
 	default = no
 	
 	shared_focus = DAN_Airmarshal_goering
+	continuous_focus_position = { x = 2000 y = 1000 }
 }
 
 focus_tree = {
@@ -29,4 +30,5 @@ focus_tree = {
 	
 	default = no
 	shared_focus = DAN_Start_the_propellers
+	continuous_focus_position = { x = 2000 y = 1000 }
 }

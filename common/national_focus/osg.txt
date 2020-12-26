@@ -21,6 +21,7 @@ focus_tree = {
 	default = no
 	
 	shared_focus = ostgermania_The_tue_heir
+	continuous_focus_position = { x = 2000 y = 1000 }
 }
 
 focus_tree = {
@@ -38,4 +39,5 @@ focus_tree = {
 	default = no
 	
 	shared_focus = ostgermania_work_them_harder
+	continuous_focus_position = { x = 2000 y = 1000 }
 }

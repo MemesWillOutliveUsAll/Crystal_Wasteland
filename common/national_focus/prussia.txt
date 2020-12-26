@@ -21,6 +21,7 @@ focus_tree = {
 	default = no
 	
 	shared_focus = prussia_the_kaiser
+	continuous_focus_position = { x = 2000 y = 1000 }
 }
 
 focus_tree = {
@@ -38,4 +39,5 @@ focus_tree = {
 	default = no
 	
 	shared_focus = prussia_rally_the_old_guard
+	continuous_focus_position = { x = 2000 y = 1000 }
 }

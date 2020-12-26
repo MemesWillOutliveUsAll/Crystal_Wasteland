@@ -20,6 +20,7 @@ focus_tree = {
 	
 	default = no
 	shared_focus = Shleswig_Admiral_Donitz_saves_the_day
+	continuous_focus_position = { x = 2000 y = 1000 }
 }
 
 focus_tree = {
@@ -36,4 +37,5 @@ focus_tree = {
 	
 	default = no
 	shared_focus = Shleswig_emergency_dockyards
+	continuous_focus_position = { x = 2000 y = 1000 }
 }
