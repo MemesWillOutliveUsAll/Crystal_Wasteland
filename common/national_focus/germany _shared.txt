@@ -625,7 +625,7 @@ shared_focus = {
 	id = germany_unite_east_germany
 	icon = GFX_goal_generic_allies_build_infantry
 	prerequisite = { focus = germany_take_out_Goering }
-	prerequisite = { focus = germany_take_out_Goering }
+	prerequisite = { focus = germany_take_integrate_hess }
 	relative_position_id = germany_ready_our_armies
 	x = 0
 	y = 8
