@@ -134,11 +134,16 @@ set_popularities = {
 add_ideas = {
 }
 
-load_focus_tree = {
-				tree = danzig_initial_focus
-				keep_completed = no
-				}
-
+create_country_leader = {
+	name = "Herman Goring"
+	desc = " "
+	picture = "gfx/leaders/GER/Portrait_Germany_Hermann_Goring.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		dictator
+	}
+}
 #create_country_leader = {
 #	name = "Dennis Fredauer"
 #	desc = ""

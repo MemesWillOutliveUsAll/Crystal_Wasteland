@@ -131,7 +131,16 @@ set_popularities = {
 add_ideas = {
 }
 
-
+create_country_leader = {
+	name = "Herman Goring"
+	desc = " "
+	picture = "gfx/leaders/GER/Portrait_Germany_Karl_Donitz.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		dictator
+	}
+}
 
 #create_country_leader = {
 #	name = "Dennis Fredauer"
