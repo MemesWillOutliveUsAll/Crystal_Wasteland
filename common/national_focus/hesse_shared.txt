@@ -373,7 +373,7 @@ shared_focus = {
 	NOT = {
 	country_exists = ALL
 	country_exists = AUS
-	country_exists = HES
+	country_exists = ALL
 	country_exists = BAY
 	}
 	}

@@ -155,7 +155,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	NOT = {country_exists = OMK}
 	}
 }
 
@@ -224,7 +224,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	NOT = {country_exists = SHL}
 	}
 }
 
@@ -490,7 +490,7 @@ shared_focus = {
 	prerequisite = { focus = germany_invade_poles }
 	prerequisite = { focus = germany_take_out_kaiser }
 	relative_position_id = germany_ready_our_armies
-	x = 0
+	x = -3
 	y = 6
 	will_lead_to_war_with = OSG
 	cost = 3
@@ -553,12 +553,82 @@ shared_focus = {
 }
 ########################################
 shared_focus = {
-	id = germany_unite_east_germany
+	id = germany_take_out_Goering
 	icon = GFX_goal_generic_allies_build_infantry
-	prerequisite = { focus = germany_take_integrate_hess }
-	relative_position_id = germany_take_integrate_hess
+	prerequisite = { focus = germany_invade_poles }
+	will_lead_to_war_with = DAN
+	relative_position_id = germany_ready_our_armies
+	x = 3
+	y = 6
+	
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	declare_war_on = {
+			target = DAN
+			type = annex_everything
+		}
+	}
+
+	bypass = {
+	NOT = {country_exists = DAN}
+	}
+}
+
+shared_focus = {
+	id = germany_integrate_danzig
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = germany_take_out_Goering }
+	relative_position_id = germany_take_out_Goering
 	x = 0
 	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	controls_state = 85
+	controls_state = 86
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_state_core = 85
+	add_state_core = 86
+	}
+
+	bypass = {
+	
+	}
+}
+
+########################################
+shared_focus = {
+	id = germany_unite_east_germany
+	icon = GFX_goal_generic_allies_build_infantry
+	prerequisite = { focus = germany_take_out_Goering }
+	prerequisite = { focus = germany_take_out_Goering }
+	relative_position_id = germany_ready_our_armies
+	x = 0
+	y = 8
 
 	cost = 3
 

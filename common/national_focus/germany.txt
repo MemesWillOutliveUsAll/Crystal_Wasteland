@@ -20,6 +20,7 @@ focus_tree = {
 	
 	default = no
 	shared_focus = germany_The_Death_of_hitler
+	continuous_focus_position = { x = 2000 y = 1000 }
 }
 
 focus_tree = {
@@ -36,5 +37,6 @@ focus_tree = {
 	
 	default = no
 	shared_focus = germany_rally_commies
+	continuous_focus_position = { x = 2000 y = 1000 }
 }
 

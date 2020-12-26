@@ -134,18 +134,17 @@ set_popularities = {
 add_ideas = {
 }
 
+create_country_leader = {
+	name = "Erwin Rommel"
+	desc = " "
+	picture = "gfx/leaders/GER/Portrait_Germany_Erwin_Rommel.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		dictator
+	}
+}
 
-
-#create_country_leader = {
-#	name = "Dennis Fredauer"
-#	desc = ""
-#	picture = "Portrait_Germany_Konrad_Adenauer.dds"
-#	expire = "1965.1.1"
-#	ideology = conservatism
-#	traits = {
-#	}
-#}
-#
 
 #create_country_leader = {
 #	name = "Otto Wels"
