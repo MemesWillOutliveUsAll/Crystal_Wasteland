@@ -446,7 +446,7 @@ shared_focus = {
 shared_focus = {
 	id = ostgermania_take_out_berlin
 	icon = GFX_goal_generic_allies_build_infantry
-	prerequisite = { focus = DAN_take_out_Kaiser }
+	prerequisite = { focus = ostgermania_take_out_Goering }
 	relative_position_id = ostgermania_alert_loyalists
 	x = -2
 	y = 6
@@ -480,8 +480,8 @@ shared_focus = {
 shared_focus = {
 	id = ostgermania_integrate_germany
 	icon = GFX_goal_generic_allies_build_infantry
-	prerequisite = { focus = ostgermania_take_Berlin }
-	relative_position_id = ostgermania_take_Berlin
+	prerequisite = { focus = ostgermania_take_out_berlin }
+	relative_position_id = ostgermania_take_out_berlin
 	x = 0
 	y = 1
 

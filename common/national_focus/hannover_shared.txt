@@ -99,9 +99,9 @@ shared_focus = {
 shared_focus = {
 	id = HAN_take_out_Hesse
 	icon = GFX_goal_generic_allies_build_infantry
-	prerequisite = { focus = ALL_integrate_bavaria }
+	prerequisite = { focus = HAN_leverage_anti_ss_feeling }
 	will_lead_to_war_with = HES
-	relative_position_id = ALL_integrate_bavaria
+	relative_position_id = HAN_leverage_anti_ss_feeling
 	x = 1
 	y = 1
 	
@@ -134,8 +134,8 @@ shared_focus = {
 shared_focus = {
 	id = HAN_integrate_Hesse
 	icon = GFX_goal_generic_allies_build_infantry
-	prerequisite = { focus = ALL_take_out_Hesse }
-	relative_position_id = ALL_take_out_Hesse
+	prerequisite = { focus = HAN_take_out_Hesse }
+	relative_position_id = HAN_take_out_Hesse
 	x = 0
 	y = 1
 

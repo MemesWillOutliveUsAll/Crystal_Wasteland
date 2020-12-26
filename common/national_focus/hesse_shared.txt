@@ -21,7 +21,7 @@ shared_focus = {
 		
 	completion_reward = {
 		load_focus_tree = {
-				tree = hesse_initial_focus
+				tree = hesse_warlord_focus
 				keep_completed = no
 		}
 	}
@@ -102,7 +102,7 @@ shared_focus = {
 	prerequisite = { focus = HES_grab_the_guns }
 	will_lead_to_war_with = HAN
 	relative_position_id = HES_grab_the_guns
-	x = -1
+	x = 0
 	y = 1
 	
 	cost = 3

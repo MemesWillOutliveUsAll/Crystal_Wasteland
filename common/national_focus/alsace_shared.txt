@@ -329,7 +329,7 @@ shared_focus = {
 	icon = GFX_goal_generic_allies_build_infantry
 	prerequisite = { focus = ALL_integrate_Hannover }
 	prerequisite = { focus = ALL_integrate_Hesse }
-	relative_position_id = ALL_integrate_Hannover
+	relative_position_id = ALL_integrate_Hesse
 	x = -1
 	y = 1
 

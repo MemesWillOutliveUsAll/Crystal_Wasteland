@@ -37,7 +37,7 @@ focus_tree = {
 	}
 	
 	default = no
-	shared_focus = HAN_Erich_Koch
+	shared_focus = HES_a_new_germany
 	continuous_focus_position = { x = 2000 y = 1000 }
 	
 }
