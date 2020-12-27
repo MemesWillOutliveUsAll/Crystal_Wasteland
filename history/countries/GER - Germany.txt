@@ -370,18 +370,6 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Kurt Student"
-	picture = "Portrait_Germany_Kurt_Student.dds"
-	traits = { commando trait_reckless }
-	skill = 4
-	id = 16
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 4
-	logistics_skill = 3
-}
-
-create_corps_commander = {
 	name = "Erwin von Witzleben"
 	picture = "Portrait_Germany_Erwin_von_Witzleben.dds"
 	traits = { infantry_officer career_officer }

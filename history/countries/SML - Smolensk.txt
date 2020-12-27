@@ -130,6 +130,16 @@ set_popularities = {
 add_ideas = {
 }
 
+create_country_leader = {
+	name = "Andrey Vlasov"
+	desc = " "
+	picture = "gfx/leaders/SOV/Portrait_Soviet_Andrey_Vlasov.dds"
+	expire = "1965.1.1"
+	ideology = despotism #switched from centrism
+	traits = {
+		#
+	}
+}
 
 
 #create_country_leader = {

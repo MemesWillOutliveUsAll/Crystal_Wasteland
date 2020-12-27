@@ -120,7 +120,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	NOT = {country_exists = OMK}
 	}
 }
 
@@ -187,7 +187,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	NOT = {country_exists = GER}
 	}
 }
 shared_focus = {
@@ -255,7 +255,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	NOT = {country_exists = DAN}
 	}
 }
 
@@ -322,7 +322,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	NOT = {country_exists = SOR}
 	}
 }
 
@@ -402,7 +402,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	NOT = {country_exists = PLA}
 	}
 }
 
@@ -470,7 +470,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	NOT = {country_exists = PRE}
 	}
 }
 
@@ -540,12 +540,12 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	NOT = {country_exists = OSG}
 	}
 }
 
 shared_focus = {
-	id = ostmark_take_integrate_hess
+	id = Shleswig_take_integrate_hess
 	icon = GFX_goal_generic_allies_build_infantry
 	prerequisite = { focus = Shleswig_take_out_hess }
 	relative_position_id = Shleswig_take_out_hess
@@ -580,8 +580,8 @@ shared_focus = {
 shared_focus = {
 	id = Shleswig_unite_east_germany
 	icon = GFX_goal_generic_allies_build_infantry
-	prerequisite = { focus = ostmark_take_integrate_hess }
-	relative_position_id = ostmark_take_integrate_hess
+	prerequisite = { focus = Shleswig_take_integrate_hess }
+	relative_position_id = Shleswig_take_integrate_hess
 	x = 0
 	y = 1
 

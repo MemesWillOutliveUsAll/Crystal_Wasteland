@@ -59,22 +59,37 @@ country_event = {
 			transfer_state = 784
 			transfer_state = 11
 			transfer_state = 189
+			add_state_core = 784
+			add_state_core = 11
+			add_state_core = 189
+			add_state_core = 822
+			add_state_core = 821
 		}
 		LAT = {
 			transfer_state = 190
 			transfer_state = 12
+			add_state_core = 190
+			add_state_core = 12
+			add_state_core = 815
 		}
 		EST = {
 			transfer_state = 13
 			transfer_state = 191
+			add_state_core = 13
+			add_state_core = 191
+			add_state_core = 816
 		}
 		GRA = {
 			transfer_state = 815
 			transfer_state = 816
+			add_state_core = 815
+			add_state_core = 816
 		}
 		GLI = {
 			transfer_state = 821
 			transfer_state = 822
+			add_state_core = 821
+			add_state_core = 822
 		}
 	}
 	
