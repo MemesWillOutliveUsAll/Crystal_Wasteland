@@ -14,8 +14,18 @@ set_technology = {
 	mass_assault = 1
 	fleet_in_being = 1
 }
-
-
+create_faction = China
+add_to_faction = CHI
+add_to_faction = XSM
+add_to_faction = SHX
+add_to_faction = YUN
+add_to_faction = SIK
+add_to_faction = GXC
+puppet = XSM
+puppet = SHX
+puppet = YUN
+puppet = SIK
+puppet = GXC
 set_convoys = 40
 
 set_politics = {

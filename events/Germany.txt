@@ -37,6 +37,7 @@ country_event = {
 			days = 2 
 			} 
 			}
+			
 		
 			set_politics = {
 			ruling_party = communism

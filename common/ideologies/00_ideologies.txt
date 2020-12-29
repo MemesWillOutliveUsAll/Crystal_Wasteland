@@ -103,6 +103,9 @@ ideologies = {
 			can_force_government = no
 			can_send_volunteers = yes
 			can_puppet = yes
+			can_puppet = no
+			can_join_factions = no
+			can_create_factions = no
 		}
 		
 		can_collaborate = yes
@@ -113,8 +116,9 @@ ideologies = {
 			army_intel_to_others = 7.5
 			navy_intel_to_others = 12.5
 			airforce_intel_to_others = 7.5
-			#can_join_factions = no
-			#can_create_factions = no
+			can_join_factions = no
+			can_create_factions = no
+			can_guarantee_other_ideologies = no
 		}
 		
 		faction_modifiers = {
@@ -219,6 +223,7 @@ ideologies = {
 			can_send_volunteers = no
 			can_join_factions = no
 			can_create_factions = no
+			can_guarantee_other_ideologies = no
 		}
 		
 		modifiers = {
