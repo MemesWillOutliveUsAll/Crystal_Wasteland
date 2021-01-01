@@ -17,6 +17,7 @@ country_event = {
 		HOL = {set_global_flag = death_to_belgians}
 		declare_war_on = { type = annex_everything    target = BEL }
 		set_global_flag = HOLincorporateVLA
+		news_event = { id = news.2 }
 	}
 }
 

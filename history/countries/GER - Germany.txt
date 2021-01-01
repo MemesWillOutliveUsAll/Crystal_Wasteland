@@ -1,5 +1,7 @@
 ﻿capital = 808
-
+add_ideas = {
+Medium_contamination
+}
 oob = "GER_1936"
 
 set_fuel_ratio = 0.8

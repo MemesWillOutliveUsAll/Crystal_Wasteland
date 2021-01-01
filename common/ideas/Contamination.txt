@@ -1,0 +1,47 @@
+ideas = {
+	
+	country = {
+	
+		Medium_contamination = {
+			
+			picture = GFX_idea_Medium_contamination
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.50
+			}
+			
+		}
+		
+		Heavy_contamination = {
+			
+			picture = GFX_idea_Heavy_contamination
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.70
+			}
+			
+		}
+	
+	}
+	
+}

@@ -1,7 +1,7 @@
 ﻿
 shared_focus = {
 	id = BAY_Communsim_in_Bavaria
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Communism_in_Bavaria
 	x = 14
 	y = 0
 
@@ -37,7 +37,7 @@ shared_focus = {
 
 shared_focus = {
 	id = BAY_rally_the_workers
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_generic_soviet_politics
 	x = 14
 	y = 0
 
@@ -67,7 +67,7 @@ shared_focus = {
 
 shared_focus = {
 	id = BAY_hate_ss
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_occupy_states_ongoing_war
 	prerequisite = { focus = BAY_rally_the_workers }
 	relative_position_id = BAY_rally_the_workers
 	x = 0
@@ -98,7 +98,7 @@ shared_focus = {
 
 shared_focus = {
 	id = BAY_take_out_SS
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Rhine_Occupied
 	prerequisite = { focus = BAY_hate_ss }
 	will_lead_to_war_with = ALL
 	relative_position_id = BAY_hate_ss
@@ -133,7 +133,7 @@ shared_focus = {
 
 shared_focus = {
 	id = BAY_integrate_rhine
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_soviet_construction
 	prerequisite = { focus = BAY_take_out_SS }
 	relative_position_id = BAY_take_out_SS
 	x = 0
@@ -162,6 +162,43 @@ shared_focus = {
 	add_state_core = 54
 	add_state_core = 53
 	add_state_core = 52
+	hidden_effect = {
+				division_template = {
+					name = "Communist_militia"
+					priority = 2
+					division_names_group = ROM_MTN_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+	    	   		 	infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+			
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 28 }
+					create_unit = {
+						division = "name = \"Communist militia\" division_template = \"Communist_militia\" start_experience_factor = 0" 
+						owner = BAY
+					}
+					create_unit = {
+						division = "name = \"Communist militia\" division_template = \"Communist_militia\" start_experience_factor = 0" 
+						owner = BAY
+					}
+					create_unit = {
+						division = "name = \"Communist militia\" division_template = \"Communist_militia\" start_experience_factor = 0" 
+						owner = BAY
+					}
+					create_unit = {
+						division = "name = \"Communist militia\" division_template = \"Communist_militia\" start_experience_factor = 0" 
+						owner = BAY
+					}
+				}
+			}
 	}
 
 	bypass = {
@@ -171,7 +208,7 @@ shared_focus = {
 ###########################################
 shared_focus = {
 	id = BAY_take_out_Hannover
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Attack_hannover
 	prerequisite = { focus = BAY_integrate_rhine }
 	will_lead_to_war_with = HAN
 	relative_position_id = BAY_integrate_rhine
@@ -206,7 +243,7 @@ shared_focus = {
 
 shared_focus = {
 	id = BAY_integrate_Hannover
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = BAY_take_out_Hannover }
 	relative_position_id = BAY_take_out_Hannover
 	x = 0
@@ -243,7 +280,7 @@ shared_focus = {
 #######################################
 shared_focus = {
 	id = BAY_take_out_Hesse
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Crack_Speidel
 	prerequisite = { focus = BAY_integrate_rhine }
 	will_lead_to_war_with = HES
 	relative_position_id = BAY_integrate_rhine
@@ -278,7 +315,7 @@ shared_focus = {
 
 shared_focus = {
 	id = BAY_integrate_Hesse
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = BAY_take_out_Hesse }
 	relative_position_id = BAY_take_out_Hesse
 	x = 0
@@ -315,7 +352,7 @@ shared_focus = {
 #############################
 shared_focus = {
 	id = BAY_integrate_austria
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Austrian_referundum
 	prerequisite = { focus = BAY_integrate_Hesse }
 	prerequisite = { focus = BAY_integrate_Hannover }
 	will_lead_to_war_with = AUS
@@ -356,7 +393,7 @@ shared_focus = {
 #####################################
 shared_focus = {
 	id = ALL_unite_west_germany
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_national_unity
 	prerequisite = { focus = BAY_integrate_austria }
 	relative_position_id = BAY_integrate_austria
 	x = 0
@@ -383,6 +420,7 @@ shared_focus = {
 		
 	completion_reward = {
 	set_cosmetic_tag = GER
+	news_event = { id = news.8 }
 	}
 
 	bypass = {

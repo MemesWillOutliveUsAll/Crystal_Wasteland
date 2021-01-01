@@ -1,5 +1,7 @@
 ﻿capital = 617
-
+add_ideas = {
+Heavy_contamination
+}
 oob = "SIK_1936"
 
 set_technology = {

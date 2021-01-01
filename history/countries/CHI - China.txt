@@ -39,6 +39,9 @@ set_popularities = {
 	neutrality = 100
 }
 
+add_ideas = {
+Heavy_contamination
+}
 create_country_leader = {
 	name = "Chiang Kai-Shek"
 	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"

@@ -1,5 +1,7 @@
 ﻿capital = 46
-
+add_ideas = {
+Medium_contamination
+}
 oob = "ROM_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }

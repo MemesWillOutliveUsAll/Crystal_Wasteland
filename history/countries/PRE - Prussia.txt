@@ -1,4 +1,7 @@
 ﻿capital = 64
+add_ideas = {
+Medium_contamination
+}
 oob = "PRE_1936"
 # Starting tech
 set_technology = {

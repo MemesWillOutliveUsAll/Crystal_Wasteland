@@ -1,7 +1,9 @@
 ﻿capital = 16
 
 set_stability = 0.23
-
+add_ideas = {
+Heavy_contamination
+}
 
 # Starting tech
 set_technology = {

@@ -71,6 +71,10 @@ create_country_leader = {
 	}
 }
 
+add_ideas = {
+Heavy_contamination
+}
+
 create_corps_commander = {
 	name = "Karl Eglseer"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"

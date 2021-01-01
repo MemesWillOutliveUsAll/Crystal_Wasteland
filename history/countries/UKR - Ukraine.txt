@@ -1,5 +1,7 @@
 ﻿capital = 202 #Kiev
-
+add_ideas = {
+Medium_contamination
+}
 oob = "UKR_1936"
 
 set_research_slots = 3

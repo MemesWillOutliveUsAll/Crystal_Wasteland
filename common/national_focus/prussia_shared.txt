@@ -8,7 +8,7 @@
 
 shared_focus = {
 	id = prussia_the_kaiser
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Kaiser_initial
 	x = 14
 	y = 0
 
@@ -42,7 +42,7 @@ shared_focus = {
 
 shared_focus = {
 	id = prussia_rally_the_old_guard
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_neutrality_focus
 	x = 8
 	y = 0
 
@@ -98,7 +98,7 @@ shared_focus = {
 ############################################
 shared_focus = {
 	id = prussia_take_out_Goering
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Airmarshal_Goering
 	prerequisite = { focus = prussia_ready_our_armies }
 	will_lead_to_war_with = DAN
 	relative_position_id = prussia_ready_our_armies
@@ -133,7 +133,7 @@ shared_focus = {
 
 shared_focus = {
 	id = prussia_integrate_danzig
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = prussia_take_out_Goering }
 	relative_position_id = prussia_take_out_Goering
 	x = 0
@@ -166,7 +166,7 @@ shared_focus = {
 ###########################################
 shared_focus = {
 	id = prussia_take_out_hess
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Deal_with_succesor
 	prerequisite = { focus = prussia_ready_our_armies }
 	will_lead_to_war_with = OSG
 	relative_position_id = prussia_ready_our_armies
@@ -201,7 +201,7 @@ shared_focus = {
 
 shared_focus = {
 	id = germany_take_integrate_hess
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = prussia_take_out_hess }
 	relative_position_id = prussia_take_out_hess
 	x = 0
@@ -234,7 +234,7 @@ shared_focus = {
 ###########################################
 shared_focus = {
 	id = prussia_invade_poles
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_PLA_DESTROY
 	prerequisite = { focus = prussia_ready_our_armies }
 	will_lead_to_war_with = PLA
 	relative_position_id = prussia_ready_our_armies
@@ -269,7 +269,7 @@ shared_focus = {
 
 shared_focus = {
 	id = prussia_integrate_poles
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = prussia_invade_poles }
 	relative_position_id = prussia_invade_poles
 	x = 0
@@ -303,7 +303,7 @@ shared_focus = {
 ####################################################################
 shared_focus = {
 	id = prussia_invade_silesians
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Lock_up_industrialists
 	prerequisite = { focus = prussia_invade_poles }
 	will_lead_to_war_with = SDR
 	relative_position_id = prussia_ready_our_armies
@@ -338,7 +338,7 @@ shared_focus = {
 
 shared_focus = {
 	id = prussia_integrate_silesia
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = prussia_invade_silesians }
 	relative_position_id = prussia_invade_silesians
 	x = 0
@@ -384,7 +384,7 @@ shared_focus = {
 #################################################
 shared_focus = {
 	id = prussia_take_out_Kaltenbrunner
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Kill_kaltenbrunner
 	prerequisite = { focus =  prussia_take_out_Goering}
 	will_lead_to_war_with = OMK
 	relative_position_id = prussia_ready_our_armies
@@ -419,7 +419,7 @@ shared_focus = {
 
 shared_focus = {
 	id = prussia_take_integrate_kaltenbrunner
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = prussia_take_out_Kaltenbrunner }
 	relative_position_id = prussia_take_out_Kaltenbrunner
 	x = 0
@@ -452,7 +452,7 @@ shared_focus = {
 ####################################################
 shared_focus = {
 	id = prussia_take_out_Donitz
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Admiral_Donitz_Saves_the_day
 	prerequisite = { focus =  prussia_take_out_Kaltenbrunner}
 	will_lead_to_war_with = SHL
 	relative_position_id = prussia_ready_our_armies
@@ -487,7 +487,7 @@ shared_focus = {
 
 shared_focus = {
 	id = prussia_integrate_Donitz
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = prussia_take_out_Donitz }
 	relative_position_id = prussia_take_out_Donitz
 	x = 0
@@ -524,7 +524,7 @@ shared_focus = {
 ###############################################################
 shared_focus = {
 	id = prussia_take_out_berlin
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Claim_the_jewel
 	prerequisite = { focus = prussia_invade_silesians }
 	will_lead_to_war_with = GER
 	relative_position_id = prussia_ready_our_armies
@@ -559,7 +559,7 @@ shared_focus = {
 
 shared_focus = {
 	id = prussia_integrate_germany
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = prussia_take_out_berlin }
 	relative_position_id = prussia_take_out_berlin
 	x = 0
@@ -593,8 +593,8 @@ shared_focus = {
 }
 #######################################
 shared_focus = {
-	id = ostgermania_unite_east_germany
-	icon = GFX_goal_generic_allies_build_infantry
+	id = prussia_unite_east_germany
+	icon = GFX_goal_generic_national_unity
 	prerequisite = { focus = prussia_integrate_germany }
 	prerequisite = { focus = prussia_integrate_Donitz }
 	relative_position_id = prussia_ready_our_armies
@@ -624,6 +624,7 @@ shared_focus = {
 		
 	completion_reward = {
 	set_cosmetic_tag = GER
+	news_event = { id = news.14 }
 	}
 
 	bypass = {

@@ -9,7 +9,7 @@ set_convoys = 5 #VANILLA & DLC
 	###################
 
 	#IDEAS SETUP
-
+	add_ideas = {Medium_contamination}
 	#TECHNOLOGY
 	set_research_slots = 0
 
@@ -106,6 +106,9 @@ set_convoys = 5 #VANILLA & DLC
 		}
 	}
 
+}
+add_ideas = {
+Medium_contamination
 }
 
 set_technology = { #VANILLA & DLC

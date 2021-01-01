@@ -1,7 +1,7 @@
 ﻿
 shared_focus = {
 	id = Shleswig_Admiral_Donitz_saves_the_day
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Admiral_Donitz_Saves_the_day
 	x = 14
 	y = 0
 
@@ -36,7 +36,7 @@ shared_focus = {
 
 shared_focus = {
 	id = Shleswig_emergency_dockyards
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_build_navy
 	x = 8
 	y = 0
 
@@ -63,7 +63,7 @@ shared_focus = {
 
 shared_focus = {
 	id = Shleswig_ready_our_armies
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_political_pressure
 	prerequisite = { focus = Shleswig_emergency_dockyards }
 	relative_position_id = Shleswig_emergency_dockyards
 	x = 0
@@ -92,7 +92,7 @@ shared_focus = {
 #################################################
 shared_focus = {
 	id = Shleswig_take_out_Kaltenbrunner
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Kill_kaltenbrunner
 	prerequisite = { focus = Shleswig_ready_our_armies }
 	relative_position_id = Shleswig_ready_our_armies
 	x = -2
@@ -126,7 +126,7 @@ shared_focus = {
 
 shared_focus = {
 	id = Shleswig_take_integrate_kaltenbrunner
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = Shleswig_take_out_Kaltenbrunner }
 	relative_position_id = Shleswig_take_out_Kaltenbrunner
 	x = 0
@@ -192,7 +192,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = Shleswig_integrate_germany
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = Shleswig_attack_germany }
 	relative_position_id = Shleswig_attack_germany
 	x = 0
@@ -227,7 +227,7 @@ shared_focus = {
 ############################################################
 shared_focus = {
 	id = Shleswig_attack_Goering
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Airmarshal_Goering
 	prerequisite = { focus = Shleswig_take_out_Kaltenbrunner }
 	relative_position_id = Shleswig_ready_our_armies
 	x = -4
@@ -261,7 +261,7 @@ shared_focus = {
 
 shared_focus = {
 	id = Shleswig_integrate_danzig
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = Shleswig_attack_Goering }
 	relative_position_id = Shleswig_attack_Goering
 	x = 0
@@ -294,7 +294,7 @@ shared_focus = {
 ######################################################
 shared_focus = {
 	id = Shleswig_invade_silesians
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Lock_up_industrialists
 	prerequisite = { focus = Shleswig_attack_germany }
 	relative_position_id = Shleswig_ready_our_armies
 	x = 4
@@ -328,7 +328,7 @@ shared_focus = {
 
 shared_focus = {
 	id = Shleswig_integrate_silesia
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = Shleswig_invade_silesians }
 	relative_position_id = Shleswig_invade_silesians
 	x = 0
@@ -374,7 +374,7 @@ shared_focus = {
 ##############################################
 shared_focus = {
 	id = Shleswig_invade_poles
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_PLA_DESTROY
 	prerequisite = { focus = Shleswig_invade_silesians }
 	relative_position_id = Shleswig_ready_our_armies
 	x = -2
@@ -408,7 +408,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ostmark_integrate_poles
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = Shleswig_invade_poles }
 	relative_position_id = Shleswig_invade_poles
 	x = 0
@@ -442,7 +442,7 @@ shared_focus = {
 ########################################
 shared_focus = {
 	id = Shleswig_take_out_kaiser
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Destroy_kaiser
 	prerequisite = { focus = Shleswig_attack_Goering }
 	relative_position_id = Shleswig_ready_our_armies
 	x = 2
@@ -476,7 +476,7 @@ shared_focus = {
 
 shared_focus = {
 	id = Shleswig_take_integrate_kaiser
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = Shleswig_take_out_kaiser }
 	relative_position_id = Shleswig_take_out_kaiser
 	x = 0
@@ -511,7 +511,7 @@ shared_focus = {
 #############################
 shared_focus = {
 	id = Shleswig_take_out_hess
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Deal_with_succesor
 	prerequisite = { focus = Shleswig_take_out_kaiser }
 	prerequisite = { focus = Shleswig_invade_poles }
 	relative_position_id = Shleswig_ready_our_armies
@@ -546,7 +546,7 @@ shared_focus = {
 
 shared_focus = {
 	id = Shleswig_take_integrate_hess
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = Shleswig_take_out_hess }
 	relative_position_id = Shleswig_take_out_hess
 	x = 0
@@ -579,7 +579,7 @@ shared_focus = {
 #################################
 shared_focus = {
 	id = Shleswig_unite_east_germany
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_national_unity
 	prerequisite = { focus = Shleswig_take_integrate_hess }
 	relative_position_id = Shleswig_take_integrate_hess
 	x = 0
@@ -608,6 +608,7 @@ shared_focus = {
 		
 	completion_reward = {
 	set_cosmetic_tag = GER
+	news_event = { id = news.15 }
 	}
 
 	bypass = {

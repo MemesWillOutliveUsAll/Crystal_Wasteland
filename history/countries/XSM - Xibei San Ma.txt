@@ -1,5 +1,7 @@
 ﻿capital = 604
-
+add_ideas = {
+Heavy_contamination
+}
 oob = "XSM_1936"
 
 # Starting tech

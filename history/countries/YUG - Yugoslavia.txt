@@ -1,6 +1,8 @@
 ﻿capital = 107
 
-
+add_ideas = {
+Medium_contamination
+}
 set_technology = {
 	tech_support = 1		
 	tech_engineers = 1

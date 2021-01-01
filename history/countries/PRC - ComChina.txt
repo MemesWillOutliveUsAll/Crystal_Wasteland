@@ -1,5 +1,7 @@
 ﻿capital = 622
-
+add_ideas = {
+Heavy_contamination
+}
 oob = "PRC_1936"
 
 # Starting tech

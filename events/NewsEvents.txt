@@ -57,11 +57,12 @@ news_event = {
 	}
 }
 
+# Belgium ##
 news_event = {
-	id = news.1
+	id = news.2
 	title = news.2.t
 	desc = news.2.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_soviet_soldiers_ruins
 	
 	major = yes
 	
@@ -69,25 +70,248 @@ news_event = {
 	
 	option = {
 		name = news.2.a
-		trigger = {
-			NOT = {
-				TAG = GER
-				TAG = BAY
-				TAG = PRE
-				TAG = SDR
-				TAG = HES
-				TAG = HAN
-				TAG = ALL
-				TAG = SHL
-				TAG = OMK
-				TAG = DAN
-				TAG = OSG
-			}
-		}
-	}
-	option = {
-		name = news.2.a
 	}
 }
 
+news_event = {
+	id = news.3
+	title = news.3.t
+	desc = news.3.d
+	picture = GFX_news_event_german_inspect_troops
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.3.a
+	}
+}
 
+news_event = {
+	id = news.4
+	title = news.4.t
+	desc = news.4.d
+	picture = GFX_news_event_german_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.4.a
+	}
+}
+
+news_event = {
+	id = news.5
+	title = news.5.t
+	desc = news.5.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.5.a
+	}
+}
+
+# GERMANY #
+
+news_event = {
+	id = news.6
+	title = news.6.t
+	desc = news.6.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.6.a
+	}
+}
+
+news_event = {
+	id = news.7
+	title = news.7.t
+	desc = news.7.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.7.a
+	}
+}
+
+news_event = {
+	id = news.8
+	title = news.8.t
+	desc = news.8.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.8.a
+	}
+}
+
+news_event = {
+	id = news.9
+	title = news.9.t
+	desc = news.9.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.9.a
+	}
+}
+
+news_event = {
+	id = news.10
+	title = news.10.t
+	desc = news.10.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.10.a
+	}
+}
+
+news_event = {
+	id = news.11
+	title = news.11.t
+	desc = news.11.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.11.a
+	}
+}
+
+news_event = {
+	id = news.12
+	title = news.12.t
+	desc = news.12.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.12.a
+	}
+}
+
+news_event = {
+	id = news.13
+	title = news.13.t
+	desc = news.13.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.13.a
+	}
+}
+
+news_event = {
+	id = news.14
+	title = news.14.t
+	desc = news.14.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.12.a
+	}
+}
+
+news_event = {
+	id = news.15
+	title = news.15.t
+	desc = news.15.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.15.a
+	}
+}
+
+news_event = {
+	id = news.16
+	title = news.16.t
+	desc = news.16.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.16.a
+	}
+}
+
+## CZech news
+news_event = {
+	id = news.17
+	title = news.17.t
+	desc = news.17.d
+	picture = GFX_news_event_polish_tanks
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.17.a
+	}
+}
+
+news_event = {
+	id = news.18
+	title = news.18.t
+	desc = news.18.d
+	picture = GFX_news_event_hungarian_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.18.a
+	}
+}

@@ -16,7 +16,9 @@ set_technology = {
 	fuel_refining = 1
 }
 
-
+add_ideas = {
+Heavy_contamination
+}
 
 set_politics = {
 	ruling_party = democratic

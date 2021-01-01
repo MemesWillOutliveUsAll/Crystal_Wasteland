@@ -1,5 +1,7 @@
 ﻿capital = 206
-
+add_ideas = {
+Medium_contamination
+}
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

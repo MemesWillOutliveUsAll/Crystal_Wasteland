@@ -1,7 +1,9 @@
 ﻿capital = 7
 
 oob = "HOL_1936"
-
+add_ideas = {
+Medium_contamination
+}
 set_research_slots = 0
 set_stability = 0.25
 set_war_support = 0

@@ -51,7 +51,9 @@ if = {
 }
 
 
-
+add_ideas = {
+Medium_contamination
+}
 
 set_research_slots = 3
 set_convoys = 50

@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_Heavy_contamination"
+		texturefile = "gfx/interface/ideas/Heavy_contamination.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_Medium_contamination"
+		texturefile = "gfx/interface/ideas/Medium_contamination.dds"
+	}
+	
+}

@@ -1,5 +1,7 @@
 capital = 808
-
+add_ideas = {
+Medium_contamination
+}
 oob = "OMK_1936"
 
 # Starting tech

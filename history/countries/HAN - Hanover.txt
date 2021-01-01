@@ -1,5 +1,7 @@
 ﻿capital = 59
-
+add_ideas = {
+Medium_contamination
+}
 oob = "HAN_1936"
 
 # Starting tech

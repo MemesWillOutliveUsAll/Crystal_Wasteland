@@ -59,7 +59,9 @@ if = {
 		basic_torpedo = 1
 	}
 }
-
+add_ideas = {
+Medium_contamination
+}
 
 set_popularities = {	democratic = 2	neutrality = 17	communism = 8	fascism = 73
 }

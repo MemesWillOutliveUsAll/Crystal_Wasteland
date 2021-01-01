@@ -1,6 +1,6 @@
 ﻿shared_focus = {
 	id = ostgermania_The_tue_heir
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_The_true_heir
 	x = 14
 	y = 0
 
@@ -37,7 +37,7 @@
 
 shared_focus = {
 	id = ostgermania_work_them_harder
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_construct_infrastructure
 	x = 8
 	y = 0
 
@@ -64,7 +64,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ostgermania_alert_loyalists
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_demand_territory
 	prerequisite = { focus = ostgermania_work_them_harder }
 	relative_position_id = ostgermania_work_them_harder
 	x = 0
@@ -94,7 +94,7 @@ shared_focus = {
 ###################################################
 shared_focus = {
 	id = ostgermania_take_out_kaiser
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Destroy_kaiser
 	prerequisite = { focus = ostgermania_alert_loyalists }
 	relative_position_id = ostgermania_alert_loyalists
 	x = -2
@@ -128,7 +128,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ostgermania_take_integrate_kaiser
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = ostgermania_take_out_kaiser }
 	relative_position_id = ostgermania_take_out_kaiser
 	x = 0
@@ -163,7 +163,7 @@ shared_focus = {
 ##################################################################
 shared_focus = {
 	id = ostgermania_invade_poles
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_PLA_DESTROY
 	prerequisite = { focus = ostgermania_alert_loyalists }
 	relative_position_id = ostgermania_alert_loyalists
 	x = 2
@@ -197,7 +197,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ostgermania_integrate_poles
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = ostgermania_invade_poles }
 	relative_position_id = ostgermania_invade_poles
 	x = 0
@@ -231,7 +231,7 @@ shared_focus = {
 ########################################################################
 shared_focus = {
 	id = ostgermania_take_out_Goering
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Airmarshal_Goering
 	prerequisite = { focus = ostgermania_take_out_kaiser }
 	relative_position_id = ostgermania_alert_loyalists
 	x = -4
@@ -265,7 +265,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ostgermania_integrate_danzig
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = ostgermania_take_out_Goering }
 	relative_position_id = ostgermania_take_out_Goering
 	x = 0
@@ -298,7 +298,7 @@ shared_focus = {
 ##############################################################
 shared_focus = {
 	id = ostgermania_invade_silesians
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Lock_up_industrialists
 	prerequisite = { focus = ostgermania_invade_poles }
 	relative_position_id = ostgermania_alert_loyalists
 	x = 4
@@ -332,7 +332,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ostgermania_integrate_silesia
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = ostgermania_invade_silesians }
 	relative_position_id = ostgermania_invade_silesians
 	x = 0
@@ -378,7 +378,7 @@ shared_focus = {
 #############################################
 shared_focus = {
 	id = ostgermania_take_out_Kaltenbrunner
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Kill_kaltenbrunner
 	prerequisite = { focus =  ostgermania_invade_silesians}
 	relative_position_id = ostgermania_alert_loyalists
 	x = 2
@@ -412,7 +412,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ostgermania_take_integrate_kaltenbrunner
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = ostgermania_take_out_Kaltenbrunner }
 	relative_position_id = ostgermania_take_out_Kaltenbrunner
 	x = 0
@@ -445,7 +445,7 @@ shared_focus = {
 ##############################################################
 shared_focus = {
 	id = ostgermania_take_out_berlin
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Claim_the_jewel
 	prerequisite = { focus = ostgermania_take_out_Goering }
 	relative_position_id = ostgermania_alert_loyalists
 	x = -2
@@ -479,7 +479,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ostgermania_integrate_germany
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = ostgermania_take_out_berlin }
 	relative_position_id = ostgermania_take_out_berlin
 	x = 0
@@ -514,7 +514,7 @@ shared_focus = {
 ############################################
 shared_focus = {
 	id = ostgermania_take_out_Donitz
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Admiral_Donitz_Saves_the_day
 	prerequisite = { focus =  ostgermania_take_out_Kaltenbrunner}
 	prerequisite = { focus =  ostgermania_take_out_berlin}
 	relative_position_id = ostgermania_alert_loyalists
@@ -549,7 +549,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ostgermania_integrate_Donitz
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = ostgermania_take_out_Donitz }
 	relative_position_id = ostgermania_take_out_Donitz
 	x = 0
@@ -586,7 +586,7 @@ shared_focus = {
 ##############################
 shared_focus = {
 	id = ostgermania_unite_east_germany
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_national_unity
 	prerequisite = { focus = ostgermania_integrate_Donitz }
 	prerequisite = { focus = ostgermania_integrate_Donitz }
 	relative_position_id = ostgermania_integrate_Donitz
@@ -616,6 +616,7 @@ shared_focus = {
 		
 	completion_reward = {
 	set_cosmetic_tag = GER
+	news_event = { id = news.12 }
 	}
 
 	bypass = {

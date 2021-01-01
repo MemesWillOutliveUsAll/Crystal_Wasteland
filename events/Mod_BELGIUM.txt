@@ -38,6 +38,7 @@ country_event = {
 				days = 20
 			} 
 		}
+		news_event = { id = news.3 }
 	}
 }
 
@@ -55,6 +56,7 @@ country_event = {
 	option = {
 		name = mod_belgium.2.a
 		declare_war_on = { type = annex_everything    target = FRA }
+		news_event = { id = news.4 }
 	}
 }
 
@@ -72,5 +74,6 @@ country_event = {
 	option = {
 		name = mod_belgium.3.a
 		declare_war_on = { type = annex_everything    target = HOL }
+		news_event = { id = news.5 }
 	}
 }

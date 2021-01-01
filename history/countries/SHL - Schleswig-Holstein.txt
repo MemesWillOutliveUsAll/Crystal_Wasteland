@@ -1,5 +1,8 @@
 ﻿capital = 808
 oob = "SHL_1936"
+add_ideas = {
+Medium_contamination
+}
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -132,7 +135,7 @@ add_ideas = {
 }
 
 create_country_leader = {
-	name = "Herman Goring"
+	name = "Karl Donitz"
 	desc = " "
 	picture = "gfx/leaders/GER/Portrait_Germany_Karl_Donitz.dds"
 	expire = "1965.1.1"

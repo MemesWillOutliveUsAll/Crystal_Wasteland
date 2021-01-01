@@ -8,7 +8,7 @@
 
 shared_focus = {
 	id = ALL_The_SS_in_power
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Reinhard_Heydrich_initial
 	x = 14
 	y = 0
 
@@ -42,7 +42,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_anex_luxemburg
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_occupy_states_ongoing_war
 	x = 14
 	y = 0
 
@@ -79,7 +79,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_recall_SS_divisions_from_ostland
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_political_pressure
 	prerequisite = { focus = ALL_anex_luxemburg }
 	relative_position_id = ALL_anex_luxemburg
 	x = 0
@@ -99,6 +99,37 @@ shared_focus = {
 	available_if_capitulated = yes
 		
 	completion_reward = {
+	hidden_effect = {
+				division_template = {
+					name = "SS_Ostland"
+					priority = 2
+					division_names_group = ROM_MTN_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+	    	   		 	infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+			
+	    	   		 	infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 28 }
+					create_unit = {
+						division = "name = \"SS Ostland\" division_template = \"SS_Ostland\" start_experience_factor = 1.0" 
+						owner = ALL
+					}
+				}
+			}
 	}
 
 	bypass = {
@@ -110,7 +141,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_take_out_bavaria
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Communism_in_Bavaria
 	prerequisite = { focus = ALL_recall_SS_divisions_from_ostland }
 	will_lead_to_war_with = BAY
 	relative_position_id = ALL_recall_SS_divisions_from_ostland
@@ -145,7 +176,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_integrate_bavaria
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_more_territorial_claims
 	prerequisite = { focus = ALL_take_out_bavaria }
 	relative_position_id = ALL_take_out_bavaria
 	x = 0
@@ -182,7 +213,7 @@ shared_focus = {
 ###########################################
 shared_focus = {
 	id = ALL_take_out_Hannover
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Attack_hannover
 	prerequisite = { focus = ALL_integrate_bavaria }
 	will_lead_to_war_with = HAN
 	relative_position_id = ALL_integrate_bavaria
@@ -217,7 +248,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_integrate_Hannover
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = ALL_take_out_Hannover }
 	relative_position_id = ALL_take_out_Hannover
 	x = 0
@@ -254,7 +285,7 @@ shared_focus = {
 #######################################
 shared_focus = {
 	id = ALL_take_out_Hesse
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Crack_Speidel
 	prerequisite = { focus = ALL_integrate_bavaria }
 	will_lead_to_war_with = HES
 	relative_position_id = ALL_integrate_bavaria
@@ -289,7 +320,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_integrate_Hesse
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = ALL_take_out_Hesse }
 	relative_position_id = ALL_take_out_Hesse
 	x = 0
@@ -326,7 +357,7 @@ shared_focus = {
 #############################
 shared_focus = {
 	id = ALL_integrate_austria
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Austrian_referundum
 	prerequisite = { focus = ALL_integrate_Hannover }
 	prerequisite = { focus = ALL_integrate_Hesse }
 	relative_position_id = ALL_integrate_Hesse
@@ -366,7 +397,7 @@ shared_focus = {
 #####################################
 shared_focus = {
 	id = ALL_unite_west_germany
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_national_unity
 	prerequisite = { focus = ALL_integrate_austria }
 	relative_position_id = ALL_integrate_austria
 	x = 0
@@ -393,6 +424,7 @@ shared_focus = {
 		
 	completion_reward = {
 	set_cosmetic_tag = GER
+	news_event = { id = news.7 }
 	}
 
 	bypass = {

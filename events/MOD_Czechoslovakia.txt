@@ -42,6 +42,7 @@ country_event = {
 	option = {
 		name = mod_Czechoslovakia.2.a
 		declare_war_on = { type = annex_everything    target = SLO }
+		news_event = { id = news.17 }
 	}
 }
 
@@ -59,6 +60,7 @@ country_event = {
 	option = {
 		name = mod_Czechoslovakia.3.a
 		declare_war_on = { type = annex_everything   target = HUN }
+		news_event = { id = news.18 }
 	}
 }
 

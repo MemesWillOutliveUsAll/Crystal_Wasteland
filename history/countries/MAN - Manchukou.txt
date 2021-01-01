@@ -1,7 +1,9 @@
 ﻿capital = 328
 
 oob = "MAN_1936"
-
+add_ideas = {
+Medium_contamination
+}
 set_technology = {
 	infantry_weapons = 1
 	gw_artillery = 1

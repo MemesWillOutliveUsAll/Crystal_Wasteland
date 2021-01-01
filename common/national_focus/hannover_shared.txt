@@ -1,7 +1,7 @@
 ﻿
 shared_focus = {
 	id = HAN_Erich_Koch
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_KOCH
 	x = 14
 	y = 0
 
@@ -36,7 +36,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HAN_loyal_to_hess
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_rhineland
 	x = 14
 	y = 0
 
@@ -68,7 +68,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HAN_leverage_anti_ss_feeling
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_molotov_ribbentrop_pact
 	prerequisite = { focus = HAN_loyal_to_hess }
 	relative_position_id = HAN_loyal_to_hess
 	x = 0
@@ -88,6 +88,35 @@ shared_focus = {
 	available_if_capitulated = yes
 		
 	completion_reward = {
+	hidden_effect = {
+				division_template = {
+					name = "German_militia"
+					priority = 2
+					division_names_group = ROM_MTN_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+	    	   		 	infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+			
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 59 }
+					create_unit = {
+						division = "name = \"German militia\" division_template = \"German_militia\" start_experience_factor = 0" 
+						owner = HAN
+					}
+					create_unit = {
+						division = "name = \"German militia\" division_template = \"German_militia\" start_experience_factor = 0" 
+						owner = HAN
+					}
+				}
+			}
 	}
 
 	bypass = {
@@ -98,7 +127,7 @@ shared_focus = {
 ############################################
 shared_focus = {
 	id = HAN_take_out_Hesse
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Crack_Speidel
 	prerequisite = { focus = HAN_leverage_anti_ss_feeling }
 	will_lead_to_war_with = HES
 	relative_position_id = HAN_leverage_anti_ss_feeling
@@ -133,7 +162,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HAN_integrate_Hesse
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_military_sphere
 	prerequisite = { focus = HAN_take_out_Hesse }
 	relative_position_id = HAN_take_out_Hesse
 	x = 0
@@ -171,7 +200,7 @@ shared_focus = {
 ###########################################
 shared_focus = {
 	id = HAN_take_out_bavaria
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Communism_in_Bavaria
 	prerequisite = { focus = HAN_integrate_Hesse }
 	will_lead_to_war_with = BAY
 	relative_position_id = HAN_integrate_Hesse
@@ -206,7 +235,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HAN_integrate_bavaria
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = HAN_take_out_bavaria }
 	relative_position_id = HAN_take_out_bavaria
 	x = 0
@@ -243,7 +272,7 @@ shared_focus = {
 #####################################
 shared_focus = {
 	id = HAN_take_out_SS
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Rhine_Occupied
 	prerequisite = { focus = HAN_integrate_Hesse }
 	will_lead_to_war_with = ALL
 	relative_position_id = HAN_integrate_Hesse
@@ -278,7 +307,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HAN_integrate_rhine
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = HAN_take_out_SS }
 	relative_position_id = HAN_take_out_SS
 	x = 0
@@ -317,7 +346,7 @@ shared_focus = {
 #############################
 shared_focus = {
 	id = HAN_integrate_austria
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Austrian_referundum
 	prerequisite = { focus = HAN_integrate_rhine }
 	prerequisite = { focus = HAN_integrate_bavaria }
 	relative_position_id = HAN_integrate_rhine
@@ -357,7 +386,7 @@ shared_focus = {
 #####################################
 shared_focus = {
 	id = HAN_unite_west_germany
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_national_unity
 	prerequisite = { focus = HAN_integrate_austria }
 	relative_position_id = HAN_integrate_austria
 	x = 0
@@ -384,6 +413,7 @@ shared_focus = {
 		
 	completion_reward = {
 	set_cosmetic_tag = GER
+	news_event = { id = news.10 }
 	}
 
 	bypass = {

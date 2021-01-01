@@ -1,6 +1,6 @@
 ﻿shared_focus = {
 		id = ostmark_our_plot
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_Kaltenbrunner_initial
 		x = 14
 		y = 0
 
@@ -35,7 +35,7 @@
 
 shared_focus = {
 	id = ostmark_purge_the_unloyal
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_position_armies
 	x = 8
 	y = 0
 
@@ -62,7 +62,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ostmark_purge_the_military
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_intelligence_exchange
 	prerequisite = { focus = ostmark_purge_the_unloyal }
 	relative_position_id = ostmark_purge_the_unloyal
 	x = 0
@@ -91,7 +91,7 @@ shared_focus = {
 ###########################################################################
 shared_focus = {
 	id = ostmark_take_out_Goering
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Airmarshal_Goering
 	prerequisite = { focus = ostmark_purge_the_military }
 	relative_position_id = ostmark_purge_the_military
 	x = 1
@@ -125,7 +125,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ostmark_integrate_danzig
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = ostmark_take_out_Goering }
 	relative_position_id = ostmark_take_out_Goering
 	x = 0
@@ -158,7 +158,7 @@ shared_focus = {
 ##################################################################################
 shared_focus = {
 	id = ostmark_take_out_Donitz
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Admiral_Donitz_Saves_the_day
 	prerequisite = { focus = ostmark_purge_the_military }
 	relative_position_id = ostmark_purge_the_military
 	x = -1
@@ -192,7 +192,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ostmark_integrate_Donitz
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = ostmark_take_out_Donitz }
 	relative_position_id = ostmark_take_out_Donitz
 	x = 0
@@ -229,7 +229,7 @@ shared_focus = {
 ############################################
 shared_focus = {
 	id = ostmark_take_Berlin
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Claim_the_jewel
 	prerequisite = { focus = ostmark_purge_the_military }
 	relative_position_id = ostmark_purge_the_military
 	x = 4
@@ -263,7 +263,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ostmark_integrate_germany
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = ostmark_take_Berlin }
 	relative_position_id = ostmark_take_Berlin
 	x = 0
@@ -298,7 +298,7 @@ shared_focus = {
 #####################################
 shared_focus = {
 	id = ostmark_invade_silesians
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Lock_up_industrialists
 	prerequisite = { focus = ostmark_purge_the_military }
 	relative_position_id = ostmark_purge_the_military
 	x = -4
@@ -332,7 +332,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ostmark_integrate_silesia
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = ostmark_invade_silesians }
 	relative_position_id = ostmark_invade_silesians
 	x = 0
@@ -379,7 +379,7 @@ shared_focus = {
 ##################################
 shared_focus = {
 	id = ostmark_invade_poles
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_PLA_DESTROY
 	prerequisite = { focus = ostmark_invade_silesians }
 	relative_position_id = ostmark_purge_the_military
 	x = -2
@@ -413,7 +413,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ostmark_integrate_poles
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = ostmark_invade_poles }
 	relative_position_id = ostmark_invade_poles
 	x = 0
@@ -447,7 +447,7 @@ shared_focus = {
 #################################################
 shared_focus = {
 	id = ostmark_take_out_kaiser
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Destroy_kaiser
 	prerequisite = { focus = ostmark_take_Berlin }
 	relative_position_id = ostmark_purge_the_military
 	x = 2
@@ -481,7 +481,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ostmark_take_integrate_kaiser
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = ostmark_take_out_kaiser }
 	relative_position_id = ostmark_take_out_kaiser
 	x = 0
@@ -516,7 +516,7 @@ shared_focus = {
 ################################
 shared_focus = {
 	id = ostmark_take_out_hess
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_focus_Deal_with_succesor
 	prerequisite = { focus = ostmark_take_out_kaiser }
 	prerequisite = { focus = ostmark_invade_poles }
 	relative_position_id = ostmark_purge_the_military
@@ -551,7 +551,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ostmark_take_integrate_hess
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = ostmark_take_out_hess }
 	relative_position_id = ostmark_take_out_hess
 	x = 0
@@ -585,7 +585,7 @@ shared_focus = {
 ########### end ##
 shared_focus = {
 	id = ostmark_unite_east_germany
-	icon = GFX_goal_generic_allies_build_infantry
+	icon = GFX_goal_generic_national_unity
 	prerequisite = { focus = ostmark_take_integrate_hess }
 	relative_position_id = ostmark_take_integrate_hess
 	x = 0
@@ -614,6 +614,7 @@ shared_focus = {
 		
 	completion_reward = {
 	set_cosmetic_tag = GER
+	news_event = { id = news.13 }
 	}
 
 	bypass = {
