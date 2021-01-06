@@ -146,3 +146,28 @@ create_country_leader = {
 		#
 	}
 }
+
+create_corps_commander = {
+	name = "Gotthard Heinrici"
+	picture = "Portrait_Germany_Gotthard_Heinrici.dds"
+	traits = { trait_engineer infantry_officer trait_cautious }
+	skill = 3
+
+	id = 33
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Ernst-Eberhard Hell"
+	picture = "Portrait_Germany_Ernst-Eberhard_Hell.dds"
+	traits = { winter_specialist trait_engineer war_hero }
+	skill = 3
+	id = 34
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}

@@ -147,3 +147,26 @@ create_country_leader = {
 }
 
 
+create_corps_commander = {
+	name = "Hasso von Manteuffel"
+		picture = "Portrait_Germany_Hasso_von_Manteuffel.dds"
+	traits = { armor_officer career_officer trait_cautious }
+	skill = 4
+	id = 25
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Albert Kesselring"
+	picture = "Portrait_Germany_Albert_Kesselring.dds"
+	traits = { brilliant_strategist trait_cautious war_hero }
+	skill = 4
+	id = 32
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}

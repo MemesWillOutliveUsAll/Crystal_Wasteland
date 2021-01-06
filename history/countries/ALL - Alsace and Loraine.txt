@@ -85,4 +85,38 @@ create_country_leader = {
 	}
 }
 
+create_corps_commander = {
+	name = "Johannes Blaskowitz"
+	picture = "Portrait_Germany_Johannes_Blaskowitz.dds"
+	traits = { infantry_officer }
+	skill = 3
+	id = 19
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
 
+create_corps_commander = {
+	name = "Paul Hausser"
+	picture = "Portrait_Germany_Paul_Hausser.dds"
+	traits = {  armor_officer politically_connected }
+	skill = 4
+	id = 20
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Heinz Guderian"
+	picture = "Portrait_Germany_Heinz_Guderian.dds"
+	traits = { trickster brilliant_strategist panzer_leader armor_officer career_officer }
+	skill = 4
+	id = 6
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
+}

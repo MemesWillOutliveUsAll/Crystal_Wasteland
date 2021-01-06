@@ -184,4 +184,39 @@ create_country_leader = {
 #	}
 #}
 
+create_corps_commander = {
+	name = "Hermann Hoth"
+	picture = "Portrait_Germany_Herman_Hoth.dds"
+	traits = { trait_reckless armor_officer }
+	skill = 3
+	id = 18
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
 
+
+create_corps_commander = {
+	name = "Friedrich Schulz"
+	picture = "Portrait_Germany_Friedrich_Schulz.dds"
+	traits = { infantry_officer }
+	skill = 3
+	id = 21
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Georg von Küchler"
+	picture = "Portrait_Germany_Georg_von_Kuchler.dds"
+	traits = {  }
+	skill = 4
+	id = 22
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}

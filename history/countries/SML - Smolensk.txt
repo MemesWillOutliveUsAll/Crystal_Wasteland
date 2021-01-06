@@ -1,4 +1,5 @@
 ﻿capital = 242
+oob = "SML_1936"
 add_ideas = {
 Heavy_contamination
 }
@@ -120,9 +121,7 @@ set_stability = 0.75
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 
 }
 set_popularities = {
@@ -144,40 +143,42 @@ create_country_leader = {
 }
 
 
-#create_country_leader = {
-#	name = "Dennis Fredauer"
-#	desc = ""
-#	picture = "Portrait_Germany_Konrad_Adenauer.dds"
-#	expire = "1965.1.1"
-#	ideology = conservatism
-#	traits = {
-#	}
-#}
-#
+create_corps_commander = {
+	name = "Andrey Vlasov"
+		picture = "Portrait_Soviet_Andrey_Vlasov.dds"
+	traits = { winter_specialist infantry_officer }
+	id = 412
+	skill = 3
+	
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
+}
 
-#create_country_leader = {
-#	name = "Otto Wels"
-#	desc = "POLITICS_OTTO_WELS_DESC"
-#	picture = "Portrait_Germany_Adolf_Hitler.dds"
-#	expire = "1939.1.16"
-#	ideology = socialism
-#	traits = {
-#		exiled
-#		union_man
-#	}
-#}
-#
-#create_country_leader = {
-#	name = "Ernst Thälmann"
-#	desc = "POLITICS_ERNST_THALMANN_DESC"
-#	picture = "Portrait_Germany_Adolf_Hitler.dds"
-#	expire = "1956.1.1"
-#	ideology = stalinism
-#	traits = {
-#		assassination_survivor
-#		stalins_puppet
-#		political_prisoner
-#	}
-#}
+create_corps_commander = {
+	name = "Ivan Fedyuninsky"
+		picture = "Portrait_Soviet_Ivan_Fedyuninsky.dds"
+	traits = { infantry_officer }
+	skill = 1 
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Maksim Purkayev"
+		picture = "Portrait_Soviet_Maksim_Purkayev.dds"
+	traits = { career_officer }
+	skill = 3
+
+	
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
 
 

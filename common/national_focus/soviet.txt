@@ -11,6 +11,6 @@
 	}
 	
 	default = no
-
+	shared_focus = SOV_defeat_in_the_patriotic_war
 
 }

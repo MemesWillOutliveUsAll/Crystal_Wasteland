@@ -113,4 +113,25 @@ spriteTypes = {
 	name = "GFX_focus_Attack_hannover"
 	texturefile = "gfx/interface/goals/Takeover_Hannover.dds"			
 	}
+	
+	# Soviet union
+	SpriteType = {
+	name = "GFX_focus_Soviet_union"
+	texturefile = "gfx/interface/goals/soviet_union_image.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_go_with_lebedev"
+	texturefile = "gfx/interface/goals/Going_with_lebedev.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_stalin_initial"
+	texturefile = "gfx/interface/goals/Going_with_Stalin.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_trotsky_initial"
+	texturefile = "gfx/interface/goals/Go_with_Trotsky.dds"			
+	}
 }

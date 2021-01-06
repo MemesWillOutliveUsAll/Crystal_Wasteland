@@ -139,7 +139,7 @@ add_ideas = {
 create_country_leader = {
 	name = "Erwin Rommel"
 	desc = " "
-	picture = "gfx/leaders/GER/Portrait_Germany_Erwin_Rommel.dds"
+	picture = "Portrait_Germany_Erwin_Rommel.dds"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
@@ -148,29 +148,66 @@ create_country_leader = {
 }
 
 
-#create_country_leader = {
-#	name = "Otto Wels"
-#	desc = "POLITICS_OTTO_WELS_DESC"
-#	picture = "Portrait_Germany_Adolf_Hitler.dds"
-#	expire = "1939.1.16"
-#	ideology = socialism
-#	traits = {
-#		exiled
-#		union_man
-#	}
-#}
-#
-#create_country_leader = {
-#	name = "Ernst Thälmann"
-#	desc = "POLITICS_ERNST_THALMANN_DESC"
-#	picture = "Portrait_Germany_Adolf_Hitler.dds"
-#	expire = "1956.1.1"
-#	ideology = stalinism
-#	traits = {
-#		assassination_survivor
-#		stalins_puppet
-#		political_prisoner
-#	}
-#}
+create_corps_commander = {
+	name = "Erwin Rommel"
+	picture = "Portrait_Germany_Erwin_Rommel.dds"
+	traits = { trickster trait_reckless war_hero armor_officer media_personality }
+	skill = 4
+	id = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Walter Model"
+	picture = "Portrait_Germany_Walter_Model.dds"
+	traits = { defensive_doctrine brilliant_strategist trait_cautious politically_connected }
+	skill = 3
+	id = 10
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Maximilian von Weichs"
+	picture = "Portrait_Germany_Maximilian_von_Weichs.dds"
+	traits = { cavalry_officer }
+	skill = 4
+	id = 11
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Wilhelm Ritter von Leeb"
+	picture = "Portrait_Germany_Wilhelm_Ritter_von_Leeb.dds"
+	traits = { old_guard infantry_officer }
+	skill = 3
+	id = 13
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Georg-Hans Reinhardt"
+	picture = "Portrait_Germany_Georg_von_Reinhardt.dds"
+	traits = { trait_cautious armor_officer }
+	skill = 3
+	id = 14
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+
 
 

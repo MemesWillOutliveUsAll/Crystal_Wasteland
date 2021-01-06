@@ -148,4 +148,39 @@ create_country_leader = {
 	}
 }
 
+create_field_marshal = {
+	name = "Günther von Kluge"
+	picture = "Portrait_Germany_Gunther_von_Kluge.dds"
+	traits = {  offensive_doctrine armor_officer }
+	skill = 3
+	id = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
 
+create_corps_commander = {
+	name = "Friedrich Paulus"
+	picture = "Portrait_Germany_Friedrich_Paulus.dds"
+	traits = { trait_cautious armor_officer }
+	skill = 1
+	id = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+
+create_corps_commander = {
+	name = "Erich von Manstein"
+	picture = "Portrait_Germany_Erich_von_Manstein.dds"
+	traits = { trickster armor_officer brilliant_strategist trait_engineer }
+	skill = 4
+	id = 5
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}

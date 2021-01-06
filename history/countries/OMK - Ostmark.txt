@@ -148,3 +148,62 @@ create_country_leader = {
 	}
 }
 
+create_field_marshal = {
+	name = "Gerd von Rundstedt"
+	picture = "Portrait_Germany_Gerd_von_Rundstedt.dds"
+	traits = { defensive_doctrine urban_assault_specialist old_guard }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	id = 1
+}
+
+create_corps_commander = {
+	name = "Alfred Jodl"
+	picture = "Portrait_Germany_Alfred_Jodl.dds"
+	traits = { politically_connected career_officer }
+	skill = 3
+	id = 23
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Sepp Dietrich"
+	picture = "Portrait_Germany_Josef_Dietrich.dds"
+	traits = { armor_officer politically_connected brilliant_strategist trait_reckless }
+	skill = 4
+	id = 24
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Hasso von Manteuffel"
+		picture = "Portrait_Germany_Hasso_von_Manteuffel.dds"
+	traits = { armor_officer career_officer trait_cautious }
+	skill = 4
+	id = 25
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Albert Kesselring"
+	picture = "Portrait_Germany_Albert_Kesselring.dds"
+	traits = { brilliant_strategist trait_cautious war_hero }
+	skill = 4
+	id = 32
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}

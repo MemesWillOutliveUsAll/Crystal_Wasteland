@@ -1,4 +1,5 @@
 ﻿capital = 219
+oob = "GMC_1936"
 add_ideas = {
 Heavy_contamination
 }
@@ -120,8 +121,6 @@ set_stability = 0.75
 
 set_politics = {
 	ruling_party = fascism
-	last_election = "1936.1.1"
-	election_frequency = 48
 	elections_allowed = no
 
 }
@@ -146,6 +145,81 @@ create_country_leader = {
 	traits = {
 		dictator
 	}
+}
+
+create_corps_commander = {
+	name = "Dmitry Lelyushenko"
+		picture = "Portrait_Soviet_Dmitri_Danilovich_Lelyushenko.dds"
+	traits = {armor_officer trait_reckless  }
+	skill = 1 
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Andrei Grechko"
+		picture = "Portrait_Soviet_Andrei_Antonovich_Grechko.dds"
+	traits = { cavalry_officer }
+	skill = 3
+
+
+	
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Rodion Malinovsky"
+		picture = "Portrait_Soviet_Rodion_Malinovsky.dds"
+	traits = { career_officer old_guard trait_cautious politically_connected }
+	skill = 1 
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Vasily Chuikov"
+		picture = "Portrait_Soviet_Vasily_Chuikov.dds"
+	traits = { brilliant_strategist career_officer }
+	skill = 1
+
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Filipp Oktyabrskiy"
+		picture = "Portrait_Soviet_Filipp_Oktyabrsky.dds"
+	traits = { ground_pounder ironside }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "Sergey Gorshkov"
+	id = 411
+		picture = "Portrait_Soviet_Sergey_Gorshkov.dds"
+	traits = { navy_career_officer bold }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
 }
 
 

@@ -159,9 +159,9 @@ puppet = WUR
 #}
 #
 create_country_leader = {
-	name = "Ernst Thälmann"
+	name = "Walter Ulbricht"
 	desc = " "
-	picture = "gfx/leaders/GER/Walter_portrait.png"
+	picture = "Walter_portrait.png"
 	expire = "1956.1.1"
 	ideology = stalinism
 	traits = {
@@ -169,4 +169,26 @@ create_country_leader = {
 	}
 }
 
+create_corps_commander = {
+	name = "Walter Krüger"
+	picture = "Portrait_Germany_Walter_Kruger.dds"
+	traits = { armor_officer trait_reckless politically_connected}
+	skill = 3
+	id = 15
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
+}
 
+create_corps_commander = {
+	name = "Erwin von Witzleben"
+	picture = "Portrait_Germany_Erwin_von_Witzleben.dds"
+	traits = { infantry_officer career_officer }
+	skill = 4
+	id = 17
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}

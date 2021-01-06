@@ -144,3 +144,15 @@ create_country_leader = {
 		dictator
 	}
 }
+
+create_corps_commander = {
+	name = "Wilhelm List"
+	picture = "Portrait_Germany_Wilhelm_List.dds"
+	traits = { career_officer inflexible_strategist }
+	skill = 2
+	id = 7
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
