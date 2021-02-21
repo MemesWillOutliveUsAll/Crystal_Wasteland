@@ -1,0 +1,10 @@
+######################################
+category = {
+ name = "CWL sounds"
+ soundeffects = {
+	Jet_plane_in_30s
+ }
+ 
+ compressor = master_compressor
+}
+

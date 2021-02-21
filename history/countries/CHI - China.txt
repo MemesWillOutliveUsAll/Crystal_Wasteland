@@ -2,6 +2,11 @@
 
 oob = "CHI_1936"
 
+add_ideas = {
+		Communist_prc_rebels
+		Heavy_contamination
+	}
+
 set_stability = 0.8
 set_war_support = 0.4
 # Starting tech
@@ -39,9 +44,7 @@ set_popularities = {
 	neutrality = 100
 }
 
-add_ideas = {
-Heavy_contamination
-}
+
 create_country_leader = {
 	name = "Chiang Kai-Shek"
 	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"

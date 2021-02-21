@@ -1,5 +1,5 @@
 ﻿focus_tree = {
-	id = soviet_focus
+	id = soviet_focus_initial
 
 	country = {
 		factor = 0
@@ -12,5 +12,58 @@
 	
 	default = no
 	shared_focus = SOV_defeat_in_the_patriotic_war
+
+}
+
+focus_tree = {
+	id = soviet_lebedev_reveals_genius
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	
+	default = no
+	shared_focus = SOV_Reveal_jet_planes
+	shared_focus = SOV_rebuilding_civilization
+	shared_focus = SOV_Fixing_the_mistakes
+
+}
+
+focus_tree = {
+	id = soviet_stalin_initial_path
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	
+	default = no
+	shared_focus = SOV_Purge_Lebedev
+
+}
+
+focus_tree = {
+	id = soviet_trotsky_initial_path
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	
+	default = no
+	shared_focus = SOV_internationale
 
 }

@@ -1,0 +1,9 @@
+########################DEBUG #########################
+sound =
+{
+	name = "Jet_plane_in_the_30s"
+	file = "menu/JET.wav"
+	volume = 1
+	always_load = yes
+}
+

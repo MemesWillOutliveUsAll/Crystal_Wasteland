@@ -1,0 +1,101 @@
+ideas = {
+	
+	country = {
+	
+		Communist_prc_rebels = {
+			
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.03
+				army_org_factor = -0.1
+				army_org_regain = -0.05
+				army_core_attack_factor = -0.4
+				army_core_defence_factor = -0.3
+			}
+			
+		}
+		
+		Communist_prc_rebels_emboldened = {
+			
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.03
+				army_org_factor = -0.4
+				army_org_regain = -0.25
+				army_core_attack_factor = -0.7
+				army_core_defence_factor = -0.6
+			}
+			
+		}
+		
+		China_jet_attack = {
+			
+			picture = jet
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.3
+				industrial_capacity_factory = -0.5
+				production_speed_buildings_factor = -0.4
+				
+			}
+			
+		}
+		
+		China_sov_industrial = {
+			
+			picture = generic_production_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.2
+				
+			}
+			
+		}
+	
+	}
+	
+}

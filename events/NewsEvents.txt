@@ -315,3 +315,20 @@ news_event = {
 		name = news.18.a
 	}
 }
+
+
+################# super events !!!! #####################
+news_event = {
+	id = news.19
+	title = news.19.t
+	desc = news.19.d
+	picture = GFX_news_event_komet
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.18.a
+	}
+}

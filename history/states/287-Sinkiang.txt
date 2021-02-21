@@ -3,6 +3,7 @@ state={
 	name="STATE_287"
 
 	history={
+		set_demilitarized_zone = yes
 		owner = SIK
 		add_core_of = SIK
 		add_core_of = CHI

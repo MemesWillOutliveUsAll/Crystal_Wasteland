@@ -1,0 +1,9 @@
+
+
+soundeffect = {
+	name = "Jet_plane_in_30s"
+	sounds = {
+		sound = "Jet_plane_in_the_30s"
+	} 
+	volume = 1
+}

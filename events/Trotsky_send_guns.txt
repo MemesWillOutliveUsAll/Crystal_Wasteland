@@ -1,0 +1,33 @@
+﻿###########################
+# SendGuns Events
+###########################
+
+add_namespace = SendGuns
+
+# sending guns
+country_event = {
+	id = SendGuns.1
+	title = SendGuns.1.t
+	desc = SendGuns.1.d
+	picture = GFX_report_event_soviet_soldiers
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 2 }
+	
+	option = {
+		name = SendGuns.1.a
+		add_equipment_to_stockpile = {
+
+        type = infantry_equipment_1
+
+        amount = 5000
+		producer = SOV
+
+		}
+	}
+	
+	
+}

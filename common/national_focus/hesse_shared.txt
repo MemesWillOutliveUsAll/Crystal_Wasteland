@@ -88,6 +88,13 @@ shared_focus = {
 	available_if_capitulated = yes
 		
 	completion_reward = {
+	add_equipment_to_stockpile = {
+
+        type = infantry_equipment_1
+
+        amount = 10000
+
+    }
 	}
 
 	bypass = {

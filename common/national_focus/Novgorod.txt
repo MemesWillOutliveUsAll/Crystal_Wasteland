@@ -1,0 +1,16 @@
+﻿focus_tree = {
+	id = Smolensk_focus_unification
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = NOV
+		}
+	}
+	
+	default = no
+	shared_focus = NOV_a_fine_balancing_act
+
+}

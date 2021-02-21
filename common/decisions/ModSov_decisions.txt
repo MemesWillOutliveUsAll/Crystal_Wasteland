@@ -1,0 +1,295 @@
+SOV_siberian_plan = {
+	
+	SOV_Develop_Industry_In_Vladivostock = {
+		icon = generic_construction
+
+		available = {
+			
+		}
+
+		visible = {
+			SOV = {has_country_flag = SibPlan}
+		}
+
+		cost = 50
+		days_remove = 90
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		highlight_state_targets = { state = 408 }
+
+		remove_effect = {
+			
+				408 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			
+		}
+	}
+	
+	
+	SOV_Develop_Industry_In_Kemerovo = {
+		icon = generic_construction
+
+		available = {
+			
+		}
+
+		visible = {
+			OR = {
+				SOV = {has_country_flag = SibPlan}
+			}
+		}
+
+		cost = 50
+		days_remove = 90
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		highlight_state_targets = { state = 569 }
+
+		remove_effect = {
+		
+				569 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+
+		}
+	}
+	
+	SOV_Develop_Industry_In_Irkutsk = {
+		icon = generic_construction
+
+		available = {
+			
+		}
+
+		visible = {
+			OR = {
+				SOV = {has_country_flag = SibPlan}
+			}
+		}
+
+		cost = 50
+		days_remove = 90
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		highlight_state_targets = { state = 566 }
+
+		remove_effect = {
+				566 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+		}
+	}
+	
+	SOV_Develop_Industry_In_Tomsk = {
+		icon = generic_construction
+
+		available = {
+			
+		}
+
+		visible = {
+			OR = {
+				SOV = {has_country_flag = SibPlan}
+			}
+		}
+
+		cost = 50
+		days_remove = 90
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		highlight_state_targets = { state = 578 }
+
+		remove_effect = {
+				578 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+		}
+	}
+	
+	SOV_Develop_Siberian_railroad = {
+		icon = generic_construction
+
+		available = {
+			
+		}
+
+		visible = {
+			OR = {
+				SOV = {has_country_flag = SibPlan}
+			}
+			578 = { is_owned_and_controlled_by = ROOT }
+			569 = { is_owned_and_controlled_by = ROOT }
+			568 = { is_owned_and_controlled_by = ROOT }
+			567 = { is_owned_and_controlled_by = ROOT }
+			566 = { is_owned_and_controlled_by = ROOT }
+			564 = { is_owned_and_controlled_by = ROOT }
+			563 = { is_owned_and_controlled_by = ROOT }
+			561 = { is_owned_and_controlled_by = ROOT }
+			657 = { is_owned_and_controlled_by = ROOT }
+			409 = { is_owned_and_controlled_by = ROOT }
+			408 = { is_owned_and_controlled_by = ROOT }
+		}
+
+		cost = 100
+		days_remove = 90
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		highlight_state_targets = { state = 578 }
+
+		remove_effect = {
+			
+				578 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				
+				569 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				
+				568 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				
+				567 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				
+				564 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				
+				563 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				
+				561 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				
+				657 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				
+				409 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				
+				408 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			
+		}
+	}
+
+}

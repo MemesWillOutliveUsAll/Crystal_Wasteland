@@ -2396,8 +2396,8 @@ PLA_neutrality_DEF:0 "Polish Liberation army"
 PLA_DEF:0 "Polish"
 PLA_ADJ:0 "Polish"
 
-REN_fascism:0 "Russian Empire"
-REM_fascism_DEF:0 "Russian Empire"
+REM_fascism:0 "Russian mob"
+REM_fascism_DEF:0 "Russian mobs"
 REM_DEF:0 "Russian"
 REM_ADJ:0 "Russian"
 

@@ -5,7 +5,14 @@ state={
 	manpower = 153510
 	
 	state_category = wasteland
-
+	
+	history={
+		owner = ANR
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ANR
+	}
 
 	provinces={
 		4781 4800 10531 10713 12509 

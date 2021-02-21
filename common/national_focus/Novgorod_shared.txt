@@ -1,0 +1,621 @@
+﻿shared_focus = {
+	id = NOV_a_fine_balancing_act
+	icon = GFX_focus_vlasovIntial
+	x = 14
+	y = 0
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+		
+		
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = NOV_The_threats_that_surround_us
+	icon = GFX_goal_generic_small_arms
+	prerequisite = { focus = NOV_a_fine_balancing_act }
+	relative_position_id = NOV_a_fine_balancing_act
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_equipment_to_stockpile = {
+
+			type = infantry_equipment_1
+
+			amount = 5000
+
+			}
+	
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+		id = NOV_No_time_for_democracy
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = NOV_The_threats_that_surround_us }
+		mutually_exclusive = { focus = NOV_promise_elections_after_unification }
+		x = -2
+		y = 1
+		relative_position_id = NOV_The_threats_that_surround_us
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	
+shared_focus = {
+		id = NOV_promise_elections_after_unification
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = NOV_The_threats_that_surround_us }
+		mutually_exclusive = { focus = NOV_No_time_for_democracy }
+		x = 2
+		y = 1
+		relative_position_id = NOV_The_threats_that_surround_us
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+
+			type = infantry_equipment_1
+
+			amount = 10000
+
+			}	
+		}
+	}
+	
+shared_focus = {
+		id = NOV_Troops_on_high_alert
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = NOV_No_time_for_democracy }
+		x = 0
+		y = 1
+		relative_position_id = NOV_No_time_for_democracy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+shared_focus = {
+		id = NOV_Lock_up_political_opponents
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = NOV_Troops_on_high_alert }
+		x = 0
+		y = 1
+		relative_position_id = NOV_Troops_on_high_alert
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+shared_focus = {
+		id = NOV_Martial_law
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = NOV_Lock_up_political_opponents }
+		x = 0
+		y = 1
+		relative_position_id = NOV_Lock_up_political_opponents
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+### f ###
+shared_focus = {
+		id = NOV_Ready_the_civilians
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = NOV_promise_elections_after_unification }
+		x = 0
+		y = 1
+		relative_position_id = NOV_promise_elections_after_unification
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+shared_focus = {
+		id = NOV_Improve_infrastructure
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = NOV_Ready_the_civilians }
+		x = 0
+		y = 1
+		relative_position_id = NOV_Ready_the_civilians
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+shared_focus = {
+		id = NOV_Emergency_constructions
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = NOV_Improve_infrastructure }
+		x = 0
+		y = 1
+		relative_position_id = NOV_Improve_infrastructure
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	###
+
+	
+	
+shared_focus = {
+		id = NOV_take_back_west
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = NOV_Martial_law focus = NOV_Emergency_constructions}
+		x = 2
+		y = 1
+		relative_position_id = NOV_Martial_law
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		declare_war_on = {
+			target = SML
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = GMC
+			type = annex_everything
+		}
+			
+		}
+	}
+	
+shared_focus = {
+		id = NOV_unify_west_russia
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = NOV_take_back_west }
+		x = 0
+		y = 1
+		relative_position_id = NOV_take_back_west
+
+		cost = 20
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		NOT = {
+		country_exists = SML
+		country_exists = GMC
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		NOV = {
+			set_cosmetic_tag = SOV
+			set_country_flag = WestRussiaUnited
+			transfer_state = 256
+			transfer_state = 250
+			transfer_state = 249
+			transfer_state = 399
+			transfer_state = 651
+			transfer_state = 398
+			transfer_state = 217
+			transfer_state = 401
+			transfer_state = 251
+			transfer_state = 652
+			add_state_core = 256
+			add_state_core = 250
+			add_state_core = 249
+			add_state_core = 399
+			add_state_core = 651
+			add_state_core = 398
+			add_state_core = 217
+			add_state_core = 401
+			add_state_core = 251
+			add_state_core = 652
+			# enemy cores #
+			add_state_core = 239
+			add_state_core = 265
+			add_state_core = 260
+			add_state_core = 255
+			add_state_core = 257
+			add_state_core = 258
+			add_state_core = 223
+			add_state_core = 254
+			add_state_core = 252
+			add_state_core = 253
+			add_state_core = 219
+			add_state_core = 248
+			add_state_core = 247
+			add_state_core = 400
+			add_state_core = 351
+			add_state_core = 214
+			add_state_core = 262
+			add_state_core = 397
+			add_state_core = 264
+			add_state_core = 244
+			add_state_core = 263
+			add_state_core = 209
+			add_state_core = 208
+			add_state_core = 195
+			add_state_core = 246
+			add_state_core = 210
+			add_state_core = 242
+			add_state_core = 205
+			add_state_core = 243
+			add_state_core = 241
+			add_state_core = 224
+			add_state_core = 222
+			add_state_core = 220
+			add_state_core = 240
+			} 
+			
+		}
+	}
+
+shared_focus = {
+		id = NOV_attack_sov
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = NOV_unify_west_russia }
+		x = 0
+		y = 1
+		relative_position_id = NOV_unify_west_russia
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		SOV = {has_country_flag = Sov_moved_in}
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		declare_war_on = {
+			target = SOV
+			type = annex_everything
+		}
+			
+		}
+	}
+	
+shared_focus = {
+		id = NOV_unify_russia
+		icon = GFX_goal_rhineland
+		prerequisite = { focus = NOV_attack_sov }
+		x = 0
+		y = 1
+		relative_position_id = NOV_attack_sov
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		NOT = {
+		country_exists = SOV
+		}
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		NOV ={
+			add_state_core = 654
+			add_state_core = 40
+			add_state_core = 588
+			add_state_core = 590
+			add_state_core = 583
+			add_state_core = 570
+			add_state_core = 571
+			add_state_core = 403
+			add_state_core = 572
+			add_state_core = 582
+			add_state_core = 573
+			add_state_core = 580
+			add_state_core = 581
+			add_state_core = 579
+			add_state_core = 653
+			#
+			add_state_core = 516
+			add_state_core = 644
+			add_state_core = 577
+			add_state_core = 578
+			add_state_core = 569
+			add_state_core = 329
+			add_state_core = 330
+			add_state_core = 576
+			add_state_core = 568
+			add_state_core = 575
+			add_state_core = 567
+			add_state_core = 565
+			add_state_core = 566
+			add_state_core = 564
+			add_state_core = 563
+			add_state_core = 574
+			add_state_core = 561
+			add_state_core = 562
+			add_state_core = 637
+			add_state_core = 560
+			add_state_core = 657
+			add_state_core = 655
+			add_state_core = 409
+			add_state_core = 408
+		
+		}
+			
+		}
+	}

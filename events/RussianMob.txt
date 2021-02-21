@@ -1,0 +1,54 @@
+add_namespace = mob
+
+# Russian mob start collapse
+country_event = {
+	id = mob.1
+	title = mob.1.t
+	desc = mob.1.d
+	picture = GFX_report_event_soviet_soldiers
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 2 }
+	
+	option = { # belarus independence
+		name = mob.1.a
+		408 = { set_demilitarized_zone = yes }
+		409 = { set_demilitarized_zone = yes }
+		SOV = {country_event = { id = mob.2 days = 70 }}
+	}
+	
+	
+}
+
+country_event = {
+	id = mob.2
+	title = mob.2.t
+	desc = mob.2.d
+	picture = GFX_report_event_soviet_soldiers
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 14 }
+	
+	option = { # belarus independence
+		name = mob.2.a
+		REM = {
+			transfer_state = 408
+			transfer_state = 409
+			load_oob = "REM_1936"
+			SOV = {
+				declare_war_on = {
+					target = REM
+					type = annex_everything
+				}
+			}
+			
+		}
+	}
+	
+}

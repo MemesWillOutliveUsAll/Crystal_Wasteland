@@ -54,7 +54,6 @@ on_actions = {
 				}
 				BEL = {transfer_state = 6}
 				HOL = {remove_state_core = 6}
-				BEL = {puppet = HOL}
 				HOL ={set_cosmetic_tag = HOL_reichskommissariat}
 				HOL ={
 					create_country_leader = {
@@ -193,6 +192,56 @@ on_actions = {
 					
 			}
 			
+			# soviet vs russian mob
+			if = { 
+				limit = {
+						FROM = {
+							OR = {
+								original_tag = SOV
+							}
+						}
+						ROOT = { 
+							OR = {
+								original_tag = REM 
+							}
+						}
+					
+					}
+					
+					FROM = {
+					white_peace = ROOT
+					annex_country = {
+							target = ROOT
+							transfer_troops = no
+					}
+					}
+			}
+			
+			if = { 
+				limit = {
+						FROM = {
+							OR = {
+								original_tag = REM
+							}
+						}
+						ROOT = { 
+							OR = {
+								original_tag = SOV 
+							}
+						}
+					
+					}
+					
+					FROM = {
+					white_peace = ROOT
+					annex_country = {
+							target = ROOT
+							transfer_troops = no
+					}
+					}
+			}
+			##################################################################
+			
 			
 			
 			if ={
@@ -246,6 +295,93 @@ on_actions = {
 					white_peace = BEL
 				}
 			}
+			
+			
+			if = { 
+				limit = {
+						FROM = {
+							OR = {
+								original_tag = NOV
+								original_tag = GMC
+								original_tag = SML
+							}
+						}
+						ROOT = { 
+							OR = {
+								original_tag = NOV
+								original_tag = GMC
+								original_tag = SML
+							}
+						}
+					
+					}
+					
+					FROM = {
+					white_peace = ROOT
+					annex_country = {
+							target = ROOT
+							transfer_troops = no
+					}
+					}
+			}
+			
+			# China # # ## # # # # #
+			if = { 
+				limit = {
+						FROM = {
+							OR = {
+								is_in_faction_with = CHI
+								original_tag = CHI
+							}
+						}
+						ROOT = { 
+							OR = {
+								original_tag = PRC
+							}
+						}
+					
+					}
+					
+					CHI = {
+					white_peace = ROOT
+					annex_country = {
+							target = ROOT
+							transfer_troops = no
+					}
+					}
+			}
+			
+			if = { 
+				limit = {
+						FROM = {
+							OR = {
+								original_tag = PRC
+							}
+						}
+						ROOT = { 
+							OR = {
+								original_tag = CHI
+								original_tag = XSM
+								original_tag = SIK
+								original_tag = GXC
+								original_tag = SHX
+								original_tag = YUN
+							}
+						}
+					
+					}
+					
+					FROM = {
+					white_peace = ROOT
+					annex_country = {
+							target = ROOT
+							transfer_troops = no
+					}
+					}
+			}
+			
+			
+			
 	}
 			
 			

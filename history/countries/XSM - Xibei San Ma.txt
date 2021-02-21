@@ -1,6 +1,7 @@
 ﻿capital = 604
 add_ideas = {
 Heavy_contamination
+Communist_prc_rebels
 }
 oob = "XSM_1936"
 

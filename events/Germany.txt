@@ -23,6 +23,13 @@ country_event = {
 			days = 7 
 			} 
 			}
+			
+			CHI = {
+			country_event = {
+			id = mod_China.1
+			days = 240
+			}
+			}
 		
 			HOL = {
 			country_event = {

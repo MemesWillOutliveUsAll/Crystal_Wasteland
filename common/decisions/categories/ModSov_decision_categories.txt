@@ -1,0 +1,17 @@
+SOV_siberian_plan = {
+
+	allowed = {
+		OR = {
+			tag = SOV
+		}
+	}
+	
+	visible = {
+		has_civil_war = no
+		exists = yes
+		has_capitulated = no
+		SOV = {has_country_flag = SibPlan}
+		
+	}
+	
+}

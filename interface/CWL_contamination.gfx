@@ -10,4 +10,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/Medium_contamination.dds"
 	}
 	
+	# CHINA !!! #
+	SpriteType = {
+	name = "GFX_idea_jet"
+	texturefile = "gfx/interface/ideas/small_jet.dds"			
+	}
+	
 }

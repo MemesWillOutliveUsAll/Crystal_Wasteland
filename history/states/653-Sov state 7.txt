@@ -5,6 +5,26 @@ state={
 	manpower = 2161650
 	
 	state_category = city
+	
+	history={
+		owner = ANR
+		victory_points = {
+			1821 5
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 1
+			air_base = 1
+
+		}
+		add_core_of = ANR
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 3
+			}
+		}
+	}
 
 
 	provinces={

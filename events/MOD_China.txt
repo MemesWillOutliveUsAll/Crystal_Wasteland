@@ -13,42 +13,23 @@ country_event = {
 	# Accept
 	option = {
 		name = mod_China.1.a
+		PRC = {
+		load_oob = "PRC_revolt"
+		}
 		declare_war_on = { type = annex_everything    target = PRC }
-	}
-}
-
-#Inocorporating our territories #
-country_event = {
-	id = mod_China.2
-	title = mod_China.2.t
-	desc = mod_China.2.d
-	picture = GFX_report_event_generic_sign_treaty3
-
-	is_triggered_only = yes
-	
-	mean_time_to_happen = { days = 2 }
-	
-	# Accept
-	option = {
-		name = mod_Czechoslovakia.2.a
+		PRC = {
+		transfer_state = 608
+		transfer_state = 609
+		transfer_state = 617
+		transfer_state = 748
+		transfer_state = 603
 		
-	}
-}
-
-country_event = {
-	id = mod_Czechoslovakia.3
-	title = mod_Czechoslovakia.3.t
-	desc = mod_Czechoslovakia.3.d
-	picture = GFX_report_event_generic_sign_treaty3
-
-	is_triggered_only = yes
-	
-	mean_time_to_happen = { days = 2 }
-	
-	# Accept
-	option = {
-		name = mod_Czechoslovakia.3.a
-		declare_war_on = { type = annex_everything   target = HUN }
+			annex_country = {
+				target = SIK
+				transfer_troops = YES
+			}
+		
+		}
 	}
 }
 

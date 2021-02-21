@@ -7,6 +7,7 @@ state={
 	state_category = large_city
 
 	history={
+		set_demilitarized_zone = yes
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = PRC

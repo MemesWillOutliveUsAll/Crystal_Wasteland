@@ -50,6 +50,7 @@
 		HAN = {add_state_core = 809}
 		HAN = {transfer_state = 809}
 		
+		
 		country_event = germany.1
 		dismantle_faction = yes
 		
