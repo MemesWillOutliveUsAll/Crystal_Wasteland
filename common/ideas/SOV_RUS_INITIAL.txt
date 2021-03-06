@@ -1,0 +1,47 @@
+ideas = {
+	
+	country = {
+	
+		academics_purged = {
+			
+			picture = SOV_scientist_defect
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.25
+			}
+			
+		}
+		
+		mongolian_integration_sov = {
+			
+			picture = generic_local_self_management
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.05
+			}
+			
+		}
+	
+	}
+	
+}

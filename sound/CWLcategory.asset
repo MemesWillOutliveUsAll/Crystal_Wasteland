@@ -1,8 +1,55 @@
-######################################
+###################################### Russia ####################################
 category = {
  name = "CWL sounds"
  soundeffects = {
 	Jet_plane_in_30s
+ }
+ soundeffects = {
+	Lebedev_sov_win
+ }
+ 
+ soundeffects = {
+	Stalin_sov_win
+ }
+ 
+ soundeffects = {
+	Trotsky_sov_win
+ }
+ 
+ soundeffects = {
+	Rhodazhevsky_sov_win
+ }
+ 
+ soundeffects = {
+	Rokossovsky_sov_win
+ }
+ 
+ soundeffects = {
+	Vlasov_sov_win
+ }
+ ####################################### GERMAN UNIFICATION #############################################
+ soundeffects = {
+	Heydirch_ger_wins
+ }
+ 
+ soundeffects = {
+	Rudolf_Hess_ger_wins
+ }
+ 
+ soundeffects = {
+	Rommel_ger_wins
+ }
+ 
+ soundeffects = {
+	Kaiser_ger_wins
+ }
+ 
+ soundeffects = {
+	Socialist_Germany_ger_wins
+ }
+ 
+ soundeffects = {
+	Silesia_ger_wins
  }
  
  compressor = master_compressor

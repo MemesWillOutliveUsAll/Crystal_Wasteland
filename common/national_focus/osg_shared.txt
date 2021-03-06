@@ -608,6 +608,7 @@ shared_focus = {
 	country_exists = PRE
 	country_exists = GER
 	}
+	
 	}
 		
 	cancel_if_invalid = yes
@@ -617,9 +618,111 @@ shared_focus = {
 	completion_reward = {
 	set_cosmetic_tag = GER
 	news_event = { id = news.12 }
+	OSG = { set_country_flag = EastGermanyUnited }
 	}
 
 	bypass = {
 
+	}
+}
+
+shared_focus = {
+	id = ostgermania_riding_to_the_west
+	icon = GFX_goal_generic_military_sphere
+	prerequisite = { focus = ostgermania_unite_east_germany }
+	will_lead_to_war_with = HAN
+	will_lead_to_war_with = ALL
+	will_lead_to_war_with = BAY
+	will_lead_to_war_with = HES
+	relative_position_id = ostgermania_unite_east_germany
+	x = 0
+	y = 1
+	
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	#not = { HES = {has_country_flag = WestGermanyUnited}}
+		or = {
+		HES = {has_country_flag = WestGermanyUnited}
+		BAY = {has_country_flag = WestGermanyUnited}
+		HAN = {has_country_flag = WestGermanyUnited}
+		ALL = {has_country_flag = WestGermanyUnited}
+		}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	hidden_effect ={
+		annex_country = {
+			target = HAN
+			transfer_troops = yes
+		}
+		OSG = { change_tag_from = HAN }
+		declare_war_on = {
+			target = HES
+			type = annex_everything
+		}
+		
+		declare_war_on = {
+			target = ALL
+			type = annex_everything
+		}
+		
+		declare_war_on = {
+			target = HAN
+			type = annex_everything
+		}
+		
+		declare_war_on = {
+			target = BAY
+			type = annex_everything
+		}
+	
+	}
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ostgermania_unifying_germany
+	icon = GFX_goal_generic_military_deal
+	prerequisite = { focus = ostgermania_riding_to_the_west }
+	relative_position_id = ostgermania_riding_to_the_west
+	x = 0
+	y = 1
+	
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		hidden_effect = {
+			German_unification = yes
+			news_event = { id = news.26 }
+			sound_effect = "Rudolf_Hess_ger_wins"
+		}
+	}
+
+	bypass = {
 	}
 }

@@ -41,3 +41,20 @@ focus_tree = {
 	shared_focus = ostgermania_work_them_harder
 	continuous_focus_position = { x = 2000 y = 1000 }
 }
+
+focus_tree = {
+	id = osg_germany_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = OSG
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 2000 y = 1000 }
+}

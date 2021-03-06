@@ -1,4 +1,4 @@
-########################DEBUG #########################
+########################Soviet #########################
 sound =
 {
 	name = "Jet_plane_in_the_30s"
@@ -7,3 +7,99 @@ sound =
 	always_load = yes
 }
 
+sound =
+{
+	name = "Lebedev_wins"
+	file = "menu/Lebedev.wav"
+	volume = 1
+	always_load = yes
+}
+
+sound =
+{
+	name = "Stalin_wins"
+	file = "menu/Stalin_unification.wav"
+	volume = 1
+	always_load = yes
+}
+
+sound =
+{
+	name = "Trotsky_wins"
+	file = "menu/Trotsky_win.wav"
+	volume = 1
+	always_load = yes
+}
+
+sound =
+{
+	name = "Rhodazhevsky_wins"
+	file = "menu/Rhodazhevsky_win.wav"
+	volume = 1
+	always_load = yes
+}
+
+sound =
+{
+	name = "Rokossovsky_wins"
+	file = "menu/Rokossovsky_win.wav"
+	volume = 1
+	always_load = yes
+}
+
+sound =
+{
+	name = "Vlasov_wins"
+	file = "menu/Vlasov_unification.wav"
+	volume = 1
+	always_load = yes
+}
+
+############################################################# German ###############################################################
+sound =
+{
+	name = "Heydirch_wins"
+	file = "menu/Heydrich_win.wav"
+	volume = 1
+	always_load = yes
+}
+
+sound =
+{
+	name = "Rudolf_Hess_wins"
+	file = "menu/Rudolf_hess_wins.wav"
+	volume = 1
+	always_load = yes
+}
+
+sound =
+{
+	name = "Rommel_wins"
+	file = "menu/Rommel_win.wav"
+	volume = 1
+	always_load = yes
+}
+
+sound =
+{
+	name = "Socialist_Germany_wins"
+	file = "menu/Soc_ger_win.wav"
+	volume = 1
+	always_load = yes
+}
+
+sound =
+{
+	name = "Silesia_wins"
+	file = "menu/Sileisa_win.wav"
+	volume = 1
+	always_load = yes
+}
+
+sound =
+{
+	name = "Kaiser_wins"
+	file = "menu/Kaiser_win.wav"
+	volume = 1
+	always_load = yes
+}

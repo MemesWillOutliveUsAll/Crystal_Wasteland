@@ -195,7 +195,7 @@ SOV_siberian_plan = {
 			factor = 50
 		}
 
-		highlight_state_targets = { state = 578 }
+		#highlight_state_targets = { state = 578 }
 
 		remove_effect = {
 			

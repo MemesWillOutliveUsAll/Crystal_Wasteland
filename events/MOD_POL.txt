@@ -1,0 +1,23 @@
+﻿add_namespace = mod_Poland
+# Death to commie China!
+country_event = {
+	id = mod_Poland.1
+	title = mod_Poland.1.t
+	desc = mod_Poland.1.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 2 }
+	
+	# Accept
+	option = {
+		name = mod_Poland.1.a
+		10 = { set_demilitarized_zone = yes }
+		88 = { set_demilitarized_zone = yes }
+		91 = { set_demilitarized_zone = yes }
+		89 = { set_demilitarized_zone = yes }
+		
+	}
+}
+

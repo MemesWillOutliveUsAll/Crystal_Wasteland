@@ -92,6 +92,17 @@ shared_focus = {
 		}
 
 		completion_reward = {
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Leon Trotsky"
+			desc = "POLITICS_LEON_TROTSKY_DESC"
+			picture = "Portrait_Leon_Trotsky.dds"
+			expire = "1965.1.1"
+			ideology = leninism
+			traits = {
+				permanent_revolutionary
+			}
+		}
 		load_focus_tree = {
 			tree = soviet_trotsky_initial_path
 			keep_completed = no
@@ -131,7 +142,8 @@ shared_focus = {
 		}
 
 		completion_reward = {
-		SOV = {country_event = { id = mob.1 days = 70 }}
+		
+		hidden_effect = {SOV = {country_event = { id = mob.1 days = 70 }}}
 		load_focus_tree = {
 			tree = soviet_stalin_initial_path
 			keep_completed = no
@@ -489,7 +501,9 @@ shared_focus = {
 	available_if_capitulated = yes
 		
 	completion_reward = {
-	add_stability = 0.01
+	add_ideas = {
+	mongolian_integration_sov
+	}
 		
 	}
 
@@ -690,6 +704,35 @@ shared_focus = {
 		
 	completion_reward = {
 		add_stability = 0.05
+		CHI = {
+				add_ideas = {
+				China_jet_attack
+				}
+			}
+			
+			GXC = {
+				add_ideas = {
+				China_jet_attack
+				}
+			}
+			
+			SHX = {
+				add_ideas = {
+				China_jet_attack
+				}
+			}
+			
+			XSM = {
+				add_ideas = {
+				China_jet_attack
+				}
+			}
+			
+			YUN = {
+				add_ideas = {
+				China_jet_attack
+				}
+			}
 	}
 
 	bypass = {
@@ -983,6 +1026,9 @@ shared_focus = {
 	icon = GFX_goal_generic_territory_or_war
 	prerequisite = { focus = SOV_STALINSMANPOWERLEVYL  focus = SOV_Lebedevs_aircraft_factories}
 	relative_position_id = SOV_STALINSMANPOWERLEVYL
+	will_lead_to_war_with = GMC
+	will_lead_to_war_with = SML
+	will_lead_to_war_with = NOV
 	x = 2
 	y = 1
 
@@ -1020,6 +1066,11 @@ shared_focus = {
 	}
 
 	bypass = {
+	NOT = {
+		country_exists = NOV
+		country_exists = GMC
+		country_exists = SML
+		}
 
 	}
 }
@@ -1051,6 +1102,8 @@ shared_focus = {
 	available_if_capitulated = yes
 		
 	completion_reward = {
+	
+	hidden_effect = {sound_effect = "Lebedev_sov_win"}
 	SOV = {
 	
 		add_state_core = 256
@@ -1100,7 +1153,7 @@ shared_focus = {
 			add_state_core = 240
 	
 	}
-		
+		news_event = { id = news.20 }
 	}
 
 	bypass = {
@@ -1178,7 +1231,7 @@ shared_focus = {
 
 shared_focus = {
 		id = SOV_emergency_weapons
-		icon = GFX_goal_rhineland
+		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = SOV_Purge_Lebedev }
 		x = 2
 		y = 1
@@ -1294,6 +1347,8 @@ shared_focus = {
 			type = infantry_equipment_1
 
 			amount = 5000
+			
+			producer = SOV
 
 			}	
 		}
@@ -1301,7 +1356,7 @@ shared_focus = {
 	
 shared_focus = {
 		id = SOV_expand_conscription
-		icon = GFX_goal_rhineland
+		icon = GFX_goal_support_communism
 		prerequisite = { focus = SOV_abandon_china }
 		x = -1
 		y = 1
@@ -1360,7 +1415,7 @@ shared_focus = {
 	
 shared_focus = {
 		id = SOV_gulag_force
-		icon = GFX_goal_rhineland
+		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = SOV_emergency_weapons }
 		x = 1
 		y = 1
@@ -1420,7 +1475,7 @@ shared_focus = {
 	
 shared_focus = {
 		id = SOV_Anti_german_campaign
-		icon = GFX_goal_rhineland
+		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = SOV_pruge_trotsky }
 		x = 0
 		y = 1
@@ -1449,6 +1504,8 @@ shared_focus = {
 		}
 
 		completion_reward = {
+		add_war_support = 0.10
+		add_stability = 0.35
 		
 		}
 	}
@@ -1523,6 +1580,9 @@ shared_focus = {
 	icon = GFX_goal_generic_territory_or_war
 	prerequisite = { focus = SOV_run_to_the_urals}
 	relative_position_id = SOV_run_to_the_urals
+	will_lead_to_war_with = GMC
+	will_lead_to_war_with = SML
+	will_lead_to_war_with = NOV
 	x = 0
 	y = 1
 
@@ -1560,6 +1620,11 @@ shared_focus = {
 	}
 
 	bypass = {
+	NOT = {
+		country_exists = NOV
+		country_exists = GMC
+		country_exists = SML
+		}
 
 	}
 }
@@ -1591,6 +1656,8 @@ shared_focus = {
 	available_if_capitulated = yes
 		
 	completion_reward = {
+	hidden_effect ={sound_effect = Stalin_sov_win}
+	news_event = { id = news.21 }
 	SOV = {
 	
 		add_state_core = 256
@@ -1787,7 +1854,7 @@ shared_focus = {
 	
 shared_focus = {
 	id = SOV_german_comrades
-	icon = GFX_goal_demand_sudetenland
+	icon = GFX_goal_generic_small_arms
 	prerequisite = { focus = SOV_internationale }
 	relative_position_id = SOV_internationale
 	x = 2
@@ -1832,7 +1899,7 @@ shared_focus = {
 
 shared_focus = {
 	id = SOV_czechoslovak_comrades
-	icon = GFX_goal_demand_sudetenland
+	icon = GFX_goal_generic_small_arms
 	prerequisite = { focus = SOV_internationale }
 	relative_position_id = SOV_internationale
 	x = -2
@@ -1867,7 +1934,337 @@ shared_focus = {
 			id = SendGuns.1		
 			days = 7 
 			} 
-			}
+		}
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = SOV_5_year_plan
+	icon = GFX_goal_generic_construct_civ_factory
+	prerequisite = { focus = SOV_czechoslovak_comrades }
+	relative_position_id = SOV_czechoslovak_comrades
+	x = -1
+	y = 1
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_political_power = 100
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = SOV_purge_stalin
+	icon = GFX_goal_generic_forceful_treaty
+	prerequisite = { focus = SOV_german_comrades }
+	relative_position_id = SOV_german_comrades
+	x = 1
+	y = 1
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_stability = 0.2
+	}
+
+	bypass = {
+	
+	}
+}
+
+shared_focus = {
+	id = SOV_exile_lebedev
+	icon = GFX_goal_generic_military_sphere
+	prerequisite = { focus = SOV_help_china }
+	prerequisite = { focus = SOV_czechoslovak_comrades }
+	relative_position_id = SOV_help_china
+	x = 1
+	y = 1
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_war_support = 0.1
+		
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = SOV_reinvigorate_our_people
+	icon = GFX_goal_generic_cavalry
+	prerequisite = { focus = SOV_help_china }
+	prerequisite = { focus = SOV_german_comrades }
+	relative_position_id = SOV_help_china
+	x = -1
+	y = 1
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		stability = 0.2
+		political_power = 200
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = SOV_reclaim_anarchy
+	icon = GFX_goal_generic_political_pressure
+	prerequisite = { focus = SOV_reinvigorate_our_people }
+	prerequisite = { focus = SOV_exile_lebedev }
+	prerequisite = { focus = SOV_purge_stalin }
+	prerequisite = { focus = SOV_5_year_plan }
+	relative_position_id = SOV_exile_lebedev
+	x = -1
+	y = 1
+
+	cost = 20
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	SOV = {
+			transfer_state = 654
+			transfer_state = 40
+			transfer_state = 588
+			transfer_state = 590
+			transfer_state = 583
+			transfer_state = 570
+			transfer_state = 571
+			transfer_state = 403
+			transfer_state = 572
+			transfer_state = 582
+			transfer_state = 573
+			transfer_state = 581
+			transfer_state = 653
+			transfer_state = 580
+			transfer_state = 579
+			add_state_core = 654
+			add_state_core = 40
+			add_state_core = 588
+			add_state_core = 590
+			add_state_core = 583
+			add_state_core = 570
+			add_state_core = 571
+			add_state_core = 403
+			add_state_core = 572
+			add_state_core = 582
+			add_state_core = 573
+			add_state_core = 580
+			add_state_core = 581
+			add_state_core = 579
+			add_state_core = 653
+			
+			set_country_flag = Sov_moved_in
+		}
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = SOV_Trotsky_ride_west
+	icon = GFX_goal_generic_territory_or_war
+	prerequisite = { focus = SOV_reclaim_anarchy}
+	relative_position_id = SOV_reclaim_anarchy
+	will_lead_to_war_with = GMC
+	will_lead_to_war_with = SML
+	will_lead_to_war_with = NOV
+	x = 0
+	y = 1
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	or = {
+		SML = {has_country_flag = WestRussiaUnited}
+		NOV = {has_country_flag = WestRussiaUnited}
+		GMC = {has_country_flag = WestRussiaUnited}
+	}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	declare_war_on = {
+			target = NOV
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = SML
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = GMC
+			type = annex_everything
+		}
+	}
+
+	bypass = {
+	NOT = {
+		country_exists = NOV
+		country_exists = GMC
+		country_exists = SML
+		}
+
+	}
+}
+
+shared_focus = {
+	id = SOV_trotsky_unify_russia
+	icon = GFX_goal_generic_alliance
+	prerequisite = { focus = SOV_Trotsky_ride_west }
+	relative_position_id = SOV_Trotsky_ride_west
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {
+		country_exists = NOV
+		country_exists = GMC
+		country_exists = SML
+		}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	news_event = { id = news.22 }
+	hidden_effect = {sound_effect = Trotsky_sov_win}
+	SOV = {
+	
+		add_state_core = 256
+			add_state_core = 250
+			add_state_core = 249
+			add_state_core = 399
+			add_state_core = 651
+			add_state_core = 398
+			add_state_core = 217
+			add_state_core = 401
+			add_state_core = 251
+			add_state_core = 652
+			# enemy cores #
+			add_state_core = 239
+			add_state_core = 265
+			add_state_core = 260
+			add_state_core = 255
+			add_state_core = 257
+			add_state_core = 258
+			add_state_core = 223
+			add_state_core = 254
+			add_state_core = 252
+			add_state_core = 253
+			add_state_core = 219
+			add_state_core = 248
+			add_state_core = 247
+			add_state_core = 400
+			add_state_core = 351
+			add_state_core = 214
+			add_state_core = 262
+			add_state_core = 397
+			add_state_core = 264
+			add_state_core = 244
+			add_state_core = 263
+			add_state_core = 209
+			add_state_core = 208
+			add_state_core = 195
+			add_state_core = 246
+			add_state_core = 210
+			add_state_core = 242
+			add_state_core = 205
+			add_state_core = 243
+			add_state_core = 241
+			add_state_core = 224
+			add_state_core = 222
+			add_state_core = 220
+			add_state_core = 240
+	
+	}
+		
 	}
 
 	bypass = {

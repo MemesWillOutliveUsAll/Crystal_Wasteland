@@ -469,7 +469,6 @@ shared_focus = {
 	id = silesian_take_out_hess
 	icon = GFX_focus_Deal_with_succesor
 	prerequisite = { focus = silesian_attack_germany }
-	prerequisite = { focus = silesian_attack_Goering }
 	relative_position_id = silesian_industrialize_some_more
 	x = -2
 	y = 4
@@ -534,13 +533,85 @@ shared_focus = {
 }
 ###########################################
 shared_focus = {
+	id = silesian_take_out_Donitz
+	icon = GFX_focus_Admiral_Donitz_Saves_the_day
+	prerequisite = { focus =  silesian_take_out_hess}
+	prerequisite = { focus =  silesian_take_out_kaiser}
+	will_lead_to_war_with = SHL
+	relative_position_id = silesian_take_integrate_hess
+	x = 2
+	y = 1
+
+	cost = 3
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	declare_war_on = {
+			target = SHL
+			type = annex_everything
+		}
+	}
+
+	bypass = {
+	NOT = {country_exists = SHL}
+	}
+}
+
+shared_focus = {
+	id = silesian_integrate_Donitz
+	icon = GFX_goal_generic_forceful_treaty
+	prerequisite = { focus = silesian_take_out_Donitz }
+	relative_position_id = silesian_take_out_Donitz
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 200
+	}
+
+	available = {
+	controls_state = 814
+	controls_state = 58
+	controls_state = 61
+	controls_state = 62
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_state_core = 61
+	add_state_core = 62
+	add_state_core = 58
+	add_state_core = 814
+	}
+
+	bypass = {
+
+	}
+}
+###########################################
+shared_focus = {
 	id = silesian_unite_east_germany
 	icon = GFX_goal_generic_national_unity
-	prerequisite = { focus = silesian_take_integrate_hess }
-	prerequisite = { focus = silesian_take_integrate_kaiser }
-	relative_position_id = silesian_industrialize_some_more
+	prerequisite = { focus = silesian_integrate_Donitz }
+	relative_position_id = silesian_integrate_Donitz
 	x = 0
-	y = 8
+	y = 1
 
 	cost = 3
 
@@ -557,6 +628,8 @@ shared_focus = {
 	country_exists = PRE
 	country_exists = GER
 	}
+	
+	
 	}
 		
 	cancel_if_invalid = yes
@@ -564,17 +637,110 @@ shared_focus = {
 	available_if_capitulated = yes
 		
 	completion_reward = {
+	SDR = { set_country_flag = EastGermanyUnited }
 	set_cosmetic_tag = GER
-	hidden_effect = { 
-	add_state_core = 61
-	add_state_core = 62
-	add_state_core = 58
-	add_state_core = 814
-	}
 	news_event = { id = news.16 }
 	}
 
 	bypass = {
 
+	}
+}
+
+shared_focus = {
+	id = silesian_riding_to_the_west
+	icon = GFX_goal_generic_military_sphere
+	prerequisite = { focus = silesian_unite_east_germany }
+	will_lead_to_war_with = HAN
+	will_lead_to_war_with = ALL
+	will_lead_to_war_with = BAY
+	will_lead_to_war_with = HES
+	relative_position_id = silesian_unite_east_germany
+	x = 0
+	y = 1
+	
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	#not = { HES = {has_country_flag = WestGermanyUnited}}
+		or = {
+		HES = {has_country_flag = WestGermanyUnited}
+		BAY = {has_country_flag = WestGermanyUnited}
+		HAN = {has_country_flag = WestGermanyUnited}
+		ALL = {has_country_flag = WestGermanyUnited}
+		}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	hidden_effect ={
+		
+		
+		declare_war_on = {
+			target = HES
+			type = annex_everything
+		}
+		
+		declare_war_on = {
+			target = ALL
+			type = annex_everything
+		}
+		
+		declare_war_on = {
+			target = HAN
+			type = annex_everything
+		}
+		
+		declare_war_on = {
+			target = BAY
+			type = annex_everything
+		}
+	
+	}
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = silesian_unifying_germany
+	icon = GFX_goal_generic_military_deal
+	prerequisite = { focus = silesian_riding_to_the_west }
+	relative_position_id = silesian_riding_to_the_west
+	x = 0
+	y = 1
+	
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		hidden_effect = {
+			German_unification = yes
+			news_event = { id = news.30 }
+			sound_effect = "Silesia_ger_wins"
+		}
+	}
+
+	bypass = {
 	}
 }

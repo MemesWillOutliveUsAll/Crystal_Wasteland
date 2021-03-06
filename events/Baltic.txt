@@ -19,6 +19,7 @@ country_event = {
 	
 	option = { # belarus independence
 		name = baltic.1.a
+		news_event = { id = news.33 }
 		BLR = {
 			transfer_state = 204
 			transfer_state = 194

@@ -93,6 +93,8 @@ shared_focus = {
         type = infantry_equipment_1
 
         amount = 10000
+		
+		producer = GER
 
     }
 	}
@@ -421,9 +423,124 @@ shared_focus = {
 	completion_reward = {
 	set_cosmetic_tag = GER
 	news_event = { id = news.11 }
+	HES = { set_country_flag = WestGermanyUnited }
 	}
 
 	bypass = {
 
+	}
+}
+
+shared_focus = {
+	id = HES_riding_to_the_east
+	icon = GFX_goal_generic_military_sphere
+	prerequisite = { focus = HES_unite_west_germany }
+	will_lead_to_war_with = OSG
+	will_lead_to_war_with = PRE
+	will_lead_to_war_with = SDR
+	will_lead_to_war_with = GER
+	relative_position_id = HES_unite_west_germany
+	x = 0
+	y = 1
+	
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		or = {
+		DAN = {has_country_flag = EastGermanyUnited}
+		SHL = {has_country_flag = EastGermanyUnited}
+		SDR = {has_country_flag = EastGermanyUnited}
+		GER = {has_country_flag = EastGermanyUnited}
+		OMK = {has_country_flag = EastGermanyUnited}
+		PRE = {has_country_flag = EastGermanyUnited}
+		OSG = {has_country_flag = EastGermanyUnited}
+		}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	hidden_effect ={
+		
+		annex_country = {
+			target = SHL
+			transfer_troops = yes
+		}
+		
+		HES = { change_tag_from = SHL }
+		
+		annex_country = {
+			target = DAN
+			transfer_troops = yes
+		}
+		
+		HES = { change_tag_from = DAN }
+		
+		declare_war_on = {
+			target = OSG
+			type = annex_everything
+		}
+		
+		
+		declare_war_on = {
+			target = SDR
+			type = annex_everything
+		}
+		
+		declare_war_on = {
+			target = GER
+			type = annex_everything
+		}
+		
+		declare_war_on = {
+			target = PRE
+			type = annex_everything
+		}
+	
+	}
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = HES_unifying_germany
+	icon = GFX_goal_generic_military_deal
+	prerequisite = { focus = HES_riding_to_the_east }
+	relative_position_id = HES_riding_to_the_east
+	x = 0
+	y = 1
+	
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		hidden_effect = {
+			German_unification = yes
+			news_event = { id = news.28 }
+			sound_effect = "Rommel_ger_wins"
+		}
+	}
+
+	bypass = {
 	}
 }

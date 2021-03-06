@@ -1,9 +1,106 @@
 
-
+############### RUSSIAN UNIFICATION ###############################
 soundeffect = {
 	name = "Jet_plane_in_30s"
 	sounds = {
 		sound = "Jet_plane_in_the_30s"
+	} 
+	volume = 1
+}
+
+soundeffect = {
+	name = "Lebedev_sov_win"
+	sounds = {
+		sound = "Lebedev_wins"
+	} 
+	volume = 1
+}
+
+soundeffect = {
+	name = "Stalin_sov_win"
+	sounds = {
+		sound = "Stalin_wins"
+	} 
+	volume = 1
+}
+
+soundeffect = {
+	name = "Trotsky_sov_win"
+	sounds = {
+		sound = "Trotsky_wins"
+	} 
+	volume = 1
+}
+
+soundeffect = {
+	name = "Rhodazhevsky_sov_win"
+	sounds = {
+		sound = "Rhodazhevsky_wins"
+	} 
+	volume = 1
+}
+
+soundeffect = {
+	name = "Rokossovsky_sov_win"
+	sounds = {
+		sound = "Rokossovsky_wins"
+	} 
+	volume = 1
+}
+
+soundeffect = {
+	name = "Vlasov_sov_win"
+	sounds = {
+		sound = "Vlasov_wins"
+	} 
+	volume = 1
+}
+
+################################## German unification songs #################################################
+soundeffect = {
+	name = "Heydirch_ger_wins"
+	sounds = {
+		sound = "Heydirch_wins"
+	} 
+	volume = 1
+}
+
+soundeffect = {
+	name = "Rudolf_Hess_ger_wins"
+	sounds = {
+		sound = "Rudolf_Hess_wins"
+	} 
+	volume = 1
+}
+
+soundeffect = {
+	name = "Rommel_ger_wins"
+	sounds = {
+		sound = "Rommel_wins"
+	} 
+	volume = 1
+}
+
+soundeffect = {
+	name = "Kaiser_ger_wins"
+	sounds = {
+		sound = "Kaiser_wins"
+	} 
+	volume = 1
+}
+
+soundeffect = {
+	name = "Socialist_Germany_ger_wins"
+	sounds = {
+		sound = "Socialist_Germany_wins"
+	} 
+	volume = 1
+}
+
+soundeffect = {
+	name = "Silesia_ger_wins"
+	sounds = {
+		sound = "Silesia_wins"
 	} 
 	volume = 1
 }

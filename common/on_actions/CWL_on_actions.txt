@@ -9,7 +9,7 @@ on_actions = {
 							}
 						}
 						ROOT = { original_tag = BEL }
-						has_global_flag = HOLincorporateVLA
+						
 				}
 				HOL = {
 						white_peace = BEL
@@ -22,23 +22,10 @@ on_actions = {
 						days = 20
 					}						
 				}
-				clr_global_flag = HOLincorporateVLA
+				
 				
 			}
 			
-			if = {#Holand attacks Belgium
-				limit = {
-					FROM = {
-							OR = {
-								original_tag = HOL
-							}
-						}
-						ROOT = { original_tag = BEL }
-				}
-				HOL = {
-					white_peace = BEL
-				}
-			}
 			
 			if = {#Belgium attacks holland
 				limit = {
@@ -164,7 +151,6 @@ on_actions = {
 								original_tag = SHL
 								original_tag = GER
 								original_tag = SDR
-								original_tag = PLA
 								original_tag = HAN
 								original_tag = HES
 								original_tag = BAY
@@ -192,7 +178,52 @@ on_actions = {
 					
 			}
 			
-			# soviet vs russian mob
+			if = { 
+				limit = {
+						FROM = {
+							OR = {
+								original_tag = DAN
+								original_tag = OMK
+								original_tag = OSG
+								original_tag = SDR
+								original_tag = SHL
+								original_tag = GER
+								original_tag = SDR
+								original_tag = HAN
+								original_tag = HES
+								original_tag = BAY
+								original_tag = ALL
+								original_tag = PRE
+								original_tag = AUS
+								original_tag = LUX
+								original_tag = SOR
+							}
+						}
+						ROOT = { 
+							OR = {
+								original_tag = PLA 
+							}
+						}
+					
+					}
+					
+					FROM = {
+					white_peace = ROOT
+					annex_country = {
+							target = ROOT
+							transfer_troops = no
+					}
+					}
+					
+					POL = {
+					country_event = {
+					id = mod_Poland.1	
+					days = 50 
+					} 
+					}
+			}
+			
+			# soviet vs russian mob ##############################
 			if = { 
 				limit = {
 						FROM = {
@@ -301,6 +332,7 @@ on_actions = {
 				limit = {
 						FROM = {
 							OR = {
+								original_tag = SOV
 								original_tag = NOV
 								original_tag = GMC
 								original_tag = SML
@@ -311,6 +343,7 @@ on_actions = {
 								original_tag = NOV
 								original_tag = GMC
 								original_tag = SML
+								original_tag = SOV
 							}
 						}
 					

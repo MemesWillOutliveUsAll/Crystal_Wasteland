@@ -600,6 +600,8 @@ shared_focus = {
 	country_exists = PRE
 	country_exists = GER
 	}
+	
+	
 	}
 		
 	cancel_if_invalid = yes
@@ -609,9 +611,123 @@ shared_focus = {
 	completion_reward = {
 	set_cosmetic_tag = GER
 	news_event = { id = news.15 }
+	SHL = { set_country_flag = EastGermanyUnited }
 	}
 
 	bypass = {
 
+	}
+}
+
+shared_focus = {
+	id = Shleswig_riding_to_the_west
+	icon = GFX_goal_generic_military_sphere
+	prerequisite = { focus = Shleswig_unite_east_germany }
+	will_lead_to_war_with = HAN
+	will_lead_to_war_with = ALL
+	will_lead_to_war_with = BAY
+	will_lead_to_war_with = HES
+	relative_position_id = Shleswig_unite_east_germany
+	x = 0
+	y = 1
+	
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	not = { HES = {has_country_flag = WestGermanyUnited}}
+		or = {
+		BAY = {has_country_flag = WestGermanyUnited}
+		HAN = {has_country_flag = WestGermanyUnited}
+		ALL = {has_country_flag = WestGermanyUnited}
+		}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	hidden_effect ={
+		
+		
+		declare_war_on = {
+			target = HES
+			type = annex_everything
+		}
+		
+		declare_war_on = {
+			target = ALL
+			type = annex_everything
+		}
+		
+		declare_war_on = {
+			target = HAN
+			type = annex_everything
+		}
+		
+		declare_war_on = {
+			target = BAY
+			type = annex_everything
+		}
+	
+	}
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = Shleswig_unifying_germany
+	icon = GFX_goal_generic_military_deal
+	prerequisite = { focus = Shleswig_riding_to_the_west }
+	relative_position_id = Shleswig_riding_to_the_west
+	x = 0
+	y = 1
+	
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		hidden_effect = {
+			HES = {German_unification = yes}
+			news_event = { id = news.28 }
+			sound_effect = "Rommel_ger_wins"
+			HES = {
+			load_focus_tree = {
+				tree = osg_germany_focus
+				keep_completed = no
+			}
+			}
+			
+			HES = {
+			annex_country = {
+			target = SHL
+			transfer_troops = yes
+			}
+			}
+			HES = { 
+			set_cosmetic_tag = GER
+			change_tag_from = SHL }
+		}
+	}
+
+	bypass = {
 	}
 }

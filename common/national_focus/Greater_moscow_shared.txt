@@ -1,6 +1,6 @@
 ﻿shared_focus = {
 	id = GMC_begin_purge
-	icon = GFX_focus_vlasovIntial
+	icon = GFX_goal_generic_major_alliance
 	x = 14
 	y = 0
 
@@ -57,6 +57,8 @@ shared_focus = {
 			type = infantry_equipment_1
 
 			amount = 5000
+			
+			producer = SOV
 
 			}
 	
@@ -94,7 +96,9 @@ shared_focus = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
-
+		stability = 0.1
+		war_support = 0.1
+		political_power = 100
 		}
 
 		completion_reward = {
@@ -132,7 +136,7 @@ shared_focus = {
 		}
 
 		completion_reward = {
-		
+		manpower = 10000
 		}
 	}
 	
@@ -171,7 +175,9 @@ shared_focus = {
 
 			type = infantry_equipment_1
 
-			amount = 10000
+			amount = 1000
+			
+			producer = GER
 
 			}	
 		}
@@ -208,6 +214,8 @@ shared_focus = {
 		}
 
 		completion_reward = {
+		stability = 0.10
+		war_support = 0.30
 			
 		}
 	}
@@ -243,7 +251,9 @@ shared_focus = {
 		}
 
 		completion_reward = {
-			
+			add_ideas = {
+			academics_purged
+			}
 		}
 	}
 	
@@ -259,7 +269,8 @@ shared_focus = {
 		x = 0
 		y = 1
 		relative_position_id = GMC_recruit_militia
-
+		will_lead_to_war_with = SML
+		will_lead_to_war_with = NOV
 		cost = 10
 
 		ai_will_do = {
@@ -271,6 +282,10 @@ shared_focus = {
 		}
 
 		bypass = {
+		NOT = {
+		country_exists = NOV
+		country_exists = SML
+		}
 
 		}
 
@@ -399,7 +414,7 @@ shared_focus = {
 		x = 0
 		y = 1
 		relative_position_id = GMC_unify_west_russia
-
+		will_lead_to_war_with = SOV
 		cost = 10
 
 		ai_will_do = {
@@ -412,6 +427,9 @@ shared_focus = {
 		}
 
 		bypass = {
+		NOT = {
+		country_exists = SOV
+		}
 
 		}
 
@@ -466,6 +484,8 @@ shared_focus = {
 		}
 
 		completion_reward = {
+		hidden_effect = {sound_effect = "Rhodazhevsky_sov_win"}
+		news_event = { id = news.23 }
 		GMC ={
 			add_state_core = 654
 			add_state_core = 40

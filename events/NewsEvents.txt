@@ -329,6 +329,219 @@ news_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = news.18.a
+		name = news.19.a
+	}
+}
+
+## RUSSIAN SUPER EVENTS ####
+news_event = { # lebedev
+	id = news.20
+	title = news.20.t
+	desc = news.20.d
+	picture = GFX_news_event_006
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.20.a
+	}
+}
+
+news_event = { # Stalin
+	id = news.21
+	title = news.21.t
+	desc = news.21.d
+	picture = GFX_news_event_stalin_meeting
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.21.a
+	}
+}
+
+news_event = { # Trotsky
+	id = news.22
+	title = news.22.t
+	desc = news.22.d
+	picture = GFX_news_event_stalin_meeting
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.22.a
+	}
+}
+
+news_event = { # Rhodezvsky
+	id = news.23
+	title = news.23.t
+	desc = news.23.d
+	picture = GFX_news_event_033
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.23.a
+	}
+}
+
+news_event = { # Vlasov
+	id = news.24
+	title = news.24.t
+	desc = news.24.d
+	picture = GFX_news_event_german_speech
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.24.a
+	}
+}
+
+news_event = { # Rokosvsky
+	id = news.25
+	title = news.25.t
+	desc = news.25.d
+	picture = GFX_news_event_election_vote
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.25.a
+	}
+}
+
+# GERMAN UNIFICATION ##################################
+news_event = { # Nazi Win
+	id = news.26
+	title = news.26.t
+	desc = news.26.d
+	picture = GFX_news_event_german_speech
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.26.a
+	}
+}
+
+news_event = { # SS Win
+	id = news.27
+	title = news.27.t
+	desc = news.27.d
+	picture = GFX_news_event_germany_victory
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.27.a
+	}
+}
+
+news_event = { # Militarist Win
+	id = news.28
+	title = news.28.t
+	desc = news.28.d
+	picture = GFX_news_event_german_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.28.a
+	}
+}
+
+news_event = { # Kaiser Win
+	id = news.29
+	title = news.29.t
+	desc = news.29.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.29.a
+	}
+}
+
+news_event = { # Industrialists win
+	id = news.30
+	title = news.30.t
+	desc = news.30.d
+	picture = GFX_news_events_generic_sign_treaty2
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.30.a
+	}
+}
+
+news_event = { # Communist win
+	id = news.31
+	title = news.31.t
+	desc = news.31.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.31.a
+	}
+}
+
+# WORLD NEWS ##############
+news_event = { # Chinese Civil war
+	id = news.32
+	title = news.32.t
+	desc = news.32.d
+	picture = GFX_news_event_018
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.32.a
+	}
+}
+
+news_event = { # Ostland collapse
+	id = news.33
+	title = news.33.t
+	desc = news.33.d
+	picture = GFX_news_event_german_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.33.a
 	}
 }

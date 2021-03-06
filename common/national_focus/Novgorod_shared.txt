@@ -1,6 +1,6 @@
 ﻿shared_focus = {
 	id = NOV_a_fine_balancing_act
-	icon = GFX_focus_vlasovIntial
+	icon = GFX_goal_generic_neutrality_focus
 	x = 14
 	y = 0
 
@@ -57,6 +57,8 @@ shared_focus = {
 			type = infantry_equipment_1
 
 			amount = 5000
+			
+			producer = SOV
 
 			}
 	
@@ -105,7 +107,7 @@ shared_focus = {
 	
 shared_focus = {
 		id = NOV_promise_elections_after_unification
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = NOV_The_threats_that_surround_us }
 		mutually_exclusive = { focus = NOV_No_time_for_democracy }
 		x = 2
@@ -134,14 +136,7 @@ shared_focus = {
 
 		}
 
-		completion_reward = {
-			add_equipment_to_stockpile = {
-
-			type = infantry_equipment_1
-
-			amount = 10000
-
-			}	
+		completion_reward = {	
 		}
 	}
 	
@@ -176,13 +171,22 @@ shared_focus = {
 		}
 
 		completion_reward = {
+		add_equipment_to_stockpile = {
+
+			type = infantry_equipment_1
+
+			amount = 5000
+			
+			producer = SOV
+
+			}
 			
 		}
 	}
 	
 shared_focus = {
 		id = NOV_Lock_up_political_opponents
-		icon = GFX_goal_generic_army_artillery
+		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = NOV_Troops_on_high_alert }
 		x = 0
 		y = 1
@@ -211,13 +215,15 @@ shared_focus = {
 		}
 
 		completion_reward = {
+		add_stability = -0.10
+		add_political_power = 125
 			
 		}
 	}
 	
 shared_focus = {
 		id = NOV_Martial_law
-		icon = GFX_goal_generic_army_artillery
+		icon = GFX_goal_generic_production2
 		prerequisite = { focus = NOV_Lock_up_political_opponents }
 		x = 0
 		y = 1
@@ -246,6 +252,30 @@ shared_focus = {
 		}
 
 		completion_reward = {
+		if = {
+				limit = {
+					has_idea = extensive_conscription
+				}
+				add_ideas = service_by_requirement
+			}
+			else_if = {
+				limit = {
+					has_idea = limited_conscription
+				}
+				add_ideas = extensive_conscription
+			}
+			else_if = {
+				limit = {
+					has_idea = volunteer_only
+				}
+				add_ideas = limited_conscription
+			}
+			else_if = {
+				limit = {
+					has_idea = disarmed_nation
+				}
+				add_ideas = volunteer_only
+			}
 			
 		}
 	}
@@ -288,7 +318,7 @@ shared_focus = {
 	
 shared_focus = {
 		id = NOV_Improve_infrastructure
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = NOV_Ready_the_civilians }
 		x = 0
 		y = 1
@@ -317,13 +347,24 @@ shared_focus = {
 		}
 
 		completion_reward = {
+		if = {
+				limit = { has_full_control_of_state = 195 }
+				195 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 			
 		}
 	}
 	
 shared_focus = {
 		id = NOV_Emergency_constructions
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = NOV_Improve_infrastructure }
 		x = 0
 		y = 1
@@ -352,6 +393,29 @@ shared_focus = {
 		}
 
 		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 			
 		}
 	}
@@ -366,7 +430,8 @@ shared_focus = {
 		x = 2
 		y = 1
 		relative_position_id = NOV_Martial_law
-
+		will_lead_to_war_with = SML
+		will_lead_to_war_with = GMC
 		cost = 10
 
 		ai_will_do = {
@@ -378,6 +443,10 @@ shared_focus = {
 		}
 
 		bypass = {
+		NOT = {
+		country_exists = SML
+		country_exists = GMC
+		}
 
 		}
 
@@ -506,7 +575,7 @@ shared_focus = {
 		x = 0
 		y = 1
 		relative_position_id = NOV_unify_west_russia
-
+		will_lead_to_war_with = SOV
 		cost = 10
 
 		ai_will_do = {
@@ -519,6 +588,9 @@ shared_focus = {
 		}
 
 		bypass = {
+		NOT = {
+		country_exists = SOV
+		}
 
 		}
 
@@ -573,6 +645,8 @@ shared_focus = {
 		}
 
 		completion_reward = {
+		hidden_effect = {sound_effect = "Rokossovsky_sov_win"}
+		news_event = { id = news.25 }
 		NOV ={
 			add_state_core = 654
 			add_state_core = 40

@@ -12,6 +12,7 @@ country_event = {
 	
 	# Accept
 	option = {
+	news_event = { id = news.32 }
 		name = mod_China.1.a
 		PRC = {
 		load_oob = "PRC_revolt"

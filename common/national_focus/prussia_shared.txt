@@ -200,7 +200,7 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = germany_take_integrate_hess
+	id = prussia_take_integrate_hess
 	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = prussia_take_out_hess }
 	relative_position_id = prussia_take_out_hess
@@ -616,6 +616,7 @@ shared_focus = {
 	country_exists = OSG
 	country_exists = GER
 	}
+	
 	}
 		
 	cancel_if_invalid = yes
@@ -626,8 +627,108 @@ shared_focus = {
 	set_cosmetic_tag = GER
 	news_event = { id = news.14 }
 	}
+	
+	PRE = { set_country_flag = EastGermanyUnited }
 
 	bypass = {
 
+	}
+}
+
+shared_focus = {
+	id = prussia_riding_to_the_west
+	icon = GFX_goal_generic_military_sphere
+	prerequisite = { focus = prussia_unite_east_germany }
+	will_lead_to_war_with = HAN
+	will_lead_to_war_with = ALL
+	will_lead_to_war_with = BAY
+	will_lead_to_war_with = HES
+	relative_position_id = prussia_unite_east_germany
+	x = 0
+	y = 1
+	
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	#not = { HES = {has_country_flag = WestGermanyUnited}}
+	or = {
+	HES = {has_country_flag = WestGermanyUnited}
+	BAY = {has_country_flag = WestGermanyUnited}
+	HAN = {has_country_flag = WestGermanyUnited}
+	ALL = {has_country_flag = WestGermanyUnited}
+	}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	hidden_effect ={
+		
+		
+		declare_war_on = {
+			target = HES
+			type = annex_everything
+		}
+		
+		declare_war_on = {
+			target = ALL
+			type = annex_everything
+		}
+		
+		declare_war_on = {
+			target = HAN
+			type = annex_everything
+		}
+		
+		declare_war_on = {
+			target = BAY
+			type = annex_everything
+		}
+	
+	}
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = prussia_unifying_germany
+	icon = GFX_goal_generic_military_deal
+	prerequisite = { focus = prussia_riding_to_the_west }
+	relative_position_id = prussia_riding_to_the_west
+	x = 0
+	y = 1
+	
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		hidden_effect = {
+			German_unification = yes
+			news_event = { id = news.29 }
+			sound_effect = "Kaiser_ger_wins"
+		}
+	}
+
+	bypass = {
 	}
 }

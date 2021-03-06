@@ -415,9 +415,147 @@ shared_focus = {
 	completion_reward = {
 	set_cosmetic_tag = GER
 	news_event = { id = news.10 }
+	HAN = { set_country_flag = WestGermanyUnited }
 	}
 
 	bypass = {
 
+	}
+}
+
+shared_focus = {
+	id = HAN_riding_to_the_east
+	icon = GFX_goal_generic_military_sphere
+	prerequisite = { focus = HAN_unite_west_germany }
+	will_lead_to_war_with = OSG
+	will_lead_to_war_with = PRE
+	will_lead_to_war_with = DAN
+	will_lead_to_war_with = SHL
+	will_lead_to_war_with = SDR
+	will_lead_to_war_with = GER
+	will_lead_to_war_with = OMK
+	relative_position_id = HAN_unite_west_germany
+	x = 0
+	y = 1
+	
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	not = { OSG = {has_country_flag = EastGermanyUnited}}
+		or = {
+		DAN = {has_country_flag = EastGermanyUnited}
+		SHL = {has_country_flag = EastGermanyUnited}
+		SDR = {has_country_flag = EastGermanyUnited}
+		GER = {has_country_flag = EastGermanyUnited}
+		OMK = {has_country_flag = EastGermanyUnited}
+		PRE = {has_country_flag = EastGermanyUnited}
+		OSG = {has_country_flag = EastGermanyUnited}
+		}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	hidden_effect ={
+		
+		
+		declare_war_on = {
+			target = OSG
+			type = annex_everything
+		}
+		
+		declare_war_on = {
+			target = DAN
+			type = annex_everything
+		}
+		
+		declare_war_on = {
+			target = SHL
+			type = annex_everything
+		}
+		
+		declare_war_on = {
+			target = SDR
+			type = annex_everything
+		}
+		
+		declare_war_on = {
+			target = GER
+			type = annex_everything
+		}
+		
+		declare_war_on = {
+			target = PRE
+			type = annex_everything
+		}
+		
+		declare_war_on = {
+			target = OMK
+			type = annex_everything
+		}
+	
+	}
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = HAN_unifying_germany
+	icon = GFX_goal_generic_military_deal
+	prerequisite = { focus = HAN_riding_to_the_east }
+	relative_position_id = HAN_riding_to_the_east
+	x = 0
+	y = 1
+	
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		hidden_effect = {
+			OSG = {German_unification = yes}
+			news_event = { id = news.31 }
+			sound_effect = "Rudolf_Hess_ger_wins"
+			OSG = {
+			load_focus_tree = {
+				tree = osg_germany_focus
+				keep_completed = no
+			}
+			}
+			
+			OSG = {
+			annex_country = {
+			target = HAN
+			transfer_troops = yes
+			}
+			}
+			OSG = { 
+			set_cosmetic_tag = GER
+			change_tag_from = HAN 
+			}
+			
+		}
+	}
+
+	bypass = {
 	}
 }
