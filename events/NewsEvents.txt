@@ -545,3 +545,18 @@ news_event = { # Ostland collapse
 		name = news.33.a
 	}
 }
+
+news_event = { # Polish civil war
+	id = news.34
+	title = news.34.t
+	desc = news.34.d
+	picture = GFX_news_event_polish_tanks
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.34.a
+	}
+}

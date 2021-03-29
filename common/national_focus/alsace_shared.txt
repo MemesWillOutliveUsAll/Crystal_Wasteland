@@ -73,7 +73,7 @@ shared_focus = {
 
 
 	bypass = {
-
+	OMK = { has_country_flag = GermanyUnited }
 	}
 }
 
@@ -133,6 +133,7 @@ shared_focus = {
 	}
 
 	bypass = {
+	OMK = { has_country_flag = GermanyUnited }
 
 	}
 }
@@ -170,7 +171,10 @@ shared_focus = {
 	}
 
 	bypass = {
+	or = {
 	NOT = {country_exists = BAY}
+	OMK = { has_country_flag = GermanyUnited }
+	}
 	}
 }
 
@@ -207,6 +211,7 @@ shared_focus = {
 	}
 
 	bypass = {
+	OMK = { has_country_flag = GermanyUnited }
 
 	}
 }
@@ -242,7 +247,10 @@ shared_focus = {
 	}
 
 	bypass = {
+	or ={
 	NOT = {country_exists = HAN}
+	OMK = { has_country_flag = GermanyUnited }
+	}
 	}
 }
 
@@ -279,6 +287,7 @@ shared_focus = {
 	}
 
 	bypass = {
+	OMK = { has_country_flag = GermanyUnited }
 
 	}
 }
@@ -314,7 +323,10 @@ shared_focus = {
 	}
 
 	bypass = {
+	or = {
 	NOT = {country_exists = HES}
+	OMK = { has_country_flag = GermanyUnited }
+	}
 	}
 }
 
@@ -351,6 +363,7 @@ shared_focus = {
 	}
 
 	bypass = {
+	OMK = { has_country_flag = GermanyUnited }
 
 	}
 }
@@ -391,6 +404,7 @@ shared_focus = {
 	}
 
 	bypass = {
+	OMK = { has_country_flag = GermanyUnited }
 
 	}
 }
@@ -429,6 +443,7 @@ shared_focus = {
 	}
 
 	bypass = {
+	OMK = { has_country_flag = GermanyUnited }
 
 	}
 }
@@ -514,6 +529,7 @@ shared_focus = {
 	}
 
 	bypass = {
+	OMK = { has_country_flag = GermanyUnited }
 	}
 }
 

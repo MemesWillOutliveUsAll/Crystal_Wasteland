@@ -1,0 +1,9 @@
+Remove_pol_cores = {
+	# West germany #############################
+	remove_state_core = 92
+	remove_state_core = 91
+	remove_state_core = 90
+	remove_state_core = 89
+	remove_state_core = 88
+	remove_state_core = 10
+}

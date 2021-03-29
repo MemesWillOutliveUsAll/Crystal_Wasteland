@@ -1,0 +1,18 @@
+state={
+	id=836
+	history={
+		owner = ROM
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = ROM
+
+	}
+	name="STATE_836"
+	provinces={
+		6761 11689 
+	}
+	manpower= 56213
+	state_category=town
+	buildings_max_level_factor=1.000
+}

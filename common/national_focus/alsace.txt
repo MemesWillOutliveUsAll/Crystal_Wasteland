@@ -40,3 +40,35 @@ focus_tree = {
 	continuous_focus_position = { x = 2000 y = 1000 }
 }
 
+focus_tree = {
+	id = alsace_reconquest_of_europe
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ALL
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 2000 y = 1000 }
+}
+
+focus_tree = {
+	id = alsace_failure
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ALL
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 2000 y = 1000 }
+}
+

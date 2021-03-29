@@ -178,6 +178,81 @@ on_actions = {
 					
 			}
 			
+			# Poland #
+			if = {  # Right polish win #
+				limit = {
+						FROM = {
+							OR = {
+								original_tag = PLF
+							}
+						}
+						ROOT = { 
+							OR = {
+								original_tag = POL								
+							}
+						}
+					
+					}
+					
+					FROM = {
+					white_peace = ROOT
+					annex_country = {
+							target = ROOT
+							transfer_troops = no
+					}
+					country_event = {
+					id = mod_Poland.4		
+					days = 8 
+					} 
+					
+					}
+					
+					ROOT = {
+					Remove_pol_cores = yes
+					}
+					
+					
+					
+			}
+			
+			if = {  # Left polish win #
+				limit = {
+						FROM = {
+							OR = {
+								original_tag = POL
+							}
+						}
+						ROOT = { 
+							OR = {
+								original_tag = PLF							
+								
+							}
+						}
+					
+					}
+					
+					FROM = {
+					white_peace = ROOT
+					annex_country = {
+							target = ROOT
+							transfer_troops = no
+					}
+					country_event = {
+					id = mod_Poland.3		
+					days = 8 
+					} 
+					
+					}
+					
+					ROOT = {
+					Remove_pol_cores = yes
+					}
+					
+					
+					
+			}
+			
+			# MOD #
 			if = { 
 				limit = {
 						FROM = {

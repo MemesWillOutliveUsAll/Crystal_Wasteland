@@ -64,6 +64,7 @@
 
 
 	bypass = {
+	BAY = {has_country_flag = GermanyUnited}
 	}
 }
 
@@ -92,7 +93,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	BAY = {has_country_flag = GermanyUnited}
 	}
 }
 
@@ -121,7 +122,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	BAY = {has_country_flag = GermanyUnited}
 	}
 }
 
@@ -156,7 +157,10 @@ shared_focus = {
 	}
 
 	bypass = {
+	or = {
+	BAY = {has_country_flag = GermanyUnited}
 	NOT = {country_exists = OMK}
+	}
 	}
 }
 
@@ -189,7 +193,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	BAY = {has_country_flag = GermanyUnited}
 	}
 }
 
@@ -225,7 +229,10 @@ shared_focus = {
 	}
 
 	bypass = {
+	or = {
 	NOT = {country_exists = SHL}
+	BAY = {has_country_flag = GermanyUnited}
+	}
 	}
 }
 
@@ -262,7 +269,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	BAY = {has_country_flag = GermanyUnited}
 	}
 }
 #################################
@@ -296,7 +303,10 @@ shared_focus = {
 	}
 
 	bypass = {
+	or = {
 	NOT = {country_exists = SDR}
+	BAY = {has_country_flag = GermanyUnited}
+	}
 	}
 }
 
@@ -342,7 +352,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	BAY = {has_country_flag = GermanyUnited}
 	}
 }
 ##################################
@@ -377,7 +387,10 @@ shared_focus = {
 	}
 
 	bypass = {
+	or = {
 	NOT = {country_exists = PRE}
+	BAY = {has_country_flag = GermanyUnited}
+	}
 	}
 }
 
@@ -412,7 +425,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	BAY = {has_country_flag = GermanyUnited}
 	}
 }
 ##########################
@@ -447,7 +460,10 @@ shared_focus = {
 	}
 
 	bypass = {
+	or = {
 	NOT = {country_exists = PLA}
+	BAY = {has_country_flag = GermanyUnited}
+	}
 	}
 }
 
@@ -481,7 +497,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	BAY = {has_country_flag = GermanyUnited}
 	}
 }
 ###########################################
@@ -516,7 +532,10 @@ shared_focus = {
 	}
 
 	bypass = {
+	or = {
 	NOT = {country_exists = OSG}
+	BAY = {has_country_flag = GermanyUnited}
+	}
 	}
 }
 
@@ -549,7 +568,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	BAY = {has_country_flag = GermanyUnited}
 	}
 }
 ########################################
@@ -584,7 +603,10 @@ shared_focus = {
 	}
 
 	bypass = {
+	or = {
 	NOT = {country_exists = DAN}
+	BAY = {has_country_flag = GermanyUnited}
+	}
 	}
 }
 
@@ -617,7 +639,7 @@ shared_focus = {
 	}
 
 	bypass = {
-	
+	BAY = {has_country_flag = GermanyUnited}
 	}
 }
 
@@ -658,7 +680,7 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	BAY = {has_country_flag = GermanyUnited}
 	}
 }
 
@@ -727,6 +749,7 @@ shared_focus = {
 	}
 
 	bypass = {
+	BAY = {has_country_flag = GermanyUnited}
 	}
 }
 

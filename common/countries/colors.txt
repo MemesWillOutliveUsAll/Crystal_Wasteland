@@ -800,3 +800,8 @@ ANR = {
 	color = rgb { 0  0  0 }
 	color_ui = rgb { 0  0  0 }
 }
+
+PLF = {
+	color = rgb { 197 92 106 }
+	color_ui = rgb { 255 120 138 }
+}

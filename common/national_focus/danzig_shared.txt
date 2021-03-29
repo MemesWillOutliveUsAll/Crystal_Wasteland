@@ -721,15 +721,7 @@ shared_focus = {
 		
 	completion_reward = {
 		hidden_effect = {
-			HES = {German_unification = yes}
-			news_event = { id = news.28 }
-			sound_effect = "Rommel_ger_wins"
-			HES = {
-			load_focus_tree = {
-				tree = osg_germany_focus
-				keep_completed = no
-			}
-			}
+			DAN = { set_country_flag = GermanyUnited }
 			
 			HES = {
 			annex_country = {

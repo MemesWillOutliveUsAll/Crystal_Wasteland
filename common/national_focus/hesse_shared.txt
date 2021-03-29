@@ -62,7 +62,10 @@ shared_focus = {
 
 
 	bypass = {
-
+	or = {
+		DAN = {has_country_flag = GermanyUnited}
+		SHL = {has_country_flag = GermanyUnited}
+	}
 	}
 }
 
@@ -100,6 +103,10 @@ shared_focus = {
 	}
 
 	bypass = {
+	or = {
+		DAN = {has_country_flag = GermanyUnited}
+		SHL = {has_country_flag = GermanyUnited}
+	}
 
 	}
 }
@@ -136,7 +143,13 @@ shared_focus = {
 	}
 
 	bypass = {
+	or = {
 	NOT = {country_exists = HAN}
+	or = {
+		DAN = {has_country_flag = GermanyUnited}
+		SHL = {has_country_flag = GermanyUnited}
+	}
+	}
 	}
 }
 
@@ -201,7 +214,10 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	or = {
+		DAN = {has_country_flag = GermanyUnited}
+		SHL = {has_country_flag = GermanyUnited}
+	}
 	}
 }
 
@@ -237,7 +253,13 @@ shared_focus = {
 	}
 
 	bypass = {
+	or = {
 	NOT = {country_exists = BAY}
+	or = {
+		DAN = {has_country_flag = GermanyUnited}
+		SHL = {has_country_flag = GermanyUnited}
+	}
+	}
 	}
 }
 
@@ -274,7 +296,10 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	or = {
+		DAN = {has_country_flag = GermanyUnited}
+		SHL = {has_country_flag = GermanyUnited}
+	}
 	}
 }
 #####################################
@@ -309,7 +334,13 @@ shared_focus = {
 	}
 
 	bypass = {
+	or = {
 	NOT = {country_exists = ALL}
+	or = {
+		DAN = {has_country_flag = GermanyUnited}
+		SHL = {has_country_flag = GermanyUnited}
+	}
+	}
 	}
 }
 
@@ -348,7 +379,10 @@ shared_focus = {
 	}
 
 	bypass = {
-
+	or = {
+		DAN = {has_country_flag = GermanyUnited}
+		SHL = {has_country_flag = GermanyUnited}
+	}
 	}
 }
 
@@ -389,6 +423,10 @@ shared_focus = {
 	}
 
 	bypass = {
+	or = {
+		DAN = {has_country_flag = GermanyUnited}
+		SHL = {has_country_flag = GermanyUnited}
+	}
 
 	}
 }
@@ -427,6 +465,10 @@ shared_focus = {
 	}
 
 	bypass = {
+	or = {
+		DAN = {has_country_flag = GermanyUnited}
+		SHL = {has_country_flag = GermanyUnited}
+	}
 
 	}
 }
@@ -508,6 +550,10 @@ shared_focus = {
 	}
 
 	bypass = {
+	or = {
+		DAN = {has_country_flag = GermanyUnited}
+		SHL = {has_country_flag = GermanyUnited}
+	}
 	}
 }
 
@@ -535,6 +581,7 @@ shared_focus = {
 		
 	completion_reward = {
 		hidden_effect = {
+			HES = { set_country_flag = GermanyUnited }
 			German_unification = yes
 			news_event = { id = news.28 }
 			sound_effect = "Rommel_ger_wins"

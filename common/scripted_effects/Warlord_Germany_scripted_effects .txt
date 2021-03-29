@@ -17,6 +17,12 @@ German_unification = {
 	add_state_core = 57
 	add_state_core = 59
 	add_state_core = 809
+	add_state_core = 152
+	add_state_core = 4
+	add_state_core = 153
+	add_state_core = 39
+	add_state_core = 819
+	
 	
 	# East germany #############################
 	add_state_core = 97
