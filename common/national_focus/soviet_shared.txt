@@ -72,7 +72,7 @@ shared_focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 50
 		}
 
 		available = {
@@ -163,7 +163,7 @@ shared_focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 40
 		}
 
 		available = {
@@ -1748,7 +1748,9 @@ shared_focus = {
 		}
 
 		completion_reward = {
-		
+		hidden_effect = {
+		SOV = { set_country_flag = leb_kicked_out }
+		}
 		}
 	}
 

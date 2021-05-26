@@ -198,3 +198,11 @@ GMC_attack_sov_desc:0 "We shall now proceed to destroy our shadow"
 GMC_unify_russia:0 "Unifying Russia"
 GMC_unify_russia_desc:0 "Despite Overwhelming odds we have won out and now Rule Russia. However, we still have a lot of work to complete."
 academics_purged:0 "Academics purged"
+
+################## Sov mob ######################
+mob.1.t:0 "Citizens rebel in Vladivostok"
+mob.1.d:0 "The citizens chant for Trotsky and a re enraged at Stalin and his failure against the Germans. There are so many of them that they have blockaded the roads leading up to Vladivostok."
+mob.1.a:0 "Don't you have anything better to do?"
+mob.2.t:0 "Revolution in Vladivostok"
+mob.2.d:0 "The citizens have decided to declare war on the Soviet Union, thankfully Stalin Has gotten away before the rioters could snatch him."
+mob.2.a:0 "What is wrong with you people?!"

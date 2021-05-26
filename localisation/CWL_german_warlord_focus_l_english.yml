@@ -145,6 +145,8 @@
  silesian_unite_east_germany_desc:0 "It is time We unite east germany under our rule"
  silesian_riding_to_the_west:0 "Taking back the west"
  silesian_riding_to_the_west_desc:0 "It is time we reclaim the Rhineland"
+ silesian_unifying_germany:0 "Unification of Germany"
+ silesian_unifying_germany_desc:0 "It is time we shwo the world our industrial might"
  #	Schleswig
  Shleswig_Admiral_Donitz_saves_the_day:0 "Admiral Donitz saves the day"
  Shleswig_Admiral_Donitz_saves_the_day_desc:0 "Do not worry! Admiral Donitz is here!"
@@ -419,4 +421,6 @@ news.33.t:0 "The collapse of Ostland"
 news.33.d:0 "It seems the reichs frontier has buckled after the Belorussians had declared their independence OStland reformed into the Baltic unitary state. However, the states future is far from secure and seems to be heading towards imminent collapse."
 news.33.a:0 "Interesting"
 
-
+germany.1.t:0 "Communists take over"
+germany.1.d:0 "With the death of Hitler the communist have taken the Reichstag and have declared the German socialist republic. Unfortunately the other German warlords fail to acknowledge us an so even to the outside Germany shall shatter."
+germany.1.a:0 "The end of the German Empire."

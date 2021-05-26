@@ -4,23 +4,27 @@ bookmarks = {
 		desc = "GATHERING_STORM_DESC"
 		date = 1936.1.1.12
 		picture = "GFX_select_date_1936"
-		default_country = "SOV"
+		default_country = "YUG"
 		default = yes
 		
-		"SOV" ={
+		"YUG" ={
+			
+		}
 		
+		"SOV" ={
+			minor = yes
 		}
 		
 		"NOV" ={
-		
+			minor = yes
 		}
 		
 		"GMC" ={
-		
+			minor = yes
 		}
 		
 		"SML" ={
-			
+			minor = yes
 		}
 		
 		

@@ -346,9 +346,166 @@ on_actions = {
 					}
 					}
 			}
-			##################################################################
+			################################################################## YUGOSLAVIA
 			
+			if = { ### ALL YUGOSLAVIAS as well ashow they treat independent nations
+				limit = {
+						FROM = {
+							OR = {
+								original_tag = YUG
+								original_tag = KOS
+								original_tag = SER
+								original_tag = VOJ
+								original_tag = BOS
+							}
+						}
+						ROOT = { 
+							OR = {
+								original_tag = KOS
+								original_tag = YUG
+								original_tag = SER
+								original_tag = VOJ
+								original_tag = CRO
+								original_tag = SLV
+								original_tag = BOS
+							}
+						}
+					
+					}
+					
+					FROM = {
+					
+					white_peace = ROOT
+					annex_country = {
+							target = ROOT
+							transfer_troops = no
+					}
+					}
+					
+					ROOT = {
+					Remove_yug_cores = yes
+					}
+			}
 			
+			if = { ### Croatian complete annexation
+				limit = {
+						FROM = {
+							OR = {
+								original_tag = CRO
+							}
+						}
+						ROOT = { 
+							OR = {
+								original_tag = KOS
+								original_tag = YUG
+							}
+						}
+					
+					}
+					
+					FROM = {
+					
+					white_peace = ROOT
+					annex_country = {
+							target = ROOT
+							transfer_troops = no
+					}
+					}
+			}
+			
+			if = { ### Croatian reaction to Serbian attack
+				limit = {
+						FROM = {
+							OR = {
+								original_tag = CRO
+							}
+						}
+						ROOT = { 
+							OR = {
+								original_tag = SER
+							}
+						}
+					
+					}
+					
+					FROM = {
+					
+					white_peace = ROOT
+					transfer_state = 823
+					transfer_state = 833
+					transfer_state = 45
+					}
+					
+					VOJ ={
+					load_focus_tree = {
+					tree = empty_focus
+					keep_completed = no
+					}
+					transfer_state = 764
+					transfer_state = 835
+					transfer_state = 834
+					create_country_leader = {
+					name = "Power Vacuum"
+					desc = "POLITICS_MILAN_STOJADINOVIC_DESC"
+					picture = "gfx/leaders/YUG/adadss.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						#
+					}
+					}
+					}
+					
+					ROOT = {
+					load_focus_tree = {
+					tree = empty_focus
+					keep_completed = no
+					}
+					}
+			}
+			
+			if = { ### Croatian reaction to Vojvodina attack
+				limit = {
+						FROM = {
+							OR = {
+								original_tag = CRO
+							}
+						}
+						ROOT = { 
+							OR = {
+								original_tag = VOJ
+							}
+						}
+					
+					}
+					
+					FROM = {
+					
+					white_peace = ROOT
+					transfer_state = 823
+					transfer_state = 833
+					transfer_state = 45
+					}
+					
+					ROOT ={
+					create_country_leader = {
+					name = "Power Vacuum"
+					desc = "POLITICS_MILAN_STOJADINOVIC_DESC"
+					picture = "gfx/leaders/YUG/adadss.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						#
+					}
+					}
+					load_focus_tree = {
+					tree = empty_focus
+					keep_completed = no
+					}
+					}
+			}
+			
+			################################################################## 
 			
 			if ={
 			limit = {

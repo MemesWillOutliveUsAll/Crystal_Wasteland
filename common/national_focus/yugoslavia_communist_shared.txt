@@ -1,0 +1,1222 @@
+shared_focus = {
+	id = YUGCOM_call_the_council
+	icon = GFX_focus_Call_the_council
+	x = 14
+	y = 0
+
+	cost = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	hidden_effect = {
+	if = { 
+		limit = {
+        SOV = {has_country_flag = leb_kicked_out}
+		}  
+		country_event = mod_comYugoslavia.2
+	}
+	else = {
+	country_event = mod_comYugoslavia.1
+	}
+	}
+		
+	}	
+
+
+	bypass = {
+	}
+}
+
+############### SVETLANA #######################################
+shared_focus = {
+	id = YUGCOM_Svetlana_chosen
+	icon = GFX_focus_going_with_svetlana
+	prerequisite = { focus = YUGCOM_call_the_council }
+	mutually_exclusive = { focus = YUGCOM_The_mysterious_candidate}
+	mutually_exclusive = { focus = YUGCOM_Rankovic_takeover}
+	relative_position_id = YUGCOM_call_the_council
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	KOS = {has_country_flag = council_has_chosen}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		create_country_leader = {
+			name = "Svetlana Stanković"
+			desc = "POLITICS_JOSEPH_STALIN_DESC"
+			picture = "gfx/leaders/YUG/Svetlana.png"
+			expire = "1953.3.1"
+			ideology = stalinism
+			traits = {
+		
+			}
+			}
+			
+		hidden_effect = {
+		KOS = {set_country_flag = Svetlana_chosen}
+		}
+	}	
+
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_guns_from_the_rebels
+	icon = GFX_goal_generic_small_arms
+	prerequisite = { focus = YUGCOM_Svetlana_chosen }
+	relative_position_id = YUGCOM_Svetlana_chosen
+	x = 0
+	y = 1
+
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_equipment_to_stockpile = {
+
+        type = infantry_equipment_1
+
+        amount = 5000
+		producer = YUG
+
+		}
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_increase_women_rights
+	icon = GFX_goal_generic_propaganda
+	prerequisite = { focus = YUGCOM_guns_from_the_rebels }
+	relative_position_id = YUGCOM_guns_from_the_rebels
+	x = 0
+	y = 1
+
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_allow_limited_capitalism
+	icon = GFX_goal_generic_construct_civ_factory
+	prerequisite = { focus = YUGCOM_increase_women_rights }
+	relative_position_id = YUGCOM_increase_women_rights
+	x = 0
+	y = 1
+
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_ideas = comprimise_with_capitalists
+	}
+
+	bypass = {
+
+	}
+}
+
+### LEBEDEV ##############################################################
+shared_focus = {
+	id = YUGCOM_The_mysterious_candidate
+	icon = GFX_focus_Bizoro_lebedev
+	prerequisite = { focus = YUGCOM_call_the_council }
+	mutually_exclusive = { focus = YUGCOM_Svetlana_chosen}
+	mutually_exclusive = { focus = YUGCOM_Rankovic_takeover}
+	relative_position_id = YUGCOM_call_the_council
+	x = -3
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	KOS = {has_country_flag = council_has_chosen}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		create_country_leader = {
+			name = "Andrej Marković"
+			desc = "POLITICS_JOSEPH_STALIN_DESC"
+			picture = "gfx/leaders/SOV/Sergey Lebedev.png"
+			expire = "1953.3.1"
+			ideology = stalinism
+			traits = {
+		
+			}
+			}
+			
+		hidden_effect = {
+		KOS = {set_country_flag = Andrej_chosen}
+		}
+	}	
+
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_emergency_arms_factory
+	icon = GFX_goal_generic_construct_mil_factory
+	prerequisite = { focus = YUGCOM_The_mysterious_candidate }
+	relative_position_id = YUGCOM_The_mysterious_candidate
+	x = 0
+	y = 1
+
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	107 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_follow_up_on_titoism
+	icon = GFX_focus_tito
+	prerequisite = { focus = YUGCOM_emergency_arms_factory }
+	relative_position_id = YUGCOM_emergency_arms_factory
+	x = 0
+	y = 1
+
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_airplane_parade
+	icon = GFX_focus_RevealJet
+	prerequisite = { focus = YUGCOM_follow_up_on_titoism }
+	relative_position_id = YUGCOM_follow_up_on_titoism
+	x = 0
+	y = 1
+
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	set_technology = {
+			jet_fighter2 = 1
+			jet_tactical_bomber2 = 1
+			jet_strategic_bomber1 = 1
+			}
+	}
+
+	bypass = {
+
+	}
+}
+
+############ RANKOVIC ###################################################
+shared_focus = {
+	id = YUGCOM_Rankovic_takeover
+	icon = GFX_focus_going_with_rankovic
+	prerequisite = { focus = YUGCOM_call_the_council }
+	mutually_exclusive = { focus = YUGCOM_Svetlana_chosen}
+	mutually_exclusive = { focus = YUGCOM_The_mysterious_candidate}
+	relative_position_id = YUGCOM_call_the_council
+	x = 3
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	KOS = {has_country_flag = council_has_chosen}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		create_country_leader = {
+			name = "Aleskandar Ranković"
+			desc = "POLITICS_JOSEPH_STALIN_DESC"
+			picture = "gfx/leaders/YUG/Aleksandar_Rankovic.png"
+			expire = "1953.3.1"
+			ideology = stalinism
+			traits = {
+		
+			}
+			}
+			
+		hidden_effect = {
+		KOS = {set_country_flag = Rankovic_chosen}
+		}
+	}	
+
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_purge_local_officials
+	icon = GFX_goal_generic_forceful_treaty
+	prerequisite = { focus = YUGCOM_Rankovic_takeover }
+	relative_position_id = YUGCOM_Rankovic_takeover
+	x = 0
+	y = 1
+
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_political_power = -45
+	}
+
+	bypass = {
+
+	}
+}
+
+
+
+shared_focus = {
+	id = YUGCOM_enact_first_five_year_plan
+	icon = GFX_goal_generic_soviet_construction
+	prerequisite = { focus = YUGCOM_purge_local_officials }
+	relative_position_id = YUGCOM_purge_local_officials
+	x = 0
+	y = 1
+
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+				107 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				
+				833 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_purge_the_army
+	icon = GFX_focus_Ensure_stability
+	prerequisite = { focus = YUGCOM_enact_first_five_year_plan }
+	relative_position_id = YUGCOM_enact_first_five_year_plan
+	x = 0
+	y = 1
+
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	army_experience = -30
+	add_command_power = -100
+	add_timed_idea = { idea = army_purged  days = 360 }
+	
+	}
+
+	bypass = {
+
+	}
+}
+
+######### ALL coalescing ################
+
+shared_focus = {
+	id = YUGCOM_reveal_our_republic
+	icon = GFX_focus_com_yug
+	prerequisite = { focus = YUGCOM_allow_limited_capitalism focus = YUGCOM_purge_the_army focus = YUGCOM_airplane_parade }
+	relative_position_id = YUGCOM_allow_limited_capitalism
+	x = 0
+	y = 1
+
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	hidden_effect = {
+	news_event = { id = news.35 }
+	}
+	
+	}
+
+	bypass = {
+
+	}
+}
+
+########################################################################################################################################################################################
+############################################## AFTER COLLAPSE ##########################################################################################################################
+
+# SVETLANA ##########
+shared_focus = {
+	id = YUGCOM_Svetlana_continues_on
+	icon = GFX_focus_going_with_svetlana
+	mutually_exclusive = { focus = YUGCOM_Andrej_saves_yugoslavia}
+	mutually_exclusive = { focus = YUGCOM_integration_rankovic}
+	x = 10
+	y = 1
+
+	cost = 0
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	KOS = {has_country_flag = Svetlana_chosen}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		
+	}	
+
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_attract_investors
+	icon = GFX_focus_generic_concessions
+	prerequisite = { focus = YUGCOM_Svetlana_continues_on }
+	relative_position_id = YUGCOM_Svetlana_continues_on
+	x = -1
+	y = 1
+
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+				825 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_recruit_peasents
+	icon = GFX_goal_generic_national_unity
+	prerequisite = { focus = YUGCOM_Svetlana_continues_on }
+	relative_position_id = YUGCOM_Svetlana_continues_on
+	x = 1
+	y = 1
+
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_the_peoples_propaganda
+	icon = GFX_goal_generic_propaganda
+	prerequisite = { focus = YUGCOM_recruit_peasents }
+	prerequisite = { focus = YUGCOM_attract_investors }
+	relative_position_id = YUGCOM_recruit_peasents
+	x = -1
+	y = 1
+
+	cost = 10
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_political_power = 100
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_the_replace_rankovic_loyalists
+	icon = GFX_goal_generic_political_pressure
+	prerequisite = { focus = YUGCOM_recruit_peasents }
+	prerequisite = { focus = YUGCOM_attract_investors }
+	relative_position_id = YUGCOM_recruit_peasents
+	x = 1
+	y = 1
+
+	cost = 10
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_stability = 0.15
+		add_war_support = -0.10
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_keep_capitalism
+	icon = GFX_goal_generic_construct_military
+	prerequisite = { focus = YUGCOM_recruit_peasents }
+	prerequisite = { focus = YUGCOM_attract_investors }
+	relative_position_id = YUGCOM_recruit_peasents
+	x = -3
+	y = 1
+
+	cost = 10
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_ideas = keep_capitalism
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_destroy_the_despots
+	icon = GFX_goal_generic_territory_or_war
+	prerequisite = { focus = YUGCOM_the_peoples_propaganda }
+	prerequisite = { focus = YUGCOM_the_replace_rankovic_loyalists }
+	prerequisite = { focus = YUGCOM_keep_capitalism }
+	x = 0
+	y = 1
+	relative_position_id = YUGCOM_the_peoples_propaganda
+	cost = 2
+		
+	ai_will_do = {
+		base = 1
+	}
+		
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		hidden_effect = {
+		declare_war_on = { type = annex_everything    target = YUG }
+		declare_war_on = { type = annex_everything    target = CRO }
+		}
+	}
+	bypass = {
+	OR = {
+	has_war_with = CRO
+	has_war_with = YUG
+	}
+	
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_reclaim_the_east
+	icon = GFX_goal_generic_more_territorial_claims
+	prerequisite = { focus = YUGCOM_destroy_the_despots }
+	x = 0
+	y = 1
+	relative_position_id = YUGCOM_destroy_the_despots
+	cost = 2
+		
+	ai_will_do = {
+		base = 1
+	}
+		
+	available = {
+	YUG = {exists = no}
+	CRO = {exists = no}
+	OR = {
+	SER = {exists = no}
+	VOJ = {exists = no}
+	}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		hidden_effect = {
+		declare_war_on = { type = annex_everything    target = SER }
+		declare_war_on = { type = annex_everything    target = VOJ }
+		}
+	}
+	bypass = {
+	OR = {
+	has_war_with = SER
+	has_war_with = VOJ
+	}
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_reclaim_the_slovenia
+	icon = GFX_goal_generic_forceful_treaty
+	prerequisite = { focus = YUGCOM_reclaim_the_east }
+	x = 0
+	y = 1
+	relative_position_id = YUGCOM_reclaim_the_east
+	cost = 2
+		
+	ai_will_do = {
+		base = 1
+	}
+		
+	available = {
+	SER = {exists = no}
+	VOJ = {exists = no}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		hidden_effect = {
+		declare_war_on = { type = annex_everything    target = SLV }
+		}
+	}
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_proclaim_our_victory
+	icon = GFX_goal_generic_major_alliance
+	prerequisite = { focus = YUGCOM_reclaim_the_slovenia }
+	x = 0
+	y = 1
+	relative_position_id = YUGCOM_reclaim_the_slovenia
+	cost = 2
+		
+	ai_will_do = {
+		base = 1
+	}
+		
+	available = {
+	SLV = {exists = no}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		hidden_effect = {
+		news_event = { id = news.38 }
+		sound_effect = "Svetlana_wins"
+		}
+	}
+	bypass = {
+	}
+}
+
+# ANDREJ #####################
+
+shared_focus = {
+	id = YUGCOM_Andrej_saves_yugoslavia
+	icon = GFX_focus_go_with_lebedev
+	mutually_exclusive = { focus = YUGCOM_integration_rankovic}
+	mutually_exclusive = { focus = YUGCOM_Svetlana_continues_on}
+	x = 16
+	y = 1
+
+	cost = 0
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	KOS = {has_country_flag = Andrej_chosen}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		
+	}	
+
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_guns_of_the_soviet_union
+	icon = GFX_goal_support_communism
+	prerequisite = { focus = YUGCOM_Andrej_saves_yugoslavia }
+	relative_position_id = YUGCOM_Andrej_saves_yugoslavia
+	x = 1
+	y = 1
+
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_snatch_factories
+	icon = GFX_goal_generic_construct_civ_factory
+	prerequisite = { focus = YUGCOM_Andrej_saves_yugoslavia }
+	relative_position_id = YUGCOM_Andrej_saves_yugoslavia
+	x = -1
+	y = 1
+
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_bring_the_jets_out_of_storage
+	icon = GFX_focus_RevealJet
+	prerequisite = { focus = YUGCOM_guns_of_the_soviet_union }
+	prerequisite = { focus = YUGCOM_snatch_factories }
+	relative_position_id = YUGCOM_snatch_factories
+	x = 1
+	y = 1
+
+	cost = 10
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_Increase_the_power_of_the_udba
+	icon = GFX_goal_generic_dangerous_deal
+	prerequisite = { focus = YUGCOM_guns_of_the_soviet_union }
+	prerequisite = { focus = YUGCOM_snatch_factories }
+	relative_position_id = YUGCOM_snatch_factories
+	x = -1
+	y = 1
+
+	cost = 10
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_war_support = -0.15
+		add_political_power = 50
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_purge_svetlana
+	icon = GFX_focus_Lockup_Svetlana
+	prerequisite = { focus = YUGCOM_guns_of_the_soviet_union }
+	prerequisite = { focus = YUGCOM_snatch_factories }
+	relative_position_id = YUGCOM_snatch_factories
+	x = 3
+	y = 1
+
+	cost = 10
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_stability = -0.05
+		add_political_power = 35
+	}
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_destroy_the_captilists
+	icon = GFX_goal_generic_forceful_treaty
+	prerequisite = { focus = YUGCOM_Increase_the_power_of_the_udba }
+	prerequisite = { focus = YUGCOM_bring_the_jets_out_of_storage }
+	prerequisite = { focus = YUGCOM_purge_svetlana }
+	x = 0
+	y = 1
+	relative_position_id = YUGCOM_bring_the_jets_out_of_storage
+	cost = 2
+		
+	ai_will_do = {
+		base = 1
+	}
+		
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		hidden_effect = {
+		declare_war_on = { type = annex_everything    target = YUG }
+		declare_war_on = { type = annex_everything    target = CRO }
+		}
+	}
+	bypass = {
+	OR = {
+	has_war_with = CRO
+	has_war_with = YUG
+	}
+	
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_reclaim_the_serbian_republic
+	icon = GFX_goal_generic_military_deal
+	prerequisite = { focus = YUGCOM_destroy_the_captilists }
+	x = 0
+	y = 1
+	relative_position_id = YUGCOM_destroy_the_captilists
+	cost = 2
+		
+	ai_will_do = {
+		base = 1
+	}
+		
+	available = {
+	YUG = {exists = no}
+	CRO = {exists = no}
+	OR = {
+	SER = {exists = no}
+	VOJ = {exists = no}
+	}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		hidden_effect = {
+		declare_war_on = { type = annex_everything    target = SER }
+		declare_war_on = { type = annex_everything    target = VOJ }
+		}
+	}
+	bypass = {
+	OR = {
+	has_war_with = SER
+	has_war_with = VOJ
+	}
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_reclaim_the_slovenia_republic
+	icon = GFX_goal_generic_military_sphere
+	prerequisite = { focus = YUGCOM_reclaim_the_serbian_republic }
+	x = 0
+	y = 1
+	relative_position_id = YUGCOM_reclaim_the_serbian_republic
+	cost = 2
+		
+	ai_will_do = {
+		base = 1
+	}
+		
+	available = {
+	SER = {exists = no}
+	VOJ = {exists = no}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		hidden_effect = {
+		declare_war_on = { type = annex_everything    target = SLV }
+		}
+	}
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = YUGCOM_proclaim_our_new_republic
+	icon = GFX_goal_generic_major_alliance
+	prerequisite = { focus = YUGCOM_reclaim_the_slovenia_republic }
+	x = 0
+	y = 1
+	relative_position_id = YUGCOM_reclaim_the_slovenia_republic
+	cost = 2
+		
+	ai_will_do = {
+		base = 1
+	}
+		
+	available = {
+	SLV = {exists = no}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		hidden_effect = {
+		sound_effect = "Jet_plane_in_30s"
+		news_event = { id = news.40 }
+		}
+	}
+	bypass = {
+	}
+}
+
+
+############## RANKOVIC #######################
+shared_focus = {
+	id = YUGCOM_integration_rankovic
+	icon = GFX_focus_going_with_rankovic
+	mutually_exclusive = { focus = YUGCOM_Andrej_saves_yugoslavia}
+	mutually_exclusive = { focus = YUGCOM_Svetlana_continues_on}
+	x = 20
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	KOS = {has_country_flag = Rankovic_chosen}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		hidden_effect = {
+			SER = {
+				annex_country = {
+				target = KOS
+				transfer_troops = yes
+				}
+			}
+		}
+	}	
+
+
+	bypass = {
+	}
+}

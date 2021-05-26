@@ -723,6 +723,7 @@ shared_focus = {
 			ALL = { 
 			set_cosmetic_tag = GER
 			change_tag_from = OMK }
+			complete_national_focus = ALL_unifying_germany
 		}
 	}
 

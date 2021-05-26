@@ -1,7 +1,11 @@
 ﻿capital = 107
 
+oob = "YUG_1936"
+
 add_ideas = {
 Medium_contamination
+A_Junta_in_all_but_name
+Communist_resistance
 }
 set_technology = {
 	tech_support = 1		

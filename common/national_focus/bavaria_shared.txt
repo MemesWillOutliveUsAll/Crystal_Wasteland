@@ -541,6 +541,7 @@ shared_focus = {
 			GER = {German_unification = yes}
 			
 			GER = {
+			complete_national_focus = germany_unifying_germany	
 			annex_country = {
 			target = BAY
 			transfer_troops = yes

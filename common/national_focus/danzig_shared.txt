@@ -610,7 +610,6 @@ shared_focus = {
 	available = {
 	NOT = {
 	country_exists = SHL
-	country_exists = DAN
 	country_exists = SDR
 	country_exists = OSG
 	country_exists = PRE
@@ -730,9 +729,11 @@ shared_focus = {
 			}
 			}
 			HES = { 
+			complete_national_focus = HES_unifying_germany	
 			set_cosmetic_tag = GER
-			change_tag_from = DAN }
-		}
+			change_tag_from = { DAN }
+			}
+			}
 	}
 
 	bypass = {

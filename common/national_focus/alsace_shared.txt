@@ -560,9 +560,47 @@ shared_focus = {
 		German_unification = yes
 		news_event = { id = news.27 }
 		sound_effect = "Heydirch_ger_wins"
+		load_focus_tree = {
+			tree = alsace_failure
+			keep_completed = no
+			}
 	}
 	
 	}
+
+	bypass = {
+	}
+}
+
+## Reconquest of europe ##
+
+shared_focus = {
+	id = ALL_the_german_reconquista
+	icon = GFX_goal_generic_occupy_states_ongoing_war
+	x = 14
+	y = 0
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	
+	}
+		
+		
+
 
 	bypass = {
 	}

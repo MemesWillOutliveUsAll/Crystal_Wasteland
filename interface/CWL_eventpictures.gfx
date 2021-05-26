@@ -1,0 +1,18 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_report_event_Svetlana"
+		texturefile = "gfx/event_pictures/report_event_Svetlana.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_news_mig_15"
+		texturefile = "gfx/event_pictures/news_jet_mig_15.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Gavrilo"
+		texturefile = "gfx/event_pictures/Gavrilo_statue.dds"
+	}
+	
+}

@@ -1,0 +1,49 @@
+YUG_Project_killer = {
+
+	allowed = {
+		OR = {
+			tag = YUG
+		}
+	}
+	
+	visible = {
+		has_civil_war = no
+		exists = yes
+		has_capitulated = no
+		OR = {
+		YUG = {has_completed_focus = Yugoslavia_Jovanovich_scientist_chosen}
+		YUG = {has_completed_focus = Yugoslavia_Ljubomir_scientist_chosen}
+		}
+		
+		
+	}
+	
+}
+
+YUG_going_to_blow_up = {
+
+	allowed = {
+		OR = {
+			tag = YUG
+			tag = KOS
+		}
+	}
+	
+	visible = {
+		has_civil_war = no
+		exists = yes
+		has_capitulated = no
+		OR = {
+		YUG = {has_country_flag = civil_war_start}
+		KOS = {has_country_flag = civil_war_start}
+		}
+		
+		OR = {
+		NOT = {YUG = {has_country_flag = Second_explosion}}
+		NOT = {YUG = {has_country_flag = Has_contained_explosion}}
+		}
+		
+		
+	}
+	
+}

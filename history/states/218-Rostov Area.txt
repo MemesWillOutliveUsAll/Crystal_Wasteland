@@ -8,4 +8,21 @@ state={
 	manpower=1501076
 	buildings_max_level_factor=1.000
 	state_category=city
+	
+	history={
+		owner = ANR
+		victory_points = {
+			9417 15 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 3
+			9417 ={
+				naval_base = 5
+			}
+		}
+		add_core_of = ANR
+	}
 }

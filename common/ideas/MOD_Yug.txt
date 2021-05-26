@@ -1,0 +1,73 @@
+ideas = {
+	
+	country = {
+	
+		Communist_resistance = {
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.03
+				industrial_capacity_factory = -0.5
+				production_speed_buildings_factor = -0.4
+			}
+			
+		}
+		
+		
+		paying_back_our_debt = {
+			
+			picture = HUN_treaty_of_triannon
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.3
+				political_power_gain = -0.25
+			}
+			
+		}
+		
+		A_Junta_in_all_but_name = {
+			
+			picture = chi_army_corruption2
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.05
+				army_org_factor = 0.15
+				
+			}
+			
+		}
+	
+	}
+	
+}

@@ -53,6 +53,7 @@ focus_tree = {
 	}
 	
 	default = no
+	shared_focus = ALL_anex_luxemburg
 	continuous_focus_position = { x = 2000 y = 1000 }
 }
 

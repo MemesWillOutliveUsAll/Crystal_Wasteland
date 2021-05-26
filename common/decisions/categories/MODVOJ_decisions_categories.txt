@@ -1,0 +1,17 @@
+MODVOJ_militia = {
+
+	allowed = {
+		OR = {
+			tag = VOJ
+		}
+	}
+	
+	visible = {
+		has_civil_war = no
+		exists = yes
+		has_capitulated = no
+		VOJ = {has_completed_focus = VOJ_all_the_guns} 
+	}
+	
+}
+

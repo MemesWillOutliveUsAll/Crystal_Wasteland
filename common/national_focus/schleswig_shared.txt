@@ -718,6 +718,7 @@ shared_focus = {
 			HES = { 
 			set_cosmetic_tag = GER
 			change_tag_from = SHL 
+			complete_national_focus = HES_unifying_germany	
 			}
 		}
 	}

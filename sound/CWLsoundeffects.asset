@@ -104,3 +104,53 @@ soundeffect = {
 	} 
 	volume = 1
 }
+
+#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ YUGOSLAVIA ################################################################
+
+soundeffect = {
+	name = "Jeremija_wins_evil"
+	sounds = {
+		sound = "Jeremija_wins_evil"
+	} 
+	volume = 1
+}
+
+soundeffect = {
+	name = "Jeremija_wins_good"
+	sounds = {
+		sound = "Jeremija_wins_good"
+	} 
+	volume = 1
+}
+
+soundeffect = {
+	name = "Svetlana_wins"
+	sounds = {
+		sound = "Svetlana_wins"
+	} 
+	volume = 1
+}
+
+soundeffect = {
+	name = "Yugoslav_kingdom_win"
+	sounds = {
+		sound = "Yugoslav_kingdom_win"
+	} 
+	volume = 1
+}
+
+soundeffect = {
+	name = "Rankovic_wins"
+	sounds = {
+		sound = "Rankovic_wins"
+	} 
+	volume = 1
+}
+
+soundeffect = {
+	name = "Ustase_win"
+	sounds = {
+		sound = "Ustase_win"
+	} 
+	volume = 1
+}

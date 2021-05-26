@@ -1,0 +1,498 @@
+﻿l_english:
+
+ 
+ 
+ GMC_EQUIPMENT_VERSION_1:0 "A"
+ GMC_EQUIPMENT_VERSION_2:0 "A-1"
+ GMC_EQUIPMENT_VERSION_3:0 "A-2"
+ GMC_EQUIPMENT_VERSION_4:0 "AM"
+ GMC_EQUIPMENT_VERSION_5:0 "B"
+ GMC_EQUIPMENT_VERSION_6:0 "B-1"
+ GMC_EQUIPMENT_VERSION_7:0 "B-2"
+ GMC_EQUIPMENT_VERSION_8:0 "BM"
+ GMC_EQUIPMENT_VERSION_9:0 "C"
+ GMC_EQUIPMENT_VERSION_10:0 "C-1"
+ GMC_EQUIPMENT_VERSION_11:0 "C-2"
+ GMC_EQUIPMENT_VERSION_12:0 "CM"
+ GMC_EQUIPMENT_VERSION_13:0 "D"
+ GMC_EQUIPMENT_VERSION_14:0 "D-1"
+ GMC_EQUIPMENT_VERSION_15:0 "D-2"
+ GMC_EQUIPMENT_VERSION_16:0 "DM"
+ 
+ 
+ #tanks
+ 
+
+ GMC_gw_tank_equipment:0 "T-18"
+ GMC_gw_tank_equipment_short:0 "T-18"
+ 
+ GMC_light_tank_equipment_2:0 "BT-7"
+ GMC_light_tank_equipment_2_short:0 "BT-7"
+ 
+ 
+ GMC_light_tank_artillery_equipment_1:0 "SU-1"
+ GMC_light_tank_artillery_equipment_1_short:0 "SU-1"
+ GMC_light_tank_artillery_equipment_2:0 "SU-26"
+ GMC_light_tank_artillery_equipment_2_short:0 "SU-26"
+ GMC_light_tank_artillery_equipment_3:0 "SU-76"
+ GMC_light_tank_artillery_equipment_3_short:0 "SU-76"
+ 
+ 
+ GMC_light_tank_equipment_3:0 "T-60 scout"
+ GMC_light_tank_equipment_3_short:0 "T-60"
+ 
+ 
+ GMC_light_tank_destroyer_equipment_1:1 "AT-1"
+ GMC_light_tank_destroyer_equipment_1_short:1 "AT-1"
+ #GMC_light_tank_destroyer_equipment_1_desc:0 ""
+ GMC_light_tank_destroyer_equipment_2:1 "SU-5"
+ GMC_light_tank_destroyer_equipment_2_short:1 "SU-5"
+ #GMC_light_tank_destroyer_equipment_2_desc:0 ""
+ GMC_light_tank_destroyer_equipment_3:0 "ZiS-30"
+ GMC_light_tank_destroyer_equipment_3_short:0 "ZiS-30"
+ #GMC_light_tank_destroyer_equipment_3_desc:0 ""
+ 
+ 
+ GMC_light_tank_aa_equipment_1:0 "ZSU-12.7"
+ GMC_light_tank_aa_equipment_1_short:0 "ZSU-12.7"
+ #GMC_light_tank_aa_equipment_1_desc:0 ""
+ GMC_light_tank_aa_equipment_2:0 "ZSU-12.7-2"
+ GMC_light_tank_aa_equipment_2_short:0 "ZSU-12.7-2"
+ #GMC_light_tank_aa_equipment_2_desc:0 ""
+ GMC_light_tank_aa_equipment_3:0 "ZSU-37"
+ GMC_light_tank_aa_equipment_3_short:0 "ZSU-37"
+ #GMC_light_tank_aa_equipment_3_desc:0 ""
+ 
+ GMC_medium_tank_artillery_equipment_1:0 "SU-76-32"
+ GMC_medium_tank_artillery_equipment_1_short:0 "SU-76-32"
+ #GMC_medium_tank_artillery_equipment_1_desc:0 ""
+ GMC_medium_tank_artillery_equipment_2:0 "SU-122"
+ GMC_medium_tank_artillery_equipment_2_short:0 "SU-122"
+ #GMC_medium_tank_artillery_equipment_2_desc:0 ""
+ GMC_medium_tank_artillery_equipment_3:0 "SU-152-44"
+ GMC_medium_tank_artillery_equipment_3_short:0 "SU-152-44"
+ 
+ GMC_medium_tank_destroyer_equipment_1:0 "SU-85-32"
+ GMC_medium_tank_destroyer_equipment_1_short:0 "SU-85-32"
+ #GMC_medium_tank_destroyer_equipment_1_desc:0 ""
+ GMC_medium_tank_destroyer_equipment_2:0 "SU-85"
+ GMC_medium_tank_destroyer_equipment_2_short:0 "SU-85"
+ #GMC_medium_tank_destroyer_equipment_2_desc:0 ""
+ GMC_medium_tank_destroyer_equipment_3:0 "SU-100"
+ GMC_medium_tank_destroyer_equipment_3_short:0 "SU-100"
+ 
+ GMC_medium_tank_aa_equipment_1:0 "ZSU-37-32"
+ GMC_medium_tank_aa_equipment_1_short:0 "ZSU-37-32"
+ #GMC_medium_tank_aa_equipment_1_desc:0 ""
+ GMC_medium_tank_aa_equipment_2:0 "ZSU-37-34"
+ GMC_medium_tank_aa_equipment_2_short:0 "ZSU-37-34"
+ #GMC_medium_tank_aa_equipment_2_desc:0 ""
+ GMC_medium_tank_aa_equipment_3:0 "ZSU-57-44"
+ GMC_medium_tank_aa_equipment_3_short:0 "ZSU-57-44"
+ 
+ GMC_heavy_tank_equipment_3:0 "IS"
+ GMC_heavy_tank_equipment_3_short:0 "IS"
+ 
+ GMC_heavy_tank_artillery_equipment_1:0 "SU-14"
+ GMC_heavy_tank_artillery_equipment_1_short:0 "SU-14"
+ #GMC_heavy_tank_artillery_equipment_1_desc:0 ""
+ GMC_heavy_tank_artillery_equipment_2:1 "KV-2"
+ GMC_heavy_tank_artillery_equipment_2_short:1 "KV-2"
+ #GMC_heavy_tank_artillery_equipment_2_desc:0 ""
+ GMC_heavy_tank_artillery_equipment_3:0 "ISU-152"
+ GMC_heavy_tank_artillery_equipment_3_short:0 "ISU-152"
+ 
+ GMC_heavy_tank_destroyer_equipment_1:0 "SMK"
+ GMC_heavy_tank_destroyer_equipment_1_short:0 "SMK"
+ #GMC_heavy_tank_destroyer_equipment_1_desc:0 ""
+ GMC_heavy_tank_destroyer_equipment_2:1 "SU-152"
+ GMC_heavy_tank_destroyer_equipment_2_short:1 "SU-152"
+ #GMC_heavy_tank_destroyer_equipment_2_desc:0 ""
+ GMC_heavy_tank_destroyer_equipment_3:0 "ISU-122"
+ GMC_heavy_tank_destroyer_equipment_3_short:0 "ISU-122"
+ 
+ GMC_heavy_tank_aa_equipment_1:0 "ZSU-12.7-4"
+ GMC_heavy_tank_aa_equipment_1_short:0 "ZSU-12.7-4"
+ #GMC_heavy_tank_aa_equipment_1_desc:0 ""
+ GMC_heavy_tank_aa_equipment_2:1 "ZSU-37-2"
+ GMC_heavy_tank_aa_equipment_2_short:1 "ZSU-37-2"
+ #GMC_heavy_tank_aa_equipment_2_desc:0 ""
+ GMC_heavy_tank_aa_equipment_3:0 "ISU-57-2"
+ GMC_heavy_tank_aa_equipment_3_short:0 "ISU-57-2"
+
+ GMC_super_heavy_tank_artillery_equipment_1:0 "ISU-203"
+ GMC_super_heavy_tank_artillery_equipment_1_short:0 "ISU-203"
+ 
+ GMC_super_heavy_tank_destroyer_equipment_1:0 "ISU-130"
+ GMC_super_heavy_tank_destroyer_equipment_1_short:0 "ISU-130"
+ 
+ GMC_super_heavy_tank_aa_equipment_1:0 "ISU-57-4"
+ GMC_super_heavy_tank_aa_equipment_1_short:0 "ISU-57-4"
+
+ GMC_modern_tank_equipment_1:0 "T-54"
+ GMC_modern_tank_equipment_1_short:0 "T-54"
+
+ GMC_modern_tank_artillery_equipment_1:0 "SU-152-54"
+ GMC_modern_tank_artillery_equipment_1_short:0 "SU-152-54"
+ 
+ GMC_modern_tank_destroyer_equipment_1:0 "SU-122-54"
+ GMC_modern_tank_destroyer_equipment_1_short:0 "SU-122-54"
+ 
+ GMC_modern_tank_aa_equipment_1:0 "ZSU-57-2"
+ GMC_modern_tank_aa_equipment_1_short:0 "ZSU-57-2"
+ #GMC_modern_tank_aa_equipment_1_desc:0 ""
+ 
+ GMC_motorized_equipment_1:0 "ZIS-5"
+ 
+ GMC_mechanized_equipment_1:0 "BTR M1941"
+ GMC_mechanized_equipment_1_short:0 "BTR M1941"
+ GMC_mechanized_equipment_2:0 "BTR M1943"
+ GMC_mechanized_equipment_2_short:0 "BTR M1943"
+ GMC_mechanized_equipment_3:0 "BTR-152"
+ GMC_mechanized_equipment_3_short:0 "BTR-152"
+ 
+ GMC_infantry_equipment_0:0 "M-N M1891/30"
+ GMC_infantry_equipment_0_short:0 "M-N 1891/30"
+ GMC_infantry_equipment_1:0 "SVT-38/40"
+ GMC_infantry_equipment_1_short:0 "SVT-38/40"
+ GMC_infantry_equipment_2:0 "PPSh-41"
+ GMC_infantry_equipment_2_short:0 "PPSh-41"
+ GMC_infantry_equipment_3:0 "PPS-43"
+ GMC_infantry_equipment_3_short:0 "PPS-43"
+ GMC_infantry_at:0 "PTRD"
+ GMC_infantry_at2:0 "RPG-43"
+ GMC_support_weapons:0 "PM M1910 & 9 cm GR"
+ GMC_support_weapons2:0 "DP & RM-38"
+ GMC_support_weapons3:0 "DS-39 & 82-PM-41"
+ GMC_support_weapons4:0 "SG-43 Goryunov & 120-PM-43"
+ 
+ #################################################################################
+ NOV_EQUIPMENT_VERSION_1:0 "A"
+ NOV_EQUIPMENT_VERSION_2:0 "A-1"
+ NOV_EQUIPMENT_VERSION_3:0 "A-2"
+ NOV_EQUIPMENT_VERSION_4:0 "AM"
+ NOV_EQUIPMENT_VERSION_5:0 "B"
+ NOV_EQUIPMENT_VERSION_6:0 "B-1"
+ NOV_EQUIPMENT_VERSION_7:0 "B-2"
+ NOV_EQUIPMENT_VERSION_8:0 "BM"
+ NOV_EQUIPMENT_VERSION_9:0 "C"
+ NOV_EQUIPMENT_VERSION_10:0 "C-1"
+ NOV_EQUIPMENT_VERSION_11:0 "C-2"
+ NOV_EQUIPMENT_VERSION_12:0 "CM"
+ NOV_EQUIPMENT_VERSION_13:0 "D"
+ NOV_EQUIPMENT_VERSION_14:0 "D-1"
+ NOV_EQUIPMENT_VERSION_15:0 "D-2"
+ NOV_EQUIPMENT_VERSION_16:0 "DM"
+ 
+ 
+ #tanks
+ 
+
+ NOV_gw_tank_equipment:0 "T-18"
+ NOV_gw_tank_equipment_short:0 "T-18"
+ 
+ NOV_light_tank_equipment_2:0 "BT-7"
+ NOV_light_tank_equipment_2_short:0 "BT-7"
+ 
+ 
+ NOV_light_tank_artillery_equipment_1:0 "SU-1"
+ NOV_light_tank_artillery_equipment_1_short:0 "SU-1"
+ NOV_light_tank_artillery_equipment_2:0 "SU-26"
+ NOV_light_tank_artillery_equipment_2_short:0 "SU-26"
+ NOV_light_tank_artillery_equipment_3:0 "SU-76"
+ NOV_light_tank_artillery_equipment_3_short:0 "SU-76"
+ 
+ 
+ NOV_light_tank_equipment_3:0 "T-60 scout"
+ NOV_light_tank_equipment_3_short:0 "T-60"
+ 
+ 
+ NOV_light_tank_destroyer_equipment_1:1 "AT-1"
+ NOV_light_tank_destroyer_equipment_1_short:1 "AT-1"
+ #NOV_light_tank_destroyer_equipment_1_desc:0 ""
+ NOV_light_tank_destroyer_equipment_2:1 "SU-5"
+ NOV_light_tank_destroyer_equipment_2_short:1 "SU-5"
+ #NOV_light_tank_destroyer_equipment_2_desc:0 ""
+ NOV_light_tank_destroyer_equipment_3:0 "ZiS-30"
+ NOV_light_tank_destroyer_equipment_3_short:0 "ZiS-30"
+ #NOV_light_tank_destroyer_equipment_3_desc:0 ""
+ 
+ 
+ NOV_light_tank_aa_equipment_1:0 "ZSU-12.7"
+ NOV_light_tank_aa_equipment_1_short:0 "ZSU-12.7"
+ #NOV_light_tank_aa_equipment_1_desc:0 ""
+ NOV_light_tank_aa_equipment_2:0 "ZSU-12.7-2"
+ NOV_light_tank_aa_equipment_2_short:0 "ZSU-12.7-2"
+ #NOV_light_tank_aa_equipment_2_desc:0 ""
+ NOV_light_tank_aa_equipment_3:0 "ZSU-37"
+ NOV_light_tank_aa_equipment_3_short:0 "ZSU-37"
+ #NOV_light_tank_aa_equipment_3_desc:0 ""
+ 
+ NOV_medium_tank_artillery_equipment_1:0 "SU-76-32"
+ NOV_medium_tank_artillery_equipment_1_short:0 "SU-76-32"
+ #NOV_medium_tank_artillery_equipment_1_desc:0 ""
+ NOV_medium_tank_artillery_equipment_2:0 "SU-122"
+ NOV_medium_tank_artillery_equipment_2_short:0 "SU-122"
+ #NOV_medium_tank_artillery_equipment_2_desc:0 ""
+ NOV_medium_tank_artillery_equipment_3:0 "SU-152-44"
+ NOV_medium_tank_artillery_equipment_3_short:0 "SU-152-44"
+ 
+ NOV_medium_tank_destroyer_equipment_1:0 "SU-85-32"
+ NOV_medium_tank_destroyer_equipment_1_short:0 "SU-85-32"
+ #NOV_medium_tank_destroyer_equipment_1_desc:0 ""
+ NOV_medium_tank_destroyer_equipment_2:0 "SU-85"
+ NOV_medium_tank_destroyer_equipment_2_short:0 "SU-85"
+ #NOV_medium_tank_destroyer_equipment_2_desc:0 ""
+ NOV_medium_tank_destroyer_equipment_3:0 "SU-100"
+ NOV_medium_tank_destroyer_equipment_3_short:0 "SU-100"
+ 
+ NOV_medium_tank_aa_equipment_1:0 "ZSU-37-32"
+ NOV_medium_tank_aa_equipment_1_short:0 "ZSU-37-32"
+ #NOV_medium_tank_aa_equipment_1_desc:0 ""
+ NOV_medium_tank_aa_equipment_2:0 "ZSU-37-34"
+ NOV_medium_tank_aa_equipment_2_short:0 "ZSU-37-34"
+ #NOV_medium_tank_aa_equipment_2_desc:0 ""
+ NOV_medium_tank_aa_equipment_3:0 "ZSU-57-44"
+ NOV_medium_tank_aa_equipment_3_short:0 "ZSU-57-44"
+ 
+ NOV_heavy_tank_equipment_3:0 "IS"
+ NOV_heavy_tank_equipment_3_short:0 "IS"
+ 
+ NOV_heavy_tank_artillery_equipment_1:0 "SU-14"
+ NOV_heavy_tank_artillery_equipment_1_short:0 "SU-14"
+ #NOV_heavy_tank_artillery_equipment_1_desc:0 ""
+ NOV_heavy_tank_artillery_equipment_2:1 "KV-2"
+ NOV_heavy_tank_artillery_equipment_2_short:1 "KV-2"
+ #NOV_heavy_tank_artillery_equipment_2_desc:0 ""
+ NOV_heavy_tank_artillery_equipment_3:0 "ISU-152"
+ NOV_heavy_tank_artillery_equipment_3_short:0 "ISU-152"
+ 
+ NOV_heavy_tank_destroyer_equipment_1:0 "SMK"
+ NOV_heavy_tank_destroyer_equipment_1_short:0 "SMK"
+ #NOV_heavy_tank_destroyer_equipment_1_desc:0 ""
+ NOV_heavy_tank_destroyer_equipment_2:1 "SU-152"
+ NOV_heavy_tank_destroyer_equipment_2_short:1 "SU-152"
+ #NOV_heavy_tank_destroyer_equipment_2_desc:0 ""
+ NOV_heavy_tank_destroyer_equipment_3:0 "ISU-122"
+ NOV_heavy_tank_destroyer_equipment_3_short:0 "ISU-122"
+ 
+ NOV_heavy_tank_aa_equipment_1:0 "ZSU-12.7-4"
+ NOV_heavy_tank_aa_equipment_1_short:0 "ZSU-12.7-4"
+ #NOV_heavy_tank_aa_equipment_1_desc:0 ""
+ NOV_heavy_tank_aa_equipment_2:1 "ZSU-37-2"
+ NOV_heavy_tank_aa_equipment_2_short:1 "ZSU-37-2"
+ #NOV_heavy_tank_aa_equipment_2_desc:0 ""
+ NOV_heavy_tank_aa_equipment_3:0 "ISU-57-2"
+ NOV_heavy_tank_aa_equipment_3_short:0 "ISU-57-2"
+
+ NOV_super_heavy_tank_artillery_equipment_1:0 "ISU-203"
+ NOV_super_heavy_tank_artillery_equipment_1_short:0 "ISU-203"
+ 
+ NOV_super_heavy_tank_destroyer_equipment_1:0 "ISU-130"
+ NOV_super_heavy_tank_destroyer_equipment_1_short:0 "ISU-130"
+ 
+ NOV_super_heavy_tank_aa_equipment_1:0 "ISU-57-4"
+ NOV_super_heavy_tank_aa_equipment_1_short:0 "ISU-57-4"
+
+ NOV_modern_tank_equipment_1:0 "T-54"
+ NOV_modern_tank_equipment_1_short:0 "T-54"
+
+ NOV_modern_tank_artillery_equipment_1:0 "SU-152-54"
+ NOV_modern_tank_artillery_equipment_1_short:0 "SU-152-54"
+ 
+ NOV_modern_tank_destroyer_equipment_1:0 "SU-122-54"
+ NOV_modern_tank_destroyer_equipment_1_short:0 "SU-122-54"
+ 
+ NOV_modern_tank_aa_equipment_1:0 "ZSU-57-2"
+ NOV_modern_tank_aa_equipment_1_short:0 "ZSU-57-2"
+ #NOV_modern_tank_aa_equipment_1_desc:0 ""
+ 
+ NOV_motorized_equipment_1:0 "ZIS-5"
+ 
+ NOV_mechanized_equipment_1:0 "BTR M1941"
+ NOV_mechanized_equipment_1_short:0 "BTR M1941"
+ NOV_mechanized_equipment_2:0 "BTR M1943"
+ NOV_mechanized_equipment_2_short:0 "BTR M1943"
+ NOV_mechanized_equipment_3:0 "BTR-152"
+ NOV_mechanized_equipment_3_short:0 "BTR-152"
+ 
+ NOV_infantry_equipment_0:0 "M-N M1891/30"
+ NOV_infantry_equipment_0_short:0 "M-N 1891/30"
+ NOV_infantry_equipment_1:0 "SVT-38/40"
+ NOV_infantry_equipment_1_short:0 "SVT-38/40"
+ NOV_infantry_equipment_2:0 "PPSh-41"
+ NOV_infantry_equipment_2_short:0 "PPSh-41"
+ NOV_infantry_equipment_3:0 "PPS-43"
+ NOV_infantry_equipment_3_short:0 "PPS-43"
+ NOV_infantry_at:0 "PTRD"
+ NOV_infantry_at2:0 "RPG-43"
+ NOV_support_weapons:0 "PM M1910 & 9 cm GR"
+ NOV_support_weapons2:0 "DP & RM-38"
+ NOV_support_weapons3:0 "DS-39 & 82-PM-41"
+ NOV_support_weapons4:0 "SG-43 Goryunov & 120-PM-43"
+
+##########################################################################################
+
+SML_EQUIPMENT_VERSION_1:0 "A"
+ SML_EQUIPMENT_VERSION_2:0 "A-1"
+ SML_EQUIPMENT_VERSION_3:0 "A-2"
+ SML_EQUIPMENT_VERSION_4:0 "AM"
+ SML_EQUIPMENT_VERSION_5:0 "B"
+ SML_EQUIPMENT_VERSION_6:0 "B-1"
+ SML_EQUIPMENT_VERSION_7:0 "B-2"
+ SML_EQUIPMENT_VERSION_8:0 "BM"
+ SML_EQUIPMENT_VERSION_9:0 "C"
+ SML_EQUIPMENT_VERSION_10:0 "C-1"
+ SML_EQUIPMENT_VERSION_11:0 "C-2"
+ SML_EQUIPMENT_VERSION_12:0 "CM"
+ SML_EQUIPMENT_VERSION_13:0 "D"
+ SML_EQUIPMENT_VERSION_14:0 "D-1"
+ SML_EQUIPMENT_VERSION_15:0 "D-2"
+ SML_EQUIPMENT_VERSION_16:0 "DM"
+ 
+ 
+ #tanks
+ 
+
+ SML_gw_tank_equipment:0 "T-18"
+ SML_gw_tank_equipment_short:0 "T-18"
+ 
+ SML_light_tank_equipment_2:0 "BT-7"
+ SML_light_tank_equipment_2_short:0 "BT-7"
+ 
+ 
+ SML_light_tank_artillery_equipment_1:0 "SU-1"
+ SML_light_tank_artillery_equipment_1_short:0 "SU-1"
+ SML_light_tank_artillery_equipment_2:0 "SU-26"
+ SML_light_tank_artillery_equipment_2_short:0 "SU-26"
+ SML_light_tank_artillery_equipment_3:0 "SU-76"
+ SML_light_tank_artillery_equipment_3_short:0 "SU-76"
+ 
+ 
+ SML_light_tank_equipment_3:0 "T-60 scout"
+ SML_light_tank_equipment_3_short:0 "T-60"
+ 
+ 
+ SML_light_tank_destroyer_equipment_1:1 "AT-1"
+ SML_light_tank_destroyer_equipment_1_short:1 "AT-1"
+ #SML_light_tank_destroyer_equipment_1_desc:0 ""
+ SML_light_tank_destroyer_equipment_2:1 "SU-5"
+ SML_light_tank_destroyer_equipment_2_short:1 "SU-5"
+ #SML_light_tank_destroyer_equipment_2_desc:0 ""
+ SML_light_tank_destroyer_equipment_3:0 "ZiS-30"
+ SML_light_tank_destroyer_equipment_3_short:0 "ZiS-30"
+ #SML_light_tank_destroyer_equipment_3_desc:0 ""
+ 
+ 
+ SML_light_tank_aa_equipment_1:0 "ZSU-12.7"
+ SML_light_tank_aa_equipment_1_short:0 "ZSU-12.7"
+ #SML_light_tank_aa_equipment_1_desc:0 ""
+ SML_light_tank_aa_equipment_2:0 "ZSU-12.7-2"
+ SML_light_tank_aa_equipment_2_short:0 "ZSU-12.7-2"
+ #SML_light_tank_aa_equipment_2_desc:0 ""
+ SML_light_tank_aa_equipment_3:0 "ZSU-37"
+ SML_light_tank_aa_equipment_3_short:0 "ZSU-37"
+ #SML_light_tank_aa_equipment_3_desc:0 ""
+ 
+ SML_medium_tank_artillery_equipment_1:0 "SU-76-32"
+ SML_medium_tank_artillery_equipment_1_short:0 "SU-76-32"
+ #SML_medium_tank_artillery_equipment_1_desc:0 ""
+ SML_medium_tank_artillery_equipment_2:0 "SU-122"
+ SML_medium_tank_artillery_equipment_2_short:0 "SU-122"
+ #SML_medium_tank_artillery_equipment_2_desc:0 ""
+ SML_medium_tank_artillery_equipment_3:0 "SU-152-44"
+ SML_medium_tank_artillery_equipment_3_short:0 "SU-152-44"
+ 
+ SML_medium_tank_destroyer_equipment_1:0 "SU-85-32"
+ SML_medium_tank_destroyer_equipment_1_short:0 "SU-85-32"
+ #SML_medium_tank_destroyer_equipment_1_desc:0 ""
+ SML_medium_tank_destroyer_equipment_2:0 "SU-85"
+ SML_medium_tank_destroyer_equipment_2_short:0 "SU-85"
+ #SML_medium_tank_destroyer_equipment_2_desc:0 ""
+ SML_medium_tank_destroyer_equipment_3:0 "SU-100"
+ SML_medium_tank_destroyer_equipment_3_short:0 "SU-100"
+ 
+ SML_medium_tank_aa_equipment_1:0 "ZSU-37-32"
+ SML_medium_tank_aa_equipment_1_short:0 "ZSU-37-32"
+ #SML_medium_tank_aa_equipment_1_desc:0 ""
+ SML_medium_tank_aa_equipment_2:0 "ZSU-37-34"
+ SML_medium_tank_aa_equipment_2_short:0 "ZSU-37-34"
+ #SML_medium_tank_aa_equipment_2_desc:0 ""
+ SML_medium_tank_aa_equipment_3:0 "ZSU-57-44"
+ SML_medium_tank_aa_equipment_3_short:0 "ZSU-57-44"
+ 
+ SML_heavy_tank_equipment_3:0 "IS"
+ SML_heavy_tank_equipment_3_short:0 "IS"
+ 
+ SML_heavy_tank_artillery_equipment_1:0 "SU-14"
+ SML_heavy_tank_artillery_equipment_1_short:0 "SU-14"
+ #SML_heavy_tank_artillery_equipment_1_desc:0 ""
+ SML_heavy_tank_artillery_equipment_2:1 "KV-2"
+ SML_heavy_tank_artillery_equipment_2_short:1 "KV-2"
+ #SML_heavy_tank_artillery_equipment_2_desc:0 ""
+ SML_heavy_tank_artillery_equipment_3:0 "ISU-152"
+ SML_heavy_tank_artillery_equipment_3_short:0 "ISU-152"
+ 
+ SML_heavy_tank_destroyer_equipment_1:0 "SMK"
+ SML_heavy_tank_destroyer_equipment_1_short:0 "SMK"
+ #SML_heavy_tank_destroyer_equipment_1_desc:0 ""
+ SML_heavy_tank_destroyer_equipment_2:1 "SU-152"
+ SML_heavy_tank_destroyer_equipment_2_short:1 "SU-152"
+ #SML_heavy_tank_destroyer_equipment_2_desc:0 ""
+ SML_heavy_tank_destroyer_equipment_3:0 "ISU-122"
+ SML_heavy_tank_destroyer_equipment_3_short:0 "ISU-122"
+ 
+ SML_heavy_tank_aa_equipment_1:0 "ZSU-12.7-4"
+ SML_heavy_tank_aa_equipment_1_short:0 "ZSU-12.7-4"
+ #SML_heavy_tank_aa_equipment_1_desc:0 ""
+ SML_heavy_tank_aa_equipment_2:1 "ZSU-37-2"
+ SML_heavy_tank_aa_equipment_2_short:1 "ZSU-37-2"
+ #SML_heavy_tank_aa_equipment_2_desc:0 ""
+ SML_heavy_tank_aa_equipment_3:0 "ISU-57-2"
+ SML_heavy_tank_aa_equipment_3_short:0 "ISU-57-2"
+
+ SML_super_heavy_tank_artillery_equipment_1:0 "ISU-203"
+ SML_super_heavy_tank_artillery_equipment_1_short:0 "ISU-203"
+ 
+ SML_super_heavy_tank_destroyer_equipment_1:0 "ISU-130"
+ SML_super_heavy_tank_destroyer_equipment_1_short:0 "ISU-130"
+ 
+ SML_super_heavy_tank_aa_equipment_1:0 "ISU-57-4"
+ SML_super_heavy_tank_aa_equipment_1_short:0 "ISU-57-4"
+
+ SML_modern_tank_equipment_1:0 "T-54"
+ SML_modern_tank_equipment_1_short:0 "T-54"
+
+ SML_modern_tank_artillery_equipment_1:0 "SU-152-54"
+ SML_modern_tank_artillery_equipment_1_short:0 "SU-152-54"
+ 
+ SML_modern_tank_destroyer_equipment_1:0 "SU-122-54"
+ SML_modern_tank_destroyer_equipment_1_short:0 "SU-122-54"
+ 
+ SML_modern_tank_aa_equipment_1:0 "ZSU-57-2"
+ SML_modern_tank_aa_equipment_1_short:0 "ZSU-57-2"
+ #SML_modern_tank_aa_equipment_1_desc:0 ""
+ 
+ SML_motorized_equipment_1:0 "ZIS-5"
+ 
+ SML_mechanized_equipment_1:0 "BTR M1941"
+ SML_mechanized_equipment_1_short:0 "BTR M1941"
+ SML_mechanized_equipment_2:0 "BTR M1943"
+ SML_mechanized_equipment_2_short:0 "BTR M1943"
+ SML_mechanized_equipment_3:0 "BTR-152"
+ SML_mechanized_equipment_3_short:0 "BTR-152"
+ 
+ SML_infantry_equipment_0:0 "M-N M1891/30"
+ SML_infantry_equipment_0_short:0 "M-N 1891/30"
+ SML_infantry_equipment_1:0 "SVT-38/40"
+ SML_infantry_equipment_1_short:0 "SVT-38/40"
+ SML_infantry_equipment_2:0 "PPSh-41"
+ SML_infantry_equipment_2_short:0 "PPSh-41"
+ SML_infantry_equipment_3:0 "PPS-43"
+ SML_infantry_equipment_3_short:0 "PPS-43"
+ SML_infantry_at:0 "PTRD"
+ SML_infantry_at2:0 "RPG-43"
+ SML_support_weapons:0 "PM M1910 & 9 cm GR"
+ SML_support_weapons2:0 "DP & RM-38"
+ SML_support_weapons3:0 "DS-39 & 82-PM-41"
+ SML_support_weapons4:0 "SG-43 Goryunov & 120-PM-43"

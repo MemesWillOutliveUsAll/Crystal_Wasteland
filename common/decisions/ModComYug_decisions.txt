@@ -1,0 +1,475 @@
+YUGCOM_communist_militia = {
+
+	YUGCOM_slovenia = {
+
+		available = {
+			controls_state = 813
+			controls_state = 102
+			controls_state = 736
+		}
+
+		visible = {
+		}
+
+		cost = 0
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				division_template = {
+					name = "Partisans"
+					priority = 0
+					division_names_group = ROM_MTN_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+	    	   		 	infantry = { x = 1 y = 0 }
+					}
+				}
+				
+				102 = {
+					create_unit = {
+						division = "name = \"Partisans\" division_template = \"Partisans\" start_experience_factor = 0.0" 
+						owner = KOS
+					}
+				}
+			}
+		}
+	}
+
+	YUGCOM_vojvodina = {
+
+		available = {
+			controls_state = 823
+			controls_state = 764
+			controls_state = 45
+			controls_state = 833
+			controls_state = 834
+			controls_state = 835
+		}
+
+		visible = {
+		}
+
+		cost = 0
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+				
+		}
+	}
+	
+	YUGCOM_southern_serbia = {
+
+		available = {
+			controls_state = 803
+			controls_state = 106
+			controls_state = 818
+			controls_state = 802
+		}
+
+		visible = {
+		}
+
+		cost = 0
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				division_template = {
+					name = "Partisans"
+					priority = 0
+					division_names_group = ROM_MTN_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+	    	   		 	infantry = { x = 1 y = 0 }
+					}
+				}
+				
+				106 = {
+					create_unit = {
+						division = "name = \"Partisans\" division_template = \"Partisans\" start_experience_factor = 0.0" 
+						owner = KOS
+					}
+				}
+			}	
+		}
+	}
+	
+	
+	YUGCOM_northern_serbia_and_montenegro = {
+
+		available = {
+			controls_state = 107
+			controls_state = 108
+			controls_state = 105
+		}
+
+		visible = {
+		}
+
+		cost = 0
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				division_template = {
+					name = "Partisans"
+					priority = 0
+					division_names_group = ROM_MTN_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+	    	   		 	infantry = { x = 1 y = 0 }
+					}
+				}
+				
+				107 = {
+					create_unit = {
+						division = "name = \"Partisans\" division_template = \"Partisans\" start_experience_factor = 0.0" 
+						owner = KOS
+					}
+					create_unit = {
+						division = "name = \"Partisans\" division_template = \"Partisans\" start_experience_factor = 0.0" 
+						owner = KOS
+					}
+				}
+			}	
+		}
+	}
+	
+	
+	YUGCOM_northern_croatia = {
+
+		available = {
+			controls_state = 830
+			controls_state = 109
+			controls_state = 829
+		}
+
+		visible = {
+		}
+
+		cost = 0
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				division_template = {
+					name = "Partisans"
+					priority = 0
+					division_names_group = ROM_MTN_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+	    	   		 	infantry = { x = 1 y = 0 }
+					}
+				}
+				
+				109 = {
+					create_unit = {
+						division = "name = \"Partisans\" division_template = \"Partisans\" start_experience_factor = 0.0" 
+						owner = KOS
+					}
+					create_unit = {
+						division = "name = \"Partisans\" division_template = \"Partisans\" start_experience_factor = 0.0" 
+						owner = KOS
+					}
+				}
+			}	
+		}
+	}
+	
+	YUGCOM_southern_bosnia_and_croatia = {
+
+		available = {
+			controls_state = 104
+			controls_state = 804
+			controls_state = 103
+			controls_state = 831
+			controls_state = 163
+		}
+
+		visible = {
+		}
+
+		cost = 0
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				division_template = {
+					name = "Partisans"
+					priority = 0
+					division_names_group = ROM_MTN_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+	    	   		 	infantry = { x = 1 y = 0 }
+					}
+				}
+				
+				104 = {
+					create_unit = {
+						division = "name = \"Partisans\" division_template = \"Partisans\" start_experience_factor = 0.0" 
+						owner = KOS
+					}
+					create_unit = {
+						division = "name = \"Partisans\" division_template = \"Partisans\" start_experience_factor = 0.0" 
+						owner = KOS
+					}
+				}
+			}	
+		}
+	}
+	
+	
+	YUGCOM_northern_bosnia = {
+
+		available = {
+			controls_state = 832
+			controls_state = 828
+			controls_state = 827
+			controls_state = 824
+			controls_state = 826
+			controls_state = 825
+		}
+
+		visible = {
+		}
+
+		cost = 0
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				division_template = {
+					name = "Partisans"
+					priority = 0
+					division_names_group = ROM_MTN_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+	    	   		 	infantry = { x = 1 y = 0 }
+					}
+				}
+				
+				825 = {
+					create_unit = {
+						division = "name = \"Partisans\" division_template = \"Partisans\" start_experience_factor = 0.0" 
+						owner = KOS
+					}
+					create_unit = {
+						division = "name = \"Partisans\" division_template = \"Partisans\" start_experience_factor = 0.0" 
+						owner = KOS
+					}
+				}
+			}	
+		}
+	}
+
+}
+
+YUGCOM_exploit_our_connections_within_the_union = {
+	YUGCOM_Soviet_guns = {
+
+		available = {
+			KOS = {has_completed_focus = YUGCOM_guns_of_the_soviet_union} 
+		}
+
+		visible = {
+		}
+
+		cost = 25
+		days_remove = 10
+		fire_only_once = no
+		
+		days_remove = 25
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+
+				type = infantry_equipment_1
+
+				amount = 2500
+				producer = SOV
+
+			}
+		}
+	}
+	
+	YUGCOM_take_factories_from_soviets = {
+
+		available = {
+			KOS = {has_completed_focus = YUGCOM_snatch_factories} 
+		}
+
+		visible = {
+		}
+
+		cost = 50
+		days_remove = 25
+		fire_only_once = no
+		
+		days_remove = 70
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			add_offsite_building = { type = arms_factory level = 1 }
+		}
+	}
+	
+	YUGCOM_bring_the_jets_over = {
+
+		available = {
+			KOS = {has_completed_focus = YUGCOM_bring_the_jets_out_of_storage} 
+		}
+
+		visible = {
+		}
+
+		cost = 100
+		fire_only_once = yes
+		
+		days_remove = 150
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		remove_effect = {
+			hidden_effect = {
+			set_technology = {
+			jet_fighter2 = 1
+			jet_tactical_bomber2 = 1
+			jet_strategic_bomber1 = 1
+			}
+			}
+			}
+		}
+	}
+	
+	YUGCOM_use_the_udba_to_purge_opponents = {
+
+		available = {
+			KOS = {has_completed_focus = YUGCOM_Increase_the_power_of_the_udba} 
+		}
+
+		visible = {
+		}
+
+		cost = 0
+		days_remove = 10
+		fire_only_once = no
+		
+		days_remove = 20
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		remove_effect = {
+			add_political_power = 75
+			add_stability = -0.05
+		}
+	}
+}

@@ -1,0 +1,367 @@
+MODVOJ_militia = {
+
+	MODVOJ_slovenia = {
+
+		available = {
+			controls_state = 813
+			controls_state = 102
+			controls_state = 736
+		}
+
+		visible = {
+		}
+
+		cost = 0
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				division_template = {
+					name = "Yugoslav nationalists"
+					priority = 0
+					division_names_group = ROM_MTN_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+	    	   		 	infantry = { x = 1 y = 0 }
+					}
+				}
+				
+				102 = {
+					create_unit = {
+						division = "name = \"Yugoslav nationalists\" division_template = \"Yugoslav nationalists\" start_experience_factor = 0.0" 
+						owner = VOJ
+					}
+				}
+			}
+		}
+	}
+
+	MODVOJ_vojvodina = {
+
+		available = {
+			controls_state = 823
+			controls_state = 764
+			controls_state = 45
+			controls_state = 833
+			controls_state = 834
+			controls_state = 835
+		}
+
+		visible = {
+		}
+
+		cost = 0
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				division_template = {
+					name = "Yugoslav nationalists"
+					priority = 0
+					division_names_group = ROM_MTN_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+	    	   		 	infantry = { x = 1 y = 0 }
+					}
+				}
+				
+				102 = {
+					create_unit = {
+						division = "name = \"Yugoslav nationalists\" division_template = \"Yugoslav nationalists\" start_experience_factor = 0.0" 
+						owner = VOJ
+					}
+				}
+			}	
+		}
+	}
+	
+	MODVOJ_southern_serbia = {
+
+		available = {
+			controls_state = 803
+			controls_state = 106
+			controls_state = 818
+			controls_state = 802
+		}
+
+		visible = {
+		}
+
+		cost = 0
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				division_template = {
+					name = "Yugoslav nationalists"
+					priority = 0
+					division_names_group = ROM_MTN_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+	    	   		 	infantry = { x = 1 y = 0 }
+					}
+				}
+				
+				106 = {
+					create_unit = {
+						division = "name = \"Yugoslav nationalists\" division_template = \"Yugoslav nationalists\" start_experience_factor = 0.0" 
+						owner = VOJ
+					}
+				}
+			}	
+		}
+	}
+	
+	
+	MODVOJ_northern_serbia_and_montenegro = {
+
+		available = {
+			controls_state = 107
+			controls_state = 108
+			controls_state = 105
+		}
+
+		visible = {
+		}
+
+		cost = 0
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				division_template = {
+					name = "Yugoslav nationalists"
+					priority = 0
+					division_names_group = ROM_MTN_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+	    	   		 	infantry = { x = 1 y = 0 }
+					}
+				}
+				
+				107 = {
+					create_unit = {
+						division = "name = \"Yugoslav nationalists\" division_template = \"Yugoslav nationalists\" start_experience_factor = 0.0" 
+						owner = VOJ
+					}
+					create_unit = {
+						division = "name = \"Yugoslav nationalists\" division_template = \"Yugoslav nationalists\" start_experience_factor = 0.0" 
+						owner = VOJ
+					}
+				}
+			}	
+		}
+	}
+	
+	
+	MODVOJ_northern_croatia = {
+
+		available = {
+			controls_state = 830
+			controls_state = 109
+			controls_state = 829
+		}
+
+		visible = {
+		}
+
+		cost = 0
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				division_template = {
+					name = "Yugoslav nationalists"
+					priority = 0
+					division_names_group = ROM_MTN_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+	    	   		 	infantry = { x = 1 y = 0 }
+					}
+				}
+				
+				109 = {
+					create_unit = {
+						division = "name = \"Yugoslav nationalists\" division_template = \"Yugoslav nationalists\" start_experience_factor = 0.0" 
+						owner = VOJ
+					}
+					create_unit = {
+						division = "name = \"Yugoslav nationalists\" division_template = \"Yugoslav nationalists\" start_experience_factor = 0.0" 
+						owner = VOJ
+					}
+				}
+			}	
+		}
+	}
+	
+	MODVOJ_southern_bosnia_and_croatia = {
+
+		available = {
+			controls_state = 104
+			controls_state = 804
+			controls_state = 103
+			controls_state = 831
+			controls_state = 163
+		}
+
+		visible = {
+		}
+
+		cost = 0
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				division_template = {
+					name = "Yugoslav nationalists"
+					priority = 0
+					division_names_group = ROM_MTN_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+	    	   		 	infantry = { x = 1 y = 0 }
+					}
+				}
+				
+				104 = {
+					create_unit = {
+						division = "name = \"Yugoslav nationalists\" division_template = \"Yugoslav nationalists\" start_experience_factor = 0.0" 
+						owner = VOJ
+					}
+					create_unit = {
+						division = "name = \"Yugoslav nationalists\" division_template = \"Yugoslav nationalists\" start_experience_factor = 0.0" 
+						owner = VOJ
+					}
+				}
+			}	
+		}
+	}
+	
+	
+	MODVOJ_northern_bosnia = {
+
+		available = {
+			controls_state = 832
+			controls_state = 828
+			controls_state = 827
+			controls_state = 824
+			controls_state = 826
+			controls_state = 825
+		}
+
+		visible = {
+		}
+
+		cost = 0
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				division_template = {
+					name = "Yugoslav nationalists"
+					priority = 0
+					division_names_group = ROM_MTN_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+	    	   		 	infantry = { x = 1 y = 0 }
+					}
+				}
+				
+				825 = {
+					create_unit = {
+						division = "name = \"Yugoslav nationalists\" division_template = \"Yugoslav nationalists\" start_experience_factor = 0.0" 
+						owner = VOJ
+					}
+					create_unit = {
+						division = "name = \"Yugoslav nationalists\" division_template = \"Yugoslav nationalists\" start_experience_factor = 0.0" 
+						owner = VOJ
+					}
+				}
+			}	
+		}
+	}
+
+}

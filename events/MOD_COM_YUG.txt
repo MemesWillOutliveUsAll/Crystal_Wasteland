@@ -1,0 +1,57 @@
+﻿add_namespace = mod_comYugoslavia
+# before Yugoslav Civil war #
+country_event = {
+	id = mod_comYugoslavia.1
+	title = mod_comYugoslavia.1.t
+	desc = mod_comYugoslavia.1.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	# Ljubomir
+	option = {
+		name = mod_comYugoslavia.1.a
+		ai_will_do = {
+		factor = 2
+		}
+		hidden_effect = {
+		YUG = { set_country_flag = council_has_chosen }
+		complete_national_focus = YUGCOM_Rankovic_takeover	
+		}
+	}
+	# Jovanovich
+	option = {
+		name = mod_comYugoslavia.1.b
+		ai_will_do = {
+		factor = 60
+		}
+		hidden_effect = {
+		YUG = { set_country_flag = council_has_chosen }
+		complete_national_focus = YUGCOM_Svetlana_chosen
+		}
+	}
+	
+}
+
+country_event = {
+	id = mod_comYugoslavia.2
+	title = mod_comYugoslavia.2.t
+	desc = mod_comYugoslavia.2.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	# Ljubomir
+	option = {
+		name = mod_comYugoslavia.2.a
+		hidden_effect = {
+		YUG = { set_country_flag = council_has_chosen }
+		complete_national_focus = YUGCOM_The_mysterious_candidate
+		}
+	}
+	
+}

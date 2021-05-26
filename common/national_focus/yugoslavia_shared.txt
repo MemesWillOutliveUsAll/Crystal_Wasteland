@@ -1,0 +1,849 @@
+shared_focus = {
+	id = Yugoslavia_Harnessing_the_killer
+	icon = GFX_focus_Harnessing_the_killer
+	x = 14
+	y = 0
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		country_event = mod_Yugoslavia.1
+	}	
+
+
+	bypass = {
+	}
+}
+
+
+
+######################### Ljubomir science ##########################################
+shared_focus = {
+	id = Yugoslavia_Ljubomir_scientist_chosen
+	icon = GFX_focus_Ljubomir_give_money_to_scientists
+	prerequisite = { focus = Yugoslavia_Harnessing_the_killer }
+	mutually_exclusive = { focus = Yugoslavia_Jovanovich_scientist_chosen}
+	relative_position_id = Yugoslavia_Harnessing_the_killer
+	x = -2
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	YUG = {has_country_flag = Scientist_chosen}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		833 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				instant_build = yes
+			}
+		}
+	}	
+
+
+	bypass = {
+	}
+}
+
+###################### Jovanovich pr campaign ###################################################
+shared_focus = {
+	id = Yugoslavia_Jovanovich_scientist_chosen
+	icon = GFX_focus_Jovanovich_attract_canadian_scientists
+	prerequisite = { focus = Yugoslavia_Harnessing_the_killer }
+	mutually_exclusive = { focus = Yugoslavia_Ljubomir_scientist_chosen}
+	relative_position_id = Yugoslavia_Harnessing_the_killer
+	x = 2
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	YUG = {has_country_flag = Scientist_chosen}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_political_power = 200
+		add_stability = 0.05
+	}	
+
+
+	bypass = {
+	}
+}
+
+######################## finishing touches ################################################################
+
+shared_focus = {
+	id = Yugoslavia_the_test_complete
+	icon = GFX_focus_A_toast_to_the_test
+	prerequisite = { focus = Yugoslavia_Jovanovich_scientist_chosen focus = Yugoslavia_Ljubomir_scientist_chosen }
+	relative_position_id = Yugoslavia_Jovanovich_scientist_chosen
+	x = -2
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_completed_focus = Yugoslavia_the_commies_gone
+	YUG = {has_country_flag = YUG_everything_is_ready}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		country_event = mod_Yugoslavia.3
+	}	
+
+
+	bypass = {
+	}
+}
+
+########################## Politics before the crystal wasteland ###################################################
+
+shared_focus = {
+	id = Yugoslavia_ensuring_stability
+	icon = GFX_focus_Ensure_stability
+	x = 6
+	y = 0
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	YUG = {has_country_flag = Scientist_chosen}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		
+	}	
+
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = Yugoslavia_get_some_debt
+	icon = GFX_focus_debt
+	prerequisite = { focus = Yugoslavia_ensuring_stability }
+	relative_position_id = Yugoslavia_ensuring_stability
+	x = 2
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_timed_idea = { idea = paying_back_our_debt  days = 100 }
+		add_political_power = 150
+	}	
+
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = Yugoslavia_crush_protesters
+	icon = GFX_focus_crush_protestors
+	prerequisite = { focus = Yugoslavia_ensuring_stability }
+	relative_position_id = Yugoslavia_ensuring_stability
+	x = -2
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		remove_ideas = {Communist_resistance}
+	}	
+
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = Yugoslavia_lockup_Svetlana
+	icon = GFX_focus_Lockup_Svetlana
+	prerequisite = { focus = Yugoslavia_ensuring_stability }
+	relative_position_id = Yugoslavia_ensuring_stability
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		country_event = mod_Yugoslavia.2
+	}	
+
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = Yugoslavia_the_commies_gone
+	icon = GFX_focus_The_commies_gone
+	prerequisite = { focus = Yugoslavia_lockup_Svetlana }
+	prerequisite = { focus = Yugoslavia_crush_protesters }
+	prerequisite = { focus = Yugoslavia_get_some_debt }
+	relative_position_id = Yugoslavia_lockup_Svetlana
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_stability = 0.01
+	}	
+
+
+	bypass = {
+	}
+}
+
+## FIRST EXPLOSION ##
+
+shared_focus = {
+	id = Yugoslavia_junta_on_high_alert
+	icon = GFX_focus_Ensure_stability
+	x = 6
+	y = 0
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_equipment_to_stockpile = {
+
+			type = infantry_equipment_1
+
+			amount = 5000
+			producer = YUG
+
+		}
+	}	
+
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = Yugoslavia_emergency_funds
+	icon = GFX_focus_debt
+	prerequisite = { focus = Yugoslavia_junta_on_high_alert }
+	relative_position_id = Yugoslavia_junta_on_high_alert
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_political_power = 150
+	}	
+
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = Yugoslavia_war_is_over
+	icon = GFX_goal_generic_military_deal
+	prerequisite = { focus = Yugoslavia_emergency_funds }
+	relative_position_id = Yugoslavia_emergency_funds
+	x = 0
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		KOS = {exists = no}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_political_power = 150
+		hidden_effect = {
+		news_event = { id = news.36 }
+		}
+	}	
+
+
+	bypass = {
+	}
+}
+
+# democratic increase ##
+shared_focus = {
+	id = Yugoslavia_the_democrats_takeover
+	icon = GFX_goal_generic_national_unity
+	prerequisite = { focus = Yugoslavia_war_is_over }
+	mutually_exclusive = { focus = Yugoslavia_crush_democrats}
+	relative_position_id = Yugoslavia_war_is_over
+	x = 3
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	remove_ideas = {A_Junta_in_all_but_name}
+	hidden_effect = {
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+		}
+		
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.10
+		}
+	}
+	}	
+
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = Yugoslavia_promise_elections
+	icon = GFX_goal_support_democracy
+	prerequisite = { focus = Yugoslavia_the_democrats_takeover }
+	relative_position_id = Yugoslavia_the_democrats_takeover
+	x = -1
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_political_power = 20
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.10
+		}
+	}	
+
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = Yugoslavia_reveal_the_secrets_of_the_junta
+	icon = GFX_goal_generic_forceful_treaty
+	prerequisite = { focus = Yugoslavia_the_democrats_takeover }
+	relative_position_id = Yugoslavia_the_democrats_takeover
+	x = 1
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_stability = -0.15
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.25
+		}
+	}	
+
+
+	bypass = {
+	}
+}
+#military coup #
+shared_focus = {
+	id = Yugoslavia_crush_democrats
+	icon = GFX_goal_generic_propaganda
+	prerequisite = { focus = Yugoslavia_war_is_over }
+	mutually_exclusive = { focus = Yugoslavia_the_democrats_takeover}
+	relative_position_id = Yugoslavia_war_is_over
+	x = -3
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_political_power = 25
+		add_stability = 0.01
+	}	
+
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = Yugoslavia_the_white_terror
+	icon = GFX_focus_The_commies_gone
+	prerequisite = { focus = Yugoslavia_crush_democrats }
+	relative_position_id = Yugoslavia_crush_democrats
+	x = 1
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_stability = 0.05
+		manpower = -1000
+		add_popularity = {
+			ideology = communism
+			popularity = -0.16
+		}
+	}	
+
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = Yugoslavia_eradicate_the_democrats
+	icon = GFX_focus_crush_protestors
+	prerequisite = { focus = Yugoslavia_crush_democrats }
+	relative_position_id = Yugoslavia_crush_democrats
+	x = -1
+	y = 1
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_stability = 0.05
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.27
+		}
+	}	
+
+
+	bypass = {
+	}
+}
+
+#SECOND EXPLOSION#
+
+shared_focus = {
+	id = Yugoslavia_failure_after_failure
+	icon = GFX_focus_Ensure_stability
+	x = 6
+	y = 0
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_stability = -0.35
+	}	
+
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = Yugoslavia_defeat_after_defeat
+	icon = GFX_goal_generic_political_pressure
+	prerequisite = { focus = Yugoslavia_failure_after_failure }
+	relative_position_id = Yugoslavia_failure_after_failure
+	x = -2
+	y = 1
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_war_support = -0.50
+	}	
+
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = Yugoslavia_deserters
+	icon = GFX_goal_generic_more_territorial_claims
+	prerequisite = { focus = Yugoslavia_failure_after_failure }
+	relative_position_id = Yugoslavia_failure_after_failure
+	x = 0
+	y = 1
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		manpower = -1200
+	}	
+
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = Yugoslavia_bureaucratic_meltdown
+	icon = GFX_goal_generic_forceful_treaty
+	prerequisite = { focus = Yugoslavia_failure_after_failure }
+	relative_position_id = Yugoslavia_failure_after_failure
+	x = 2
+	y = 1
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_political_power = -350
+	}	
+
+
+	bypass = {
+	}
+}
+
+# warpath #
+shared_focus = {
+	id = Yugoslavia_attack_the_sepratists
+	icon = GFX_goal_generic_territory_or_war
+	prerequisite = { focus = Yugoslavia_bureaucratic_meltdown }
+	prerequisite = { focus = Yugoslavia_deserters }
+	prerequisite = { focus = Yugoslavia_defeat_after_defeat }
+	x = 0
+	y = 1
+	relative_position_id = Yugoslavia_deserters
+	cost = 2
+		
+	ai_will_do = {
+		base = 1
+	}
+		
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		hidden_effect = {
+		declare_war_on = { type = annex_everything    target = KOS }
+		declare_war_on = { type = annex_everything    target = CRO }
+		}
+	}
+	bypass = {
+	OR = {
+	has_war_with = CRO
+	has_war_with = KOS
+	}
+	
+	}
+}
+
+shared_focus = {
+	id = Yugoslavia_eradicate_the_commies
+	icon = GFX_goal_generic_occupy_states_ongoing_war
+	prerequisite = { focus = Yugoslavia_attack_the_sepratists }
+	x = 0
+	y = 1
+	relative_position_id = Yugoslavia_attack_the_sepratists
+	cost = 2
+		
+	ai_will_do = {
+		base = 1
+	}
+		
+	available = {
+	KOS = {exists = no}
+	CRO = {exists = no}
+	OR = {
+	SER = {exists = no}
+	VOJ = {exists = no}
+	}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		hidden_effect = {
+		declare_war_on = { type = annex_everything    target = SER }
+		declare_war_on = { type = annex_everything    target = VOJ }
+		}
+	}
+	bypass = {
+	OR = {
+	has_war_with = SER
+	has_war_with = VOJ
+	}
+	}
+}
+
+shared_focus = {
+	id = Yugoslavia_stability_restored
+	icon = GFX_goal_molotov_ribbentrop_pact
+	prerequisite = { focus = Yugoslavia_eradicate_the_commies }
+	x = 0
+	y = 1
+	relative_position_id = Yugoslavia_eradicate_the_commies
+	cost = 2
+		
+	ai_will_do = {
+		base = 1
+	}
+		
+	available = {
+	SER = {exists = no}
+	VOJ = {exists = no}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		hidden_effect = {
+		sound_effect = "Yugoslav_kingdom_win"
+		news_event = { id = news.36 }
+		}
+	}
+	bypass = {
+	}
+}

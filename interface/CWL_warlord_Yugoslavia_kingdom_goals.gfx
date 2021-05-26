@@ -1,0 +1,57 @@
+spriteTypes = {	
+
+	# Non politics #
+	SpriteType = {
+	name = "GFX_focus_Harnessing_the_killer"
+	texturefile = "gfx/interface/goals/Harnessing_the_killer.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_Jovanovich_attract_canadian_scientists"
+	texturefile = "gfx/interface/goals/Jovanovich_attract_canadian_scientists.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_Ljubomir_give_money_to_scientists"
+	texturefile = "gfx/interface/goals/Ljubomir_give_money_to_scientists.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_A_toast_to_the_test"
+	texturefile = "gfx/interface/goals/A_toast_to_the_test.dds"			
+	}
+	
+	
+	############# POLITICS
+	SpriteType = {
+	name = "GFX_focus_Ensure_stability"
+	texturefile = "gfx/interface/goals/Ensure_stability.dds"			
+	}
+	
+	
+	SpriteType = {
+	name = "GFX_focus_crush_protestors"
+	texturefile = "gfx/interface/goals/crush_protestors.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_debt"
+	texturefile = "gfx/interface/goals/debt.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_Lockup_Svetlana"
+	texturefile = "gfx/interface/goals/Lockup_Svetlana.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_The_commies_gone"
+	texturefile = "gfx/interface/goals/The_commies_gone.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_Boot_on_fascism"
+	texturefile = "gfx/interface/goals/Boot_on_fascism.dds"			
+	}
+	
+}

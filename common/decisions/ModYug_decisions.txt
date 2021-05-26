@@ -1,0 +1,353 @@
+YUG_Project_killer = {
+	
+	YUG_invite_canadian_scientists = {
+		#icon = generic_construction
+
+		available = {
+			
+		}
+
+		visible = {
+			YUG = {has_completed_focus = Yugoslavia_Jovanovich_scientist_chosen}
+		}
+
+		cost = 50
+		days_remove = 50
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			YUG = {set_country_flag = YUG_and_the_jews}
+			
+		}
+	}
+	
+	
+	YUG_and_the_jewish_scientists = {
+		#icon = generic_construction
+
+		available = {
+			YUG = {has_country_flag = YUG_and_the_jews}
+		}
+
+		visible = {
+			YUG = {has_completed_focus = Yugoslavia_Jovanovich_scientist_chosen}
+		}
+
+		cost = 50
+		days_remove = 50
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+
+		remove_effect = {
+		
+				YUG = {set_country_flag = YUG_starting_chamber_ready}
+
+		}
+	}
+	
+	
+	############### Ljubomir
+	
+	YUG_develop_vojvodina = {
+		#icon = generic_construction
+
+		available = {
+			
+		}
+
+		visible = {
+			YUG = {has_completed_focus = Yugoslavia_Ljubomir_scientist_chosen}
+		}
+
+		cost = 50
+		days_remove = 50
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		
+
+		remove_effect = {
+			YUG = {set_country_flag = YUG_developed_vojvodina}
+		}
+	}
+	
+	YUG_increase_scientist_pay = {
+		#icon = generic_construction
+
+		available = {
+			YUG = {has_country_flag = YUG_developed_vojvodina}
+		}
+
+		visible = {
+			YUG = {has_completed_focus = Yugoslavia_Ljubomir_scientist_chosen}
+		}
+
+		cost = 100
+		days_remove = 50
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+	
+
+		remove_effect = {
+			YUG = {set_country_flag = YUG_starting_chamber_ready}
+		}
+	}
+	
+	############################## END FOR BOTH
+	
+	YUG_build_the_chamber = {
+		#icon = generic_construction
+
+		available = {
+			YUG = {has_country_flag = YUG_starting_chamber_ready}
+		}
+
+		visible = {
+			OR = {
+				YUG = {has_completed_focus = Yugoslavia_Jovanovich_scientist_chosen}
+				YUG = {has_completed_focus = Yugoslavia_Ljubomir_scientist_chosen}
+			}
+		}
+
+		cost = 50
+		days_remove = 90
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+				YUG = {set_country_flag = YUG_everything_is_ready}
+		}
+	}
+
+}
+
+
+############################
+YUG_going_to_blow_up = {
+
+	the_second_explosion = {
+		fire_only_once = yes
+		
+		is_good = no 
+		
+		available = {
+			if ={
+				limit = {
+					TAG = YUG
+				}
+				KOS ={ exists = no }
+			}
+			
+			if ={
+				limit = {
+					TAG = KOS
+				}
+				YUG ={ exists = no }
+			}
+		}
+		
+		complete_effect = {
+			YUG = {set_country_flag = Has_contained_explosion}
+		}
+		
+		selectable_mission = no
+		
+		visible = {
+		OR = {
+		YUG = {has_country_flag = civil_war_start}
+		}
+		
+		OR = {
+		NOT = {YUG = {has_country_flag = Second_explosion}}
+		NOT = {YUG = {has_country_flag = Has_contained_explosion}}
+		
+		}
+		
+		
+		}
+		
+		is_good = no
+		
+		days_mission_timeout = 25
+		
+		activation = {
+		OR = {
+		YUG = {has_country_flag = civil_war_start}
+		}
+		
+        }
+		
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		timeout_effect = {
+		hidden_effect = {
+		news_event = { id = news.44 }
+		YUG = {set_country_flag = Second_explosion}
+		YUG = {
+		white_peace = KOS
+		transfer_units_fraction = {
+				target = CRO
+				size = 0.3
+				stockpile_ratio = 0.3
+				army_ratio = 0.3
+				navy_ratio = 0.3
+				air_ratio = 0.3
+				keep_unit_leaders = { }
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
+		transfer_units_fraction = {
+				target = SER
+				size = 0.1
+				stockpile_ratio = 0.1
+				army_ratio = 0.1
+				navy_ratio = 0.1
+				air_ratio = 0.1
+				keep_unit_leaders = { }
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
+		declare_war_on = { type = annex_everything    target = BOS }
+			load_focus_tree = {
+			tree = yugoslavian_second_explosion
+			keep_completed = no
+			}
+			country_event = mod_Voj.2
+		}
+		
+		KOS = {
+		transfer_units_fraction = {
+				target = VOJ
+				size = 0.3
+				stockpile_ratio = 0.3
+				army_ratio = 0.3
+				navy_ratio = 0.3
+				air_ratio = 0.3
+				keep_unit_leaders = { }
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
+			
+		transfer_units_fraction = {
+				target = SER
+				size = 0.2
+				stockpile_ratio = 0.2
+				army_ratio = 0.2
+				navy_ratio = 0.2
+				air_ratio = 0.2
+				keep_unit_leaders = { }
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
+			load_focus_tree = {
+			tree = yugoslavian_communist_collapse_focus
+			keep_completed = no
+			}
+			country_event = mod_Voj.1
+		}
+		BOS = {transfer_state = 104}
+		SER = {
+		set_politics = {
+		ruling_party = communism
+		elections_allowed = no
+		}
+		
+		set_cosmetic_tag = YUG
+		transfer_state = 107
+		transfer_state = 108
+		transfer_state = 106
+		transfer_state = 802
+		transfer_state = 818
+		transfer_state = 803
+		transfer_state = 105
+		ADD_yug_cores = yes
+		}
+		
+		SLV = {
+		transfer_state = 736
+		transfer_state = 102
+		transfer_state = 813
+		add_state_core = 736
+		add_state_core = 102
+		add_state_core = 813
+		}
+		
+		CRO = {
+		transfer_state = 109
+		transfer_state = 830
+		transfer_state = 829
+		}
+		
+		VOJ ={
+		set_politics = {
+		ruling_party = neutrality
+		elections_allowed = no
+		}
+		transfer_state = 764
+		transfer_state = 834
+		transfer_state = 835
+		transfer_state = 45
+		transfer_state = 833
+		transfer_state = 823
+		ADD_yug_cores = yes
+			load_focus_tree = {
+			tree = Yugoslav_state_focus
+			keep_completed = no
+			}
+		}
+		}
+		
+			
+        }
+		
+	}
+	
+	
+	
+	
+}

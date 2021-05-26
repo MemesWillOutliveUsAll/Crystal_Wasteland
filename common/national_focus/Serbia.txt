@@ -1,0 +1,217 @@
+﻿focus_tree = {
+	
+	id = Serbia_focus
+	
+	country = {
+		base = 0
+		modifier = {
+			add = 10
+			tag = SER
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 50 }
+	
+	################################
+	###### GOVERNMENT AFFAIRS ######
+	################################
+	
+	focus = {
+		id = SER_the_internal_struggle
+		icon = GFX_focus_Ensure_stability
+		x = 14
+		y = 0
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		unlock_decision_category_tooltip = SER_democratic_resistance
+		SER = {set_country_flag = SER_revolution_started}
+		}
+	}
+
+	focus = {
+		id = SER_lie_to_the_democrats
+		icon = GFX_focus_crush_protestors
+		prerequisite = { focus = SER_the_internal_struggle }
+		x = -2
+		y = 1
+		relative_position_id = SER_the_internal_struggle
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			SER = {set_country_flag = SER_democratic_oposition_distracted}
+		}
+	}
+	
+	
+	focus = {
+		id = SER_rally_the_stalinists
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = SER_the_internal_struggle }
+		x = 2
+		y = 1
+		relative_position_id = SER_the_internal_struggle
+		cost = 10
+		
+		ai_will_do = {
+			base = 50
+		}
+		
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SER_keep_an_eye_on_albanians
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = SER_the_internal_struggle }
+		x = 0
+		y = 1
+		relative_position_id = SER_the_internal_struggle
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	## war 
+	focus = {
+		id = SER_destroy_the_black_hand
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = SER_keep_an_eye_on_albanians }
+		prerequisite = { focus = SER_rally_the_stalinists }
+		prerequisite = { focus = SER_lie_to_the_democrats }
+		x = 0
+		y = 1
+		relative_position_id = SER_keep_an_eye_on_albanians
+		cost = 2
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			hidden_effect = {
+			declare_war_on = { type = annex_everything    target = VOJ }
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_reclamation_of_croatia_and_bosnia
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = SER_destroy_the_black_hand }
+		x = 0
+		y = 1
+		relative_position_id = SER_destroy_the_black_hand
+		cost = 2
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			VOJ ={ exists = no }
+			OR ={
+			NOT = {
+			CRO ={ exists = yes }
+			YUG ={ exists = yes }
+			}
+			NOT = {
+			CRO ={ exists = yes }
+			KOS ={ exists = no }
+			}
+			NOT = {
+			KOS ={ exists = yes }
+			YUG ={ exists = yes }
+			}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			hidden_effect = {
+			declare_war_on = { type = annex_everything    target = CRO }
+			declare_war_on = { type = annex_everything    target = KOS }
+			declare_war_on = { type = annex_everything    target = YUG }
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_Yugoslavia_secure
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = SER_reclamation_of_croatia_and_bosnia }
+		x = 0
+		y = 1
+		relative_position_id = SER_reclamation_of_croatia_and_bosnia
+		cost = 2
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			hidden_effect = {
+		news_event = { id = news.39 }
+		sound_effect = "Rankovic_wins"
+		}
+		}
+	}
+	
+}

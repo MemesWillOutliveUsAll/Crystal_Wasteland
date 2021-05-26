@@ -585,6 +585,11 @@ shared_focus = {
 			German_unification = yes
 			news_event = { id = news.28 }
 			sound_effect = "Rommel_ger_wins"
+			
+			load_focus_tree = {
+			tree = alsace_failure
+			keep_completed = no
+			}
 		}
 	}
 

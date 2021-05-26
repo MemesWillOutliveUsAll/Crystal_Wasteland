@@ -1,0 +1,662 @@
+﻿focus_tree = {
+	
+	id = Yugoslav_state_focus
+	
+	country = {
+		base = 0
+		modifier = {
+			add = 10
+			tag = VOJ
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 50 }
+	
+	################################
+	###### GOVERNMENT AFFAIRS ######
+	################################
+	
+	focus = {
+		id = VOJ_all_the_guns
+		icon = GFX_goal_rhineland
+		x = 14
+		y = 0
+		cost = 5
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		add_equipment_to_stockpile = {
+
+        type = infantry_equipment_1
+
+        amount = 5000
+		producer = YUG
+
+		}
+		}
+	}
+	
+	# crazy path #############################################################################################
+	focus = {
+		id = VOJ_no_time_for_caution
+		icon = GFX_focus_crush_protestors
+		prerequisite = { focus = VOJ_all_the_guns }
+		mutually_exclusive = { focus = VOJ_taking_it_slow}
+		x = 3
+		y = 1
+		relative_position_id = VOJ_all_the_guns
+		cost = 5
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = VOJ_hide_wounds
+		icon = GFX_focus_Ensure_stability
+		prerequisite = { focus = VOJ_no_time_for_caution }
+		x = -1
+		y = 1
+		relative_position_id = VOJ_no_time_for_caution
+		cost = 5
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			has_war = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			country_event = mod_Voj.3
+		}
+	}
+	
+	focus = {
+		id = VOJ_create_a_new_yugoslav_culture
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = VOJ_no_time_for_caution }
+		x = 1
+		y = 1
+		relative_position_id = VOJ_no_time_for_caution
+		cost = 5
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			has_war = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			country_event = mod_Voj.4
+		}
+	}
+	
+	focus = {
+		id = VOJ_ban_all_slavic_ethnicities
+		icon = GFX_goal_anschluss
+		prerequisite = { focus = VOJ_create_a_new_yugoslav_culture }
+		x = 2
+		y = 1
+		relative_position_id = VOJ_create_a_new_yugoslav_culture
+		cost = 5
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			has_war = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = VOJ_state_atheism
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = VOJ_create_a_new_yugoslav_culture }
+		x = 0
+		y = 1
+		relative_position_id = VOJ_create_a_new_yugoslav_culture
+		cost = 5
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			has_war = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = VOJ_propaganda_of_great_leader
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = VOJ_hide_wounds }
+		x = 0
+		y = 1
+		relative_position_id = VOJ_hide_wounds
+		cost = 5
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			has_war = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			country_event = mod_Voj.5
+		}
+	}
+	
+	focus = {
+		id = VOJ_eradication_of_serbian_and_montenegran_identity
+		icon = GFX_focus_The_commies_gone
+		prerequisite = { focus = VOJ_ban_all_slavic_ethnicities }
+		prerequisite = { focus = VOJ_state_atheism }
+		prerequisite = { focus = VOJ_propaganda_of_great_leader }
+		prerequisite = { focus = VOJ_Gavrilo_princip_day }
+		x = 1
+		y = 1
+		relative_position_id = VOJ_propaganda_of_great_leader
+		cost = 2
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			hidden_effect = {
+			declare_war_on = { type = annex_everything    target = SER }
+			}
+		}
+	}
+	
+	focus = {
+		id = VOJ_eradication_of_bosnian_and_croatian_identity
+		icon = GFX_Boot_on_fascism
+		prerequisite = { focus = VOJ_eradication_of_serbian_and_montenegran_identity }
+		x = 0
+		y = 1
+		relative_position_id = VOJ_eradication_of_serbian_and_montenegran_identity
+		cost = 2
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			SER ={ exists = no }
+			OR ={
+			NOT = {
+			CRO ={ exists = yes }
+			YUG ={ exists = yes }
+			}
+			NOT = {
+			CRO ={ exists = yes }
+			KOS ={ exists = yes }
+			}
+			NOT = {
+			KOS ={ exists = yes }
+			YUG ={ exists = yes }
+			}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			hidden_effect = {
+			declare_war_on = { type = annex_everything    target = CRO }
+			declare_war_on = { type = annex_everything    target = KOS }
+			declare_war_on = { type = annex_everything    target = YUG }
+			}
+		}
+	}
+	
+	focus = {
+		id = VOJ_eradication_of_slovenian_identity
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = VOJ_eradication_of_bosnian_and_croatian_identity }
+		x = 0
+		y = 1
+		relative_position_id = VOJ_eradication_of_bosnian_and_croatian_identity
+		cost = 2
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			CRO = {exists = no }
+			KOS = {exists = no }
+			YUG = {exists = no }
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			hidden_effect = {
+			declare_war_on = { type = annex_everything    target = SLV }
+			}
+		}
+	}
+	
+	focus = {
+		id = VOJ_declare_the_all_yugoslav_state
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = VOJ_eradication_of_slovenian_identity }
+		x = 0
+		y = 1
+		relative_position_id = VOJ_eradication_of_slovenian_identity
+		cost = 2
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			CRO = {exists = no }
+			KOS = {exists = no }
+			YUG = {exists = no }
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			hidden_effect = {
+				country_event = mod_Voj.9
+				news_event = { id = news.42 }
+				sound_effect = "Jeremija_wins_evil"
+			}
+		}
+	}
+	
+	
+	
+	
+	# non crazy path ############################################################################################
+	focus = {
+		id = VOJ_taking_it_slow
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = VOJ_all_the_guns }
+		mutually_exclusive = { focus = VOJ_no_time_for_caution}
+		x = -3
+		y = 1
+		relative_position_id = VOJ_all_the_guns
+		cost = 5
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			has_war = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	# initial #
+	focus = {
+		id = VOJ_democracy
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = VOJ_taking_it_slow }
+		x = -1
+		y = 1
+		relative_position_id = VOJ_taking_it_slow
+		cost = 5
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			has_war = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = VOJ_reveal_wounds
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = VOJ_taking_it_slow }
+		x = 1
+		y = 1
+		relative_position_id = VOJ_taking_it_slow
+		cost = 5
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			has_war = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			country_event = mod_Voj.7
+		}
+	}
+	
+	# after #
+	
+	focus = {
+		id = VOJ_make_religion_inconvenient
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = VOJ_democracy }
+		x = 0
+		y = 1
+		relative_position_id = VOJ_democracy
+		cost = 5
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			has_war = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = VOJ_bolster_yugoslav_nationalism
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = VOJ_democracy }
+		x = -2
+		y = 1
+		relative_position_id = VOJ_democracy
+		cost = 5
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			has_war = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = VOJ_begin_pereparations_for_transition
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = VOJ_reveal_wounds }
+		x = 0
+		y = 1
+		relative_position_id = VOJ_reveal_wounds
+		cost = 5
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			has_war = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			country_event = mod_Voj.8
+		}
+	}
+	
+	focus = {
+		id = VOJ_Gavrilo_princip_day
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = VOJ_reveal_wounds focus = VOJ_hide_wounds }
+		x = 2
+		y = 1
+		relative_position_id = VOJ_reveal_wounds
+		cost = 5
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			has_war = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			country_event = mod_Voj.6
+		}
+	}
+	
+	focus = {
+		id = VOJ_taking_out_of_rankovic
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = VOJ_make_religion_inconvenient }
+		prerequisite = { focus = VOJ_bolster_yugoslav_nationalism }
+		prerequisite = { focus = VOJ_begin_pereparations_for_transition }
+		prerequisite = { focus = VOJ_Gavrilo_princip_day }
+		x = -1
+		y = 1
+		relative_position_id = VOJ_begin_pereparations_for_transition
+		cost = 2
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			hidden_effect = {
+			declare_war_on = { type = annex_everything    target = SER }
+			}
+		}
+	}
+	
+	focus = {
+		id = VOJ_reataking_of_the_west
+		icon = GFX_goal_generic_occupy_states_coastal
+		prerequisite = { focus = VOJ_taking_out_of_rankovic }
+		x = 0
+		y = 1
+		relative_position_id = VOJ_taking_out_of_rankovic
+		cost = 2
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			SER ={ exists = no }
+			OR ={
+			NOT = {
+			CRO ={ exists = yes }
+			YUG ={ exists = yes }
+			}
+			NOT = {
+			CRO ={ exists = yes }
+			KOS ={ exists = yes }
+			}
+			NOT = {
+			KOS ={ exists = yes }
+			YUG ={ exists = yes }
+			}
+			}
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			hidden_effect = {
+			declare_war_on = { type = annex_everything    target = CRO }
+			declare_war_on = { type = annex_everything    target = KOS }
+			declare_war_on = { type = annex_everything    target = YUG }
+			}
+		}
+	}
+	
+	focus = {
+		id = VOJ_bring_slovenia_back_into_the_fold
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = VOJ_reataking_of_the_west }
+		x = 0
+		y = 1
+		relative_position_id = VOJ_reataking_of_the_west
+		cost = 2
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			CRO = {exists = no }
+			KOS = {exists = no }
+			YUG = {exists = no }
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			hidden_effect = {
+			declare_war_on = { type = annex_everything    target = SLV }
+			}
+		}
+	}
+	
+	focus = {
+		id = VOJ_declare_the_new_yugoslav_state
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = VOJ_bring_slovenia_back_into_the_fold }
+		x = 0
+		y = 1
+		relative_position_id = VOJ_bring_slovenia_back_into_the_fold
+		cost = 2
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			CRO = {exists = no }
+			KOS = {exists = no }
+			YUG = {exists = no }
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			hidden_effect = {
+			sound_effect = "Jeremija_wins_good"
+				country_event = mod_Voj.10
+				news_event = { id = news.41 }
+			}
+		}
+	}
+	
+}

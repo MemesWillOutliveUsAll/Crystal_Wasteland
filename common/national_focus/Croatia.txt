@@ -1,0 +1,217 @@
+﻿focus_tree = {
+	
+	id = Serbia_focus
+	
+	country = {
+		base = 0
+		modifier = {
+			add = 10
+			tag = CRO
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 50 }
+	
+	################################
+	###### GOVERNMENT AFFAIRS ######
+	################################
+	
+	focus = {
+		id = CRO_Za_dom_spremni
+		icon = GFX_goal_generic_demand_territory
+		x = 10
+		y = 0
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = CRO_force_conscription
+		icon = GFX_focus_crush_protestors
+		prerequisite = { focus = CRO_Za_dom_spremni }
+		x = -2
+		y = 1
+		relative_position_id = CRO_Za_dom_spremni
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			manpower = 100000
+		}
+	}
+	
+	
+	focus = {
+		id = CRO_create_emergency_arms_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = CRO_Za_dom_spremni }
+		x = 2
+		y = 1
+		relative_position_id = CRO_Za_dom_spremni
+		cost = 10
+		
+		ai_will_do = {
+			base = 50
+		}
+		
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			109 = {
+			add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+	}
+	
+	focus = {
+		id = CRO_introduce_the_one_third_rule
+		icon = GFX_focus_generic_concessions
+		prerequisite = { focus = CRO_Za_dom_spremni }
+		x = 0
+		y = 1
+		relative_position_id = CRO_Za_dom_spremni
+		cost = 10
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_satbility = -0.10
+		}
+	}
+	
+	## war 
+	focus = {
+		id = CRO_reclaim_our_homeland
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = CRO_introduce_the_one_third_rule }
+		prerequisite = { focus = CRO_create_emergency_arms_factories }
+		prerequisite = { focus = CRO_force_conscription }
+		x = 0
+		y = 1
+		relative_position_id = CRO_introduce_the_one_third_rule
+		cost = 2
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			hidden_effect = {
+			declare_war_on = { type = annex_everything    target = YUG }
+			declare_war_on = { type = annex_everything    target = KOS }
+			}
+		}
+	}
+	
+	focus = {
+		id = CRO_crush_the_serbs
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = CRO_reclaim_our_homeland }
+		x = 0
+		y = 1
+		relative_position_id = CRO_reclaim_our_homeland
+		cost = 2
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			KOS ={ exists = no }
+			YUG ={ exists = no }
+			OR ={
+			NOT = {
+			VOJ ={ exists = no }
+			SER ={ exists = no }
+			}
+			}
+			
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			hidden_effect = {
+			declare_war_on = { type = annex_everything    target = VOJ }
+			declare_war_on = { type = annex_everything    target = SER }
+			}
+		}
+	}
+	
+	focus = {
+		id = CRO_greater_croatia_achieved
+		icon = GFX_focus_YUG_banovina_of_croatia
+		prerequisite = { focus = CRO_crush_the_serbs }
+		x = 0
+		y = 1
+		relative_position_id = CRO_crush_the_serbs
+		cost = 2
+		
+		ai_will_do = {
+			base = 1
+		}
+		
+		available = {
+			has_war = no
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		hidden_effect = {
+		sound_effect = "Ustase_win"
+		news_event = { id = news.37 }
+		}	
+		}
+	}
+	
+}

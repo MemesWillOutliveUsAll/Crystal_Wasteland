@@ -1,0 +1,215 @@
+﻿add_namespace = mod_Voj
+# non vojvodinian #
+country_event = {
+	id = mod_Voj.1
+	title = mod_Voj.1.t
+	desc = mod_Voj.1.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	# stay
+	option = {
+		name = mod_Voj.1.a
+		hidden_effect = {
+		
+		}
+	}
+	# Serbia
+	option = {
+		name = mod_Voj.1.b
+		hidden_effect = {
+			SER = { change_tag_from = KOS }
+		}
+	}
+	
+	option = { # Follow jeremija
+		name = mod_Voj.1.c
+		hidden_effect = {
+			VOJ = { change_tag_from = KOS }
+		}
+	}
+}
+
+country_event = {
+	id = mod_Voj.2
+	title = mod_Voj.2.t
+	desc = mod_Voj.2.d
+	picture = GFX_report_event_Svetlana
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mod_Voj.2.a
+		
+	}
+	option = { #croatia
+		name = mod_Voj.2.b
+		hidden_effect = {
+			CRO = { change_tag_from = YUG }
+		}
+	}
+	
+}
+# actual Vojvodinian events #
+
+country_event = {
+	id = mod_Voj.3
+	title = mod_Voj.3.t
+	desc = mod_Voj.3.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mod_Voj.3.a
+		
+	}
+	
+}
+
+country_event = {
+	id = mod_Voj.4
+	title = mod_Voj.4.t
+	desc = mod_Voj.4.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mod_Voj.4.a
+		
+	}
+	
+}
+
+country_event = {
+	id = mod_Voj.5
+	title = mod_Voj.5.t
+	desc = mod_Voj.5.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mod_Voj.5.a
+		
+	}
+	
+}
+
+country_event = {
+	id = mod_Voj.6
+	title = mod_Voj.6.t
+	desc = mod_Voj.6.d
+	picture = GFX_Gavrilo
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mod_Voj.6.a
+		
+	}
+	
+}
+
+country_event = {
+	id = mod_Voj.7
+	title = mod_Voj.7.t
+	desc = mod_Voj.7.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mod_Voj.7.a
+		
+	}
+	
+}
+
+country_event = {
+	id = mod_Voj.8
+	title = mod_Voj.8.t
+	desc = mod_Voj.8.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mod_Voj.8.a
+		
+	}
+	
+}
+
+country_event = { # bad
+	id = mod_Voj.9
+	title = mod_Voj.9.t
+	desc = mod_Voj.9.d
+	picture = GFX_report_event_worker_protests
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mod_Voj.9.a
+		manpower = -10001
+		kill_country_leader = yes
+		create_country_leader = {
+		name = "Milan Stojadinović"
+		desc = "POLITICS_MILAN_STOJADINOVIC_DESC"
+		picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Stojadinovic.dds"
+		expire = "1965.1.1"
+		ideology = despotism
+		traits = {
+		#
+		}
+		}
+	}
+	
+}
+
+country_event = {
+	id = mod_Voj.10
+	title = mod_Voj.10.t
+	desc = mod_Voj.10.d
+	picture = GFX_report_event_soviet_tank_parade
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mod_Voj.10.a
+		kill_country_leader = yes
+		create_country_leader = {
+		name = "Milan Stojadinović"
+		desc = "POLITICS_MILAN_STOJADINOVIC_DESC"
+		picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Stojadinovic.dds"
+		expire = "1965.1.1"
+		ideology = despotism
+		traits = {
+		#
+		}
+		}
+	}
+	
+}

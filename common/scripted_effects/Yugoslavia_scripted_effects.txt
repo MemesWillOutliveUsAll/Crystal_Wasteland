@@ -1,0 +1,78 @@
+Remove_yug_cores = {
+	# remove yug cores #############################
+	
+	# Serbia and Macedonia
+	remove_state_core = 107
+	remove_state_core = 108
+	remove_state_core = 106
+	remove_state_core = 802
+	remove_state_core = 818
+	remove_state_core = 803
+	remove_state_core = 105
+	# Vojvodina
+	remove_state_core = 764
+	remove_state_core = 834
+	remove_state_core = 835
+	remove_state_core = 45
+	remove_state_core = 833
+	remove_state_core = 823
+	# Croatia
+	remove_state_core = 832
+	remove_state_core = 109
+	remove_state_core = 830
+	remove_state_core = 831
+	remove_state_core = 103
+	remove_state_core = 163
+	remove_state_core = 829
+	# Bosnia
+	remove_state_core = 824
+	remove_state_core = 828
+	remove_state_core = 827
+	remove_state_core = 826
+	remove_state_core = 825
+	remove_state_core = 104
+	remove_state_core = 804
+	# Slovenia
+	remove_state_core = 736
+	remove_state_core = 102
+	remove_state_core = 813
+}
+
+ADD_yug_cores = {
+	# add yug cores  #############################
+	# Serbia and Macedonia
+	add_state_core = 107
+	add_state_core = 108
+	add_state_core = 106
+	add_state_core = 802
+	add_state_core = 818
+	add_state_core = 803
+	add_state_core = 105
+	# Vojvodina
+	add_state_core = 764
+	add_state_core = 834
+	add_state_core = 835
+	add_state_core = 45
+	add_state_core = 833
+	add_state_core = 823
+	# Croatia
+	add_state_core = 832
+	add_state_core = 109
+	add_state_core = 830
+	add_state_core = 831
+	add_state_core = 103
+	add_state_core = 163
+	add_state_core = 829
+	# Bosnia
+	add_state_core = 824
+	add_state_core = 828
+	add_state_core = 827
+	add_state_core = 826
+	add_state_core = 825
+	add_state_core = 104
+	add_state_core = 804
+	# Slovenia
+	add_state_core = 736
+	add_state_core = 102
+	add_state_core = 813
+}

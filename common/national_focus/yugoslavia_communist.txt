@@ -1,0 +1,41 @@
+focus_tree = {
+	id = yugoslavian_communist_pre_collapse_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = KOS
+		}
+	}
+	
+	default = no
+	
+	shared_focus = YUGCOM_call_the_council
+
+
+
+}
+
+focus_tree = {
+	id = yugoslavian_communist_collapse_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = KOS
+		}
+	}
+	
+	default = no
+	
+	shared_focus = YUGCOM_Svetlana_continues_on
+	shared_focus = YUGCOM_Andrej_saves_yugoslavia
+	shared_focus = YUGCOM_integration_rankovic
+
+
+
+}

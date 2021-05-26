@@ -1,0 +1,14 @@
+
+SER_democratic_resistance = {
+
+	allowed = {
+		OR = {
+			tag = SER
+		}
+	}
+	
+	visible = {
+		SER = {has_completed_focus = SER_the_internal_struggle}
+	}
+	
+}

@@ -1,0 +1,40 @@
+spriteTypes = {	
+
+	# politics #
+	SpriteType = {
+	name = "GFX_focus_Call_the_council"
+	texturefile = "gfx/interface/goals/Call_the_council.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_Bizoro_lebedev"
+	texturefile = "gfx/interface/goals/Bizoro_lebedev.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_going_with_svetlana"
+	texturefile = "gfx/interface/goals/going_with_svetlana.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_going_with_rankovic"
+	texturefile = "gfx/interface/goals/going_with_rankovic.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_tito"
+	texturefile = "gfx/interface/goals/Tito.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_Boot_on_fascism"
+	texturefile = "gfx/interface/goals/Boot_on_fascism.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_com_yug"
+	texturefile = "gfx/interface/goals/com_yug.dds"			
+	}
+	
+	
+}

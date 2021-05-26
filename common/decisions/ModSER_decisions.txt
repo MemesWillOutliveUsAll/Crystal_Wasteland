@@ -1,0 +1,153 @@
+
+###################### RANKOVIC COLLAPSE YUG DECISIONS ######################
+
+SER_democratic_resistance = {
+
+	SER_crush_protesters_in_belgrade = {
+
+		available = {
+			not = {has_country_flag = SER_decision_pending}
+			divisions_in_state = {
+				state = 107	
+				size > 2
+			}
+		}
+
+		visible = {
+			is_subject = no
+			SER = {has_country_flag = SER_revolution_started}
+		}
+
+		cost = 0
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+		complete_effect = {
+			SER = {set_country_flag = SER_decision_pending}
+		}
+		remove_effect = {
+			SER = {clr_country_flag = SER_decision_pending}
+			SER = {set_country_flag = SER_cracked_down_on_protesters}
+		}
+	}
+	
+	SER_remove_vulnerable_members = {
+
+		available = {
+			not = {has_country_flag = SER_decision_pending}
+		}
+
+		visible = {
+			is_subject = no
+			SER = {has_country_flag = SER_revolution_started}
+		}
+
+		cost = 0
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+		complete_effect = {
+			SER = {set_country_flag = SER_decision_pending}
+		}
+		remove_effect = {
+			SER = {clr_country_flag = SER_decision_pending}
+			SER = {set_country_flag = SER_remove_vulnerable_staff}
+		}
+	}
+	
+	SER_spread_propaganda_against_oponents = {
+
+		available = {
+			not = {has_country_flag = SER_decision_pending}
+		}
+
+		visible = {
+			is_subject = no
+			SER = {has_country_flag = SER_revolution_started}
+		}
+
+		cost = 50
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+		complete_effect = {
+			SER = {set_country_flag = SER_decision_pending}
+		}
+		remove_effect = {
+			SER = {clr_country_flag = SER_decision_pending}
+			SER = {set_country_flag = SER_spread_propaganda}
+		}
+	}
+	
+	SER_Democratic_revolution = {
+
+
+		available = {
+			SER = {
+			has_country_flag = SER_democratic_oposition_distracted
+			has_country_flag = SER_cracked_down_on_protesters
+			has_country_flag = SER_remove_vulnerable_staff
+			has_country_flag = SER_spread_propaganda
+			}
+		}
+		
+		activation = {
+			SER = {has_completed_focus = SER_the_internal_struggle}
+		}
+		
+		visible = {
+			is_subject = no
+			SER = {has_country_flag = SER_revolution_started}
+		}
+
+		selectable_mission = no
+		
+		is_good = no
+		
+		days_mission_timeout = 140
+		
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		timeout_effect = {
+		hidden_effect = {
+		set_politics = {
+		ruling_party = democratic
+		elections_allowed = no
+		}
+		
+		load_focus_tree = {
+			tree = empty
+			keep_completed = no
+			}
+		
+		}
+		}
+	}
+	
+	
+}

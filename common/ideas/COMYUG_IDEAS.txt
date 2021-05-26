@@ -1,0 +1,74 @@
+ideas = {
+	
+	country = {
+	
+		comprimise_with_capitalists = {
+			
+			picture = generic_production_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.15
+				stability_factor = 0.05
+			}
+			
+		}
+		
+		keep_capitalism = {
+			
+			picture = generic_production_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.25
+				consumer_goods_factor = -0.15
+			}
+			
+		}
+		
+		army_purged = {
+			
+			picture = officers_purged
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = -0.3
+				army_morale = -5
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+			}
+			
+		}
+		
+	
+	}
+	
+}

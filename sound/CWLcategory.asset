@@ -51,7 +51,33 @@ category = {
  soundeffects = {
 	Silesia_ger_wins
  }
+ ###################################### YUGOSLAVIA ##############################################################
+ soundeffects = {
+	Jeremija_wins_evil
+ }
+ 
+ soundeffects = {
+	Jeremija_wins_good
+ }
+ 
+ soundeffects = {
+	Svetlana_wins
+ }
+ 
+ soundeffects = {
+	Yugoslav_kingdom_win
+ }
+ 
+ soundeffects = {
+	Rankovic_wins
+ }
+ 
+ soundeffects = {
+	Ustase_win
+ }
  
  compressor = master_compressor
 }
+
+
 

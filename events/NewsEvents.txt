@@ -322,7 +322,7 @@ news_event = {
 	id = news.19
 	title = news.19.t
 	desc = news.19.d
-	picture = GFX_news_event_komet
+	picture = GFX_report_news_mig_15
 	
 	major = yes
 	
@@ -515,6 +515,7 @@ news_event = { # Communist win
 	}
 }
 
+
 # WORLD NEWS ##############
 news_event = { # Chinese Civil war
 	id = news.32
@@ -558,5 +559,158 @@ news_event = { # Polish civil war
 	
 	option = {
 		name = news.34.a
+	}
+}
+
+# YUG UNIFICATION #
+
+news_event = { # commie win initial
+	id = news.35
+	title = news.35.t
+	desc = news.35.d
+	picture = GFX_news_event_stalin_meeting
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.35.a
+	}
+}
+
+news_event = { # kingdom win 
+	id = news.36
+	title = news.36.t
+	desc = news.36.d
+	picture = GFX_news_event_german_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.36.a
+	}
+}
+
+news_event = { # Croatia win 
+	id = news.37
+	title = news.37.t
+	desc = news.37.d
+	picture = GFX_news_event_german_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.37.a
+	}
+}
+
+news_event = { # Svetlana win 
+	id = news.38
+	title = news.38.t
+	desc = news.38.d
+	picture = GFX_news_event_stalin_meeting
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.38.a
+	}
+}
+
+
+news_event = { # Rankovic win 
+	id = news.39
+	title = news.39.t
+	desc = news.39.d
+	picture = GFX_news_event_stalin_meeting
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.39.a
+	}
+}
+
+news_event = { # Andrej win 
+	id = news.40
+	title = news.40.t
+	desc = news.40.d
+	picture = GFX_news_event_stalin_meeting
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.40.a
+	}
+}
+
+news_event = { # Jeremija win 1 non crazy
+	id = news.41
+	title = news.41.t
+	desc = news.41.d
+	picture = GFX_news_event_german_speech
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.41.a
+	}
+}
+
+news_event = { # Jeremija win 2
+	id = news.42
+	title = news.42.t
+	desc = news.42.d
+	picture = GFX_news_events_generic_sign_treaty2
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.42.a
+	}
+}
+
+news_event = { # explosion 1
+	id = news.43
+	title = news.43.t
+	desc = news.43.d
+	picture = GFX_news_event_kiev_ruins
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.43.a
+	}
+}
+
+news_event = { # explosion 2
+	id = news.44
+	title = news.44.t
+	desc = news.44.d
+	picture = GFX_news_event_kiev_ruins
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.44.a
 	}
 }

@@ -542,7 +542,12 @@ shared_focus = {
 			}
 			OSG = { 
 			set_cosmetic_tag = GER
-			change_tag_from = HAN 
+			change_tag_from = HAN
+			complete_national_focus = ostgermania_unifying_germany			
+			}
+			
+			OSG = {
+			complete_national_focus = ostgermania_unifying_germany	
 			}
 			
 		}

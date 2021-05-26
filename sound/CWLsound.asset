@@ -103,3 +103,53 @@ sound =
 	volume = 1
 	always_load = yes
 }
+
+########################################################################### YUGOSLAVIA   #############################################################
+
+sound =
+{
+	name = "Jeremija_wins_evil"
+	file = "menu/Crazy_Jeremija.wav"
+	volume = 1
+	always_load = yes
+}
+
+sound =
+{
+	name = "Jeremija_wins_good"
+	file = "menu/Jeremija_ok.wav"
+	volume = 1
+	always_load = yes
+}
+
+sound =
+{
+	name = "Svetlana_wins"
+	file = "menu/Yugoslav_reformist_titoist_win.wav"
+	volume = 1
+	always_load = yes
+}
+
+sound =
+{
+	name = "Yugoslav_kingdom_win"
+	file = "menu/Yugoslav_kingdom_win.wav"
+	volume = 1
+	always_load = yes
+}
+
+sound =
+{
+	name = "Rankovic_wins"
+	file = "menu/Andrej_win.wav"
+	volume = 1
+	always_load = yes
+}
+
+sound =
+{
+	name = "Ustase_win"
+	file = "menu/Ustase_win.wav"
+	volume = 1
+	always_load = yes
+}

@@ -1,0 +1,31 @@
+YUGCOM_communist_militia = {
+
+	allowed = {
+		OR = {
+			tag = KOS
+		}
+	}
+	
+	visible = {
+		has_civil_war = no
+		exists = yes
+		has_capitulated = no
+		KOS = {has_completed_focus = YUGCOM_recruit_peasents} 
+	}
+	
+}
+
+YUGCOM_exploit_our_connections_within_the_union = {
+
+	allowed = {
+		tag = KOS
+	}
+	
+	visible = {
+		has_civil_war = no
+		exists = yes
+		has_capitulated = no
+		KOS = {has_completed_focus = YUGCOM_Andrej_saves_yugoslavia} 
+	}
+	
+}

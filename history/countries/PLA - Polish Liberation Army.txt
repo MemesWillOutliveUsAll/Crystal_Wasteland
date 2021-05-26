@@ -147,4 +147,13 @@ create_country_leader = {
 	}
 }
 
-
+create_country_leader = {
+	name = "Bolesław Piasecki"
+	desc = "POLITICS_BOLESLAW_PIASECKI_DESC"
+	picture = "GFX_POL_boleslaw_piasecki"
+	expire = "1965.1.1"
+	ideology = falangism
+	traits = {
+		#
+	}
+}
