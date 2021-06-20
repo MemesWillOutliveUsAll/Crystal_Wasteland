@@ -1,0 +1,591 @@
+#Initial focus
+	focus = {
+		id = SDR_german_industrialization
+		icon = GFX_goal_generic_construction
+		x = 100
+		y = 0
+		cost = 2
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		add_ideas = {
+			SDR_economic_path
+			}
+		}
+	}
+#branch 1 war industry
+	focus = {
+		id = SDR_build_war_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = {focus = SDR_german_industrialization}
+		x = -4
+		y = 1
+		relative_position_id = SDR_german_industrialization
+		cost = 5
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+			}
+		}
+	}
+	focus = {
+		id = SDR_small_guns
+		icon = GFX_goal_generic_small_arms
+		prerequisite = {focus = SDR_build_war_industry}
+		x = -6
+		y = 2
+		relative_position_id = SDR_german_industrialization
+		cost = 10
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_equipment_bonus
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+				}
+		}
+	}
+	focus = {
+		id = SDR_bigger_guns
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = {focus = SDR_small_guns}
+		x = -6
+		y = 3
+		relative_position_id = SDR_german_industrialization
+		cost = 10
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 0.5
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1
+				uses = 2
+				category = artillery
+				}
+		}
+	}
+	focus = {
+		id = SDR_armoured_guns
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = {focus = SDR_bigger_guns}
+		x = -6
+		y = 4
+		relative_position_id = SDR_german_industrialization
+		cost = 15
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 0.5
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_focus
+				ahead_reduction = 0.5
+				bonus = 0.5
+				uses = 2
+				category = armor
+			}
+		}
+	}
+#branch 2 political schemes
+	focus = {
+		id = SDR_reconfigure_goverment
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = {focus = SDR_german_industrialization}
+		x = 0
+		y = 1
+		relative_position_id = SDR_german_industrialization
+		cost = 5
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	focus = {
+		id = SDR_praise_trade
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = {focus = SDR_reconfigure_goverment}
+		x = 0
+		y = 2
+		relative_position_id = SDR_german_industrialization
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = {
+				SDR_praise_trade_behaviour
+			}
+		}
+	}
+#branch 2-3 meeting
+focus = {
+		id = SDR_develop_resources
+		icon = GFX_goal_generic_construction2
+		prerequisite = {focus = SDR_reinforce_country_construction}
+		prerequisite = {focus = SDR_praise_trade}
+		x = 2
+		y = 3
+		relative_position_id = SDR_german_industrialization
+		cost = 5
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = {
+				SDR_trade_resources
+				}
+		}
+	}
+#branch 3 civilian industry
+	focus = {
+		id = SDR_build_civ_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = {focus = SDR_german_industrialization}
+		x = 4
+		y = 1
+		relative_position_id = SDR_german_industrialization
+		cost = 5
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SDR_reinforce_country_construction
+		icon = GFX_goal_generic_propaganda
+		prerequisite = {focus = SDR_build_civ_industry}
+		x = 4
+		y = 2
+		relative_position_id = SDR_german_industrialization
+		cost = 10
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SDR_economic_path_2
+				remove_idea = SDR_economic_path
+			}
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = SDR_focus_industrial_research
+		icon = GFX_focus_generic_industry_1
+		prerequisite = {focus = SDR_build_civ_industry}
+		x = 6
+		y = 2
+		relative_position_id = SDR_german_industrialization
+		cost = 10
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industry_bonus
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = SDR_taking_the_lead
+		icon = GFX_focus_generic_industry_2
+		prerequisite = {focus = SDR_focus_industrial_research}
+		x = 6
+		y = 3
+		relative_position_id = SDR_german_industrialization
+		cost = 15
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 0.5
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industry_bonus
+				ahead_reduction = 0.5
+				uses = 3
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = SDR_leaps_bounds
+		icon = GFX_focus_generic_industry_3
+		prerequisite = {focus = SDR_taking_the_lead}
+		x = 6
+		y = 4
+		relative_position_id = SDR_german_industrialization
+		cost = 20
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 0.5
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industry_bonus
+				ahead_reduction = 0.5
+				bonus = 0.5
+				uses = 4
+				category = industry
+			}
+		}
+	}
+#branch 4 expansion
+	focus = {
+		id = SDR_great_engulfing
+		icon = GFX_goal_generic_forceful_treaty
+		x = 10
+		y = 0
+		cost = 2
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		relative_position_id = SDR_german_industrialization
+		
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.15
+		}
+	}
+#branch 5 navy
+focus = {
+		id = SDR_trading_ships
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 16
+		y = 0
+		relative_position_id = SDR_german_industrialization
+		cost = 5
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = {
+				SDR_trade_ships
+			}
+		}
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+SDR_industrial_resistance_1 = {
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+				modifier = {
+					stability_factor = -0.1
+					industrial_capacity_factory = -0.1
+					production_factory_efficiency_gain_factor = -0.1
+					consumer_goods_factor = 0.1
+					production_speed_buildings_factor = -0.1
+					}
+				}
+		}
+		SDR_industrial_resistance_2 = {
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+				modifier = {
+					stability_factor = -0.15
+					industrial_capacity_factory = -0.15
+					production_factory_efficiency_gain_factor = -0.15
+					consumer_goods_factor = 0.15
+					production_speed_buildings_factor = -0.15
+					}
+				}
+		}
+		SDR_industrial_resistance_3 = {
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+				modifier = {
+					stability_factor = -0.20
+					industrial_capacity_factory = -0.20
+					production_factory_efficiency_gain_factor = -0.20
+					consumer_goods_factor = 0.20
+					resistance_growth = 0.05
+					production_speed_buildings_factor = -0.20
+					}
+				}
+		}
+		SDR_industrial_resistance_4 = {
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+				modifier = {
+					stability_factor = -0.25
+					industrial_capacity_factory = -0.25
+					production_factory_efficiency_gain_factor = -0.25
+					consumer_goods_factor = 0.25
+					resistance_growth = 0.05
+					political_power_gain = -0.1
+					production_speed_buildings_factor = -0.25
+					}
+				}
+		}
+		SDR_industrial_resistance_5 = {
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+				modifier = {
+					stability_factor = -0.30
+					industrial_capacity_factory = -0.30
+					production_factory_efficiency_gain_factor = -0.30
+					consumer_goods_factor = 0.30
+					resistance_growth = 0.1
+					political_power_gain = -0.1
+					conscription = -0.3
+					production_speed_buildings_factor = -0.30
+					}
+				}
+		}
+		SDR_trade_ships = {
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+				equipment_bonus = {
+					convoy = {
+						instant = yes
+						build_cost_ic = -0.25
+					}	
+				}
+		}
+		SDR_trade_resources = {
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.15
+			}
+		}
+		SDR_economic_path = {
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		SDR_economic_path_2 = {
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		SDR_praise_trade_behaviour = {
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				trade_opinion_factor = 0.25
+			}
+		}
+		
+		
+		
+		
+		
+		
+ SDR_economic_path:0 "The Economic Path"
+ SDR_economic_path_desc:0 "Our great country's future shall be forged by factory and construction workers."
+ SDR_economic_path_2:0 "The Economic Path"
+ SDR_economic_path_desc_2:0 "Our great country's future shall be forged by factory and construction workers."
+ SDR_praise_trade_behaviour:0 "Praise Trading"
+ SDR_praise_trade_behaviour_desc:0 "We must ensure trading is a profitable and desirable behaviour, we shall encourage and praise this to other countries."
+ SDR_trade_resources:0 "Resource Development"
+ SDR_trade_resources_desc:0 "Large sums of money have been put into hunting and extracting our local resources from the ground."
+ SDR_trade_ships:0 "Trade Yards"
+ SDR_trade_ships_desc:0 "By dedicating shipyards to the construction of trade ships, the employees can streamline the process and begin an almost production line work method."
+ 
+ 
+ 
+ 
+ SDR_german_industrialization:0 "The German Industrialization" 
+ SDR_german_industrialization_desc:0 "Our nation shall persue a future of an efficent, united and industrialized Europe. Where trade, production and consumerism shall run the world.
+ #branch 1 war industry
+ SDR_build_war_industry:0 "Build War Industry"
+ SDR_build_war_industry_desc:0 "Unfortunately most countries don't wish to follow our dream, there for we shall employ the use of force."
+ SDR_small_guns:0 "Small Weaponry Development"
+ SDR_small_guns_desc:0 "We shall dedicate some time and money to the development of basic weaponry for our troops."
+ SDR_bigger_guns:0 "Advance Artillery"
+ SDR_bigger_guns_desc:0 "We shall dedicate some time and money to advance the capibilities of our artillery."
+ SDR_armoured_guns:0 "Mobile Cannons"
+ SDR_armoured_guns_desc:0 "We shall dedicate some time and money to mobilizing and armoring the guns developed during our artillery advancement."
+ #branch 2 political schemes
+ SDR_reconfigure_goverment:0 "Reconfigure Govermernt"
+ SDR_reconfigure_goverment_desc:0 "Goverment configuration is an essential step in our plan, everyone must be on board, and be working towards the same goal. A Europe where trade and economics are at it's heart."
+ SDR_praise_trade:0 "Praise Trade"
+ SDR_praise_trade_desc:0 "We must ensure trading is a profitable and desirable behaviour, we shall encourage and praise this to other countries."
+ #branch 2-3
+ SDR_develop_resources:0 "Develop Our Resources"
+ SDR_develop_resources_desc:0 "Large sums of money shall be spent into hunting and extracting our local resources from the ground."
+ #branch 3 civilian industry
+ SDR_build_civ_industry:0 "Build Civilian Industry"
+ SDR_build_civ_industry_desc:0 "We are required to develop our construction capibilities, if we truely wish to demonstrate the benefits of our ways."
+ SDR_reinforce_country_construction:0 "Unite National Goals"
+ SDR_reinforce_country_construction_desc:0 "We must ensure the entire country is united in our goals. We shall spread propaganda and tell tales of the glory that awaits us, surely the people will comply."
+ SDR_focus_industrial_research:0 "Focus On Industrial Research"
+ SDR_focus_industrial_research_desc:0 "We must pressure the focus of our scientists towards finding better methods for our industrial processes."
+ SDR_taking_the_lead:0 "Lead The Way"
+ SDR_taking_the_lead_desc:0 "We must rise from the filth and muck, and lead the way for the future of industry."
+ SDR_leaps_bounds:0 "Leaps And Bounds"
+ SDR_leaps_bounds_desc:0 "Our industrial advancement must leap and bound forward if we are to get the people with us."
+ #branch 4 expansion
+ SDR_great_engulfing:0 "The Great Engulfing"
+ SDR_great_engulfing_desc:0 "The surrounding nations in Europe have little choice, there is no falling behind. They either intergrate with us, or be engulfed by us."
+ #branch 5 Navy
+ SDR_trading_ships:0 "Trade Yards"
+ SDR_trading_ships_desc:0 "By dedicating shipyards to the construction of trade ships, the employees can streamline the process and begin an almost production line work method."
