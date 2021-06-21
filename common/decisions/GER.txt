@@ -1,1 +1,34 @@
-#Category only allowed for GER
+SDR_emergancy_measures = { 
+	  SDR_arm_the_arms = {
+		icon = generic_operation
+		cost = 60
+		days_remove = 180
+		complete_effect = {
+               add_timed_idea = { idea = SDR_arms_support days = 60}
+			} 
+     }
+	 SDR_population_repair = {
+		icon = generic_operation
+		cost = 60
+		days_remove = 120
+		available = {
+               has_damaged_buildings = yes
+          }
+		complete_effect = {
+				add_timed_idea = { idea = SDR_peoples_repair days = 120 }
+			}
+     }
+	 SDR_new_roads_rails = {
+		icon = generic_operation
+		cost = 60
+		days_remove = 240
+		available = {
+               has_damaged_buildings = yes
+          }
+		complete_effect = {
+				add_timed_idea = { idea = SDR_build_roads_rails days = 180 }
+			}
+     }
+	 
+}
+	 
