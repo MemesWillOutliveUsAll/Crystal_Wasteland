@@ -1,0 +1,42 @@
+﻿l_english:
+ 
+ SDR_german_industrialization:0 "The German Industrialization" 
+ SDR_german_industrialization_desc:0 "Our nation shall persue a future of an efficent, united and industrialized Europe. Where trade, production and consumerism shall run the world.
+ #branch 1 war industry
+ SDR_build_war_industry:0 "Build War Industry"
+ SDR_build_war_industry_desc:0 "Unfortunately most countries don't wish to follow our dream, there for we shall employ the use of force."
+ SDR_small_guns:0 "Small Weaponry Development"
+ SDR_small_guns_desc:0 "We shall dedicate some time and money to the development of basic weaponry for our troops."
+ SDR_bigger_guns:0 "Advance Artillery"
+ SDR_bigger_guns_desc:0 "We shall dedicate some time and money to advance the capibilities of our artillery."
+ SDR_armoured_guns:0 "Mobile Cannons"
+ SDR_armoured_guns_desc:0 "We shall dedicate some time and money to mobilizing and armoring the guns developed during our artillery advancement."
+ #branch 2 political schemes
+ SDR_reconfigure_goverment:0 "Reconfigure Govermernt"
+ SDR_reconfigure_goverment_desc:0 "Goverment configuration is an essential step in our plan, everyone must be on board, and be working towards the same goal. A Europe where trade and economics are at it's heart."
+ SDR_praise_trade:0 "Praise Trade"
+ SDR_praise_trade_desc:0 "We must ensure trading is a profitable and desirable behaviour, we shall encourage and praise this to other countries."
+ SDR_preach_future:0 "Preach About Our Future"
+ SDR_preach_future_desc:0 "We shall tell stories, make speaches and write books all about our grand united future that awaits the Human Race."
+ #branch 2-3
+ SDR_develop_resources:0 "Develop Our Resources"
+ SDR_develop_resources_desc:0 "Large sums of money shall be spent into hunting and extracting our local resources from the ground."
+ #branch 3 civilian industry
+ SDR_build_civ_industry:0 "Build Civilian Industry"
+ SDR_build_civ_industry_desc:0 "We are required to develop our construction capibilities, if we truely wish to demonstrate the benefits of our ways."
+ SDR_reinforce_country_construction:0 "Unite National Goals"
+ SDR_reinforce_country_construction_desc:0 "We must ensure the entire country is united in our goals. We shall spread propaganda and tell tales of the glory that awaits us, surely the people will comply."
+ SDR_focus_industrial_research:0 "Focus On Industrial Research"
+ SDR_focus_industrial_research_desc:0 "We must pressure the focus of our scientists towards finding better methods for our industrial processes."
+ SDR_taking_the_lead:0 "Lead The Way"
+ SDR_taking_the_lead_desc:0 "We must rise from the filth and muck, and lead the way for the future of industry."
+ SDR_leaps_bounds:0 "Leaps And Bounds"
+ SDR_leaps_bounds_desc:0 "Our industrial advancement must leap and bound forward if we are to get the people with us."
+ #branch 4 expansion
+ SDR_great_engulfing:0 "The Great Engulfing"
+ SDR_great_engulfing_desc:0 "The surrounding nations in Europe have little choice, there is no falling behind. They either intergrate with us, or be engulfed by us."
+ SDR_prepared_nation:0 "Prepare The Nation"
+ SDR_prepared_nation_desc:0 "We shall create some emergancy plans we can enact with not a moments notice in to ensure war efforts go as planned."
+ #branch 5 Navy
+ SDR_trading_ships:0 "Trade Yards"
+ SDR_trading_ships_desc:0 "By dedicating shipyards to the construction of trade ships, the employees can streamline the process and begin an almost production line work method."
