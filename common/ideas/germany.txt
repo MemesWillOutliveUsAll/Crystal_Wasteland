@@ -1,6 +1,249 @@
 ideas = {
 
 	country = {
+
+#Industrialist Germany
+		SDR_build_roads_rails = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+		
+			modifier = {
+				production_speed_buildings_factor = -0.35
+				production_speed_infrastructure_factor = 0.70
+				}
+				
+		}
+		SDR_peoples_repair = {
+				
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+		
+			modifier = {
+				industry_free_repair_factor = 0.75
+				}
+				
+		}
+		SDR_arms_support = {
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.5
+				production_factory_efficiency_gain_factor = 0.5
+				production_speed_buildings_factor = -0.5
+				}
+				
+		}
+		SDR_readied_for_war = {
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+				modifier = {
+					conscription_factor = 0.005
+					training_time_army_factor = -0.1
+					offensive_war_stability_factor = 0.05
+					}
+				
+		}
+		SDR_industrial_resistance_1 = {
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+				modifier = {
+					stability_factor = -0.1
+					industrial_capacity_factory = -0.1
+					production_factory_efficiency_gain_factor = -0.1
+					consumer_goods_factor = 0.1
+					production_speed_buildings_factor = -0.1
+					
+				}
+		}
+		SDR_industrial_resistance_2 = {
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+				modifier = {
+					stability_factor = -0.15
+					industrial_capacity_factory = -0.15
+					production_factory_efficiency_gain_factor = -0.15
+					consumer_goods_factor = 0.15
+					production_speed_buildings_factor = -0.15
+					
+				}
+		}
+		SDR_industrial_resistance_3 = {
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+				modifier = {
+					stability_factor = -0.20
+					industrial_capacity_factory = -0.20
+					production_factory_efficiency_gain_factor = -0.20
+					consumer_goods_factor = 0.20
+					resistance_growth = 0.05
+					production_speed_buildings_factor = -0.20
+					
+				}
+		}
+		SDR_industrial_resistance_4 = {
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+				modifier = {
+					stability_factor = -0.25
+					industrial_capacity_factory = -0.25
+					production_factory_efficiency_gain_factor = -0.25
+					consumer_goods_factor = 0.25
+					resistance_growth = 0.05
+					political_power_gain = -0.1
+					production_speed_buildings_factor = -0.25
+					
+				}
+		}
+		SDR_industrial_resistance_5 = {
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+				modifier = {
+					stability_factor = -0.30
+					industrial_capacity_factory = -0.30
+					production_factory_efficiency_gain_factor = -0.30
+					consumer_goods_factor = 0.30
+					resistance_growth = 0.1
+					political_power_gain = -0.1
+					conscription = -0.3
+					production_speed_buildings_factor = -0.30
+					
+				}
+		}
+		SDR_trade_ships = {
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+				equipment_bonus = {
+					convoy = {
+						instant = yes
+						build_cost_ic = -0.25
+					}	
+				}
+		}
+		SDR_trade_resources = {
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.15
+			}
+		}
+		SDR_economic_path = {
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		SDR_economic_path_2 = {
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		SDR_praise_trade_behaviour = {
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				trade_opinion_factor = 0.25
+			}
+		}
+
+
+
+#Default Germany
 		sour_loser = {
 			
 			allowed = {
