@@ -739,7 +739,7 @@ shared_focus = {
 			news_event = { id = news.30 }
 			sound_effect = "Silesia_ger_wins"
 			load_focus_tree = {
-			tree = alsace_failure
+			tree = silesia_unified_focus
 			keep_completed = no
 			}
 		}

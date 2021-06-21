@@ -39,3 +39,24 @@ focus_tree = {
 	shared_focus = silesian_finish_sorbs
 	continuous_focus_position = { x = 2000 y = 1000 }
 }
+
+focus_tree = {
+	id = silesia_unified_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SDR
+		}
+	}
+	
+	default = no
+	shared_focus = SDR_german_industrialization
+	shared_focus = SDR_reconfigure_goverment
+	shared_focus = SDR_great_engulfing
+	shared_focus = SDR_trading_ships
+	shared_focus = SDR_build_civ_industry
+	continuous_focus_position = { x = 2000 y = 1000 }
+}

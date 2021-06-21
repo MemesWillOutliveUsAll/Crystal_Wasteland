@@ -1,0 +1,200 @@
+﻿### Before civil war ################
+shared_focus = {
+	id = PRC_start_building_arms_sweatshops
+	icon = GFX_goal_generic_construct_mil_factory
+	x = 14
+	y = 0
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_take_guns_from_caches
+	prerequisite = { focus = PRC_start_building_arms_sweatshops }
+	relative_position_id = PRC_start_building_arms_sweatshops
+	icon = GFX_goal_generic_position_armies
+	x = -2
+	y = 1
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_Allow_dissent
+	prerequisite = { focus = PRC_start_building_arms_sweatshops }
+	relative_position_id = PRC_start_building_arms_sweatshops
+	icon = GFX_goal_generic_forceful_treaty
+	x = 2
+	y = 1
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_the_opium_problem
+	prerequisite = { focus = PRC_start_building_arms_sweatshops }
+	relative_position_id = PRC_start_building_arms_sweatshops
+	icon = GFX_goal_generic_defence
+	x = 0
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_attack_the_nationalists
+	prerequisite = { focus = PRC_Allow_dissent }
+	prerequisite = { focus = PRC_the_opium_problem }
+	prerequisite = { focus = PRC_take_guns_from_caches }
+	relative_position_id = PRC_the_opium_problem
+	icon = GFX_focus_prc_remove_chiang_kai_shek
+	x = 0
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_the_first_five_year_plan
+	prerequisite = { focus = PRC_attack_the_nationalists }
+	relative_position_id = PRC_attack_the_nationalists
+	icon = GFX_goal_generic_construction
+	x = 0
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		
+	}
+
+
+	bypass = {
+
+	}
+}
+
+
+
+
+
+
+
+### After civil war #################
