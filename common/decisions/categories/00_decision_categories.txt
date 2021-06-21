@@ -1,0 +1,11 @@
+SDR_emergancy_measures = {
+     icon = generic_prospect_for_resources
+	 visible_when_empty = no
+	 visible = {
+		tag = SDR
+		has_completed_focus = SDR_prepared_nation
+	 }
+	 available = { 
+          has_war = yes
+     }
+}
