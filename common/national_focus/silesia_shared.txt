@@ -748,3 +748,394 @@ shared_focus = {
 	bypass = {
 	}
 }
+
+
+#########################################################################################################
+Industrialist Germany United Tree
+
+#after unification focus
+	shared_focus = {
+		id = SDR_german_industrialization
+		icon = GFX_goal_generic_construction
+		x = 100
+		y = 0
+		cost = 2
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		add_ideas = {
+			SDR_economic_path
+			}
+		}
+	}
+#branch 1 war industry
+	shared_focus = {
+		id = SDR_build_war_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = {focus = SDR_german_industrialization}
+		x = -4
+		y = 1
+		relative_position_id = SDR_german_industrialization
+		cost = 5
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+			}
+		}
+	}
+	shared_focus = {
+		id = SDR_small_guns
+		icon = GFX_goal_generic_small_arms
+		prerequisite = {focus = SDR_build_war_industry}
+		x = -6
+		y = 2
+		relative_position_id = SDR_german_industrialization
+		cost = 10
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_equipment_bonus
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+				}
+		}
+	}
+	shared_focus = {
+		id = SDR_bigger_guns
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = {focus = SDR_small_guns}
+		x = -6
+		y = 3
+		relative_position_id = SDR_german_industrialization
+		cost = 10
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 0.5
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1
+				uses = 2
+				category = artillery
+				}
+		}
+	}
+	shared_focus = {
+		id = SDR_armoured_guns
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = {focus = SDR_bigger_guns}
+		x = -6
+		y = 4
+		relative_position_id = SDR_german_industrialization
+		cost = 15
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 0.5
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_focus
+				ahead_reduction = 0.5
+				bonus = 0.5
+				uses = 2
+				category = armor
+			}
+		}
+	}
+#branch 2 political schemes
+	shared_focus = {
+		id = SDR_reconfigure_goverment
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = {focus = SDR_german_industrialization}
+		x = 0
+		y = 1
+		relative_position_id = SDR_german_industrialization
+		cost = 5
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	shared_focus = {
+		id = SDR_praise_trade
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = {focus = SDR_reconfigure_goverment}
+		x = 0
+		y = 2
+		relative_position_id = SDR_german_industrialization
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = {
+				SDR_praise_trade_behaviour
+			}
+		}
+	}
+	shared_focus = {
+		id = SDR_preach_future
+		icon = GFX_goal_generic_propaganda
+		prerequisite = {focus = SDR_praise_trade}
+		x = 0
+		y = 4
+		relative_position_id = SDR_german_industrialization
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+#branch 2-3 meeting
+shared_focus = {
+		id = SDR_develop_resources
+		icon = GFX_goal_generic_construction2
+		prerequisite = {focus = SDR_reinforce_country_construction}
+		prerequisite = {focus = SDR_praise_trade}
+		x = 2
+		y = 3
+		relative_position_id = SDR_german_industrialization
+		cost = 5
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = {
+				SDR_trade_resources
+				}
+		}
+	}
+#branch 3 civilian industry
+	shared_focus = {
+		id = SDR_build_civ_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = {focus = SDR_german_industrialization}
+		x = 4
+		y = 1
+		relative_position_id = SDR_german_industrialization
+		cost = 5
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = SDR_reinforce_country_construction
+		icon = GFX_goal_generic_propaganda
+		prerequisite = {focus = SDR_build_civ_industry}
+		x = 4
+		y = 2
+		relative_position_id = SDR_german_industrialization
+		cost = 10
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SDR_economic_path_2
+				remove_idea = SDR_economic_path
+			}
+			add_stability = 0.1
+		}
+	}
+	shared_focus = {
+		id = SDR_focus_industrial_research
+		icon = GFX_focus_generic_industry_1
+		prerequisite = {focus = SDR_build_civ_industry}
+		x = 6
+		y = 2
+		relative_position_id = SDR_german_industrialization
+		cost = 10
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industry_bonus
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	shared_focus = {
+		id = SDR_taking_the_lead
+		icon = GFX_focus_generic_industry_2
+		prerequisite = {focus = SDR_focus_industrial_research}
+		x = 6
+		y = 3
+		relative_position_id = SDR_german_industrialization
+		cost = 15
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 0.5
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industry_bonus
+				ahead_reduction = 0.5
+				uses = 3
+				category = industry
+			}
+		}
+	}
+	shared_focus = {
+		id = SDR_leaps_bounds
+		icon = GFX_focus_generic_industry_3
+		prerequisite = {focus = SDR_taking_the_lead}
+		x = 6
+		y = 4
+		relative_position_id = SDR_german_industrialization
+		cost = 20
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 0.5
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industry_bonus
+				ahead_reduction = 0.5
+				bonus = 0.5
+				uses = 4
+				category = industry
+			}
+		}
+	}
+#branch 4 expansion
+	shared_focus = {
+		id = SDR_great_engulfing
+		icon = GFX_goal_generic_forceful_treaty
+		x = 10
+		y = 0
+		cost = 2
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		relative_position_id = SDR_german_industrialization
+		
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.15
+		}
+	}
+	shared_focus = {
+		id = SDR_prepared_nation
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = SDR_great_engulfing }
+		x = 10
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		relative_position_id = SDR_german_industrialization
+		
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.05
+			unlock_decision_category_tooltip = SDR_emergancy_measures
+		}
+	}
+#branch 5 navy
+shared_focus = {
+		id = SDR_trading_ships
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 16
+		y = 0
+		relative_position_id = SDR_german_industrialization
+		cost = 5
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = {
+				SDR_trade_ships
+			}
+		}
+	}
