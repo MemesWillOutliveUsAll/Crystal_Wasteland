@@ -150,7 +150,15 @@ shared_focus = {
 	available_if_capitulated = yes
 		
 	completion_reward = {
+		CHI = {
+			country_event = {
+			id = mod_China.1
+			days = 1
+			}
+			}
+		hidden_effect ={
 		
+		}
 	}
 
 
@@ -182,7 +190,7 @@ shared_focus = {
 	available_if_capitulated = yes
 		
 	completion_reward = {
-		
+		custom_effect_tooltip = space_tooltip
 	}
 
 

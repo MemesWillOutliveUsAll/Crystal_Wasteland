@@ -11,7 +11,7 @@ PRC_Civil_war = {
 
 		cost = 300
 		days_remove = 50
-		fire_only_once = no
+		fire_only_once = yes
 
 		modifier = {
 			
@@ -23,9 +23,21 @@ PRC_Civil_war = {
 
 		remove_effect = {
 			hidden_effect ={
-			
+			CHI = {
+				transfer_units_fraction = {
+				target = PRC
+				size = 0.5
+				stockpile_ratio = 0.5
+				army_ratio = 0.5
+				navy_ratio = 0.5
+				air_ratio = 0.5
+				keep_unit_leaders = { }
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+				}
 			}
-			
+			}
 		}
 	}
 	
@@ -55,9 +67,9 @@ PRC_Civil_war = {
 
 
 		remove_effect = {
-		add_stability -0.05
+		add_stability = -0.05
 		add_war_support = -0.05
-		add_politcal_power = 50
+		add_political_power = 50
 
 		}
 	}
