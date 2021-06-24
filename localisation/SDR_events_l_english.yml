@@ -1,0 +1,58 @@
+﻿l_english:
+ 
+ #Research Choice
+ industrialist.300.t:0 "Yugoslavian Research Reocvered"
+ industrialist.300.d:0 "The attempt to harness power from the Crystal made by Yugoslavia has failed in a big firey boom. Whilst we respect their attempts to harness and put the crystal to use, we are dissapointed in their failure. During disaster relief efforts, some of our men managed to locate some some old research equipment in a cellar, with in tact hard drives. The research is far from complete, and likely not the latest version. The question is, do we pick up from where they left off?"
+ industrialist.300.a:0 "Publically Announce Our Efforts"
+ industrialist.300.b:0 "Secretly Continue Research"
+ industrialist.300.c:0 "Destroy The Research Before It Can Cause More Harm"
+ industrialist.300.e:0 "Save The Research For Later Use"
+ 
+ #Research Responses
+ industrialist.301.t:0 "Poor Reception"
+ industrialist.301.d:0 "Our announcements weren't taken well, perhaps due to how recent the devestating incident in Yugoslavia. The people aren't very supportive yet, but they will soon change their tune."
+ industrialist.301.a:0 "We should have waited longer."
+ industrialist.302.t:0 "Secret Facility Established"
+ industrialist.302.d:0 "Our secret research facility has been established. In order to preserve our secrets, special care will need to be taken in construction, equipment delivery and experiements, slowing our progress. These minor set backs shall not stop us obtaining our goal however."
+ industrialist.302.a:0 "Our Future Is Bright."
+ industrialist.303.t:0 "Disaster Prevented"
+ industrialist.303.d:0 "Yugoslavia was a clear demonstration that the crystal should not be messed with. In order to prevent more lives being taken, we have destroyed the evidence. These experiements are unlikely to be attempted again."
+ industrialist.303.a:0 "A Wise Choice."
+ industrialist.304.t:0 "Safely Stored"
+ industrialist.304.d:0 "The research has been stored in a secure underground facility hidden below the sewers of Berlin. It shall remain here safely, until we have further use of it."
+ industrialist.304.a:0 "One Day It Will Be Needed."
+ 
+ #Public Route
+ industrialist.305.t:0 "A Side Track?"
+ industrialist.305.d:0 "Our lead scientist of the Crystal Project, Dr Wolfgang Schmidt, has identified a possible use for the crystal besides power. He believes there's a chance it could be used to make ammunition. Whilst he's not sure it'll work, he informs us it's worth investigating. It would take some time to research, but we may get more benefits."
+ industrialist.305.a:0 "Redirect Our Efforts To This Idea." 
+ industrialist.305.b:0 "Continue With Current Plans."
+ 
+ industrialist.307.t:0 "Unfortunate"
+ industrialist.307.d:0 "Despite our best efforts, Dr Schmidt's idea to use the crystals as ammunition failed. Storing and using the ammunition simply was too unsafe for our own troops to be worth the benefits."
+ industrialist.307.a:0 "It Was Worth A Try."
+ industrialist.308.t:0 "Results Publically Submitted."
+ industrialist.308.d:0 "It's now been over a year since we begin the research, and we've yet to have any accidents. We've posted the results of our research and progress we've made for the whole country to see. They're not fully commited to the project, but they have a little more faith in us."
+ industrialist.308.a:0 "Soon They'll Understand Fully."
+
+ industrialist.309.t:0 "A New Plan?"
+ industrialist.309.d:0 "Dr Wolfgang Schmidt is back again, and this time with a more promising idea he tells us. His experiements have demonstrated the ability for the crystal to be neutralized when combined in steel manufacturing processes. Not only this, but is has also shown evidence to strengthen the steel, with little to no added weight. Should we investigate further?"
+ industrialist.309.a:0 "Try Add It To Vehicle Armor."
+ industrialist.309.b:0 "Try Improve Weapon Steel."
+ industrialist.309.c:0 "Focus On The Mission."
+ 
+ industrialist.310.t:0 "A Breakthrough!"
+ industrialist.310.d:0 "Dr Wolfgang Schmidt and his team have done well. They shall enjoy a fine dinner tonight for their efforts. Our vehicles can now safely use this new style armor from now on."
+ industrialist.310.a:0 "May It Keep Our Men Safe."
+ industrialist.311.t:0 "A Breakthrough!"
+ industrialist.311.d:0 "Dr Wolfgang Schmidt and his team have done well. They shall enjoy a fine dinner tonight for their efforts. We can now use a more durable and reliable metal for our basic weaponry."
+ industrialist.311.a:0 "Reliability Is Essential."
+ industrialist.312.t:0 "END"
+ industrialist.312.d:0 "END"
+ industrialist.312.a:0 "END"
+ 
+ #Secret Route
+ industrialist.306.t:0 "A Large Delivery"
+ industrialist.306.d:0 "In order to continue research at this speed, our lead scientist of the Crystal Project, Dr Wolfgang Schmidt, has personally requested some a large quantity of materials. He said they're to build a special machine, and he wants them fast. This kind of quantity transported all at once would be, unusual and draw unwanted attention. What should we do?"
+ industrialist.306.a:0 "Transport It Little By Little." 
+ industrialist.306.b:0 "Move It, But Cause A Distraction."
