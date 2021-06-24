@@ -21,6 +21,8 @@
  #branch 2-3
  SDR_develop_resources:0 "Develop Our Resources"
  SDR_develop_resources_desc:0 "Large sums of money shall be spent into hunting and extracting our local resources from the ground."
+ SDR_conserve_fuel:0 "Conserve Fuel"
+ SDR_conserve_fuel_desc:0 "We can modify our vehicles and adopt new fighting strategies to reduce fuel usage, though, lower fuel usage comes at a cost."
  #branch 3 civilian industry
  SDR_build_civ_industry:0 "Build Civilian Industry"
  SDR_build_civ_industry_desc:0 "We are required to develop our construction capibilities, if we truely wish to demonstrate the benefits of our ways."
