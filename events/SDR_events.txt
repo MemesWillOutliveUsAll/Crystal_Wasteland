@@ -1,0 +1,278 @@
+add_namespace = industrialist
+
+#First choice For Yugoslavia Research
+country_event = {
+	id = industrialist.300
+	title = industrialist.300.t
+	desc = industrialist.300.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	option = {
+		name = industrialist.300.a
+		hidden_effect = {
+				SDR = {
+					country_event = { days = 100 id = industrialist.301 }
+				}
+			}
+		}
+	option = {
+		name = industrialist.300.b
+		hidden_effect = {
+				SDR = {
+					country_event = { days = 100 id = industrialist.302 }
+				}
+			}
+		}
+	option = {
+		name = industrialist.300.c
+		hidden_effect = {
+				SDR = {
+					country_event = { days = 100 id = industrialist.303 }
+				}
+			}
+		}
+	option = {
+		name = industrialist.300.e
+		hidden_effect = {
+				SDR = {
+					country_event = { days = 100 id = industrialist.304 }
+				}
+			}
+		}
+	}
+	
+#Public Route
+country_event = {
+	id = industrialist.301
+	title = industrialist.301.t
+	desc = industrialist.301.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	option = {
+			name = industrialist.301.a
+			add_stability = -0.15
+			add_political_power = -150
+			hidden_effect = {
+				SDR = {
+					country_event = { days = 100 id = industrialist.305 }
+				}
+			}
+		}
+	}	
+
+country_event = {
+	id = industrialist.305
+	title = industrialist.305.t
+	desc = industrialist.305.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	option = {
+			name = industrialist.305.a
+			hidden_effect = {
+					SDR = {
+						country_event = { days = 80 id = industrialist.307 }
+						}
+					}
+			}
+			
+	option = {
+			name = industrialist.305.b
+			hidden_effect = {
+				SDR = {
+					country_event = { days = 150 id = industrialist.308 }
+					}
+				}
+		}
+	}
+country_event = {
+	id = industrialist.307
+	title = industrialist.307.t
+	desc = industrialist.307.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	option = {
+			name = industrialist.307.a
+			hidden_effect = {
+					SDR = {
+						country_event = { days = 150 id = industrialist.308 }
+						}
+					}
+			}
+	}
+country_event = {
+	id = industrialist.308
+	title = industrialist.308.t
+	desc = industrialist.308.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	option = {
+			name = industrialist.308.a
+			add_stability = 0.1
+			hidden_effect = {
+				SDR = {
+					country_event = { days = 120 id = industrialist.309 }
+					}
+				}
+			}
+	}
+country_event = {
+	id = industrialist.309
+	title = industrialist.309.t
+	desc = industrialist.309.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	option = {
+			name = industrialist.309.a
+			hidden_effect = {
+				SDR = {
+					country_event = { days = 100 id = industrialist.310 }
+					}
+				}
+			}
+	option = {
+			name = industrialist.309.b
+			hidden_effect = {
+				SDR = {
+					country_event = { days = 100 id = industrialist.311 }
+					}
+				}
+			}
+	option = {
+			name = industrialist.309.c
+			hidden_effect = {
+				SDR = {
+					country_event = { days = 180 id = industrialist.312 }
+					}
+				}
+			}
+	}
+
+country_event = {
+	id = industrialist.310
+	title = industrialist.310.t
+	desc = industrialist.310.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	option = {
+			name = industrialist.310.a
+			add_ideas = {
+				GER_crystal_vehicles
+				}
+			hidden_effect = {
+				SDR = {
+					country_event = { days = 180 id = industrialist.312 }
+					}
+				}
+			}
+	}
+country_event = {
+	id = industrialist.311
+	title = industrialist.311.t
+	desc = industrialist.311.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	option = {
+			name = industrialist.311.a
+			add_ideas = {
+				GER_crystal_weapons
+				}
+			hidden_effect = {
+				SDR = {
+					country_event = { days = 180 id = industrialist.312 }
+					}
+				}
+			}
+	}
+	
+country_event = {
+	id = industrialist.312
+	title = industrialist.312.t
+	desc = industrialist.312.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	option = {
+			name = industrialist.312.a
+			hidden_effect = {
+				SDR = {
+					country_event = { days = 180 id = industrialist.313 }
+					}
+				}
+			}
+	}
+#Secret Route
+country_event = {
+	id = industrialist.302
+	title = industrialist.302.t
+	desc = industrialist.302.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	option = {
+			name = industrialist.302.a
+			hidden_effect = {
+				SDR = {
+					country_event = { days = 220 id = industrialist.306 }
+				}
+			}
+	}
+}
+country_event = {
+	id = industrialist.306
+	title = industrialist.306.t
+	desc = industrialist.306.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	option = {
+			name = industrialist.306.a
+			hidden_effect = {
+				SDR = {
+					country_event = { days = 280 id = industrialist.30? }
+				}
+			}
+			}
+	option = {
+			name = industrialist.306.b
+			add_political_power = -100
+			hidden_effect = {
+				SDR = {
+					country_event = { days = 180 id = industrialist.30? }
+				}
+			}
+		}
+	}
+#Destruction Route
+country_event = {
+	id = industrialist.303
+	title = industrialist.303.t
+	desc = industrialist.303.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	option = {
+			name = industrialist.303.a
+			add_political_power = 150
+			add_stability = 0.05
+			}
+	}
+#Save Route
+country_event = {
+	id = industrialist.304
+	title = industrialist.304.t
+	desc = industrialist.304.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	option = {
+			name = industrialist.304.a
+			}
+	}
