@@ -70,6 +70,11 @@ country_event = {
 		add_state_core = 835
 		}
 		
+		#Should start the crystal research event chain for industrialist germany
+		SDR = {
+			country_event = { days = 10 id = industrialist.300 }	
+		}
+		
 		news_event = { id = news.43 }
 		country_event = {
 		id = mod_Yugoslavia.4		
