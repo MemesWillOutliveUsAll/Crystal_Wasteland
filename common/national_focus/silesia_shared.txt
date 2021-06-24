@@ -963,6 +963,26 @@ shared_focus = {
 				}
 		}
 	}
+	shared_focus = {
+		id = SDR_conserve_fuel
+		icon = GFX_goal_generic_construction2
+		prerequisite = {focus = SDR_develop_resources}
+		x = 2
+		y = 4
+		relative_position_id = SDR_german_industrialization
+		cost = 5
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = {
+				SDR_fuel_conserving
+				}
+		}
+	}
 #branch 3 civilian industry
 	shared_focus = {
 		id = SDR_build_civ_industry
