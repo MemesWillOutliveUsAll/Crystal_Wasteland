@@ -16,3 +16,10 @@
  SDR_peoples_repair_desc:0 "All free hands must find work, the nations population when not occupied shall contribute to city repairs."
  SDR_build_roads_rails:0 "Build Road and Railways"
  SDR_build_roads_rails_desc:0 "As we advance into foreign land, our intergrated land's infrastructure isn't nesseserily up to our standard, weakening our supply. As a result, we must upgrade it, fast."
+
+ SDR_fuel_conserving:0 "Fuel Saving Strategies"
+ SDR_fuel_conserving_desc:0 "We have modified our vehicles and adopted new fighting strategies to reduce fuel usage, though, lower fuel usage has cost us."
+ SDR_crystal_vehicles:0 "Crystal Armor"
+ SDR_crystal_vehicles_desc:0 "By deactivating and imbuing crystals into our vehicles armor, we're able to make it stronger."
+ SDR_crystal_weapons:0 "Crystal Gun Metals"
+ SDR_crystal_weapons_desc:0 "By deactivating and imbuing crystals into our gun metals we're able to make our guns more reliable."
