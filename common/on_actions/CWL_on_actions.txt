@@ -727,6 +727,18 @@ on_actions = {
 							transfer_troops = no
 					}
 					
+					white_peace = MEN
+					annex_country = {
+							target = MEN
+							transfer_troops = no
+					}
+					
+					white_peace = MAN
+					annex_country = {
+							target = MAN
+							transfer_troops = no
+					}
+					
 					}
 					}
 			}
