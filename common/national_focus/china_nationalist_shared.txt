@@ -1,0 +1,928 @@
+﻿shared_focus = {
+	id = CHI_at_a_crossroads
+	icon = GFX_goal_generic_dangerous_deal
+	x = 14
+	y = 0
+
+	cost = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		
+	}
+
+
+	bypass = {
+
+	}
+}
+
+## STICKING WITH CHANG ###
+
+
+shared_focus = {
+	id = CHI_pushing_back
+	prerequisite = { focus = CHI_at_a_crossroads }
+	relative_position_id = CHI_at_a_crossroads
+	mutually_exclusive = { focus = CHI_empower_the_fascists }
+	icon = GFX_Boot_on_fascism
+	x = 4
+	y = 1
+
+	cost = 4
+
+	ai_will_do = {
+		factor = 80
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_political_power = 50
+		add_popularity = { ideology = fascism popularity = -0.05}
+		unlock_decision_category_tooltip = CHI_crush_the_fascists
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = CHI_small_scale_crackdowns
+	prerequisite = { focus = CHI_pushing_back }
+	relative_position_id = CHI_pushing_back
+	icon = GFX_goal_generic_national_unity
+	x = 1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	neutrality > 0.5
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_stability = 0.05
+		add_popularity = { ideology = fascism popularity = -0.05}
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = CHI_attract_investors
+	prerequisite = { focus = CHI_pushing_back }
+	relative_position_id = CHI_pushing_back
+	icon = GFX_focus_generic_concessions
+	x = -1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	neutrality > 0.6
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_political_power = 150
+		add_offsite_building = { type = industrial_complex level = 2 }
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = CHI_assure_warlords
+	prerequisite = { focus = CHI_small_scale_crackdowns }
+	prerequisite = { focus = CHI_attract_investors }
+	relative_position_id = CHI_small_scale_crackdowns
+	icon = GFX_goal_generic_intelligence_exchange
+	x = -1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	neutrality > 0.3
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_political_power = 50
+		add_stability = 0.01
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = CHI_get_ready_for_war
+	prerequisite = { focus = CHI_small_scale_crackdowns }
+	prerequisite = { focus = CHI_attract_investors }
+	relative_position_id = CHI_attract_investors
+	icon = GFX_goal_generic_fortify_city
+	x = -1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	neutrality > 0.5
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_war_support = 0.35
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = CHI_promise_the_calm
+	prerequisite = { focus = CHI_small_scale_crackdowns }
+	prerequisite = { focus = CHI_attract_investors }
+	relative_position_id = CHI_small_scale_crackdowns
+	icon = GFX_focus_Ensure_stability
+	x = 1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	neutrality > 0.5
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_stability = 0.01
+		add_political_power = 10
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = CHI_pray_that_we_are_ready
+	prerequisite = { focus = CHI_assure_warlords }
+	prerequisite = { focus = CHI_promise_the_calm }
+	prerequisite = { focus = CHI_get_ready_for_war }
+	relative_position_id = CHI_assure_warlords
+	icon = GFX_goal_generic_improve_relations
+	x = 0
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	neutrality > 0.75
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		remove_ideas = China_fascism_1
+	}
+
+
+	bypass = {
+
+	}
+}
+
+## HAN NATIONALISM ###
+
+shared_focus = {
+	id = CHI_empower_the_fascists
+	prerequisite = { focus = CHI_at_a_crossroads }
+	relative_position_id = CHI_at_a_crossroads
+	mutually_exclusive = { focus = CHI_pushing_back }
+	icon = GFX_goal_support_fascism
+	x = -4
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_popularity = { ideology = fascism popularity = 0.20 }
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = CHI_exploit_the_fascist_connection
+	prerequisite = { focus = CHI_empower_the_fascists }
+	relative_position_id = CHI_empower_the_fascists
+	icon = GFX_goal_anschluss
+	x = 1
+	y = 1
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_political_power = 50
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = CHI_terrify_the_communists
+	prerequisite = { focus = CHI_empower_the_fascists }
+	relative_position_id = CHI_empower_the_fascists
+	icon = GFX_focus_The_commies_gone
+	x = -1
+	y = 1
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	PRC = {
+	add_stability = -0.10
+	add_war_support = -0.50
+	add_political_power = -60
+	}
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = CHI_replace_Chang_kai_shek
+	prerequisite = { focus = CHI_terrify_the_communists }
+	prerequisite = { focus = CHI_exploit_the_fascist_connection }
+	relative_position_id = CHI_terrify_the_communists
+	icon = GFX_focus_prc_remove_chiang_kai_shek
+	x = 1
+	y = 2
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	hidden_effect = {
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+	}
+	}
+
+
+	bypass = {
+
+	}
+}
+
+########### MOVING ON ################
+
+shared_focus = {
+	id = CHI_A_look_at_china
+	prerequisite = { focus = CHI_replace_Chang_kai_shek focus = CHI_pray_that_we_are_ready}
+	relative_position_id = CHI_pray_that_we_are_ready
+	icon = GFX_goal_generic_more_territorial_claims
+	x = -4
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	not = {country_exists = PRC}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	hidden_effect = {
+	dismantle_faction = yes
+	if = {
+		limit = {
+		has_completed_focus = CHI_empower_the_fascists
+		
+		}
+		load_focus_tree = {
+			tree = china_nationalist_fascists_takeover
+			keep_completed = no
+		}
+		set_autonomy = { target = SHX autonomy_state = autonomy_free }
+		set_autonomy = { target = GXC autonomy_state = autonomy_free }
+		set_autonomy = { target = YUN autonomy_state = autonomy_free }
+		annex_country = {
+							target = XSM
+							transfer_troops = yes
+					}
+	
+	}
+	
+	if = {
+		limit = {
+		has_completed_focus = CHI_pushing_back
+		
+		}
+		load_focus_tree = {
+			tree = china_nationalist_Chang_in_power
+			keep_completed = no
+		}
+	
+	}
+		
+	}
+	}
+
+
+	bypass = {
+
+	}
+}
+
+
+###### Changs China #############################################
+
+shared_focus = {
+	id = CHI_begin_integration
+	icon = GFX_goal_generic_forceful_treaty
+	x = 14
+	y = 0
+
+	cost = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		unlock_decision_category_tooltip = CHI_integration_of_warlords
+	}
+
+
+	bypass = {
+
+	}
+}
+shared_focus = {
+	id = CHI_takeout_the_east
+	prerequisite = { focus = CHI_begin_integration }
+	relative_position_id = CHI_begin_integration
+	will_lead_to_war_with = MEN
+	will_lead_to_war_with = MAN
+	icon = GFX_goal_generic_fortify_city
+	x = 0
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		hidden_effect = {
+		
+		MEN = {
+			country_event = {
+			id = mod_China.2
+			days = 1
+			}
+		}
+		
+		MAN = {
+			country_event = {
+			id = mod_China.2
+			days = 1
+			}
+		}
+		
+		}
+	}
+
+
+	bypass = {
+
+	}
+}
+
+
+shared_focus = {
+	id = CHI_improve_agriculture
+	prerequisite = { focus = CHI_takeout_the_east }
+	relative_position_id = CHI_takeout_the_east
+	icon = GFX_goal_generic_construct_infrastructure
+	x = -2
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_political_power = 10
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = CHI_massive_infrastructure_investments
+	prerequisite = { focus = CHI_takeout_the_east }
+	relative_position_id = CHI_takeout_the_east
+	icon = GFX_goal_generic_construct_civ_factory
+	x = 0
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = CHI_a_modern_army
+	prerequisite = { focus = CHI_takeout_the_east }
+	relative_position_id = CHI_takeout_the_east
+	icon = GFX_goal_generic_army_doctrines
+	x = 2
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = CHI_the_worlds_factory
+	prerequisite = { focus = CHI_a_modern_army }
+	prerequisite = { focus = CHI_massive_infrastructure_investments }
+	prerequisite = { focus = CHI_improve_agriculture }
+	relative_position_id = CHI_massive_infrastructure_investments
+	icon = GFX_focus_Made_in_China
+	x = 0
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	num_of_factories > 100
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		
+	}
+
+
+	bypass = {
+
+	}
+}
+
+######## FASCIST CHINA ###############################
+
+shared_focus = {
+	id = CHI_send_the_ultimatums
+	icon = GFX_goal_generic_forceful_treaty
+	will_lead_to_war_with = YUN
+	will_lead_to_war_with = SHX
+	will_lead_to_war_with = GXC
+	x = 14
+	y = 0
+
+	cost = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		hidden_effect = {
+		
+		GXC = {
+			country_event = {
+			id = mod_China.2
+			days = 1
+			}
+		}
+		
+		SHX = {
+			country_event = {
+			id = mod_China.2
+			days = 1
+			}
+		}
+		
+		YUN = {
+			country_event = {
+			id = mod_China.2
+			days = 1
+			}
+		}
+		
+		}
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = CHI_reclaim_the_periphery
+	prerequisite = { focus = CHI_send_the_ultimatums }
+	relative_position_id = CHI_send_the_ultimatums
+	icon = GFX_goal_generic_dangerous_deal
+	will_lead_to_war_with = MEN
+	will_lead_to_war_with = MAN
+	x = 0
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	not = {country_exists = SHX}
+		not = {country_exists = GXC}
+		not = {country_exists = YUN}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		hidden_effect = {
+		
+		MEN = {
+			country_event = {
+			id = mod_China.2
+			days = 1
+			}
+		}
+		
+		MAN = {
+			country_event = {
+			id = mod_China.2
+			days = 1
+			}
+		}
+		
+		}
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = CHI_solidify_control
+	prerequisite = { focus = CHI_reclaim_the_periphery }
+	relative_position_id = CHI_reclaim_the_periphery
+	icon = GFX_focus_Wang_Ming
+	x = 0
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_stability = 0.25
+		
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = CHI_internal_passports
+	prerequisite = { focus = CHI_solidify_control }
+	relative_position_id = CHI_solidify_control
+	icon = GFX_goal_generic_fortify_city
+	x = -1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_war_support = -0.01
+		
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = CHI_begin_integration_of_the_west
+	prerequisite = { focus = CHI_solidify_control }
+	relative_position_id = CHI_solidify_control
+	icon = GFX_focus_Xinjiang_integration
+	x = 1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	613 = {
+			add_manpower = -1000000
+		}
+		
+		617 = {
+			add_manpower = 1000000
+		}
+		
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = CHI_Begin_looking_outside
+	prerequisite = { focus = CHI_begin_integration_of_the_west }
+	prerequisite = { focus = CHI_internal_passports }
+	relative_position_id = CHI_begin_integration_of_the_west
+	icon = GFX_goal_anschluss
+	x = -1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_political_power = 100
+		
+	}
+
+
+	bypass = {
+
+	}
+}
+

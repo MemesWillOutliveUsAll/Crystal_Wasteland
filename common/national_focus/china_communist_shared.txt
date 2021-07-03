@@ -20,7 +20,7 @@ shared_focus = {
 	available_if_capitulated = yes
 		
 	completion_reward = {
-		
+		add_offsite_building = { type = arms_factory level = 3 }
 	}
 
 
@@ -52,7 +52,14 @@ shared_focus = {
 	available_if_capitulated = yes
 		
 	completion_reward = {
-		
+		add_equipment_to_stockpile = {
+
+				type = infantry_equipment_1
+
+				amount = 2500
+				producer = SOV
+
+			}
 	}
 
 
@@ -84,7 +91,8 @@ shared_focus = {
 	available_if_capitulated = yes
 		
 	completion_reward = {
-		
+		add_stability = 0.05
+		add_political_power = -50
 	}
 
 
@@ -116,7 +124,7 @@ shared_focus = {
 	available_if_capitulated = yes
 		
 	completion_reward = {
-		
+		add_war_support = 0.25
 	}
 
 
@@ -157,7 +165,8 @@ shared_focus = {
 			}
 			}
 		hidden_effect ={
-		
+		CHI = { set_country_flag = First_civil_war }
+		PRC = {set_country_flag = f1}
 		}
 	}
 
@@ -182,7 +191,1145 @@ shared_focus = {
 	}
 
 	available = {
+		not = {country_exists = CHI}
+		not = {country_exists = SHX}
+		not = {country_exists = GXC}
+		not = {country_exists = YUN}
+		not = {country_exists = XSM}
+		not = {country_exists = MEN}
+		not = {country_exists = MAN}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		load_focus_tree = {
+			tree = china_after_civil_war_communist_focus
+			keep_completed = no
+		}
+		hidden_effect = {
+		PRC = {set_country_flag = five_year_plan}
+		}
+	}
 
+
+	bypass = {
+
+	}
+}
+
+
+
+
+
+
+
+### After civil war ###################################################################################################################################
+
+shared_focus = {
+	id = PRC_the_great_leap_forwards
+	icon = GFX_focus_The_great_leap_forward
+	x = 14
+	y = 0
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	hidden_effect = {
+	country_event = {
+	id = mod_com_CHI.4
+	days = 630
+	}
+	}
+	}
+
+
+	bypass = {
+
+	}
+}
+
+############ INDUSTRIAL ######################################################
+shared_focus = {
+	id = PRC_expansion_of_the_first_five_year_plan
+	prerequisite = { focus = PRC_the_great_leap_forwards }
+	relative_position_id = PRC_the_great_leap_forwards
+	icon = GFX_focus_Expansion_of_the_five_year_plan
+	x = -8
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		custom_effect_tooltip = industrial_1
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_expropriate_landowners
+	prerequisite = { focus = PRC_expansion_of_the_first_five_year_plan }
+	relative_position_id = PRC_expansion_of_the_first_five_year_plan
+	icon = GFX_goal_generic_dangerous_deal
+	x = -2
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_political_power = 50
+		add_war_support = 0.05
+		add_stability = 0.10
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_new_Railroad_from_Nanjing_to_Beijing
+	prerequisite = { focus = PRC_expansion_of_the_first_five_year_plan }
+	relative_position_id = PRC_expansion_of_the_first_five_year_plan
+	icon = GFX_goal_generic_construct_infrastructure
+	x = 2
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		608 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				instant_build = yes
+			}
+		}
+		
+		614 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				instant_build = yes
+			}
+		}
+		
+		597 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				instant_build = yes
+			}
+		}
+		
+		598 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				instant_build = yes
+			}
+		}
+		
+		613 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				instant_build = yes
+			}
+		}
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_synthetic_oil
+	prerequisite = { focus = PRC_expansion_of_the_first_five_year_plan }
+	relative_position_id = PRC_expansion_of_the_first_five_year_plan
+	icon = GFX_goal_generic_oil_refinery
+	x = 0
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	add_tech_bonus = {
+				bonus = 3.0
+				uses = 1
+				category = synth_resources
+			}
+		608 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_expand_ressource_collection_in_Guanxi
+	prerequisite = { focus = PRC_synthetic_oil }
+	prerequisite = { focus = PRC_new_Railroad_from_Nanjing_to_Beijing }
+	prerequisite = { focus = PRC_expropriate_landowners }
+	relative_position_id = PRC_synthetic_oil
+	icon = GFX_goal_generic_construction
+	x = -1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	593 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				instant_build = yes
+			}
+		}
+		
+	592 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				instant_build = yes
+			}
+		}
+		
+	599 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				instant_build = yes
+			}
+		}
+		
+	594 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				instant_build = yes
+			}
+		}
+		
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_improved_arms_arsenals
+	prerequisite = { focus = PRC_synthetic_oil }
+	prerequisite = { focus = PRC_new_Railroad_from_Nanjing_to_Beijing }
+	prerequisite = { focus = PRC_expropriate_landowners }
+	relative_position_id = PRC_synthetic_oil
+	icon = GFX_goal_generic_construct_mil_factory
+	x = 1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	325 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			type = arms_factory
+			level = 2
+			instant_build = yes
+			}
+	}
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_increased_extraction_of_shanxi_coal
+	prerequisite = { focus = PRC_expand_ressource_collection_in_Guanxi }
+	prerequisite = { focus = PRC_improved_arms_arsenals }
+	relative_position_id = PRC_improved_arms_arsenals
+	icon = GFX_goal_generic_construct_civ_factory
+	x = -1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	622 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				instant_build = yes
+			}
+		}
+	}
+
+
+	bypass = {
+
+	}
+}
+
+
+
+#################### ARMY FOCUS ############################################
+shared_focus = {
+	id = PRC_expansion_of_the_army
+	prerequisite = { focus = PRC_the_great_leap_forwards }
+	relative_position_id = PRC_the_great_leap_forwards
+	will_lead_to_war_with = TIB
+	icon = GFX_focus_Chinese_communist_army
+	x = 0
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		declare_war_on = { type = annex_everything    target = TIB }
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_expand_shipyards
+	prerequisite = { focus = PRC_expansion_of_the_army }
+	relative_position_id = PRC_expansion_of_the_army
+	icon = GFX_goal_generic_construct_naval_dockyard
+	x = 1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+		has_full_control_of_state = 613
+		has_full_control_of_state = 608
+		has_full_control_of_state = 592
+		has_full_control_of_state = 597
+		has_full_control_of_state = 598
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		608 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		613 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		592 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		597 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		598 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_new_weaponery
+	prerequisite = { focus = PRC_expansion_of_the_army }
+	relative_position_id = PRC_expansion_of_the_army
+	icon = GFX_goal_generic_small_arms
+	x = -1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.00
+			uses = 2
+			category = infantry_weapons
+		}
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_updating_our_artillery
+	prerequisite = { focus = PRC_new_weaponery }
+	prerequisite = { focus = PRC_expand_shipyards }
+	relative_position_id = PRC_new_weaponery
+	icon = GFX_goal_generic_army_artillery2
+	x = -1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_tech_bonus = {
+				bonus = 1.00
+				uses = 1
+				category = artillery
+			}
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_a_new_fighter
+	prerequisite = { focus = PRC_new_weaponery }
+	prerequisite = { focus = PRC_expand_shipyards }
+	relative_position_id = PRC_new_weaponery
+	icon = GFX_goal_generic_air_fighter2
+	x = 1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			ahead_reduction = 2
+			uses = 1
+			category = light_fighter
+		}
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_Submarine_focus
+	prerequisite = { focus = PRC_new_weaponery }
+	prerequisite = { focus = PRC_expand_shipyards }
+	relative_position_id = PRC_expand_shipyards
+	icon = GFX_goal_generic_navy_submarine
+	x = 1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			category = ss_tech
+		}
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_modernization_of_our_tank_force
+	prerequisite = { focus = PRC_Submarine_focus }
+	prerequisite = { focus = PRC_updating_our_artillery }
+	prerequisite = { focus = PRC_a_new_fighter }
+	mutually_exclusive = { focus = PRC_focus_on_cavelry }
+	relative_position_id = PRC_a_new_fighter
+	icon = GFX_goal_generic_army_tanks
+	x = -1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 2
+			category = armor
+		}
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_focus_on_cavelry
+	prerequisite = { focus = PRC_Submarine_focus }
+	prerequisite = { focus = PRC_updating_our_artillery }
+	prerequisite = { focus = PRC_a_new_fighter }
+	mutually_exclusive = { focus = PRC_modernization_of_our_tank_force }
+	relative_position_id = PRC_Submarine_focus
+	icon = GFX_goal_generic_cavalry
+	x = -1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		manpower = 1000
+		add_war_support = 0.10
+	}
+
+
+	bypass = {
+
+	}
+}
+
+
+
+
+
+
+################ POLITICAL #######################################
+shared_focus = {
+	id = PRC_begin_cultural_revolution
+	prerequisite = { focus = PRC_the_great_leap_forwards }
+	relative_position_id = PRC_the_great_leap_forwards
+	icon = GFX_focus_MAO
+	x = 8
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_political_power = 150
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_found_the_red_guard
+	prerequisite = { focus = PRC_begin_cultural_revolution }
+	relative_position_id = PRC_begin_cultural_revolution
+	icon = GFX_goal_anschluss
+	x = 1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_war_support = 0.30
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_begin_arrests_of_low_level_officials
+	prerequisite = { focus = PRC_begin_cultural_revolution }
+	relative_position_id = PRC_begin_cultural_revolution
+	icon = GFX_goal_generic_political_pressure
+	x = -1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_political_power = 100
+		add_stability = -0.11
+		add_war_support = 0.07
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_distance_ourselves_from_the_soviet_union
+	prerequisite = { focus = PRC_begin_arrests_of_low_level_officials }
+	prerequisite = { focus = PRC_found_the_red_guard }
+	relative_position_id = PRC_begin_arrests_of_low_level_officials
+	mutually_exclusive = { focus = PRC_closer_ties_with_the_soviet_union }
+	icon = GFX_focus_Ensure_stability
+	x = -1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_stability = -0.20
+		add_war_support = -0.15
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_closer_ties_with_the_soviet_union
+	prerequisite = { focus = PRC_begin_arrests_of_low_level_officials }
+	prerequisite = { focus = PRC_found_the_red_guard }
+	relative_position_id = PRC_found_the_red_guard
+	mutually_exclusive = { focus = PRC_distance_ourselves_from_the_soviet_union }
+	icon = GFX_goal_generic_improve_relations
+	x = 1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_stability = 0.20
+		add_war_support = 0.15
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_Roundups_in_Beijing
+	prerequisite = { focus = PRC_closer_ties_with_the_soviet_union focus = PRC_distance_ourselves_from_the_soviet_union}
+	relative_position_id = PRC_closer_ties_with_the_soviet_union
+	icon = GFX_goal_generic_fortify_city
+	x = -2
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	divisions_in_state = {
+				state = 608	
+				size > 4
+			}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_stability = 0.05
+		add_political_power = 10
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_ask_for_mongolia
+	prerequisite = { focus = PRC_closer_ties_with_the_soviet_union}
+	relative_position_id = PRC_closer_ties_with_the_soviet_union
+	icon = GFX_goal_generic_intelligence_exchange
+	x = 0
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		SOV = {
+		country_event = mod_com_CHI.1
+		}
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_keep_an_eye_on_Wang_Ming
+	prerequisite = { focus = PRC_distance_ourselves_from_the_soviet_union}
+	relative_position_id = PRC_distance_ourselves_from_the_soviet_union
+	icon = GFX_focus_Wang_Ming
+	x = 0
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_stability = 0.01
+		
+	}
+
+
+	bypass = {
+
+	}
+}
+
+############################ THE END #############################
+
+shared_focus = {
+	id = PRC_the_great_leap_forwards_a_success
+	prerequisite = { focus = PRC_focus_on_cavelry focus = PRC_modernization_of_our_tank_force focus = PRC_increased_extraction_of_shanxi_coal }
+	prerequisite = { focus = PRC_Roundups_in_Beijing focus = PRC_ask_for_mongolia }
+	prerequisite = { focus = PRC_Roundups_in_Beijing focus = PRC_keep_an_eye_on_Wang_Ming }
+	relative_position_id = PRC_focus_on_cavelry
+	icon = GFX_focus_MAO_Win
+	x = -1
+	y = 2
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_execute_political_opponents
+	prerequisite = { focus = PRC_the_great_leap_forwards_a_success}
+	relative_position_id = PRC_the_great_leap_forwards_a_success
+	icon = GFX_focus_Wang_Ming_Executed
+	x = -1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		custom_effect_tooltip = poll_kill
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_begin_integrating_Xinjiang
+	prerequisite = { focus = PRC_the_great_leap_forwards_a_success}
+	relative_position_id = PRC_the_great_leap_forwards_a_success
+	icon = GFX_focus_Xinjiang_integration
+	x = 1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		custom_effect_tooltip = Sinkiang_1
+	}
+
+
+	bypass = {
+
+	}
+}
+
+shared_focus = {
+	id = PRC_looking_out_towards_space
+	prerequisite = { focus = PRC_begin_integrating_Xinjiang}
+	prerequisite = { focus = PRC_execute_political_opponents}
+	relative_position_id = PRC_begin_integrating_Xinjiang
+	icon = GFX_focus_Communist_china_reaching_for_the_stars
+	x = -1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	NOT = {PRC = {has_country_flag = failure}}
 	}
 		
 	cancel_if_invalid = yes
@@ -198,11 +1345,3 @@ shared_focus = {
 
 	}
 }
-
-
-
-
-
-
-
-### After civil war #################

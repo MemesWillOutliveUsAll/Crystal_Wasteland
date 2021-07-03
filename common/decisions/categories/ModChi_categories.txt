@@ -1,0 +1,31 @@
+CHI_crush_the_fascists = {
+
+	allowed = {
+		tag = CHI
+	}
+	
+	visible = {
+		has_completed_focus = CHI_pushing_back
+		NOT = {has_completed_focus = CHI_pray_that_we_are_ready}
+		has_civil_war = no
+		exists = yes
+		has_capitulated = no
+
+	}
+	
+}
+
+CHI_integration_of_warlords = {
+
+	allowed = {
+		tag = CHI
+	}
+	
+	visible = {
+		has_civil_war = no
+		exists = yes
+		has_capitulated = no
+		has_completed_focus = CHI_begin_integration
+	}
+	
+}

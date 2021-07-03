@@ -1,0 +1,172 @@
+CHI_crush_the_fascists = {
+	
+	CHI_spread_pro_government_propaganda = {
+		#icon = generic_construction
+
+		available = {
+			
+		}
+
+		visible = {
+			
+		}
+
+		cost = 50
+		days_remove = 20
+		fire_only_once = no
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+
+		remove_effect = {
+		add_popularity = { ideology = fascism popularity = -0.05}
+		}
+	}
+	
+}
+
+CHI_integration_of_warlords = {
+
+	CHI_yunnan = {
+		#icon = generic_construction
+
+		available = {
+			
+		}
+
+		visible = {
+			
+		}
+
+		cost = 50
+		days_remove = 50
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+
+		remove_effect = {
+		hidden_effect = {
+			annex_country = {
+				target = YUN
+				transfer_troops = yes
+			}
+		}
+		}
+	}
+	
+	CHI_Shanxi = {
+		#icon = generic_construction
+
+		available = {
+			
+		}
+
+		visible = {
+			
+		}
+
+		cost = 50
+		days_remove = 50
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+
+		remove_effect = {
+		hidden_effect = {
+			annex_country = {
+				target = SHX
+				transfer_troops = yes
+			}
+		}
+		}
+	}
+	
+	CHI_Guanxi = {
+		#icon = generic_construction
+
+		available = {
+			
+		}
+
+		visible = {
+			
+		}
+
+		cost = 50
+		days_remove = 50
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+
+		remove_effect = {
+		hidden_effect = {
+			annex_country = {
+				target = GXC
+				transfer_troops = yes
+			}
+		}
+		}
+	}
+	
+	CHI_Xibei = {
+		#icon = generic_construction
+
+		available = {
+			
+		}
+
+		visible = {
+			
+		}
+
+		cost = 50
+		days_remove = 50
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+
+		remove_effect = {
+		hidden_effect = {
+			annex_country = {
+				target = XSM
+				transfer_troops = yes
+			}
+		}
+		}
+	}
+
+}

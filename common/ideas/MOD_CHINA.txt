@@ -4,7 +4,7 @@ ideas = {
 	
 		Communist_prc_rebels = {
 			
-			picture = generic_war_preparation
+			picture = FRA_scw_intervention_republicans_focus
 			
 			allowed = {
 				always = no
@@ -28,7 +28,7 @@ ideas = {
 		
 		Communist_prc_rebels_emboldened = {
 			
-			picture = generic_war_preparation
+			picture = FRA_scw_intervention_republicans_focus
 			
 			allowed = {
 				always = no
@@ -92,6 +92,75 @@ ideas = {
 				industrial_capacity_factory = 0.05
 				production_speed_buildings_factor = 0.2
 				
+			}
+			
+		}
+		
+		China_fascism_0 = {
+			
+			picture = generic_fascism_drift_bonus
+			
+			name = CHI_fascisma
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.10
+				fascism_drift = 0.25
+			}
+			
+		}
+		
+		China_fascism_1 = {
+			
+			picture = generic_fascism_drift_bonus
+			
+			name = CHI_fascisma
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.10
+				fascism_drift = 0.25
+			}
+			
+		}
+		
+		China_fascism_2 = {
+			
+			picture = generic_fascism_drift_bonus
+			
+			name = CHI_fascism
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				fascism_drift = 0.10
 			}
 			
 		}

@@ -1,4 +1,4 @@
-﻿capital = 622
+﻿capital = 608
 add_ideas = {
 Heavy_contamination
 }

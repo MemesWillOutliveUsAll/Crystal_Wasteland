@@ -1,0 +1,279 @@
+﻿add_namespace = mod_com_CHI
+country_event = { #asking for mongolia
+	id = mod_com_CHI.1
+	title = mod_com_CHI.1.t
+	desc = mod_com_CHI.1.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mod_com_CHI.1.a
+		ai_chance = { factor = 80 }
+		hidden_effect = {
+		PRC = {
+		country_event = mod_com_CHI.3
+		}
+		
+		}
+	}
+	option = {
+		name = mod_com_CHI.1.b
+		ai_chance = { factor = 2 }
+		hidden_effect = {
+		PRC = {
+		country_event = mod_com_CHI.2
+		}
+		}
+		
+	}
+}
+
+country_event = { #refused Mongolia
+	id = mod_com_CHI.2
+	title = mod_com_CHI.2.t
+	desc = mod_com_CHI.2.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mod_com_CHI.2.a
+		add_political_power = -50
+	}
+	
+}
+
+country_event = { # mongolia given #
+	id = mod_com_CHI.3
+	title = mod_com_CHI.3.t
+	desc = mod_com_CHI.3.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mod_com_CHI.3.a
+		SOV = {
+		release = mon
+		}
+		
+		MON = {
+		give_resource_rights = { receiver = PRC state = 330 }
+		}
+	}
+	
+}
+
+country_event = { # collapse beginning #
+	id = mod_com_CHI.4
+	title = mod_com_CHI.4.t
+	desc = mod_com_CHI.4.d
+	picture = GFX_report_event_dead_soldiers
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mod_com_CHI.4.a
+		hidden_effect = {
+		PRC = {
+		set_country_flag = failure
+		}
+		CHI = {
+		add_ideas = Mass_famines
+		}
+		SIK = {
+		add_ideas = Mass_famines
+		}
+		
+		YUN = {
+		add_ideas = Mass_famines
+		}
+		
+		TIB = {
+		add_ideas = Mass_famines
+		}
+		
+		country_event = {
+			id = mod_com_CHI.5		
+			days = 35 
+		}
+		
+		}
+		add_ideas = Mass_famines
+	}
+	
+}
+
+country_event = { # Collapse civil war begins #
+	id = mod_com_CHI.5
+	title = mod_com_CHI.5.t
+	desc = mod_com_CHI.5.d
+	picture = GFX_report_event_yugoslavia_partisans
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mod_com_CHI.5.a
+		hidden_effect = {
+		############## Rebels attack #############
+		
+		### Wang's rebellion ##
+		613 = { set_demilitarized_zone = yes }
+		598 = { set_demilitarized_zone = yes }
+		606 = { set_demilitarized_zone = yes }
+		596 = { set_demilitarized_zone = yes }
+		749 = { set_demilitarized_zone = yes }
+		595 = { set_demilitarized_zone = yes }
+		600 = { set_demilitarized_zone = yes }
+		### the other rebellion ###
+		748 = { set_demilitarized_zone = yes }
+		603 = { set_demilitarized_zone = yes }
+		325 = { set_demilitarized_zone = yes }
+		747 = { set_demilitarized_zone = yes }
+		
+		############### Mongolia, Tibet and Sinkiang independent ###########
+		TIB = {
+		transfer_state = 322
+		transfer_state = 757
+		transfer_state = 758
+		transfer_state = 601
+		transfer_state = 604
+		}
+		SIK = {
+		transfer_state = 619
+		transfer_state = 287
+		transfer_state = 617
+		transfer_state = 618
+		transfer_state = 759
+		transfer_state = 760
+		
+		remove_ideas = Communist_prc_rebels
+		remove_ideas = China_jet_attack
+		remove_ideas = Communist_prc_rebels_emboldened
+		
+		}
+		
+		MON = {
+		transfer_state = 612
+		transfer_state = 611
+		transfer_state = 621
+		transfer_state = 746
+		transfer_state = 616
+		transfer_state = 756
+		}
+		
+		country_event = {
+			id = mod_com_CHI.6		
+			days = 14 
+		}
+		}
+	}
+	
+}
+
+country_event = { # Collapse #
+	id = mod_com_CHI.6
+	title = mod_com_CHI.6.t
+	desc = mod_com_CHI.6.d
+	picture = GFX_report_event_yugoslavia_partisans
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mod_com_CHI.6.a
+		hidden_effect = {
+		news_event = { id = news.45 }
+		CHI = {
+		transfer_state = 613
+		transfer_state = 598
+		transfer_state = 600
+		transfer_state = 749
+		transfer_state = 596
+		transfer_state = 595
+		transfer_state = 606
+		declare_war_on = { type = annex_everything    target = PRC }
+		#declare_war_on = { type = annex_everything    target = YUN }
+		set_politics = {
+		ruling_party = communism
+		elections_allowed = no
+		}
+		add_popularity = { ideology = communism popularity = 1 }
+		
+		remove_ideas = Communist_prc_rebels
+		remove_ideas = China_jet_attack
+		remove_ideas = Communist_prc_rebels_emboldened
+		
+		}
+		
+		YUN = {
+		transfer_state = 748
+		transfer_state = 603
+		transfer_state = 325
+		transfer_state = 747
+		declare_war_on = { type = annex_everything    target = PRC }
+		declare_war_on = { type = annex_everything    target = CHI }
+		
+		set_politics = {
+		ruling_party = communism
+		elections_allowed = no
+		}
+		add_popularity = { ideology = communism popularity = 1 }
+		
+		remove_ideas = Communist_prc_rebels
+		remove_ideas = China_jet_attack
+		remove_ideas = Communist_prc_rebels_emboldened
+		
+		every_state = {
+			limit = {
+				is_core_of = CHI
+			}
+			add_core_of = ROOT
+		}
+		
+		set_cosmetic_tag = CHI
+		
+		}
+		
+		transfer_units_fraction = {
+				target = YUN
+				size = 0.3
+				stockpile_ratio = 0.3
+				army_ratio = 0.3
+				navy_ratio = 0.3
+				air_ratio = 0.3
+				keep_unit_leaders = { }
+				keep_unit_leaders_trigger = {
+				always = yes
+			}
+		}
+		
+		transfer_units_fraction = {
+				target = CHI
+				size = 0.4
+				stockpile_ratio = 0.5
+				army_ratio = 0.4
+				navy_ratio = 0.4
+				air_ratio = 0.4
+				keep_unit_leaders = { }
+				keep_unit_leaders_trigger = {
+				always = yes
+			}
+		}
+		
+		}
+	}
+	
+}

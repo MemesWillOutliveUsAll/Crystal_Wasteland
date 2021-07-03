@@ -10,7 +10,7 @@ PRC_Civil_war = {
 		has_civil_war = no
 		exists = yes
 		has_capitulated = no
-		
+		NOT = {PRC = {has_country_flag = f1}}
 	}
 	
 }
@@ -22,8 +22,8 @@ PRC_the_five_year_plan = {
 	}
 	
 	visible = {
-		has_completed_focus = PRC_the_first_five_year_plan
-		
+		PRC = {has_country_flag = five_year_plan}
+		NOT = {PRC = {has_country_flag = failure}}
 		
 	}
 	

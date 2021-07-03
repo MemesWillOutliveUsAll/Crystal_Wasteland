@@ -30,3 +30,14 @@ create_country_leader = {
 		spirit_of_genghis
 	}
 }
+
+create_country_leader = {
+	name = "Vasily Sokolovsky"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "gfx/leaders/PRC/Vasily_Sokolovsky.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}

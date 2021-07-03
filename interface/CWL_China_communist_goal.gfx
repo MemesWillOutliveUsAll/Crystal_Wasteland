@@ -1,0 +1,50 @@
+spriteTypes = {	
+
+	# politics #
+	SpriteType = {
+	name = "GFX_focus_The_great_leap_forward"
+	texturefile = "gfx/interface/goals/The_great_leap_forward.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_MAO"
+	texturefile = "gfx/interface/goals/MAO.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_Expansion_of_the_five_year_plan"
+	texturefile = "gfx/interface/goals/Expansion_of_the_five_year_plan.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_Chinese_communist_army"
+	texturefile = "gfx/interface/goals/Chinese_communist_army.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_Communist_china_reaching_for_the_stars"
+	texturefile = "gfx/interface/goals/Communist_china_reaching_for_the_stars.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_Wang_Ming"
+	texturefile = "gfx/interface/goals/Wang_Ming.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_MAO_Win"
+	texturefile = "gfx/interface/goals/MAO_Win.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_Wang_Ming_Executed"
+	texturefile = "gfx/interface/goals/Wang_Ming_Executed.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_Xinjiang_integration"
+	texturefile = "gfx/interface/goals/Xinjiang_integration.dds"			
+	}
+	
+	
+}

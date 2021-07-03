@@ -5,6 +5,7 @@ oob = "CHI_1936"
 add_ideas = {
 		Communist_prc_rebels
 		Heavy_contamination
+		China_fascism_1
 	}
 
 set_stability = 0.8
@@ -41,7 +42,8 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 100
+	neutrality = 60
+	fascism = 40
 }
 
 
@@ -57,13 +59,13 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Zhang Guotao"
+	name = "Wang Ming"
 	desc = "POLITICS_ZHANG_GUOTAO_DESC"
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+	picture = "gfx/leaders/PRC/Wang_ming_portrait.png"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
-		cornered_fox
+		#
 	}
 }
 
@@ -79,7 +81,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Weng Wenhao" 
+	name = "Weng Ming" 
 	desc = "POLITICS_ZHANG_LAN_DESC"
 	picture = "GFX_portrait_chi_weng_wenhao"
 	expire = "1965.1.1"

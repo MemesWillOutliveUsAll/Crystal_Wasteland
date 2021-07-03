@@ -12,6 +12,9 @@ country_event = {
 	
 	# Accept
 	option = {
+	add_to_faction = MEN
+	add_to_faction = MAN
+	hidden_effect = {
 	news_event = { id = news.32 }
 		name = mod_China.1.a
 		PRC = {
@@ -21,7 +24,7 @@ country_event = {
 		declare_war_on = { type = annex_everything    target = SHX }
 		declare_war_on = { type = annex_everything    target = GXC }
 		declare_war_on = { type = annex_everything    target = MAN }
-		declare_war_on = { type = annex_everything    target = MEK }
+		declare_war_on = { type = annex_everything    target = MEN }
 		}
 		PRC = {
 		transfer_state = 608
@@ -36,6 +39,75 @@ country_event = {
 			}
 		
 		}
+		
+	
+	}
+	
+	}
+}
+
+country_event = { # ultimatum
+	id = mod_China.2
+	title = mod_China.2.t
+	desc = mod_China.2.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 2 }
+	
+	# Accept
+	option = {
+	random_list = {
+			60 = {
+				CHI = {
+					annex_country = {
+							target = ROOT
+							transfer_troops = yes
+					}
+				}
+			}
+			40 = {
+				declare_war_on = {
+				target = CHI
+				type = annex_everything
+				}
+			}
+		}
+	
+	}
+}
+
+
+country_event = { # WIN
+	id = mod_China.3
+	title = mod_China.3.t
+	desc = mod_China.3.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 2 }
+	
+	# Accept
+	option = {
+	transfer_state = 330
+	}
+}
+
+country_event = { # LOSE
+	id = mod_China.4
+	title = mod_China.4.t
+	desc = mod_China.4.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 2 }
+	
+	# Accept
+	option = {
+	add_stability = -0.5
 	}
 }
 

@@ -714,3 +714,18 @@ news_event = { # explosion 2
 		name = news.44.a
 	}
 }
+
+news_event = { # second_chinese_civil_war
+	id = news.45
+	title = news.45.t
+	desc = news.45.d
+	picture = GFX_news_event_018
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.45.a
+	}
+}

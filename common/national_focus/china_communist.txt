@@ -22,3 +22,20 @@ focus_tree = {
 	shared_focus = PRC_start_building_arms_sweatshops
 	continuous_focus_position = { x = 20 y = 1000 }
 }
+
+focus_tree = {
+	id = china_after_civil_war_communist_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PRC
+		}
+	}
+	
+
+	default = no
+	shared_focus = PRC_the_great_leap_forwards
+	continuous_focus_position = { x = 20 y = 1000 }
+}

@@ -1,0 +1,10 @@
+spriteTypes = {	
+
+	# politics #
+	SpriteType = {
+	name = "GFX_focus_Made_in_China"
+	texturefile = "gfx/interface/goals/Made_in_China.dds"			
+	}
+	
+	
+}
