@@ -53,7 +53,7 @@ focus_tree = {
 	}
 	
 	default = no
-	shared_focus = ALL_anex_luxemburg
+	shared_focus = ALL_the_german_reconquista
 	continuous_focus_position = { x = 2000 y = 1000 }
 }
 
