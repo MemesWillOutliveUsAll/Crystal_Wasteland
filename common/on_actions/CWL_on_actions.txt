@@ -72,9 +72,9 @@ on_actions = {
 					id = mod_Czechoslovakia.3		
 					days = 8 
 					} 
-					remove_state_core = 70
-					remove_state_core = 71
-					remove_state_claim = 664
+					add_state_core = 70
+					add_state_core = 71
+					add_state_core = 664
 				}
 				
 			}
@@ -91,7 +91,8 @@ on_actions = {
 				CZE = {white_peace = HUN}
 				CZE = {transfer_state = 664}
 				CZE = {transfer_state = 73}
-				CZE = {puppet = HUN}
+				CZE = {add_state_core = 73}
+			
 			}
 			
 			if = { 
@@ -348,7 +349,7 @@ on_actions = {
 			}
 			################################################################## YUGOSLAVIA
 			
-			if = { ### ALL YUGOSLAVIAS as well ashow they treat independent nations
+			if = { ### ALL YUGOSLAVIAS as well as how they treat independent nations
 				limit = {
 						FROM = {
 							OR = {
@@ -743,6 +744,230 @@ on_actions = {
 					}
 			}
 			
+			############# Heydrich Germany ########################################################################################
+			
+			if = {  
+				limit = {
+						FROM = {
+							OR = {
+								original_tag = ALL
+							}
+						}
+						ROOT = { 
+							OR = {
+								original_tag = POL
+								original_tag = PLF
+								
+							}
+						}
+					
+					}
+					
+					FROM = {
+					white_peace = ROOT
+					annex_country = {
+							target = ROOT
+							transfer_troops = no
+					} 
+					
+					}
+					
+			}
+			
+			if = {  
+				limit = {
+						FROM = {
+							OR = {
+								is_in_faction_with = ALL
+								original_tag = ALL
+							}
+						}
+						ROOT = { 
+							OR = {
+								original_tag = CZE
+								
+							}
+						}
+					
+					}
+					
+					FROM = {
+					white_peace = ROOT
+					annex_country = {
+							target = ROOT
+							transfer_troops = no
+					} 
+					
+					}
+					
+					HUN = {
+					transfer_state = 664
+					transfer_state = 73
+					transfer_state = 70
+					transfer_state = 71
+					}
+					
+					
+					
+			}
+			
+			if = {  
+				limit = {
+						FROM = {
+							OR = {
+								is_in_faction_with = ALL
+								original_tag = ALL
+							}
+						}
+						ROOT = { 
+							OR = {
+								original_tag = BLR
+								original_tag = LIT
+								original_tag = LAT
+								original_tag = EST
+								
+							}
+						}
+					
+					}
+					
+					FROM = {
+					white_peace = ROOT
+					
+					
+					}
+					
+					OST = {
+					annex_country = {
+							target = ROOT
+							transfer_troops = no
+					} 
+					}
+					
+					ALL = { puppet = OST }
+					
+			}
+			
+			if = {  
+				limit = {
+						FROM = {
+							OR = {
+								is_in_faction_with = ALL
+								original_tag = ALL
+							}
+						}
+						ROOT = { 
+							OR = {
+								original_tag = UKR
+							}
+						}
+					
+					}
+					
+					FROM = {
+					white_peace = ROOT
+					puppet = UKR
+					}
+					
+					ROOT = {
+					set_cosmetic_tag = UKR_reichskommissariat
+					create_country_leader = {
+					name = "Kaltenbrunner"
+					desc = " "
+					picture = "gfx/leaders/GER/Kaltenbrunner_portrait.png"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					dictator
+					}
+					}
+					}
+					
+			}
+			
+			if = {  
+				limit = {
+						FROM = {
+							OR = {
+								is_in_faction_with = ALL
+								original_tag = ALL
+							}
+						}
+						ROOT = { 
+							OR = {
+								original_tag = UKR
+							}
+						}
+					
+					}
+					
+					FROM = {
+					white_peace = ROOT
+					puppet = UKR
+					}
+					
+					ROOT = {
+					set_cosmetic_tag = UKR_reichskommissariat
+					create_country_leader = {
+					name = "Kaltenbrunner"
+					desc = " "
+					picture = "gfx/leaders/GER/Kaltenbrunner_portrait.png"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					dictator
+					}
+					}
+					}
+					
+			}
+			
+			if = {  
+				limit = {
+						FROM = {
+							OR = {
+								is_in_faction_with = ALL
+								original_tag = ALL
+							}
+						}
+						ROOT = { 
+							OR = {
+								original_tag = NOV
+								original_tag = GMC
+								original_tag = SOV
+							}
+						}
+					
+					}
+					
+					FROM = {
+					white_peace = ROOT
+					puppet = SML
+					}
+					
+					SML = {
+					drop_cosmetic_tag = yes
+					
+					create_country_leader = {
+					name = "Felix Steiner"
+					desc = " "
+					picture = "gfx/leaders/GER/portrait_ger_felix_steiner.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+					#
+					}
+		
+					}
+					
+					annex_country = {
+							target = ROOT
+							transfer_troops = no
+					}
+					
+					}
+					
+			}
 			
 			
 	}

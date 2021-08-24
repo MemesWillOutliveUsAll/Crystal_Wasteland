@@ -1,0 +1,65 @@
+ALL_reclamation_of_our_sphere = {
+
+	allowed = {
+		tag = ALL
+	}
+	
+	visible = {
+		has_completed_focus = ALL_the_german_reconquista
+		has_civil_war = no
+		exists = yes
+		has_capitulated = no
+
+	}
+	
+}
+
+ALL_integration_of_Germans = {
+
+	allowed = {
+		tag = ALL
+	}
+	
+	visible = {
+		has_completed_focus = ALL_the_german_reconquista
+		has_civil_war = no
+		exists = yes
+		has_capitulated = no
+
+	}
+	
+}
+
+
+ALL_Siphon_wealth_from_our_conquests = {
+
+	allowed = {
+		tag = ALL
+	}
+	
+	visible = {
+		ALL = { has_country_flag = Focused_on_army }
+		has_civil_war = no
+		exists = yes
+		has_capitulated = no
+
+	}
+	
+}
+
+ALL_rehabilitate_our_army = {
+
+	allowed = {
+		tag = ALL
+	}
+	
+	visible = {
+		ALL = { has_country_flag = Focused_on_industry }
+		has_civil_war = no
+		exists = yes
+		has_capitulated = no
+
+	}
+	
+}
+

@@ -295,7 +295,7 @@ shared_focus = {
 		
 	completion_reward = {
 	declare_war_on = {
-			target = BAY
+			target = ALL
 			type = annex_everything
 		}
 	}

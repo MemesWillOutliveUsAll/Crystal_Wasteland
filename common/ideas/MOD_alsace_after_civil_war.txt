@@ -1,0 +1,228 @@
+ideas = {
+	
+	country = {
+	
+		ALL_SS_looking_over_society = {
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.15
+				political_power_factor = 0.05
+			}
+			
+		}
+		################################## INDUSTRIAL ###############################
+		German_industry_shit_0 = {
+			
+			picture = great_depression
+			
+			name = ALL_INDUSTRY_BAD_AFTER_CIVIL_WAR
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.7
+				production_factory_start_efficiency_factor = -0.6
+				production_factory_max_efficiency_factor = -0.7
+				consumer_goods_factor = 1
+			}
+			
+		}
+		
+		German_industry_shit_1 = {
+			
+			picture = great_depression
+			
+			name = ALL_INDUSTRY_BAD_AFTER_CIVIL_WAR
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.5
+				production_factory_start_efficiency_factor = -0.4
+				production_factory_max_efficiency_factor = -0.5
+				consumer_goods_factor = 0.7
+			}
+			
+		}
+		
+		German_industry_shit_2 = {
+			
+			picture = great_depression
+			
+			name = ALL_INDUSTRY_BAD_AFTER_CIVIL_WAR
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.3
+				production_factory_start_efficiency_factor = -0.2
+				production_factory_max_efficiency_factor = -0.3
+				consumer_goods_factor = 0.5
+			}
+			
+		}
+		
+		German_industry_shit_3 = {
+			
+			picture = great_depression
+			
+			name = ALL_INDUSTRY_BAD_AFTER_CIVIL_WAR
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				consumer_goods_factor = 0.1
+			}
+			
+		}
+		
+		################# Army rebuilding #################
+		Army_shit_0 = {
+			
+			picture = chi_army_corruption
+			
+			name = ALL_ARMY_SHIT
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.20
+				army_defence_factor = -0.20
+				army_org_factor = -0.20
+			}
+			
+		}
+		
+		Army_shit_1 = {
+			
+			picture = chi_army_corruption
+			
+			name = ALL_ARMY_SHIT
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+				army_org_factor = -0.15
+			}
+			
+		}
+		
+		Army_shit_2 = {
+			
+			picture = chi_army_corruption
+			
+			name = ALL_ARMY_SHIT
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.10
+				army_defence_factor = -0.10
+				army_org_factor = -0.10
+			}
+			
+		}
+		
+		Army_shit_3 = {
+			
+			picture = chi_army_corruption
+			
+			name = ALL_ARMY_SHIT
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_org_factor = -0.05
+			}
+			
+		}
+		
+		
+	
+	}
+	
+	
+	
+}

@@ -241,7 +241,7 @@ shared_focus = {
 		
 	completion_reward = {
 	declare_war_on = {
-			target = BAY
+			target = HAN
 			type = annex_everything
 		}
 	}
@@ -561,9 +561,15 @@ shared_focus = {
 		news_event = { id = news.27 }
 		sound_effect = "Heydirch_ger_wins"
 		load_focus_tree = {
-			tree = alsace_failure
+			tree = alsace_reconquest_of_europe
 			keep_completed = no
-			}
+		}
+		
+		add_ideas = {
+		German_industry_shit_0
+		Army_shit_0
+		}
+		
 	}
 	
 	}
@@ -576,7 +582,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_the_german_reconquista
-	icon = GFX_goal_generic_occupy_states_ongoing_war
+	icon = GFX_focus_Heydrich_takes_back_europe
 	x = 14
 	y = 0
 
@@ -595,12 +601,805 @@ shared_focus = {
 	available_if_capitulated = yes
 		
 	completion_reward = {
-	
+	create_faction = Axis
 	
 	}
 		
 		
 
+
+	bypass = {
+	}
+}
+
+
+# politics #
+shared_focus = {
+	id = ALL_begin_purging_the_commies
+	icon = GFX_focus_The_commies_gone
+	prerequisite = { focus = ALL_the_german_reconquista }
+	relative_position_id = ALL_the_german_reconquista
+	x = 0
+	y = 2
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_implement_paganism
+	icon = GFX_focus_German_Pagan
+	prerequisite = { focus = ALL_begin_purging_the_commies }
+	relative_position_id = ALL_begin_purging_the_commies
+	x = 0
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_what_to_do_with_the_generals
+	icon = GFX_focus_crush_protestors
+	prerequisite = { focus = ALL_begin_purging_the_commies }
+	relative_position_id = ALL_begin_purging_the_commies
+	x = -2
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	hidden_effect = {
+	Brainwash_generals = yes
+	}
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_what_to_do_with_Hess
+	icon = GFX_focus_The_true_heir
+	prerequisite = { focus = ALL_begin_purging_the_commies }
+	relative_position_id = ALL_begin_purging_the_commies
+	x = 2
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_to_continue_hitlers_legacy
+	icon = GFX_focus_ger_reichskommisariats
+	prerequisite = { focus = ALL_what_to_do_with_Hess focus = ALL_what_to_do_with_the_generals focus = ALL_implement_paganism }
+	relative_position_id = ALL_implement_paganism
+	x = 0
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+# Military chosen #
+
+shared_focus = {
+	id = ALL_focus_on_rebuilding_our_army
+	icon = GFX_focus_ss_army
+	mutually_exclusive = { focus = ALL_focus_on_rebuilding_our_industry }
+	prerequisite = { focus = ALL_the_german_reconquista }
+	relative_position_id = ALL_the_german_reconquista
+	x = -6
+	y = 1
+	
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	swap_ideas = { 
+	remove_idea = Army_shit_0 
+	add_idea = Army_shit_1 
+	}
+	
+	ALL = { set_country_flag = Focused_on_army }
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_breakthroughs_in_tanks
+	icon = GFX_goal_generic_army_tanks
+	prerequisite = { focus = ALL_focus_on_rebuilding_our_army }
+	relative_position_id = ALL_focus_on_rebuilding_our_army
+	x = 2
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_new_rifles
+	icon = GFX_goal_generic_axis_build_infantry
+	prerequisite = { focus = ALL_focus_on_rebuilding_our_army }
+	relative_position_id = ALL_focus_on_rebuilding_our_army
+	x = -2
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_improve_our_planes
+	icon = GFX_goal_generic_CAS
+	prerequisite = { focus = ALL_focus_on_rebuilding_our_army }
+	relative_position_id = ALL_focus_on_rebuilding_our_army
+	x = 0
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_encourage_new_aces
+	icon = GFX_goal_generic_improve_relations
+	prerequisite = { focus = ALL_improve_our_planes }
+	prerequisite = { focus = ALL_new_rifles }
+	relative_position_id = ALL_improve_our_planes
+	x = -1
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	if = {
+	limit = {
+	has_idea = Army_shit_1
+	}
+	swap_ideas = { 
+	remove_idea = Army_shit_1 
+	add_idea = Army_shit_2 
+	}
+	}
+	else_if = {
+	limit = {
+	has_idea = Army_shit_2
+	}
+	swap_ideas = { 
+	remove_idea = Army_shit_2 
+	add_idea = Army_shit_3 
+	}
+	}
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_rehabilitate_the_image_of_the_wermacht
+	icon = GFX_goal_molotov_ribbentrop_pact
+	prerequisite = { focus = ALL_improve_our_planes }
+	prerequisite = { focus = ALL_breakthroughs_in_tanks }
+	relative_position_id = ALL_improve_our_planes
+	x = 1
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	if = {
+	limit = {
+	has_idea = Army_shit_1
+	}
+	swap_ideas = { 
+	remove_idea = Army_shit_1 
+	add_idea = Army_shit_2 
+	}
+	}
+	else_if = {
+	limit = {
+	has_idea = Army_shit_2
+	}
+	swap_ideas = { 
+	remove_idea = Army_shit_2 
+	add_idea = Army_shit_3 
+	}
+	}
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_give_generous_priviliges
+	icon = GFX_goal_generic_dangerous_deal
+	prerequisite = { focus = ALL_encourage_new_aces }
+	prerequisite = { focus = ALL_rehabilitate_the_image_of_the_wermacht }
+	relative_position_id = ALL_encourage_new_aces
+	x = 1
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	remove_ideas = Army_shit_3
+	}
+
+	bypass = {
+	}
+}
+
+# Industry Chosen #
+
+shared_focus = {
+	id = ALL_focus_on_rebuilding_our_industry
+	icon = GFX_goal_generic_construct_civ_factory
+	mutually_exclusive = { focus = ALL_focus_on_rebuilding_our_army }
+	prerequisite = { focus = ALL_the_german_reconquista }
+	relative_position_id = ALL_the_german_reconquista
+	x = 6
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	swap_ideas = { 
+	remove_idea = German_industry_shit_0 
+	add_idea = German_industry_shit_1 
+	}
+	
+	ALL = { set_country_flag = Focused_on_industry }
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_improving_our_military_production
+	icon = GFX_goal_generic_construct_mil_factory
+	prerequisite = { focus = ALL_focus_on_rebuilding_our_industry }
+	relative_position_id = ALL_focus_on_rebuilding_our_industry
+	x = 2
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_german_war_economy
+			}
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_german_war_economy
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_german_war_economy
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_german_war_economy
+			}
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_more_slaves_to_the_camps
+	icon = GFX_focus_More_slaves_to_the_factory
+	prerequisite = { focus = ALL_focus_on_rebuilding_our_industry }
+	relative_position_id = ALL_focus_on_rebuilding_our_industry
+	x = 0
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	every_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_massive_improving_our_industrial_tech
+	icon = GFX_goal_generic_construct_infrastructure
+	prerequisite = { focus = ALL_focus_on_rebuilding_our_industry }
+	relative_position_id = ALL_focus_on_rebuilding_our_industry
+	x = -2
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_tech_bonus = {
+				name = ALL_massive_improving_our_industrial_tech
+				bonus = 1.0
+				uses = 4
+				category = industry
+			}
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_Forced_austerity
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_more_slaves_to_the_camps }
+	prerequisite = { focus = ALL_massive_infrastructure_developments }
+	relative_position_id = ALL_more_slaves_to_the_camps
+	x = -1
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	if = {
+	limit = {
+	has_idea = German_industry_shit_1
+	}
+	swap_ideas = { 
+	remove_idea = German_industry_shit_1 
+	add_idea = German_industry_shit_2 
+	}
+	}
+	else_if = {
+	limit = {
+	has_idea = German_industry_shit_2
+	}
+	swap_ideas = { 
+	remove_idea = German_industry_shit_2 
+	add_idea = German_industry_shit_3 
+	}
+	}
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_Increase_integration_of_the_periphery
+	icon = GFX_goal_generic_demand_territory
+	prerequisite = { focus = ALL_more_slaves_to_the_camps }
+	prerequisite = { focus = ALL_improving_our_military_production }
+	relative_position_id = ALL_more_slaves_to_the_camps
+	x = 1
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	if = {
+	limit = {
+	has_idea = German_industry_shit_1
+	}
+	swap_ideas = { 
+	remove_idea = German_industry_shit_1 
+	add_idea = German_industry_shit_2 
+	}
+	}
+	else_if = {
+	limit = {
+	has_idea = Army_shit_2
+	}
+	swap_ideas = { 
+	remove_idea = Army_shit_2 
+	add_idea = Army_shit_3 
+	}
+	}
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_to_banish_want
+	icon = GFX_goal_generic_positive_trade_relations
+	prerequisite = { focus = ALL_Forced_austerity }
+	prerequisite = { focus = ALL_Increase_integration_of_the_periphery }
+	relative_position_id = ALL_Increase_integration_of_the_periphery
+	x = -1
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	remove_ideas = German_industry_shit_3
+	add_political_power = 300
+	}
+
+	bypass = {
+	}
+}
+
+# the end of Heydrichs tree before the war #
+
+shared_focus = {
+	id = ALL_take_back_lebensraum
+	icon = GFX_goal_generic_more_territorial_claims
+	prerequisite = { focus = ALL_to_banish_want focus = ALL_give_generous_priviliges }
+	prerequisite = { focus = ALL_to_continue_hitlers_legacy }
+	relative_position_id = ALL_to_continue_hitlers_legacy
+	x = 0
+	y = 1
+	
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		HUN = {
+		is_in_faction_with = ALL
+		}
+		UKR = {
+		is_in_faction_with = ALL
+		}
+		OST = {
+		is_in_faction_with = ALL
+		}
+		NOT = {
+		country_exists = POL
+		country_exists = PLF
+		country_exists = BEL
+		country_exists = FRA
+		country_exists = HOL
+		}
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
 
 	bypass = {
 	}

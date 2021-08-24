@@ -117,7 +117,7 @@ set_popularities = {
 	communism = 20
 }
 
-create_faction = Germany
+create_faction = Axis
 add_to_faction = GER
 add_to_faction = PLA
 add_to_faction = OMK
@@ -136,6 +136,15 @@ add_to_faction = PRE
 add_to_faction = WUR
 add_to_faction = DAN
 add_to_faction = LUX
+add_to_faction = OST
+add_to_faction = SML
+add_to_faction = UKR
+add_to_faction = POL
+add_to_faction = SLO
+add_to_faction = CZE
+add_to_faction = ROM
+add_to_faction = HUN
+add_to_faction = HOL
 
 
 

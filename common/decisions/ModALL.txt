@@ -1,0 +1,786 @@
+ALL_reclamation_of_our_sphere = {
+	
+	ALL_The_West = {
+		#icon = generic_construction
+
+		available = {
+			
+		}
+
+		visible = {
+			
+		}
+
+		cost = 50
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+		hidden_effect = {
+		annex_country = {target = HOL}
+		annex_country = {target = BEL}
+		}
+			
+			
+		}
+	}
+	
+	
+	ALL_poland = {
+		#icon = generic_construction
+
+		available = {
+			
+		}
+
+		visible = {
+			
+		}
+
+		cost = 50
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+
+		remove_effect = {
+			declare_war_on = {
+			target = POL
+			type = annex_everything
+			}
+			declare_war_on = {
+			target = PLF
+			type = annex_everything
+			}
+		}
+	}
+	
+	
+	ALL_ostland = {
+		#icon = generic_construction
+
+		available = {
+			NOT = {
+			country_exists = POL
+			}
+			
+			NOT = {
+			country_exists = PLF
+			}
+		}
+
+		visible = {
+			
+		}
+
+		cost = 50
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		
+
+		remove_effect = {
+			hidden_effect = {
+				add_to_faction = OST
+				annex_country = {target = GLI}
+				annex_country = {target = GRA}
+				
+				declare_war_on = {
+			    target = BLR
+				type = annex_everything
+				}
+				
+				declare_war_on = {
+			    target = BLR
+				type = annex_everything
+				}
+				
+				declare_war_on = {
+			    target = LIT
+				type = annex_everything
+				}
+				
+				declare_war_on = {
+			    target = LAT
+				type = annex_everything
+				}
+				
+				declare_war_on = {
+			    target = EST
+				type = annex_everything
+				}
+				
+				OST = {
+					create_country_leader = {
+					name = "Michal Vituska"
+					desc = " "
+					picture = "gfx/leaders/GER/Vituska_Michal.png"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					dictator
+					}
+				}
+				
+				}
+			
+			}
+		}
+	}
+	
+	ALL_czech_bargain = {
+		#icon = generic_construction
+
+		available = {
+			
+		}
+
+		visible = {
+			
+		}
+
+		cost = 50
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+	
+
+		remove_effect = {
+			add_to_faction = HUN
+			declare_war_on = {
+			target = CZE
+			type = annex_everything
+			}
+		}
+	}
+	
+	ALL_ukraine = {
+		#icon = generic_construction
+
+		available = {
+			NOT = {
+			country_exists = POL
+			}
+			
+			NOT = {
+			country_exists = PLF
+			}
+			
+			HUN = {
+			is_in_faction_with = ALL
+			}
+			
+			OST = {
+			is_in_faction_with = ALL
+			}
+		}
+
+		visible = {
+			
+		}
+
+		cost = 50
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			declare_war_on = {
+			target = UKR
+			type = annex_everything
+			}	
+		}
+	}
+	
+	ALL_Romania = {
+		#icon = generic_construction
+
+		available = {
+			UKR = {
+			is_in_faction_with = ALL
+			}
+			
+			NOT = {
+			country_exists = POL
+			}
+			
+			NOT = {
+			country_exists = PLF
+			}
+			
+			HUN = {
+			is_in_faction_with = ALL
+			}
+		}
+
+		visible = {
+			
+		}
+
+		cost = 50
+		days_remove = 0
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			add_to_faction = ROM
+			ROM = {
+			give_resource_rights = { receiver = ALL state = 46 }
+			}
+			
+		}
+	}
+}
+
+ALL_integration_of_Germans = {
+
+	ALL_integration_of_the_west = {
+		#icon = generic_construction
+
+		available = {
+			NOT = {
+			country_exists = HOL
+			}
+			
+			NOT = {
+			country_exists = BEL
+			}
+		}
+
+		visible = {
+			
+		}
+
+		cost = 50
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			add_state_core = 34
+			add_state_core = 6
+			add_state_core = 35
+			add_state_core = 7
+			add_state_core = 36
+			add_state_core = 785
+			add_state_core = 29
+			add_state_core = 18
+			add_state_core = 17
+			add_state_core = 27
+		}
+	}
+	
+	ALL_integration_of_the_bohemia = {
+		#icon = generic_construction
+
+		available = {
+			NOT = {
+			country_exists = CZE
+			}
+		}
+
+		visible = {
+			
+		}
+
+		cost = 50
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			add_state_core = 75
+			add_state_core = 9
+			
+		}
+	}
+	
+	ALL_integration_of_poland = {
+		#icon = generic_construction
+
+		available = {
+			NOT = {
+			country_exists = PLF
+			}
+			
+			NOT = {
+			country_exists = POL
+			}
+		}
+
+		visible = {
+			
+		}
+
+		cost = 50
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			add_state_core = 10
+			add_state_core = 90
+			add_state_core = 88
+			add_state_core = 92
+			add_state_core = 89
+			add_state_core = 91
+		}
+	}
+	
+	ALL_integration_of_the_baltic_teritories = {
+		#icon = generic_construction
+
+		available = {
+			NOT = {
+			country_exists = BLR
+			}
+			
+			NOT = {
+			country_exists = EST
+			}
+			
+			NOT = {
+			country_exists = LAT
+			}
+			
+			NOT = {
+			country_exists = LIT
+			}
+		}
+
+		visible = {
+			
+		}
+
+		cost = 50
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			add_state_core = 816
+			add_state_core = 815
+			add_state_core = 822
+			add_state_core = 821
+			
+		}
+	}
+	
+}
+
+ALL_Siphon_wealth_from_our_conquests = {
+
+	ALL_riches_from_the_west = {
+		#icon = generic_construction
+
+		available = {
+			NOT = {
+			country_exists = BEL
+			}
+			
+			NOT = {
+			country_exists = FRA
+			}
+			
+			NOT = {
+			country_exists = HOL
+			}
+		}
+
+		visible = {
+			
+		}
+
+		cost = 0
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			if = {
+			limit = {
+			has_idea = German_industry_shit_0
+			}
+			swap_ideas = { 
+			remove_idea = German_industry_shit_0 
+			add_idea = German_industry_shit_1 
+			}
+			}
+			else_if = {
+			limit = {
+			has_idea = German_industry_shit_1
+			}
+			swap_ideas = { 
+			remove_idea = German_industry_shit_1 
+			add_idea = German_industry_shit_2 
+			}
+			}
+			else_if = {
+			limit = {
+			has_idea = German_industry_shit_2
+			}
+			swap_ideas = { 
+			remove_idea = German_industry_shit_2 
+			add_idea = German_industry_shit_3 
+			}
+			}
+			else_if = {
+			limit = {
+			has_idea = German_industry_shit_3
+			}
+			remove_ideas = German_industry_shit_3
+			}
+		}
+	}
+	
+	ALL_take_czech_gold = {
+		#icon = generic_construction
+
+		available = {
+			NOT = {
+			country_exists = CZE
+			}
+			
+		}
+
+		visible = {
+			
+		}
+
+		cost = 0
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			if = {
+			limit = {
+			has_idea = German_industry_shit_0
+			}
+			swap_ideas = { 
+			remove_idea = German_industry_shit_0 
+			add_idea = German_industry_shit_1 
+			}
+			}
+			else_if = {
+			limit = {
+			has_idea = German_industry_shit_1
+			}
+			swap_ideas = { 
+			remove_idea = German_industry_shit_1 
+			add_idea = German_industry_shit_2 
+			}
+			}
+			else_if = {
+			limit = {
+			has_idea = German_industry_shit_2
+			}
+			swap_ideas = { 
+			remove_idea = German_industry_shit_2 
+			add_idea = German_industry_shit_3 
+			}
+			}
+			else_if = {
+			limit = {
+			has_idea = German_industry_shit_3
+			}
+			remove_ideas = German_industry_shit_3
+			}
+		}
+	}
+	
+	ALL_pillage_the_east = {
+		#icon = generic_construction
+
+		available = {
+		
+			UKR = {
+			is_in_faction_with = ALL
+			}
+			
+			OST = {
+			is_in_faction_with = ALL
+			}
+			
+			NOT = {
+			country_exists = POL
+			}
+			
+			NOT = {
+			country_exists = PLF
+			}
+		}
+
+		visible = {
+			
+		}
+
+		cost = 0
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			if = {
+			limit = {
+			has_idea = German_industry_shit_0
+			}
+			swap_ideas = { 
+			remove_idea = German_industry_shit_0 
+			add_idea = German_industry_shit_1 
+			}
+			}
+			else_if = {
+			limit = {
+			has_idea = German_industry_shit_1
+			}
+			swap_ideas = { 
+			remove_idea = German_industry_shit_1 
+			add_idea = German_industry_shit_2 
+			}
+			}
+			else_if = {
+			limit = {
+			has_idea = German_industry_shit_2
+			}
+			swap_ideas = { 
+			remove_idea = German_industry_shit_2 
+			add_idea = German_industry_shit_3 
+			}
+			}
+			else_if = {
+			limit = {
+			has_idea = German_industry_shit_3
+			}
+			remove_ideas = German_industry_shit_3
+			}
+		}
+	}
+	
+	ALL_ransack_russia = {
+		#icon = generic_construction
+
+		available = {
+			SML = {
+			is_in_faction_with = ALL
+			}
+		}
+
+		visible = {
+			
+		}
+
+		cost = 0
+		days_remove = 10
+		fire_only_once = yes
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			if = {
+			limit = {
+			has_idea = German_industry_shit_0
+			}
+			swap_ideas = { 
+			remove_idea = German_industry_shit_0 
+			add_idea = German_industry_shit_1 
+			}
+			}
+			else_if = {
+			limit = {
+			has_idea = German_industry_shit_1
+			}
+			swap_ideas = { 
+			remove_idea = German_industry_shit_1 
+			add_idea = German_industry_shit_2 
+			}
+			}
+			else_if = {
+			limit = {
+			has_idea = German_industry_shit_2
+			}
+			swap_ideas = { 
+			remove_idea = German_industry_shit_2 
+			add_idea = German_industry_shit_3 
+			}
+			}
+			else_if = {
+			limit = {
+			has_idea = German_industry_shit_3
+			}
+			remove_ideas = German_industry_shit_3
+			}
+		}
+	}
+}
+
+ALL_rehabilitate_our_army = {
+
+	ALL_pillage_the_east = {
+		#icon = generic_construction
+
+		available = {
+		has_army_experience > 19
+		}
+
+		visible = {
+		OR = {
+		has_idea = Army_shit_0
+		has_idea = Army_shit_1
+		has_idea = Army_shit_2
+		has_idea = Army_shit_3
+		}	
+		}
+
+		cost = 0
+		days_remove = 70
+		fire_only_once = no
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		remove_effect = {
+			if = {
+			limit = {
+			has_idea = Army_shit_0
+			}
+			swap_ideas = { 
+			remove_idea = Army_shit_0 
+			add_idea = Army_shit_1 
+			}
+			}
+			else_if = {
+			limit = {
+			has_idea = Army_shit_1
+			}
+			swap_ideas = { 
+			remove_idea = Army_shit_1 
+			add_idea = Army_shit_2 
+			}
+			}
+			else_if = {
+			limit = {
+			has_idea = Army_shit_2
+			}
+			swap_ideas = { 
+			remove_idea = Army_shit_2 
+			add_idea = Army_shit_3 
+			}
+			}
+			else_if = {
+			limit = {
+			has_idea = Army_shit_3
+			}
+			remove_ideas = Army_shit_3
+			}
+			army_experience = -20
+		}
+	}
+
+}
+
