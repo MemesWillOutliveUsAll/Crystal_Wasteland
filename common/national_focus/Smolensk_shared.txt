@@ -322,7 +322,7 @@ shared_focus = {
 		}
 
 		available = {
-
+		is_subject = no
 		}
 
 		bypass = {
@@ -369,6 +369,7 @@ shared_focus = {
 		}
 
 		available = {
+		is_subject = no
 		NOT = {
 		country_exists = NOV
 		country_exists = GMC
@@ -412,7 +413,7 @@ shared_focus = {
 
 		available = {
 		SOV = {has_country_flag = Sov_moved_in}
-
+		is_subject = no
 		}
 
 		bypass = {
@@ -454,6 +455,7 @@ shared_focus = {
 		}
 
 		available = {
+		is_subject = no
 		NOT = {
 		country_exists = SOV
 		}
@@ -474,6 +476,8 @@ shared_focus = {
 
 		completion_reward = {
 		hidden_effect = {sound_effect = "Vlasov_sov_win"}
+		set_global_flag = VLASOV_YES
+		set_global_flag = RUSSIA_united
 		news_event = { id = news.24 }
 		SML ={
 			Integration_of_east_russia = yes

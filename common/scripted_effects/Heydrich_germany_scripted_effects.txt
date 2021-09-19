@@ -62,3 +62,78 @@ create_corps_commander = {
 
 #######################################################
 }
+
+Reduce_economic_effects = {
+
+	if = {
+	limit = {
+	has_idea = German_industry_shit_0
+	}
+	swap_ideas = { 
+	remove_idea = German_industry_shit_0 
+	add_idea = German_industry_shit_1 
+	}
+	}
+	else_if = {
+	limit = {
+	has_idea = German_industry_shit_1
+	}
+	swap_ideas = { 
+	remove_idea = German_industry_shit_1 
+	add_idea = German_industry_shit_2 
+	}
+	}
+	else_if = {
+	limit = {
+	has_idea = German_industry_shit_2
+	}
+	swap_ideas = { 
+	remove_idea = German_industry_shit_2 
+	add_idea = German_industry_shit_3 
+	}
+	}
+	else_if = {
+	limit = {
+	has_idea = German_industry_shit_3
+	}
+	remove_ideas = German_industry_shit_3
+	}
+
+
+}
+
+Rehabilitate_army = {
+	if = {
+			limit = {
+			has_idea = Army_shit_0
+			}
+			swap_ideas = { 
+			remove_idea = Army_shit_0 
+			add_idea = Army_shit_1 
+			}
+			}
+			else_if = {
+			limit = {
+			has_idea = Army_shit_1
+			}
+			swap_ideas = { 
+			remove_idea = Army_shit_1 
+			add_idea = Army_shit_2 
+			}
+			}
+			else_if = {
+			limit = {
+			has_idea = Army_shit_2
+			}
+			swap_ideas = { 
+			remove_idea = Army_shit_2 
+			add_idea = Army_shit_3 
+			}
+			}
+			else_if = {
+			limit = {
+			has_idea = Army_shit_3
+			}
+			remove_ideas = Army_shit_3
+			}
+}

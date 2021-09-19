@@ -198,6 +198,7 @@ shared_focus = {
 			tree = soviet_lebedev_reveals_genius
 			keep_completed = no
 			}
+			
 		}
 	}
 ################################################ LEBEDV FOCUSES !!!!!!!!!!!!!!! ############################################################################################################################
@@ -1070,9 +1071,13 @@ shared_focus = {
 		
 	completion_reward = {
 	
-	hidden_effect = {sound_effect = "Lebedev_sov_win"}
+	hidden_effect = {
+	set_global_flag = VLASOV_NO
+	
+	sound_effect = "Lebedev_sov_win"}
 	Integration_of_west_russia = yes
 		news_event = { id = news.20 }
+		set_global_flag = RUSSIA_united
 	}
 
 	bypass = {
@@ -1545,7 +1550,8 @@ shared_focus = {
 	hidden_effect ={sound_effect = Stalin_sov_win}
 	news_event = { id = news.21 }
 	Integration_of_west_russia = yes
-		
+	set_global_flag = VLASOV_NO
+	set_global_flag = RUSSIA_united
 	}
 
 	bypass = {
@@ -2023,7 +2029,8 @@ shared_focus = {
 	news_event = { id = news.22 }
 	hidden_effect = {sound_effect = Trotsky_sov_win}
 	Integration_of_west_russia = yes
-		
+	set_global_flag = VLASOV_NO
+	set_global_flag = RUSSIA_united	
 	}
 
 	bypass = {

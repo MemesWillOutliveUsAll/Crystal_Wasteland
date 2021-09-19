@@ -73,3 +73,36 @@ focus_tree = {
 	continuous_focus_position = { x = 2000 y = 1000 }
 }
 
+focus_tree = {
+	id = alsace_Vlasov_Submits
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ALL
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 2000 y = 1000 }
+}
+
+focus_tree = {
+	id = alsace_attack_Russia
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ALL
+		}
+	}
+	
+	default = no
+	shared_focus = ALL_attack_russia
+	continuous_focus_position = { x = 2000 y = 1000 }
+}
+

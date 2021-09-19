@@ -2378,8 +2378,8 @@ SOR_ADJ:0 "Sorbian"
 
 SML_neutrality:0 "Smolensk authority"
 SML_neutrality_DEF:0 "Smolensk authority"
-SML_fascism:0 "Reichskommissariat Moskovien"
-SML_fascism_DEF:0 "Reichskommissariat Moskovien"
+SML_fascism:0 "Reichskommissariat Russland"
+SML_fascism_DEF:0 "Reichskommissariat Russland"
 SML_DEF:0 "Russian"
 SML_ADJ:0 "Russian"
 

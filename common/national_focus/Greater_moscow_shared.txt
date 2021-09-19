@@ -428,7 +428,9 @@ shared_focus = {
 		}
 
 		completion_reward = {
-		hidden_effect = {sound_effect = "Rhodazhevsky_sov_win"}
+		hidden_effect = {sound_effect = "Rhodazhevsky_sov_win"
+		set_global_flag = RUSSIA_united
+		set_global_flag = VLASOV_NO}
 		news_event = { id = news.23 }
 		GMC ={
 			Integration_of_east_russia = yes

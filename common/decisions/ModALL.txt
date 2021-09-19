@@ -477,39 +477,7 @@ ALL_Siphon_wealth_from_our_conquests = {
 		}
 
 		remove_effect = {
-			if = {
-			limit = {
-			has_idea = German_industry_shit_0
-			}
-			swap_ideas = { 
-			remove_idea = German_industry_shit_0 
-			add_idea = German_industry_shit_1 
-			}
-			}
-			else_if = {
-			limit = {
-			has_idea = German_industry_shit_1
-			}
-			swap_ideas = { 
-			remove_idea = German_industry_shit_1 
-			add_idea = German_industry_shit_2 
-			}
-			}
-			else_if = {
-			limit = {
-			has_idea = German_industry_shit_2
-			}
-			swap_ideas = { 
-			remove_idea = German_industry_shit_2 
-			add_idea = German_industry_shit_3 
-			}
-			}
-			else_if = {
-			limit = {
-			has_idea = German_industry_shit_3
-			}
-			remove_ideas = German_industry_shit_3
-			}
+			Reduce_economic_effects = yes
 		}
 	}
 	
@@ -540,39 +508,7 @@ ALL_Siphon_wealth_from_our_conquests = {
 		}
 
 		remove_effect = {
-			if = {
-			limit = {
-			has_idea = German_industry_shit_0
-			}
-			swap_ideas = { 
-			remove_idea = German_industry_shit_0 
-			add_idea = German_industry_shit_1 
-			}
-			}
-			else_if = {
-			limit = {
-			has_idea = German_industry_shit_1
-			}
-			swap_ideas = { 
-			remove_idea = German_industry_shit_1 
-			add_idea = German_industry_shit_2 
-			}
-			}
-			else_if = {
-			limit = {
-			has_idea = German_industry_shit_2
-			}
-			swap_ideas = { 
-			remove_idea = German_industry_shit_2 
-			add_idea = German_industry_shit_3 
-			}
-			}
-			else_if = {
-			limit = {
-			has_idea = German_industry_shit_3
-			}
-			remove_ideas = German_industry_shit_3
-			}
+			Reduce_economic_effects = yes
 		}
 	}
 	
@@ -615,39 +551,7 @@ ALL_Siphon_wealth_from_our_conquests = {
 		}
 
 		remove_effect = {
-			if = {
-			limit = {
-			has_idea = German_industry_shit_0
-			}
-			swap_ideas = { 
-			remove_idea = German_industry_shit_0 
-			add_idea = German_industry_shit_1 
-			}
-			}
-			else_if = {
-			limit = {
-			has_idea = German_industry_shit_1
-			}
-			swap_ideas = { 
-			remove_idea = German_industry_shit_1 
-			add_idea = German_industry_shit_2 
-			}
-			}
-			else_if = {
-			limit = {
-			has_idea = German_industry_shit_2
-			}
-			swap_ideas = { 
-			remove_idea = German_industry_shit_2 
-			add_idea = German_industry_shit_3 
-			}
-			}
-			else_if = {
-			limit = {
-			has_idea = German_industry_shit_3
-			}
-			remove_ideas = German_industry_shit_3
-			}
+			Reduce_economic_effects = yes
 		}
 	}
 	
@@ -677,46 +581,14 @@ ALL_Siphon_wealth_from_our_conquests = {
 		}
 
 		remove_effect = {
-			if = {
-			limit = {
-			has_idea = German_industry_shit_0
-			}
-			swap_ideas = { 
-			remove_idea = German_industry_shit_0 
-			add_idea = German_industry_shit_1 
-			}
-			}
-			else_if = {
-			limit = {
-			has_idea = German_industry_shit_1
-			}
-			swap_ideas = { 
-			remove_idea = German_industry_shit_1 
-			add_idea = German_industry_shit_2 
-			}
-			}
-			else_if = {
-			limit = {
-			has_idea = German_industry_shit_2
-			}
-			swap_ideas = { 
-			remove_idea = German_industry_shit_2 
-			add_idea = German_industry_shit_3 
-			}
-			}
-			else_if = {
-			limit = {
-			has_idea = German_industry_shit_3
-			}
-			remove_ideas = German_industry_shit_3
-			}
+			Reduce_economic_effects = yes
 		}
 	}
 }
 
 ALL_rehabilitate_our_army = {
 
-	ALL_pillage_the_east = {
+	ALL_Army_reform = {
 		#icon = generic_construction
 
 		available = {
@@ -745,39 +617,7 @@ ALL_rehabilitate_our_army = {
 		}
 
 		remove_effect = {
-			if = {
-			limit = {
-			has_idea = Army_shit_0
-			}
-			swap_ideas = { 
-			remove_idea = Army_shit_0 
-			add_idea = Army_shit_1 
-			}
-			}
-			else_if = {
-			limit = {
-			has_idea = Army_shit_1
-			}
-			swap_ideas = { 
-			remove_idea = Army_shit_1 
-			add_idea = Army_shit_2 
-			}
-			}
-			else_if = {
-			limit = {
-			has_idea = Army_shit_2
-			}
-			swap_ideas = { 
-			remove_idea = Army_shit_2 
-			add_idea = Army_shit_3 
-			}
-			}
-			else_if = {
-			limit = {
-			has_idea = Army_shit_3
-			}
-			remove_ideas = Army_shit_3
-			}
+			Rehabilitate_army = yes
 			army_experience = -20
 		}
 	}

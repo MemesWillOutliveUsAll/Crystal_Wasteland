@@ -589,7 +589,10 @@ shared_focus = {
 		}
 
 		completion_reward = {
-		hidden_effect = {sound_effect = "Rokossovsky_sov_win"}
+		hidden_effect = {sound_effect = "Rokossovsky_sov_win"
+		
+		set_global_flag = VLASOV_NO}
+		set_global_flag = RUSSIA_united
 		news_event = { id = news.25 }
 		NOV ={
 			Integration_of_east_russia = yes
