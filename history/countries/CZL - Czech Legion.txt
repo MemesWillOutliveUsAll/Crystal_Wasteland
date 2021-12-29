@@ -133,9 +133,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "No true leader"
+	name = "Radola Gajda"
 	desc = " "
-	picture = "gfx/leaders/GER/Portrait0.dds"
+	picture = "gfx/leaders/SOV/Portrait_CEN_Radola_Gajda.png"
 	expire = "1965.1.1"
 	ideology = despotism #switched from centrism
 	traits = {

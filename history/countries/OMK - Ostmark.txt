@@ -138,9 +138,9 @@ add_ideas = {
 
 
 create_country_leader = {
-	name = "Kaltenbrunner"
+	name = "Ernst Kaltenbrunner"
 	desc = " "
-	picture = "gfx/leaders/GER/Kaltenbrunner_portrait.png"
+	picture = "gfx/leaders/GER/Ernst_Kaltenbrunner.png"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {

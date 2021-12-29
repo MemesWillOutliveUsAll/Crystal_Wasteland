@@ -118,9 +118,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Earl Browder"
+	name = "Douglas MacArthur"
 	desc = "POLITICS_EARL_BROWDER_DESC"
-	picture = "portrait_USA_earl_browder.dds"
+	picture = "gfx/leaders/CAN/McPog.png"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {

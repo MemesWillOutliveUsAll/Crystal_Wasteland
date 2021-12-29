@@ -159,6 +159,7 @@ add_ideas = {
 #	}
 #}
 #
+
 #create_country_leader = {
 #	name = "Ernst Thälmann"
 #	desc = "POLITICS_ERNST_THALMANN_DESC"
@@ -171,5 +172,17 @@ add_ideas = {
 #		political_prisoner
 #	}
 #}
+#
+
+create_country_leader = {
+	name = "Paul Hausser"
+	desc = ""
+	picture = "gfx/leaders/GER/Paul_Hausser.png"
+	expire = "1953.3.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
 
 

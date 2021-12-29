@@ -73,7 +73,7 @@ Heavy_contamination
 create_country_leader = {
 	name = "Mackenzie King"
 	desc = "POLITICS_MACKENZIE_KING_DESC"
-	picture = "Portrait_Canada_Mackenzie_King.dds"
+	picture = "gfx/leaders/CAN/Mackenzie_King.png"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

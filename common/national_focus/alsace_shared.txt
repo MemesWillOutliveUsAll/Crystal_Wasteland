@@ -1369,42 +1369,11 @@ shared_focus = {
 	}
 	
 	load_focus_tree = {
-				tree = alsace_Vlasov_Submits
+				tree = alsace_Heydrichs_victory
 				keep_completed = no
 		}
 	
-	}
-	
-	}
-
-	bypass = {
-	}
-}
-
-# integrating vlasov ##
-
-shared_focus = {
-	id = ALL_integrate_vlasov
-	icon = GFX_focus_Heydrich_takes_back_europe
-	x = 14
-	y = 0
-
-	cost = 3
-
-	ai_will_do = {
-		factor = 1
-	}
-
-	available = {
-	}
-		
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = yes
-		
-	completion_reward = {
-	hidden_effect = {
-		puppet = SML
+	puppet = SML
 		SML = {
 		drop_cosmetic_tag = yes
 					
@@ -1421,13 +1390,10 @@ shared_focus = {
 		}
 		
 		}
-		
+	
 	}
 	
 	}
-		
-		
-
 
 	bypass = {
 	}
@@ -1507,9 +1473,288 @@ shared_focus = {
 	available_if_capitulated = yes
 		
 	completion_reward = {
+	hidden_effect = {
+	
+	load_focus_tree = {
+				tree = alsace_Heydrichs_victory
+				keep_completed = no
+		}
+	}
 	
 	}
 
 	bypass = {
 	}
 }
+
+## The Glory Years ##
+shared_focus = {
+	id = ALL_Heydrichs_Grand_Victory
+	icon = GFX_focus_Heydrich_takes_back_europe
+	x = 14
+	y = 0
+
+	cost = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	
+	}
+}
+
+shared_focus = {
+	id = ALL_Solidify_our_grip_over_Romania
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_Heydrichs_Grand_Victory }
+	relative_position_id = ALL_Heydrichs_Grand_Victory
+	x = 0
+	y = 1
+	
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_Retrieve_our_scientists
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_Heydrichs_Grand_Victory }
+	relative_position_id = ALL_Heydrichs_Grand_Victory
+	x = -2
+	y = 1
+	
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_Crush_the_rebles
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_Heydrichs_Grand_Victory }
+	relative_position_id = ALL_Heydrichs_Grand_Victory
+	x = 2
+	y = 1
+	
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_Liberalization
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_Heydrichs_Grand_Victory }
+	relative_position_id = ALL_Heydrichs_Grand_Victory
+	x = 0
+	y = 1
+	
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_Let_the_golden_age_begin
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_Liberalization }
+	prerequisite = { focus = ALL_Crush_the_rebles }
+	prerequisite = { focus = ALL_Retrieve_our_scientists }
+	relative_position_id = ALL_Liberalization
+	x = 0
+	y = 1
+	
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+### Space Program ##########
+shared_focus = {
+	id = ALL_The_german_space_Program
+	icon = GFX_goal_generic_construct_civilian
+	x = 7
+	y = 4
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_completed_focus = ALL_Let_the_golden_age_begin
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_Von_Brauns_Genius
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_The_german_space_Program }
+	relative_position_id = ALL_The_german_space_Program
+	x = -1
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_Nazi_Space_propaganda
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_The_german_space_Program }
+	relative_position_id = ALL_The_german_space_Program
+	x = 1
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+		

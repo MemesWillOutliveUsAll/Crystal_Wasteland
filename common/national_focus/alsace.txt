@@ -106,3 +106,37 @@ focus_tree = {
 	continuous_focus_position = { x = 2000 y = 1000 }
 }
 
+focus_tree = {
+	id = alsace_Vlasov_Submits
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ALL
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 2000 y = 1000 }
+}
+
+focus_tree = {
+	id = alsace_Heydrichs_victory
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ALL
+		}
+	}
+	
+	default = no
+	shared_focus = ALL_Heydrichs_Grand_Victory
+	shared_focus = ALL_The_german_space_Program
+	continuous_focus_position = { x = 2000 y = 1000 }
+}
+
