@@ -4,3 +4,12 @@
  # ideas #
  ALL_ARMY_SHIT:0 "Recent purge"
  ALL_INDUSTRY_BAD_AFTER_CIVIL_WAR:0 "Devastated Industry"
+ 
+ # Fegelein influence #
+ ALL_Feggelein_game:0 "Feglein's Gambit"
+ ALL_Feggelein_game_desc:0 "Fegelein has decided that our government is weak and given the chance will attempt to remove Heydrich from power, lets hope it does not come to that \n Fegelein's current influence within our government is: [?Feggelein_influence]"
+ add_ten_feg:0 "Adds ten to Fegelein's influence"
+ add_thirty_feg:0 "Adds thirty to Fegelein's influence"
+ lose_ten_feg:0 "Fegelein loses ten influence"
+ need_twenty_or_lower:0 "We will need Fegeleins influence to be twenty or less to place him under house arrest"
+ need_zero_or_lower:0 "We will need Fegeleins influence to be nonexistant to disapear him"

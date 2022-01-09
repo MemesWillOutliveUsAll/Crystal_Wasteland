@@ -1,0 +1,17 @@
+﻿add_namespace = mod_Kor
+# before Yugoslav Civil war #
+country_event = {
+	id = mod_Kor.1
+	title = mod_Kor.1.t
+	desc = mod_Kor.1.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mod_Kor.1.a
+		release = KOR
+	}
+}

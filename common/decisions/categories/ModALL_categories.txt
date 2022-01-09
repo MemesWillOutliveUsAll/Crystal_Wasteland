@@ -63,3 +63,23 @@ ALL_rehabilitate_our_army = {
 	
 }
 
+ALL_Feggelein_game = {
+
+	allowed = {
+		tag = ALL
+	}
+	
+	
+	visible = {
+		not = {
+		ALL = {has_country_flag = fegelein_is_gone}
+		}
+		ALL = { has_country_flag = Fegelein_attacks }
+		has_civil_war = no
+		exists = yes
+		has_capitulated = no
+
+	}
+	
+}
+

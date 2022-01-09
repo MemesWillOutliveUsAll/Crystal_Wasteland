@@ -58,6 +58,13 @@
 				tree = warlord_german_focus
 				keep_completed = no
 		}
+		
+		JAP = {
+		country_event = {
+						id = mod_Kor.1	
+						days = 360
+					}
+		}
 		}
 		
 	}

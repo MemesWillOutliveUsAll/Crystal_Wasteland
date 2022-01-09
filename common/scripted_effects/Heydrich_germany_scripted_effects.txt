@@ -137,3 +137,161 @@ Rehabilitate_army = {
 			remove_ideas = Army_shit_3
 			}
 }
+
+add_ten_points_to_fegelein = {
+	custom_effect_tooltip = add_ten_feg
+	add_to_variable = {
+		Feggelein_influence = 10
+	}
+}
+
+add_thirty_points_to_fegelein = {
+	custom_effect_tooltip = add_thirty_feg
+	add_to_variable = {
+		Feggelein_influence = 30
+		
+	}
+}
+
+lose_ten_points_to_fegelein = {
+	custom_effect_tooltip = lose_ten_feg
+	add_to_variable = {
+		Feggelein_influence = -10
+	}
+}
+
+AA_Line_retreat = {
+	SML = {
+		release = KAZ
+		release = MON
+	}
+	
+	SOV = {
+		transfer_state = 408
+		transfer_state = 409
+		transfer_state = 560
+		transfer_state = 561
+		transfer_state = 657
+		transfer_state = 562
+		transfer_state = 574
+		transfer_state = 563
+		transfer_state = 565
+		transfer_state = 564
+		transfer_state = 566
+		add_state_core = 408
+		add_state_core = 409
+		add_state_core = 560
+		add_state_core = 561
+		add_state_core = 657
+		add_state_core = 562
+		add_state_core = 574
+		add_state_core = 563
+		add_state_core = 565
+		add_state_core = 564
+		add_state_core = 566
+	}
+	
+	GMC = {
+		set_cosmetic_tag = NKVD_military_command
+		transfer_state = 575
+		transfer_state = 567
+		transfer_state = 329
+		transfer_state = 576
+		transfer_state = 568
+		transfer_state = 654
+		transfer_state = 569
+		transfer_state = 578
+		transfer_state = 570
+		transfer_state = 40
+		transfer_state = 654
+		add_state_core = 575
+		add_state_core = 567
+		add_state_core = 329
+		add_state_core = 576
+		add_state_core = 568
+		add_state_core = 654
+		add_state_core = 569
+		add_state_core = 578
+		add_state_core = 570
+		add_state_core = 40
+		add_state_core = 654
+		set_politics = {
+		ruling_party = communism
+		elections_allowed = no
+		}
+		add_popularity = { ideology = communism popularity = 1 }
+	}
+	
+	NOV = {
+		set_cosmetic_tag = Ural_military_command
+		transfer_state = 571
+		transfer_state = 403
+		transfer_state = 572
+		transfer_state = 653
+		add_state_core = 571
+		add_state_core = 403
+		add_state_core = 572
+		add_state_core = 653
+		set_politics = {
+		ruling_party = neutrality
+		elections_allowed = no
+		}
+		add_popularity = { ideology = neutrality popularity = 1 }
+	}
+	
+	CZL = {
+		set_cosmetic_tag = Russian_liberation_front
+		set_politics = {
+		ruling_party = communism
+		elections_allowed = no
+		}
+		add_popularity = { ideology = communism popularity = 1 }
+		transfer_state = 582
+		transfer_state = 573
+		transfer_state = 581
+		transfer_state = 262
+		transfer_state = 397
+		transfer_state = 398
+		transfer_state = 400
+		transfer_state = 399
+		transfer_state = 651
+		transfer_state = 249
+		transfer_state = 256
+		transfer_state = 250
+		transfer_state = 251
+		transfer_state = 652
+		add_state_core = 582
+		add_state_core = 573
+		add_state_core = 581
+		add_state_core = 262
+		add_state_core = 397
+		add_state_core = 398
+		add_state_core = 400
+		add_state_core = 399
+		add_state_core = 651
+		add_state_core = 249
+		add_state_core = 256
+		add_state_core = 250
+		add_state_core = 251
+		add_state_core = 652
+	}
+	
+	JAP = {
+		transfer_state = 655
+	}
+	
+	ANR = {
+	transfer_state = 579
+	transfer_state = 516
+	transfer_state = 644
+	transfer_state = 637
+	transfer_state = 577
+	transfer_state = 580
+	add_state_core = 579
+	add_state_core = 516
+	add_state_core = 644
+	add_state_core = 637
+	add_state_core = 577
+	add_state_core = 580
+	}
+}

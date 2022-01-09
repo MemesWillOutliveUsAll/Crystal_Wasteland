@@ -1,4 +1,5 @@
 on_actions = {
+	
 	on_capitulation = {
 		effect = {
 			if = {#Holand attacks Belgium after Germany
@@ -76,7 +77,10 @@ on_actions = {
 					add_state_core = 71
 					add_state_core = 664
 				}
-				
+				country_event = {
+				id  = mod_Kor.1
+				days = 360
+				}
 			}
 			
 			if = { 
@@ -963,6 +967,11 @@ on_actions = {
 					annex_country = {
 							target = ROOT
 							transfer_troops = no
+					}
+					
+					load_focus_tree = {
+					tree = empty_focus
+					keep_completed = no
 					}
 					
 					}

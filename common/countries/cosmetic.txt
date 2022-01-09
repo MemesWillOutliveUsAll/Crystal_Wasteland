@@ -685,3 +685,8 @@ SOV = {
     color = rgb { 72 143 68 }
     color_ui = rgb { 72 143 68 }
 }
+
+Russian_liberation_front = {
+	color = rgb { 150 10 0 }
+	color_ui = rgb { 122 145 93 }
+}

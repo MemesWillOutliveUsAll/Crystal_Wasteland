@@ -1063,4 +1063,8 @@
  BEL_reichskommissariat:0 "Reichskommissariat Belgien Nordfrankreich"
  HOL_reichskommissariat:0 "Reichskommissariat Niederlande"
 
-UKR_reichskommissariat:0 "Reichskommissariat Ukraine"
+ UKR_reichskommissariat:0 "Reichskommissariat Ukraine"
+ 
+ NKVD_military_command:0 "NKVD Central Command"
+ Ural_military_command:0 "Ural Military District"
+ Russian_liberation_front:0 "Russian Liberation Front"

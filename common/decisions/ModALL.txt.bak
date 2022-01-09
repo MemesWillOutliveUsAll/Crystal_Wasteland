@@ -954,7 +954,6 @@ ALL_Feggelein_game = {
 		}
 		
 		timeout_effect = {
-		ALL = {set_country_flag = fegelein_is_gone}
 		}
 		
 	}

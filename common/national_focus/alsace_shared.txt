@@ -1389,9 +1389,17 @@ shared_focus = {
 		
 		}
 		
+		load_focus_tree = {
+					tree = empty_focus
+					keep_completed = no
+					}
+		
 		}
+		
 	
 	}
+	
+	
 	
 	}
 
@@ -1508,7 +1516,27 @@ shared_focus = {
 	available_if_capitulated = yes
 		
 	completion_reward = {
+	hidden_effect = {
+	SML = {
+	remove_russian_cores = yes
+	}
 	
+	NOV = {
+	remove_russian_cores = yes
+	}
+	
+	GMC = {
+	remove_russian_cores = yes
+	}
+	
+	ANR = {
+	remove_russian_cores = yes
+	}
+	
+	SOV = {
+	remove_russian_cores = yes
+	}
+	}
 	
 	}
 }
@@ -1536,7 +1564,7 @@ shared_focus = {
 	available_if_capitulated = yes
 		
 	completion_reward = {
-	
+	puppet = ROM
 	
 	}
 
@@ -1547,8 +1575,8 @@ shared_focus = {
 shared_focus = {
 	id = ALL_Retrieve_our_scientists
 	icon = GFX_goal_generic_construct_civilian
-	prerequisite = { focus = ALL_Heydrichs_Grand_Victory }
-	relative_position_id = ALL_Heydrichs_Grand_Victory
+	prerequisite = { focus = ALL_Solidify_our_grip_over_Romania }
+	relative_position_id = ALL_Solidify_our_grip_over_Romania
 	x = -2
 	y = 1
 	
@@ -1578,8 +1606,8 @@ shared_focus = {
 shared_focus = {
 	id = ALL_Crush_the_rebles
 	icon = GFX_goal_generic_construct_civilian
-	prerequisite = { focus = ALL_Heydrichs_Grand_Victory }
-	relative_position_id = ALL_Heydrichs_Grand_Victory
+	prerequisite = { focus = ALL_Solidify_our_grip_over_Romania }
+	relative_position_id = ALL_Solidify_our_grip_over_Romania
 	x = 2
 	y = 1
 	
@@ -1609,8 +1637,8 @@ shared_focus = {
 shared_focus = {
 	id = ALL_Liberalization
 	icon = GFX_goal_generic_construct_civilian
-	prerequisite = { focus = ALL_Heydrichs_Grand_Victory }
-	relative_position_id = ALL_Heydrichs_Grand_Victory
+	prerequisite = { focus = ALL_Solidify_our_grip_over_Romania }
+	relative_position_id = ALL_Solidify_our_grip_over_Romania
 	x = 0
 	y = 1
 	
@@ -1629,8 +1657,8 @@ shared_focus = {
 	available_if_capitulated = yes
 		
 	completion_reward = {
-	
-	
+	ALL = { set_country_flag = Fegelein_attacks }
+	set_variable = { Feggelein_influence = 50 }
 	}
 
 	bypass = {
@@ -1672,6 +1700,7 @@ shared_focus = {
 ### Space Program ##########
 shared_focus = {
 	id = ALL_The_german_space_Program
+	prerequisite = { focus = ALL_Let_the_golden_age_begin }
 	icon = GFX_goal_generic_construct_civilian
 	x = 7
 	y = 4
@@ -1683,7 +1712,6 @@ shared_focus = {
 	}
 
 	available = {
-	has_completed_focus = ALL_Let_the_golden_age_begin
 	}
 		
 	cancel_if_invalid = yes
@@ -1757,4 +1785,1052 @@ shared_focus = {
 	bypass = {
 	}
 }
+
+shared_focus = {
+	id = ALL_Baltic_launch_site
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_Nazi_Space_propaganda }
+	prerequisite = { focus = ALL_Von_Brauns_Genius }
+	relative_position_id = ALL_Nazi_Space_propaganda
+	x = -1
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
 		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_Invest_into_computers
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_Nazi_Space_propaganda }
+	prerequisite = { focus = ALL_Von_Brauns_Genius }
+	relative_position_id = ALL_Nazi_Space_propaganda
+	x = 1
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_more_scientists
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_Nazi_Space_propaganda }
+	prerequisite = { focus = ALL_Von_Brauns_Genius }
+	relative_position_id = ALL_Von_Brauns_Genius
+	x = -1
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_ignore_complaints
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_Baltic_launch_site }
+	prerequisite = { focus = ALL_more_scientists }
+	prerequisite = { focus = ALL_Invest_into_computers }
+	mutually_exclusive = {focus = ALL_look_into_complaints}
+	relative_position_id = ALL_Baltic_launch_site
+	x = 1
+	y = 1
+	
+	cost = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	ALL = {set_country_flag = possible_rocket_failure}
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_look_into_complaints
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_Baltic_launch_site }
+	prerequisite = { focus = ALL_more_scientists }
+	prerequisite = { focus = ALL_Invest_into_computers }
+	mutually_exclusive = {focus = ALL_ignore_complaints}
+	relative_position_id = ALL_Baltic_launch_site
+	x = -1
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_launch_the_rocket
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_look_into_complaints focus = ALL_ignore_complaints }
+	relative_position_id = ALL_ignore_complaints
+	x = -1
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+# Revaluating Our Conquests
+
+shared_focus = {
+	id = ALL_Pull_back_to_the_AA_Line
+	prerequisite = { focus = ALL_Let_the_golden_age_begin }
+	icon = GFX_goal_generic_construct_civilian
+	x = 14
+	y = 4
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	add_ten_points_to_fegelein = yes
+	AA_Line_retreat = yes
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_The_Peoples_Fuhrer
+	icon = GFX_goal_generic_construct_civilian
+	mutually_exclusive = { focus =  ALL_The_Partys_Fuhrer }
+	prerequisite = { focus = ALL_Pull_back_to_the_AA_Line }
+	relative_position_id = ALL_Pull_back_to_the_AA_Line
+	x = -2
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	ALL = {set_country_flag = sided_with_the_people}
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_Improved_healthcare
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_The_Peoples_Fuhrer }
+	relative_position_id = ALL_The_Peoples_Fuhrer
+	x = -1
+	y = 1
+	
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_benefits_to_mothers
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_The_Peoples_Fuhrer }
+	relative_position_id = ALL_The_Peoples_Fuhrer
+	x = 1
+	y = 1
+	
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_peoples_propaganda
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_benefits_to_mothers }
+	prerequisite = { focus = ALL_Improved_healthcare }
+	relative_position_id = ALL_Improved_healthcare
+	x = 1
+	y = 1
+	
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_The_Partys_Fuhrer
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_Pull_back_to_the_AA_Line }
+	mutually_exclusive = { focus =  ALL_The_Peoples_Fuhrer }
+	relative_position_id = ALL_Pull_back_to_the_AA_Line
+	x = 2
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	ALL = {set_country_flag = sided_with_the_party}
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_Increase_pay_for_beaurocrats
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_The_Partys_Fuhrer }
+	relative_position_id = ALL_The_Partys_Fuhrer
+	x = 1
+	y = 1
+	
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_pay_personal_visits
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_The_Partys_Fuhrer }
+	relative_position_id = ALL_The_Partys_Fuhrer
+	x = -1
+	y = 1
+	
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_glorify_party_leaders
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_pay_personal_visits }
+	prerequisite = { focus = ALL_Increase_pay_for_beaurocrats }
+	relative_position_id = ALL_pay_personal_visits
+	x = 1
+	y = 1
+	
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_The_Military_is_right
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_glorify_party_leaders focus =  ALL_peoples_propaganda }
+	mutually_exclusive = { focus =  ALL_The_SS_is_our_friend }
+	relative_position_id = ALL_glorify_party_leaders
+	x = 0
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	ALL = {set_country_flag = sided_with_the_military}
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_sideline_the_ss
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_The_Military_is_right }
+	relative_position_id = ALL_The_Military_is_right
+	x = 1
+	y = 1
+	
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_glorify_service
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_The_Military_is_right }
+	relative_position_id = ALL_The_Military_is_right
+	x = -1
+	y = 1
+	
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_Organize_A_military_Parade
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_sideline_the_ss }
+	prerequisite = { focus = ALL_glorify_service }
+	relative_position_id = ALL_glorify_service
+	x = 1
+	y = 1
+	
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_The_SS_is_our_friend
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_glorify_party_leaders focus =  ALL_peoples_propaganda }
+	mutually_exclusive = { focus =  ALL_The_Military_is_right }
+	relative_position_id = ALL_peoples_propaganda
+	x = 0
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	ALL = {set_country_flag = sided_with_the_SS}
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_look_into_the_army
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_The_SS_is_our_friend }
+	relative_position_id = ALL_The_SS_is_our_friend
+	x = 1
+	y = 1
+	
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_arrest_suspicious_members
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_The_SS_is_our_friend }
+	relative_position_id = ALL_The_SS_is_our_friend
+	x = -1
+	y = 1
+	
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_The_ss_secured
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_arrest_suspicious_members }
+	prerequisite = { focus = ALL_look_into_the_army }
+	relative_position_id = ALL_look_into_the_army
+	x = -1
+	y = 1
+	
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_Feggelein_feggelein_feggelein
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_The_ss_secured focus = ALL_Organize_A_military_Parade}
+	relative_position_id = ALL_The_ss_secured
+	x = 2
+	y = 1
+	
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+# army and industry
+shared_focus = {
+	id = ALL_Building_up_a_military_industrial_complex
+	prerequisite = { focus = ALL_Let_the_golden_age_begin }
+	icon = GFX_goal_generic_construct_civilian
+	x = 21
+	y = 4
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_increasing_our_production_capicity
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_Building_up_a_military_industrial_complex }
+	relative_position_id = ALL_Building_up_a_military_industrial_complex
+	x = -1
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_give_handsome_benefits
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_Building_up_a_military_industrial_complex }
+	relative_position_id = ALL_Building_up_a_military_industrial_complex
+	x = 1
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_The_Fuhrers_army
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_increasing_our_production_capicity }
+	prerequisite = { focus = ALL_give_handsome_benefits }
+	relative_position_id = ALL_increasing_our_production_capicity
+	x = 1
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_handout_pensions
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_increasing_our_production_capicity }
+	prerequisite = { focus = ALL_give_handsome_benefits }
+	relative_position_id = ALL_increasing_our_production_capicity
+	x = -1
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_cut_out_the_army_to_politics_pipeline
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_increasing_our_production_capicity }
+	prerequisite = { focus = ALL_give_handsome_benefits }
+	relative_position_id = ALL_give_handsome_benefits
+	x = 1
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+		add_ten_points_to_fegelein = yes
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_focus_on_civilian_industry
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_The_Fuhrers_army }
+	prerequisite = { focus = ALL_handout_pensions }
+	prerequisite = { focus = ALL_cut_out_the_army_to_politics_pipeline }
+	mutually_exclusive = {focus = ALL_focus_on_military_industry }
+	relative_position_id = ALL_The_Fuhrers_army
+	x = 1
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_focus_on_military_industry
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_The_Fuhrers_army }
+	prerequisite = { focus = ALL_handout_pensions }
+	prerequisite = { focus = ALL_cut_out_the_army_to_politics_pipeline }
+	mutually_exclusive = {focus = ALL_focus_on_civilian_industry }
+	relative_position_id = ALL_The_Fuhrers_army
+	x = -1
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_The_German_industrial_boom
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_focus_on_civilian_industry focus = ALL_focus_on_military_industry }
+	relative_position_id = ALL_focus_on_civilian_industry
+	x = -1
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}
+
+shared_focus = {
+	id = ALL_a_thousand_year_reich
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = { focus = ALL_launch_the_rocket}
+	prerequisite = { focus = ALL_Feggelein_feggelein_feggelein}
+	prerequisite = { focus = ALL_The_German_industrial_boom}
+	relative_position_id = ALL_Feggelein_feggelein_feggelein
+	x = 0
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	
+	}
+
+	bypass = {
+	}
+}

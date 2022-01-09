@@ -12,3 +12,8 @@ HOL_reichskommissariat = {
 	color = rgb { 115 115 115 }
 	color_ui = rgb { 122 145 93 }
 }
+
+Russian_liberation_front = {
+	color = rgb { 115 20 0 }
+	color_ui = rgb { 122 145 93 }
+}
