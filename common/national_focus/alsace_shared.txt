@@ -1378,9 +1378,9 @@ shared_focus = {
 		drop_cosmetic_tag = yes
 					
 		create_country_leader = {
-		name = "Felix Steiner"
+		name = "Siegfried Kashe"
 		desc = " "
-		picture = "gfx/leaders/GER/portrait_ger_felix_steiner.dds"
+		picture = "gfx/leaders/GER/Kashe.png"
 		expire = "1965.1.1"
 		ideology = fascism_ideology
 		traits = {

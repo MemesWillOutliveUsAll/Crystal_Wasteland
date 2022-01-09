@@ -144,6 +144,17 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Pavel Batov"
+	desc = " "
+	picture = "gfx/leaders/SOV/batov.png"
+	expire = "1965.1.1"
+	ideology = despotism #switched from centrism
+	traits = {
+		#
+	}
+}
+
 
 create_corps_commander = {
 	name = "Konstantin Rokossovsky"

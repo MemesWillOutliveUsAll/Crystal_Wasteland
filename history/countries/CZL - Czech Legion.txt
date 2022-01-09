@@ -143,6 +143,17 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Ivan Konev"
+	desc = ""
+	picture = "gfx/leaders/SOV/Ivan_Stepanovich_Konev.png"
+	expire = "1953.3.1"
+	ideology = stalinism
+	traits = {
+		
+	}
+}
+
 add_ideas = {
 }
 

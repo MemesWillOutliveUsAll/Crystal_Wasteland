@@ -147,6 +147,17 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Lavrenty Beria"
+	desc = ""
+	picture = "gfx/leaders/SOV/beria.png"
+	expire = "1953.3.1"
+	ideology = stalinism
+	traits = {
+		
+	}
+}
+
 create_corps_commander = {
 	name = "Dmitry Lelyushenko"
 		picture = "Portrait_Soviet_Dmitri_Danilovich_Lelyushenko.dds"
