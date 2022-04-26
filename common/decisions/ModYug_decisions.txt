@@ -206,7 +206,7 @@ YUG_going_to_blow_up = {
 		
 		is_good = no
 		
-		days_mission_timeout = 25
+		days_mission_timeout = 125
 		
 		activation = {
 		OR = {
