@@ -1,0 +1,27 @@
+spriteTypes = {	
+
+	# politics #
+	SpriteType = {
+	name = "GFX_focus_German_Pagan"
+	texturefile = "gfx/interface/goals/German_Pagan.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_Heydrich_takes_back_europe"
+	texturefile = "gfx/interface/goals/Heydrich_takes_back_europe.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_More_slaves_to_the_factory"
+	texturefile = "gfx/interface/goals/More_slaves_to_the_factory.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_ss_army
+	texturefile = "gfx/interface/goals/ss_army.dds"			
+	}
+	
+	
+	
+	
+}
