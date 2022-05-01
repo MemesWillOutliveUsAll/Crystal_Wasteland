@@ -2,26 +2,42 @@ spriteTypes = {
 
 	# politics #
 	SpriteType = {
-	name = "GFX_focus_German_Pagan"
-	texturefile = "gfx/interface/goals/German_Pagan.dds"			
+	name = "GFX_focus_thousand_year_reich"
+	texturefile = "gfx/interface/goals/ALL_1950s/1000_jahr_reich.dds"			
 	}
 	
-	SpriteType = {
-	name = "GFX_focus_Heydrich_takes_back_europe"
-	texturefile = "gfx/interface/goals/Heydrich_takes_back_europe.dds"			
+	name = "GFX_focus_workers"
+	texturefile = "gfx/interface/goals/ALL_1950s/ssss.dds"			
 	}
 	
-	SpriteType = {
-	name = "GFX_focus_More_slaves_to_the_factory"
-	texturefile = "gfx/interface/goals/More_slaves_to_the_factory.dds"			
+	name = "GFX_focus_AA_line"
+	texturefile = "gfx/interface/goals/ALL_1950s/aa_line.dds"			
 	}
 	
-	SpriteType = {
-	name = "GFX_focus_ss_army
-	texturefile = "gfx/interface/goals/ss_army.dds"			
+	name = "GFX_focus_Baltic_launch_site"
+	texturefile = "gfx/interface/goals/ALL_1950s/Baltic_launch_site.dds"			
 	}
 	
+	name = "GFX_focus_Heydrich_win_50s"
+	texturefile = "gfx/interface/goals/ALL_1950s/Heydrich_win.dds"			
+	}
 	
+	name = "GFX_focus_more_scientist"
+	texturefile = "gfx/interface/goals/ALL_1950s/more_scientist.dds"			
+	}
+	
+	name = "GFX_focus_No_prisoners"
+	texturefile = "gfx/interface/goals/ALL_1950s/No_prisioners.dds"			
+	}
+	
+	name = "GFX_focus_SS_military"
+	texturefile = "gfx/interface/goals/ALL_1950s/SS_military.dds"			
+	}
+	
+	name = "GFX_focus_oragnize_the_parade"
+	texturefile = "gfx/interface/goals/ALL_1950s/oragnize_the_parade.dds"			
+	}
+		
 	
 	
 }

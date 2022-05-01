@@ -1498,7 +1498,7 @@ shared_focus = {
 ## The Glory Years ##
 shared_focus = {
 	id = ALL_Heydrichs_Grand_Victory
-	icon = GFX_focus_Heydrich_takes_back_europe
+	icon = GFX_focus_Heydrich_win_50s
 	x = 14
 	y = 0
 
@@ -1788,7 +1788,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_Baltic_launch_site
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_focus_Baltic_launch_site
 	prerequisite = { focus = ALL_Nazi_Space_propaganda }
 	prerequisite = { focus = ALL_Von_Brauns_Genius }
 	relative_position_id = ALL_Nazi_Space_propaganda
@@ -1850,7 +1850,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_more_scientists
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_focus_more_scientist
 	prerequisite = { focus = ALL_Nazi_Space_propaganda }
 	prerequisite = { focus = ALL_Von_Brauns_Genius }
 	relative_position_id = ALL_Von_Brauns_Genius
@@ -2344,7 +2344,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_Organize_A_military_Parade
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_focus_No_prisoners
 	prerequisite = { focus = ALL_sideline_the_ss }
 	prerequisite = { focus = ALL_glorify_service }
 	relative_position_id = ALL_glorify_service
@@ -2556,7 +2556,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_increasing_our_production_capicity
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_focus_workers
 	prerequisite = { focus = ALL_Building_up_a_military_industrial_complex }
 	relative_position_id = ALL_Building_up_a_military_industrial_complex
 	x = -1
@@ -2616,7 +2616,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_The_Fuhrers_army
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_focus_SS_military
 	prerequisite = { focus = ALL_increasing_our_production_capicity }
 	prerequisite = { focus = ALL_give_handsome_benefits }
 	relative_position_id = ALL_increasing_our_production_capicity
@@ -2742,7 +2742,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_focus_on_military_industry
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_goal_generic_construct_mil_factory
 	prerequisite = { focus = ALL_The_Fuhrers_army }
 	prerequisite = { focus = ALL_handout_pensions }
 	prerequisite = { focus = ALL_cut_out_the_army_to_politics_pipeline }
@@ -2805,7 +2805,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_a_thousand_year_reich
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_focus_thousand_year_reich
 	prerequisite = { focus = ALL_launch_the_rocket}
 	prerequisite = { focus = ALL_Feggelein_feggelein_feggelein}
 	prerequisite = { focus = ALL_The_German_industrial_boom}
