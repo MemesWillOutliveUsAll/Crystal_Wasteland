@@ -1605,7 +1605,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_Crush_the_rebles
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_focus_No_prisoners
 	prerequisite = { focus = ALL_Solidify_our_grip_over_Romania }
 	relative_position_id = ALL_Solidify_our_grip_over_Romania
 	x = 2
@@ -1636,7 +1636,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_Liberalization
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_goal_generic_improve_relations
 	prerequisite = { focus = ALL_Solidify_our_grip_over_Romania }
 	relative_position_id = ALL_Solidify_our_grip_over_Romania
 	x = 0
@@ -1667,7 +1667,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_Let_the_golden_age_begin
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_focus_golden_age
 	prerequisite = { focus = ALL_Liberalization }
 	prerequisite = { focus = ALL_Crush_the_rebles }
 	prerequisite = { focus = ALL_Retrieve_our_scientists }
@@ -1701,7 +1701,7 @@ shared_focus = {
 shared_focus = {
 	id = ALL_The_german_space_Program
 	prerequisite = { focus = ALL_Let_the_golden_age_begin }
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_focus_rocketry
 	x = 7
 	y = 4
 	
@@ -1728,7 +1728,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_Von_Brauns_Genius
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_focus_research2
 	prerequisite = { focus = ALL_The_german_space_Program }
 	relative_position_id = ALL_The_german_space_Program
 	x = -1
@@ -1819,7 +1819,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_Invest_into_computers
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_focus_research2
 	prerequisite = { focus = ALL_Nazi_Space_propaganda }
 	prerequisite = { focus = ALL_Von_Brauns_Genius }
 	relative_position_id = ALL_Nazi_Space_propaganda
@@ -1881,7 +1881,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_ignore_complaints
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_focus_renounce_the_treaty_of_trianon
 	prerequisite = { focus = ALL_Baltic_launch_site }
 	prerequisite = { focus = ALL_more_scientists }
 	prerequisite = { focus = ALL_Invest_into_computers }
@@ -1914,7 +1914,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_look_into_complaints
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_goal_generic_scientific_exchange
 	prerequisite = { focus = ALL_Baltic_launch_site }
 	prerequisite = { focus = ALL_more_scientists }
 	prerequisite = { focus = ALL_Invest_into_computers }
@@ -1947,7 +1947,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_launch_the_rocket
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_focus_launch_the_rocket
 	prerequisite = { focus = ALL_look_into_complaints focus = ALL_ignore_complaints }
 	relative_position_id = ALL_ignore_complaints
 	x = -1
@@ -2008,7 +2008,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_The_Peoples_Fuhrer
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_focus_generic_military_academy
 	mutually_exclusive = { focus =  ALL_The_Partys_Fuhrer }
 	prerequisite = { focus = ALL_Pull_back_to_the_AA_Line }
 	relative_position_id = ALL_Pull_back_to_the_AA_Line
@@ -2040,7 +2040,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_Improved_healthcare
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_focus_generic_concessions
 	prerequisite = { focus = ALL_The_Peoples_Fuhrer }
 	relative_position_id = ALL_The_Peoples_Fuhrer
 	x = -1
@@ -2070,7 +2070,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_benefits_to_mothers
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_goal_generic_consumer_goods
 	prerequisite = { focus = ALL_The_Peoples_Fuhrer }
 	relative_position_id = ALL_The_Peoples_Fuhrer
 	x = 1
@@ -2100,7 +2100,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_peoples_propaganda
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_goal_generic_propaganda
 	prerequisite = { focus = ALL_benefits_to_mothers }
 	prerequisite = { focus = ALL_Improved_healthcare }
 	relative_position_id = ALL_Improved_healthcare
@@ -2131,7 +2131,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_The_Partys_Fuhrer
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_focus_ger_reichskommisariats
 	prerequisite = { focus = ALL_Pull_back_to_the_AA_Line }
 	mutually_exclusive = { focus =  ALL_The_Peoples_Fuhrer }
 	relative_position_id = ALL_Pull_back_to_the_AA_Line
@@ -2162,7 +2162,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_Increase_pay_for_beaurocrats
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_goal_generic_neutrality_focus
 	prerequisite = { focus = ALL_The_Partys_Fuhrer }
 	relative_position_id = ALL_The_Partys_Fuhrer
 	x = 1
@@ -2192,7 +2192,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_pay_personal_visits
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_goal_generic_intelligence_exchange
 	prerequisite = { focus = ALL_The_Partys_Fuhrer }
 	relative_position_id = ALL_The_Partys_Fuhrer
 	x = -1
@@ -2222,7 +2222,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_glorify_party_leaders
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_goal_support_fascism
 	prerequisite = { focus = ALL_pay_personal_visits }
 	prerequisite = { focus = ALL_Increase_pay_for_beaurocrats }
 	relative_position_id = ALL_pay_personal_visits
@@ -2253,7 +2253,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_The_Military_is_right
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_goal_generic_small_arms
 	prerequisite = { focus = ALL_glorify_party_leaders focus =  ALL_peoples_propaganda }
 	mutually_exclusive = { focus =  ALL_The_SS_is_our_friend }
 	relative_position_id = ALL_glorify_party_leaders
@@ -2284,7 +2284,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_sideline_the_ss
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_goal_generic_axis_build_infantry
 	prerequisite = { focus = ALL_The_Military_is_right }
 	relative_position_id = ALL_The_Military_is_right
 	x = 1
@@ -2314,7 +2314,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_glorify_service
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_focus_generic_military_mission
 	prerequisite = { focus = ALL_The_Military_is_right }
 	relative_position_id = ALL_The_Military_is_right
 	x = -1
@@ -2344,7 +2344,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_Organize_A_military_Parade
-	icon = GFX_focus_No_prisoners
+	icon = GFX_focus_oragnize_the_parade
 	prerequisite = { focus = ALL_sideline_the_ss }
 	prerequisite = { focus = ALL_glorify_service }
 	relative_position_id = ALL_glorify_service
@@ -2375,7 +2375,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_The_SS_is_our_friend
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_goal_generic_improve_relations
 	prerequisite = { focus = ALL_glorify_party_leaders focus =  ALL_peoples_propaganda }
 	mutually_exclusive = { focus =  ALL_The_Military_is_right }
 	relative_position_id = ALL_peoples_propaganda
@@ -2406,7 +2406,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_look_into_the_army
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_goal_generic_more_territorial_claims
 	prerequisite = { focus = ALL_The_SS_is_our_friend }
 	relative_position_id = ALL_The_SS_is_our_friend
 	x = 1
@@ -2436,7 +2436,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_arrest_suspicious_members
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_goal_generic_political_pressure
 	prerequisite = { focus = ALL_The_SS_is_our_friend }
 	relative_position_id = ALL_The_SS_is_our_friend
 	x = -1
@@ -2466,7 +2466,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_The_ss_secured
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_goal_generic_military_deal
 	prerequisite = { focus = ALL_arrest_suspicious_members }
 	prerequisite = { focus = ALL_look_into_the_army }
 	relative_position_id = ALL_look_into_the_army
@@ -2497,7 +2497,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_Feggelein_feggelein_feggelein
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_goal_generic_dangerous_deal
 	prerequisite = { focus = ALL_The_ss_secured focus = ALL_Organize_A_military_Parade}
 	relative_position_id = ALL_The_ss_secured
 	x = 2
@@ -2525,7 +2525,7 @@ shared_focus = {
 	}
 }
 
-# army and industry
+# army and industry###############################################
 shared_focus = {
 	id = ALL_Building_up_a_military_industrial_complex
 	prerequisite = { focus = ALL_Let_the_golden_age_begin }
@@ -2586,7 +2586,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_give_handsome_benefits
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_goal_generic_positive_trade_relations
 	prerequisite = { focus = ALL_Building_up_a_military_industrial_complex }
 	relative_position_id = ALL_Building_up_a_military_industrial_complex
 	x = 1
@@ -2647,7 +2647,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_handout_pensions
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_goal_generic_political_pressure
 	prerequisite = { focus = ALL_increasing_our_production_capicity }
 	prerequisite = { focus = ALL_give_handsome_benefits }
 	relative_position_id = ALL_increasing_our_production_capicity
@@ -2678,7 +2678,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_cut_out_the_army_to_politics_pipeline
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_goal_generic_national_unity
 	prerequisite = { focus = ALL_increasing_our_production_capicity }
 	prerequisite = { focus = ALL_give_handsome_benefits }
 	relative_position_id = ALL_give_handsome_benefits
@@ -2709,7 +2709,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_focus_on_civilian_industry
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_goal_generic_production
 	prerequisite = { focus = ALL_The_Fuhrers_army }
 	prerequisite = { focus = ALL_handout_pensions }
 	prerequisite = { focus = ALL_cut_out_the_army_to_politics_pipeline }
@@ -2775,7 +2775,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ALL_The_German_industrial_boom
-	icon = GFX_goal_generic_construct_civilian
+	icon = GFX_goal_generic_construct_infrastructure
 	prerequisite = { focus = ALL_focus_on_civilian_industry focus = ALL_focus_on_military_industry }
 	relative_position_id = ALL_focus_on_civilian_industry
 	x = -1

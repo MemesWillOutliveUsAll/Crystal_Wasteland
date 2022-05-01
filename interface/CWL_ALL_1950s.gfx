@@ -6,38 +6,60 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/ALL_1950s/1000_jahr_reich.dds"			
 	}
 	
+	SpriteType = {
 	name = "GFX_focus_workers"
 	texturefile = "gfx/interface/goals/ALL_1950s/ssss.dds"			
 	}
 	
+	SpriteType = {
 	name = "GFX_focus_AA_line"
 	texturefile = "gfx/interface/goals/ALL_1950s/aa_line.dds"			
 	}
 	
+	SpriteType = {
 	name = "GFX_focus_Baltic_launch_site"
 	texturefile = "gfx/interface/goals/ALL_1950s/Baltic_launch_site.dds"			
 	}
 	
+	SpriteType = {
 	name = "GFX_focus_Heydrich_win_50s"
 	texturefile = "gfx/interface/goals/ALL_1950s/Heydrich_win.dds"			
 	}
 	
+	SpriteType = {
 	name = "GFX_focus_more_scientist"
 	texturefile = "gfx/interface/goals/ALL_1950s/more_scientist.dds"			
 	}
 	
+	SpriteType = {
 	name = "GFX_focus_No_prisoners"
 	texturefile = "gfx/interface/goals/ALL_1950s/No_prisioners.dds"			
 	}
 	
+	SpriteType = {
 	name = "GFX_focus_SS_military"
 	texturefile = "gfx/interface/goals/ALL_1950s/SS_military.dds"			
 	}
 	
+	SpriteType = {
 	name = "GFX_focus_oragnize_the_parade"
 	texturefile = "gfx/interface/goals/ALL_1950s/oragnize_the_parade.dds"			
 	}
 		
+	SpriteType = {
+	name = "GFX_focus_golden_age"
+	texturefile = "gfx/interface/goals/ALL_1950s/golden_age.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_launch_the_rocket"
+	texturefile = "gfx/interface/goals/ALL_1950s/launch_the_rocket.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_space_propaganda"
+	texturefile = "gfx/interface/goals/ALL_1950s/space_propaganda.dds"			
+	}
 	
 	
 }
