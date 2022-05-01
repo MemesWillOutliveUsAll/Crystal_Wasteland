@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 # Heydrich after civil war 1 focus
   ALL_the_german_reconquista:0 "Reclaiming our Sphere"
   ALL_the_german_reconquista_desc:0 "To the horror of Heydrich it = seems that all that Hitler gained was lost. However it is not too late to reconquer it §Rand put the natives in their place"
@@ -144,10 +144,33 @@
  # ideas #
  ALL_ARMY_SHIT:0 "Recent purge"
  ALL_INDUSTRY_BAD_AFTER_CIVIL_WAR:0 "Devastated Industry"
+ 
+ # decisions #
+ ALL_reclamation_of_our_sphere:0 "Reclaim our sphere"
+ ALL_The_West:0 "Reclaim the west"
+ ALL_poland:0 "Reclaim poland"
+ ALL_ostland:0 "Restore Ostland"
+ ALL_czech_bargain:0 "The Czech bargain"
+ ALL_Romania:0 "Bring back Romania"
+ ALL_integration_of_Germans:0 "integration of rightful German lands"
+ ALL_integration_of_the_west:0 "integrate the west"
+ ALL_integration_of_the_bohemia:0 "Integrate Bohemia"
+ ALL_integration_of_poland:0 "Integrate Poland"
+ ALL_integration_of_the_baltic_teritories:0 "Integrate the baltic cities"
+ ALL_Siphon_wealth_from_our_conquests:0 "Siphon wealth from our conquests"
+ ALL_riches_from_the_west:0 "Riches from the west"
+ ALL_take_czech_gold:0 "Take the Czech gold"
+ ALL_pillage_the_east:0 "Pillage the east"
+ ALL_ransack_russia:0 "Ransack Russia"
+ ALL_rehabilitate_our_army:0 "Rehabilitating our army"
+ ALL_Army_reform:0 "Army reform"
+
 
  # news #
  news.46.t:0 "Germany marches east"
  news.46.d:0 "It seems that the germans have decided to attack russia as they feel that they pose an imminent threat. Russia having only just recovered does not stand much of a chance against a revitalized reich."
+ news.47.t:0 "Germany sends a man to the moon!"
+ news.47.d:0 "Amazing news has come from the reich, it seems a man has been launched"
  
  # Fegelein influence #
  ALL_Feggelein_game:0 "Feglein's Gambit"
