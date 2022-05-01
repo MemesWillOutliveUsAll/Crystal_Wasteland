@@ -1444,6 +1444,9 @@ shared_focus = {
 			    target = NOV
 				type = annex_everything
 				}
+				
+		news_event = { id = news.46 }
+		sound_effect = "attacking_russia"
 	}
 	
 	}
@@ -1968,7 +1971,17 @@ shared_focus = {
 	available_if_capitulated = yes
 		
 	completion_reward = {
-	
+	if = {
+		limit = {
+			ALL = {
+				has_country_flag = possible_rocket_failure
+			}
+		}
+	}
+	else = {
+		news_event = { id = news.47 }
+		sound_effect = "Rocket_success"
+	}
 	}
 
 	bypass = {

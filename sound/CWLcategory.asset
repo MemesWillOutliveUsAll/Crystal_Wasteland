@@ -76,8 +76,24 @@ category = {
 	Ustase_win
  }
  
+ ######################### Heydrich #############################################
+ 
+ soundeffects = {
+	Rocket_success
+ }
+ 
+ soundeffects = {
+	attacked_by_Russia
+ }
+ 
+ soundeffects = {
+	attacking_russia
+ }
+ 
  compressor = master_compressor
 }
+
+
 
 
 

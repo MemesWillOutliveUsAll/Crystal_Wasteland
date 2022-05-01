@@ -154,3 +154,29 @@ soundeffect = {
 	} 
 	volume = 1
 }
+
+########################## heydrich ################################
+
+soundeffect = {
+	name = "Rocket_success"
+	sounds = {
+		sound = "Rocket_success"
+	} 
+	volume = 1.5
+}
+
+soundeffect = {
+	name = "attacked_by_Russia"
+	sounds = {
+		sound = "attacked_by_Russia"
+	} 
+	volume = 1.5
+}
+
+soundeffect = {
+	name = "attacking_russia"
+	sounds = {
+		sound = "attacking_russia"
+	} 
+	volume = 1.5
+}

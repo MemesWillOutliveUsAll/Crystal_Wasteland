@@ -729,3 +729,35 @@ news_event = { # second_chinese_civil_war
 		name = news.45.a
 	}
 }
+
+################## HEYDRICH News #########################
+news_event = { # invasion of soviets
+	id = news.46
+	title = news.46.t
+	desc = news.46.d
+	picture = GFX_news_event_003
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.46.a
+	}
+}
+
+news_event = { launched rocket
+	id = news.47
+	title = news.47.t
+	desc = news.47.d
+	picture = GFX_report_news_man_in_space
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.47.a
+	}
+}
+

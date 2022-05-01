@@ -153,3 +153,29 @@ sound =
 	volume = 1
 	always_load = yes
 }
+
+#################################### HEYDRICH ########################################################
+
+sound =
+{
+	name = "Rocket_success"
+	file = "menu/Rocket_success.wav"
+	volume = 1
+	always_load = yes
+}
+
+sound =
+{
+	name = "attacked_by_Russia"
+	file = "menu/attacked_by_russia.wav"
+	volume = 1
+	always_load = yes
+}
+
+sound =
+{
+	name = "attacking_russia"
+	file = "menu/attacking_russia.wav"
+	volume = 1
+	always_load = yes
+}

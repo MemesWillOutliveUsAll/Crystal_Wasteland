@@ -144,6 +144,10 @@
  # ideas #
  ALL_ARMY_SHIT:0 "Recent purge"
  ALL_INDUSTRY_BAD_AFTER_CIVIL_WAR:0 "Devastated Industry"
+
+ # news #
+ news.46.t:0 "Germany marches east"
+ news.46.d:0 "It seems that the germans have decided to attack russia as they feel that they pose an imminent threat. Russia having only just recovered does not stand much of a chance against a revitalized reich."
  
  # Fegelein influence #
  ALL_Feggelein_game:0 "Feglein's Gambit"
