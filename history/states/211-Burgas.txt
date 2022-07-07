@@ -8,7 +8,7 @@ state={
 	state_category = town
 
 	history={
-		owner = BUL
+		owner = YUG
 		victory_points = { #Varna
 			9783 5
 		}
@@ -35,6 +35,7 @@ state={
 			}
 		}
 		add_core_of = BUL
+		add_core_of = YUG
 	}
 
 	provinces={

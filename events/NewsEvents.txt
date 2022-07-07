@@ -761,3 +761,18 @@ news_event = { launched rocket
 	}
 }
 
+news_event = { attacked by russia
+	id = news.48
+	title = news.48.t
+	desc = news.48.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.48.a
+	}
+}
+

@@ -223,7 +223,7 @@ country_event = {
 			}
 		}
 		
-		YUG = {set_country_flag = civil_war_start}
+		#YUG = {set_country_flag = civil_war_start}
 		KOS = {
 		ADD_yug_cores = yes
 		transfer_state = 45

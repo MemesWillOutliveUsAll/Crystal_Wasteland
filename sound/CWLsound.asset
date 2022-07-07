@@ -160,7 +160,7 @@ sound =
 {
 	name = "Rocket_success"
 	file = "menu/Rocket_success.wav"
-	volume = 1
+	volume = 2
 	always_load = yes
 }
 

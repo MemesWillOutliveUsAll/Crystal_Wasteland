@@ -65,6 +65,13 @@
 						days = 360
 					}
 		}
+		
+		YUG = {
+		country_event = {
+		id = mod_Yugoslavia.8
+		days = 1825
+		}
+		}
 		}
 		
 	}

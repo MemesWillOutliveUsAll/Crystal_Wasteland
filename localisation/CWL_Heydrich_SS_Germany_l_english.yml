@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 # Heydrich after civil war 1 focus
   ALL_the_german_reconquista:0 "Reclaiming our Sphere"
   ALL_the_german_reconquista_desc:0 "To the horror of Heydrich it = seems that all that Hitler gained was lost. However it is not too late to reconquer it §Rand put the natives in their place"
@@ -169,14 +169,36 @@ l_english:
  # news #
  news.46.t:0 "Germany marches east"
  news.46.d:0 "It seems that the germans have decided to attack russia as they feel that they pose an imminent threat. Russia having only just recovered does not stand much of a chance against a revitalized reich."
+ news.46.a:0 "A bad day to be russian"
  news.47.t:0 "Germany sends a man to the moon!"
  news.47.d:0 "Amazing news has come from the reich, it seems a man has been launched"
+ news.47.a:0 "Amazing!"
+ news.48.t:0 "Russian troops move into Russland"
+ news.48.d:0 "The once battered russians have decided to attack the German Reich citing the genocide being perpetrated against the russians within the Reich"
+ news.48.a:0 "Dark days for the Reich indeed"
  
  # Fegelein influence #
  ALL_Feggelein_game:0 "Feglein's Gambit"
- ALL_Feggelein_game_desc:0 "Fegelein has decided that our government is weak and given the chance will attempt to remove Heydrich from power, lets hope it does not come to that \n Fegelein's current influence within our government is: [?Feggelein_influence]"
+ ALL_Feggelein_game_desc:0 "Fegelein has decided that our government is weak and given the chance will attempt to remove Heydrich from power, lets hope it does not come to that \n Fegelein's current influence within our government is; [?Feggelein_influence]"
  add_ten_feg:0 "Adds ten to Fegelein's influence"
  add_thirty_feg:0 "Adds thirty to Fegelein's influence"
  lose_ten_feg:0 "Fegelein loses ten influence"
  need_twenty_or_lower:0 "We will need Fegeleins influence to be twenty or less to place him under house arrest"
  need_zero_or_lower:0 "We will need Fegeleins influence to be nonexistant to disapear him"
+ 
+ #events#
+ heydrich.2.t:0 "The after effects of General plan ost"
+ heydrich.2.d:0 "It seems that our rapid germanization efforts have backfired on us. for in our rush to germanize our conquests we forced people out of their homes and settled them into the country side assuming they would settle down and work. However most Ostlander's have found themselves stranded and poor with no prospects"
+ heydrich.2.a:0 "As long as the oil holds up we should be able to fix this minor problem"
+ heydrich.3.t:0 "The Romanian Revolution"
+ heydrich.3.d:0 "It seems that our Romanian puppet has decided to rebel against us and cut off our supply of oil. To say that this is detrimental is an understatement, we will have to cut the size of our army to try to keep our entire economy to crumble."
+ heydrich.3.a:0 "Things cant get any worse, Right?"
+ heydrich.4.t:0 "Partisans ramp up efforts in the east"
+ heydrich.4.d:0 "As if things couldnt get any worse it seems the partisans have been attentively watching us and have decided to take their chance and attack our settlers. This will only worsen our economy and no doubt ensure the legacy of our Fuhrer as that of a failure"
+ heydrich.4.a:0 "Lets hope this is the last disaster in a series of disasters"
+ heydrich.5.t:0 "The russians invade!"
+ heydrich.5.d:0 "The Fuhrer thought he obliterated the russians, however it seems he was completely incorrect as russian tanks roll over the border of Russland. This conflict will cement Heydrich either as the savior of Germany or as the one who destroyed it"
+ heydrich.5.a:0 "The end is near"
+ heydrich.6.t:0 "Our rocket blew up!"
+ heydrich.6.d:0 "It seems that our haste to launch a man into space we had failed to ensure the safety of the rocket. The problem was small and thus easily missed however our brave astronaut payed for our crime, and fegelein will no doubt use this as an oppertunity to shame us"
+ heydrich.6.a:0 "This is a disaster! Cover it up, in the name of the Fuhrer"

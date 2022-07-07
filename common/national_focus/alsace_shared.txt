@@ -1502,7 +1502,7 @@ shared_focus = {
 shared_focus = {
 	id = ALL_Heydrichs_Grand_Victory
 	icon = GFX_focus_Heydrich_win_50s
-	x = 14
+	x = 22
 	y = 0
 
 	cost = 3
@@ -1705,7 +1705,7 @@ shared_focus = {
 	id = ALL_The_german_space_Program
 	prerequisite = { focus = ALL_Let_the_golden_age_begin }
 	icon = GFX_focus_rocketry
-	x = 7
+	x = 15
 	y = 4
 	
 	cost = 10
@@ -1963,7 +1963,7 @@ shared_focus = {
 	}
 
 	available = {
-	
+	has_tech = advanced_rocket_engines
 	}
 		
 	cancel_if_invalid = yes
@@ -1975,6 +1975,15 @@ shared_focus = {
 		limit = {
 			ALL = {
 				has_country_flag = possible_rocket_failure
+			}
+		}
+		random_list = {
+			50 = {
+			}
+		
+			50 = {
+			news_event = { id = news.47 }
+			sound_effect = "Rocket_success"
 			}
 		}
 	}
@@ -1994,7 +2003,7 @@ shared_focus = {
 	id = ALL_Pull_back_to_the_AA_Line
 	prerequisite = { focus = ALL_Let_the_golden_age_begin }
 	icon = GFX_goal_generic_construct_civilian
-	x = 14
+	x = 22
 	y = 4
 	
 	cost = 10
@@ -2543,7 +2552,7 @@ shared_focus = {
 	id = ALL_Building_up_a_military_industrial_complex
 	prerequisite = { focus = ALL_Let_the_golden_age_begin }
 	icon = GFX_goal_generic_construct_civilian
-	x = 21
+	x = 29
 	y = 4
 	
 	cost = 10
@@ -2714,6 +2723,7 @@ shared_focus = {
 		
 	completion_reward = {
 		add_ten_points_to_fegelein = yes
+		add_political_power = -500
 	}
 
 	bypass = {
@@ -2801,7 +2811,7 @@ shared_focus = {
 	}
 
 	available = {
-	
+		num_of_factories = 450
 	}
 		
 	cancel_if_invalid = yes
@@ -2834,6 +2844,47 @@ shared_focus = {
 
 	available = {
 	
+	}
+		
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+		
+	completion_reward = {
+	country_event = {
+			id = heydrich.2	
+			days = 20
+		}
+	}
+
+	bypass = {
+	}
+}
+
+############ the end has come ###############
+
+shared_focus = {
+	id = ALL_Germany_under_siege
+	icon = GFX_focus_thousand_year_reich
+	prerequisite = { focus = ALL_launch_the_rocket}
+	prerequisite = { focus = ALL_Feggelein_feggelein_feggelein}
+	prerequisite = { focus = ALL_The_German_industrial_boom}
+	relative_position_id = ALL_Feggelein_feggelein_feggelein
+	x = 0
+	y = 1
+	
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		not = {
+			ALL ={
+				has_country_flag = crisis
+			}
+		}
 	}
 		
 	cancel_if_invalid = yes

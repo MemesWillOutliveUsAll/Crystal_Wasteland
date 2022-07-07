@@ -12,8 +12,8 @@ focus_tree = {
 	
 	default = no
 	
-	shared_focus = Yugoslavia_Harnessing_the_killer
-	shared_focus = Yugoslavia_ensuring_stability
+	#shared_focus = Yugoslavia_Harnessing_the_killer
+	#shared_focus = Yugoslavia_ensuring_stability
 
 
 

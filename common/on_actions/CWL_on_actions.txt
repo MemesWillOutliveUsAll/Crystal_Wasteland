@@ -47,7 +47,7 @@ on_actions = {
 					create_country_leader = {
 					name = "Hans von Luck"
 					desc = " "
-					picture = "gfx/leaders/GER/portrait_ger_hans_von_luck.dds"
+					picture = "gfx/leaders/GER/Hans_von_Luck.png"
 					expire = "1965.1.1"
 					ideology = fascism_ideology
 					traits = {
@@ -973,6 +973,103 @@ on_actions = {
 					tree = empty_focus
 					keep_completed = no
 					}
+					
+					}
+					
+			}
+			
+			if = {  
+				limit = {
+						FROM = {
+							OR = {
+								original_tag = NOV
+								original_tag = GMC
+								original_tag = SOV
+							}
+						}
+						ROOT = { 
+							OR = {
+								original_tag = ALL
+							}
+						}
+					
+					}
+					
+					FROM = {
+					white_peace = ROOT
+					annex_country = {
+							target = ROOT
+							transfer_troops = no
+					}
+
+					annex_country = {
+							target = OST
+							transfer_troops = no
+					}
+					
+					annex_country = {
+							target = UKR
+							transfer_troops = no
+					}
+					
+					annex_country = {
+							target = HUN
+							transfer_troops = no
+					}
+					
+					annex_country = {
+							target = ROM
+							transfer_troops = no
+					}
+					
+					}
+					
+			}
+			
+			if = {  
+				limit = {
+						FROM = {
+							OR = {
+								original_tag = CZL
+							}
+						}
+						ROOT = { 
+							OR = {
+								original_tag = SML
+							}
+						}
+					
+					}
+					
+					FROM = {
+					white_peace = ROOT
+					white_peace = ALL
+					annex_country = {
+							target = ROOT
+							transfer_troops = no
+					}
+					
+					}
+					
+			}
+			
+			if = {  
+				limit = {
+						FROM = {
+							OR = {
+								original_tag = ALL
+							}
+						}
+						ROOT = { 
+							OR = {
+								original_tag = CZL
+							}
+						}
+					
+					}
+					
+					FROM = {
+					white_peace = ROOT
 					
 					}
 					
